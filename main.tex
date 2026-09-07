@@ -1,0 +1,283 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+
+\title{Review of Gregory Clark, \emph{To Have and Have Not: The Determinants of Social Status in England, 1600--2026}}
+\author{David Cesarini}
+\date{}
+
+\begin{document}
+\maketitle
+
+% =====================================================================
+\section{Introduction}
+% PLACEHOLDER — ~350 words
+% - Credit the FOE (436,000+ individuals, linked 1600-2026, out to 4th cousins)
+%   and MOE (1.7M marriages, 1837-2022) as a genuinely novel, durable data
+%   resource, independent of the model fit to it.
+% - Credit the measurement-error / attenuation point as a real, underappreciated
+%   methodological contribution (Song et al. 2020 vs. Ward 2023 divergence, Fig. 4.1).
+% - Credit the Part II test battery (gender symmetry, family size, birth order,
+%   father's-death-age) as well-designed, falsifiable tests.
+% - Transition: despite this, the central causal claim -- that the correlational
+%   patterns specifically identify additive genetic transmission -- does not
+%   survive scrutiny. Some of this was flagged in peer review on the 2023 PNAS
+%   paper and never resolved; the book inherits it unchanged.
+
+% =====================================================================
+\section{The Fisher/Goldberger Critique}
+
+The book's central empirical exercise is to fit Ronald Fisher's (1918) classical
+model of phenotypic assortative mating to the observed pattern of status
+correlations among relatives. It is worth being precise about what that model
+assumes, what it implies, and what those implications cost the author, because
+the costs are severe enough to undercut the book's central causal claim on its
+own terms --- using only the numbers Clark himself reports.
+
+\subsection{The model}
+
+Normalize each individual's status phenotype $y$ to have unit variance, and
+write it as the sum of an additive genetic component and an environmental
+component,
+\begin{equation}
+y = G + E, \qquad \operatorname{Var}(G) = h^2, \quad \operatorname{Var}(E) = 1-h^2, \quad \operatorname{Cov}(G,E) = 0,
+\end{equation}
+where $h^2$ is (narrow-sense) heritability and $G,E$ are independent within a
+person. This is Clark's simplified, dominance-free version of Fisher's model;
+it is the version whose moment conditions generate the book's Table A1 and the
+decay curve $\rho_n = h^2\left(\frac{1+m}{2}\right)^n$ fit to collateral
+relatives $n$ steps removed.
+
+Mating is assortative on the \emph{phenotype}: spouses' $y$ values have
+correlation
+\begin{equation}
+\operatorname{Corr}(y_h, y_w) = r,
+\end{equation}
+where $h,w$ index husband and wife. Nothing is assumed about how spouses come
+to resemble each other on $y$ --- the model is agnostic about mechanism --- but
+everything that follows is a mechanical consequence of assortment operating on
+the \emph{whole} phenotype rather than on genotype alone.
+
+\subsection{What phenotypic assortment implies for spouses' genes and environments}
+
+Because $G$ and $E$ are the only two components of $y$, and because $y$ is what
+spouses match on, both components are dragged into correlation across spouses
+--- not just the genetic one. To see this, regress each spouse's genetic
+component on their own phenotype. Since $\operatorname{Cov}(G,y)=\operatorname{Var}(G)=h^2$ and
+$\operatorname{Var}(y)=1$, the regression coefficient is $h^2$ itself:
+\begin{equation}
+G_h = h^2 y_h + u_h, \qquad \operatorname{Var}(u_h) = h^2(1-h^2),
+\end{equation}
+with $u_h$ uncorrelated with $y_h$ by construction, and an identical equation
+for the wife. Maintaining the assumption that every cross-spouse correlation
+runs \emph{only} through the phenotype-matching channel --- i.e.\ that the
+residuals $u_h,u_w$ are uncorrelated with each other and with the spouse's
+phenotype --- gives
+\begin{equation}
+\operatorname{Cov}(G_h,G_w) = h^4\operatorname{Cov}(y_h,y_w) = h^4 r,
+\qquad\text{so}\qquad
+\operatorname{Corr}(G_h,G_w) = h^2 r \equiv m.
+\label{eq:m-def}
+\end{equation}
+This recovers Clark's identity $m=h^2r$: the genotypic correlation between
+spouses is not a free parameter, it is a forced arithmetic consequence of
+assorting on the phenotype with correlation $r$ and heritability $h^2$.
+
+The same regression logic, applied to $E$ instead of $G$ (regression
+coefficient $1-h^2$ rather than $h^2$, since $\operatorname{Cov}(E,y)=\operatorname{Var}(E)=1-h^2$), gives
+\begin{equation}
+\operatorname{Cov}(E_h,E_w) = (1-h^2)^2 r, \qquad
+\operatorname{Cov}(G_h,E_w) = h^2(1-h^2)r.
+\label{eq:ge-cross}
+\end{equation}
+This is the point Arthur Goldberger raised about Fisher's model, and which I
+raised independently in my own referee report on the 2023 PNAS paper: phenotypic
+assortment does not merely correlate spouses' genes, it \emph{also} correlates
+their environments, and it correlates one spouse's genes with the other's
+environment. Every other pair of relatives in the model --- siblings, cousins,
+a person and their own best man --- is assumed to have \emph{zero}
+environmental resemblance and zero gene-environment cross-correlation. There is
+no substantive theory in the book of why marriage, specifically, is the one
+relationship that generates environmental resemblance while every other
+family tie generates none. As I put it in my own correspondence on this paper:
+it is hard to imagine a realistic real-world process that produces
+environmental resemblance between spouses but not between siblings.
+
+This is not a decorative objection. It is doing real work, as the next two
+derivations show.
+
+\subsection{Transmission, and the sibling correlation}
+
+A child's genotype is the average of the two parents' genotypes plus an
+independent Mendelian segregation term $s$,
+\begin{equation}
+G_{\text{child}} = \tfrac{1}{2}(G_m + G_f) + s, \qquad s \perp G_m, G_f, E_{\text{anyone}},
+\end{equation}
+with $\operatorname{Var}(s)$ pinned down by the equilibrium requirement
+$\operatorname{Var}(G_{\text{child}})=h^2$. Two siblings share both parents but draw
+independent segregation terms $s_1, s_2$. Under the model's blanket assumption
+that non-spousal relatives share no environmental correlation and no
+gene-environment cross-correlation, the sibling phenotypic covariance reduces
+to the genetic term alone:
+\begin{equation}
+\operatorname{Cov}(y_1,y_2) = \operatorname{Cov}(G_1,G_2)
+= \operatorname{Var}\!\left(\tfrac{1}{2}(G_m+G_f)\right)
+= \tfrac{1}{4}\big[h^2+h^2+2mh^2\big]
+= \tfrac{1}{2}h^2(1+m).
+\label{eq:sib}
+\end{equation}
+This is the familiar formula behind the collateral-relative decay curve: sibling
+resemblance runs entirely through the genotypic spousal correlation $m$.
+
+\subsection{The parent-offspring correlation}
+
+Now compute the covariance between a child and one parent, say the father.
+Because the child's own environment $E_{\text{child}}$ is assumed independent
+of everything about the parents,
+\begin{equation}
+\operatorname{Cov}(y_{\text{child}}, y_f) = \operatorname{Cov}(G_{\text{child}}, G_f) + \operatorname{Cov}(G_{\text{child}}, E_f).
+\end{equation}
+The first term is exactly the genetic term computed above for siblings,
+\begin{equation}
+\operatorname{Cov}(G_{\text{child}}, G_f) = \tfrac{1}{2}\big[\operatorname{Cov}(G_m,G_f)+\operatorname{Var}(G_f)\big] = \tfrac{1}{2}h^2(1+m).
+\end{equation}
+But there is a second term that siblings do not have: the child inherits half
+its genes from the mother, and the mother's genes are cross-correlated with the
+\emph{father's environment} through the marriage --- exactly the term derived
+in equation~\eqref{eq:ge-cross}:
+\begin{equation}
+\operatorname{Cov}(G_{\text{child}}, E_f) = \tfrac{1}{2}\operatorname{Cov}(G_m, E_f) = \tfrac{1}{2}h^2(1-h^2)r.
+\end{equation}
+Adding the two terms and substituting $m=h^2r$:
+\begin{align}
+\operatorname{Cov}(y_{\text{child}},y_f)
+&= \tfrac{1}{2}h^2(1+m) + \tfrac{1}{2}h^2(1-h^2)r \notag\\
+&= \tfrac{1}{2}h^2\Big[1 + h^2 r + (1-h^2)r\Big] \notag\\
+&= \tfrac{1}{2}h^2\big[1+r\big].
+\label{eq:po}
+\end{align}
+So $\rho_{PO} = h^2(1+r)/2$: the parent-offspring correlation runs through
+$r$, not $m$. This is worth pausing on. It is precisely the spousal
+gene-environment cross-term that Goldberger flagged as implausible --- the
+term with no analogue anywhere else in the model --- that is mathematically
+responsible for parent-offspring resemblance exceeding sibling resemblance.
+The "curious exception" for spouses is not a side remark; it is load-bearing.
+
+\subsection{The decisive test: $\rho_{PO}$ vs.\ $\rho_S$}
+
+Comparing equations~\eqref{eq:sib} and~\eqref{eq:po}, and using $m=h^2r$
+again:
+\begin{equation}
+\rho_{PO} - \rho_S = \tfrac{1}{2}h^2(r-m) = \tfrac{1}{2}h^2 r(1-h^2) \; > \; 0
+\qquad\text{whenever } 0<h^2<1.
+\label{eq:gap}
+\end{equation}
+The model does not merely permit parent-offspring correlation to exceed
+sibling correlation --- it \emph{requires} it, by a specific, computable
+amount, given only the two parameters Clark himself estimates.
+
+Plug in Clark's own reported values, $r\approx0.8$ and $m\approx0.6$, which
+imply $h^2=m/r=0.75$. Equation~\eqref{eq:gap} predicts
+\begin{equation}
+\rho_{PO}-\rho_S \;\approx\; \tfrac{1}{2}(0.75)(0.8-0.6) \;=\; 0.075.
+\end{equation}
+% TODO: cite exact table/figure and observed gap from the book (Table 4.5,
+% occupational status, births 1780-1859): observed gap approx 0.001.
+The gap Clark's own data actually show is smaller than this by roughly two
+orders of magnitude. This is not a subtle specification-testing exercise
+requiring auxiliary assumptions --- it is arithmetic, performed entirely with
+numbers the author reports himself. Clark comes close to seeing the problem
+(p.~61: parity between the two correlations "would only be predicted\ldots if
+parents were actually matching on the genotype itself") but never computes the
+size of the discrepancy his own model predicts, and does not revise the model,
+or his confidence in its fit, in light of it.
+
+\subsection{Two parameters, not three: the Jinks-and-Eaves precedent}
+
+Equation~\eqref{eq:m-def} is the source of a second, closely related problem.
+Because $m=h^2r$ is a forced identity rather than an independent empirical
+fact, the model has exactly two free structural parameters --- one may
+parameterize it as $(h^2,r)$ or as $(h^2,m)$, but not as all three
+$(h^2,r,m)$ simultaneously without imposing the constraint that links them.
+
+This is not a new observation; it is the identical error Goldberger (1978)
+diagnosed in Jinks and Eaves's reanalysis of the British and American
+IQ-kinship data. Jinks and Eaves treated the genotypic spousal correlation $A$
+as a free parameter, in violation of Fisher's own requirement that
+$A=c_1c_2m$, and their fitted estimates duly violated it (for the British data
+set, $c_1c_2m=.22$ against a fitted $A=.47$). When Goldberger refit the model
+with the constraint properly imposed, the fit measurably worsened: $\chi^2$
+rose from $9.05$ (9 d.f., $A$ free) to $13.65$ (10 d.f., constraint imposed)
+--- an increment of $4.60$ on one degree of freedom, significant at the 5\%
+level, which Goldberger read as "a piece of evidence against the classical
+model" even though the constrained model still fit acceptably well in absolute
+terms.
+
+Clark's book (Technical Appendix, eqs.\ A1--A3) fits $m$ from the
+collateral-relative decay curve and $r$ from marriage records as two
+essentially separate exercises, and at no point jointly imposes the two-
+parameter constraint across all relationship types --- parent-offspring
+included --- simultaneously. This is the same practice Goldberger's
+re-analysis showed to be non-innocuous three decades before the underlying
+PNAS paper was written, and it is a point I raised directly in my referee
+report on that paper, where Clark's response (that spouses may be assorting on
+a "wider phenotype" than the one being modeled) did not resolve whether two or
+three parameters were actually free in the estimation. The book inherits this
+unresolved status unchanged.
+
+% =====================================================================
+\section{The Identification Problem}
+% PLACEHOLDER — ~900 words
+% - General point: a handful of kinship-correlation moments cannot discriminate
+%   among structurally different models that all fit comparably well.
+% - Jinks & Eaves vs. Rao-Morton-Yee (Goldberger 1978): incompatible substantive
+%   conclusions from overlapping data, both claiming excellent fit;
+%   Rao-Morton-Yee's own model later shown not even identified.
+% - [CONFIRM: Jencks 1980 ASR reference]
+% - Modern within-family vs. population (GWAS) effect decompositions
+%   (Young et al. 2019 Science; Young et al. 2022 Nature Genetics w/ Benjamin;
+%   Kong et al. 2018) as the kind of external evidence needed to adjudicate
+%   between observationally similar models; undermines treating m ~ 0.6 as a
+%   clean estimate of direct genetic transmission.
+% - Book's engagement with genetic-nurture literature (Ch.2) doesn't seriously
+%   grapple with population-vs-direct distinction; Clark's unpublished
+%   simulation counter was already flagged as insufficient in the 2023 PNAS review.
+
+% =====================================================================
+\section{What ``Genetic'' Does Not Mean}
+% PLACEHOLDER — ~900 words
+% - Conceptual: "genetic" in the variance-decomposition sense captures any
+%   pathway correlated with genotype, including channels ordinary usage calls
+%   "environmental" (BMI via food choice/health behavior). Jencks's point:
+%   genes being fixed (you don't choose your genotype) is different from
+%   genes' effects being fixed/immutable.
+% - External evidence from reared-together/reared-apart comparisons and
+%   unrelated-adoptee resemblance: direct evidence shared environment matters,
+%   which the "no shared environment except via spouses" assumption has to
+%   explain away and doesn't.
+% - Policy level: sympathy for skepticism of quasi-experimental policy
+%   estimates is a separate question from whether this specific variance
+%   decomposition correctly identifies genetic transmission.
+% - Net: even taking Clark's numbers at face value, "the model fits" does not
+%   get you to "society has little room to alter outcomes."
+
+% =====================================================================
+\section{Conclusion}
+% PLACEHOLDER — ~600 words
+% - Name the recurring pattern: evidence pointing either direction gets
+%   absorbed as confirmation (r>m confirms assortment; r<m for education also
+%   confirms assortment via an unformalized "broader phenotype" story;
+%   Collado's rejection becomes a measurement-error artifact; the
+%   parent-child/sibling anomaly becomes "an interesting exception").
+% - This need not be bad faith, but the "the model fits remarkably well"
+%   framing is doing far less epistemic work than the book presents it as doing.
+% - Close generously: real, lasting value in the data infrastructure and the
+%   measurement-quality critique. The genetic-transmission interpretation is a
+%   separable claim that hasn't met its own evidentiary bar.
+% - FINAL NOTE (tone): end skeptical but explicit that this is a disagreement
+%   about evidence and analysis, not discomfort with the hypothesis itself --
+%   unlike much of the criticism the book's argument attracts. Style model:
+%   Bowles (2007), "Genetically Capitalist?", Science 318 -- generous,
+%   substantive, skeptical, never moralizing.
+
+\end{document}

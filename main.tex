@@ -60,19 +60,76 @@ assumes, what it implies, and what those implications cost the author, because
 the costs are severe enough to undercut the book's central causal claim on its
 own terms --- using only the numbers Clark himself reports.
 
-\subsection{The model}
+\subsection{What has to be explained}
 
-Normalize each individual's status phenotype $y$ to have unit variance, and
-write it as the sum of an additive genetic component and an environmental
-component,
+Strip away the historical narrative and the book's empirical exercise is this:
+across roughly a dozen distinct kinship types --- spouses, parent-child,
+full siblings, aunt/uncle-niece/nephew, grandparent-grandchild, first
+cousins, second cousins, and so on --- Clark observes a correlation
+$\hat\rho_k$ in some status outcome, for $k=1,\dots,K$. The model supplies a
+predicted value for each,
 \begin{equation}
-y = G + E, \qquad \operatorname{Var}(G) = h^2, \quad \operatorname{Var}(E) = 1-h^2, \quad \operatorname{Cov}(G,E) = 0,
+E(\hat\rho_k) = f_k(\theta), \qquad \theta = (h^2, r, m),
+\label{eq:moment}
 \end{equation}
-where $h^2$ is (narrow-sense) heritability and $G,E$ are independent within a
-person. This is Clark's simplified, dominance-free version of Fisher's model;
-it is the version whose moment conditions generate the book's Table A1 and the
-decay curve $\rho_n = h^2\left(\frac{1+m}{2}\right)^n$ fit to collateral
-relatives $n$ steps removed.
+and the question is whether a single, low-dimensional $\theta$ can make all
+$K$ of these predictions line up with the data at once. Table~\ref{tab:notation}
+below collects the $f_k$'s derived in this section. The book reports that they
+do line up remarkably well (Table A1, $R^2>0.97$ for several outcomes), and
+treats this as strong evidence that the underlying process generating status
+resemblance among relatives is additive genetic transmission with assortative
+mating. Whether that inference is warranted depends entirely on what has to be
+assumed to write down the $f_k$'s in the first place, and on how many of the
+three symbols in $\theta$ are actually free. Both turn out to be more
+demanding, and more restrictive, than the book's presentation suggests.
+
+\subsection{The central assumption: genes as the sole channel of resemblance}
+
+The single most consequential assumption in the model is easy to state and
+easy to miss: \emph{the only reason any two relatives resemble each other is
+that they share genes.} Following the way Arthur Goldberger and others in the
+biometric tradition set the model up, write each person's standardized
+phenotype as a weighted sum of an additive genotypic value and an independent
+environmental deviation,
+\begin{equation}
+y = a\,G + e\,E, \qquad \operatorname{Cov}(G,E)=0,
+\label{eq:model-raw}
+\end{equation}
+with $a^2+e^2=1$ so that $\operatorname{Var}(y)=1$; below I write $h^2\equiv a^2$ for
+heritability and absorb the loadings so that $\operatorname{Var}(G)=h^2$,
+$\operatorname{Var}(E)=1-h^2$, recovering the more compact $y=G+E$ used from here on. For
+any two relatives 1 and 2 whose genotypes have correlation $\operatorname{Corr}(G_1,G_2)$,
+and whose environments are assumed uncorrelated with each other and with the
+other's genotype, the model implies
+\begin{equation}
+\operatorname{Cov}(y_1,y_2) = h^2\operatorname{Corr}(G_1,G_2).
+\label{eq:sole-channel}
+\end{equation}
+Every one of the model's predictions --- for siblings, cousins, grandparents,
+whatever the relationship --- is an application of equation~\eqref{eq:sole-channel}
+with a different value of $\operatorname{Corr}(G_1,G_2)$ plugged in. Nothing else is
+allowed to generate resemblance: not a shared home, not shared schooling, not
+shared neighborhood, not parenting style, not culture. As I put it in my own
+correspondence on this project, this is every bit as implausible, on its face,
+as a model that ignores genes entirely --- it simply replaces one extreme
+assumption (environment only) with the opposite extreme (genes only), and the
+book never argues for the extreme it picks beyond noting that the fitted model
+happens to track the data.
+
+This is not merely a theoretical worry. My own referee report on the
+underlying 2023 PNAS paper \citep{Clark2023} made the same point directly:
+the model as specified predicts that relatives reared together and relatives
+reared apart should be equally similar, since only shared genes matter and
+rearing arrangement is irrelevant to shared genotype. That prediction is
+false. Sibling and twin correlations are consistently higher for pairs reared
+together than for pairs reared apart \citep{CesariniVisscher2017}, and
+genetically unrelated adoptees reared in the same home show some resemblance
+in exactly the kinds of social-status outcomes this book studies. Both facts
+require some real channel of environmental resemblance among relatives who
+are not spouses --- precisely the channel equation~\eqref{eq:sole-channel}
+sets to zero by assumption, not by test.
+
+\subsection{Assortative mating and its consequence for spouses}
 
 Mating is assortative on the \emph{phenotype}: spouses' $y$ values have
 correlation
@@ -82,7 +139,11 @@ correlation
 where $h,w$ index husband and wife. Nothing is assumed about how spouses come
 to resemble each other on $y$ --- the model is agnostic about mechanism --- but
 everything that follows is a mechanical consequence of assortment operating on
-the \emph{whole} phenotype rather than on genotype alone.
+the \emph{whole} phenotype rather than on genotype alone. This is Clark's
+simplified, dominance-free version of Fisher's model; it is the version whose
+moment conditions generate the book's Table A1 and the decay curve
+$\rho_n = h^2\left(\frac{1+m}{2}\right)^n$ fit to collateral relatives $n$
+steps removed.
 
 \subsection{What phenotypic assortment implies for spouses' genes and environments}
 
@@ -245,11 +306,63 @@ essentially separate exercises, and at no point jointly imposes the two-
 parameter constraint across all relationship types --- parent-offspring
 included --- simultaneously. This is the same practice Goldberger's
 re-analysis showed to be non-innocuous three decades before the underlying
-PNAS paper was written, and it is a point I raised directly in my referee
-report on that paper, where Clark's response (that spouses may be assorting on
-a "wider phenotype" than the one being modeled) did not resolve whether two or
-three parameters were actually free in the estimation. The book inherits this
-unresolved status unchanged.
+PNAS paper was written, and it is exactly the point I raised in my referee
+report on that paper: ``if sorting is on phenotype, the model \ldots\ implies
+$m=rh^2$ and hence the moment conditions can (and should, as far as I can
+tell) be expressed in terms of only two parameters \ldots\ I do not understand
+the justification for not imposing the constraint in the estimation (which
+would mean that two free parameters are estimated instead of three) \ldots\
+the paper's current estimation approach causes the model fit to be
+artificially inflated.''
+
+Clark's response was that spouses may be assorting on some ``wider
+phenotype'' than the one being modeled directly --- a coherent enough claim
+about the assortment \emph{process}, but one that leaves unanswered whether
+the formulas in Table A1 (which are derived under phenotypic homogamy on the
+modeled trait itself) remain valid at all once that broader, unmodeled
+phenotype is doing the assorting. My second-round report pressed exactly this
+point and did not receive a resolution: ``It is still not entirely clear to
+me if the author is estimating the model with the constraint imposed or not
+(i.e.\ with two or three free parameters?) \ldots\ The alternative model may
+also imply some restrictions on how $m$, $r$, and $h^2$ are related. If so,
+these restrictions should be imposed in estimation.'' The book carries this
+unresolved status forward unchanged, and richer models that relax the
+sole-genetic-channel assumption of Section~2.2 --- surveyed, for instance, by
+\citet{OttoEtAl1995} --- are not engaged with at all.
+
+\subsection{Summary of notation and moment conditions}
+
+Table~\ref{tab:notation} collects the notation used above and the moment
+conditions derived so far, for reference in the sections that follow.
+
+\begin{table}[h]
+\centering
+\caption{Notation and key moment conditions}
+\label{tab:notation}
+\begin{tabular}{ll}
+\hline
+\textbf{Symbol} & \textbf{Definition} \\
+\hline
+$y$ & Standardized status phenotype, $\operatorname{Var}(y)=1$ \\
+$G$ & Additive genotypic component of $y$, $\operatorname{Var}(G)=h^2$ \\
+$E$ & Environmental component of $y$, $\operatorname{Var}(E)=1-h^2$ \\
+$h^2$ & Narrow-sense heritability \\
+$r$ & Phenotypic correlation between spouses (assortment on $y$) \\
+$m$ & Genotypic correlation between spouses; $m \equiv h^2 r$ (eq.~\ref{eq:m-def}) \\
+\hline
+\textbf{Kinship} & \textbf{Model-implied correlation} \\
+\hline
+Spouses & $r$ \\
+Full siblings & $\rho_S = \tfrac{1}{2}h^2(1+m)$ \quad (eq.~\ref{eq:sib}) \\
+Parent-offspring & $\rho_{PO} = \tfrac{1}{2}h^2(1+r)$ \quad (eq.~\ref{eq:po}) \\
+Collateral relative, $n$ steps & $\rho_n = h^2\left(\dfrac{1+m}{2}\right)^{n}$ \\
+\hline
+\end{tabular}
+\end{table}
+\emph{Note}: full step-by-step derivations of the grandparent, avuncular,
+first-cousin, and second-cousin correlations --- consistent with the notation
+above --- are given in the companion file
+\texttt{Goldberger\_1978\_DerivationAppendix.tex} included in this repository.
 
 % =====================================================================
 \section{The Identification Problem}

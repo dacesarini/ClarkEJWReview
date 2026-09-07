@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath,amssymb}
 \usepackage[margin=1in]{geometry}
+\usepackage{natbib}
 
 \title{Review of Gregory Clark, \emph{To Have and Have Not: The Determinants of Social Status in England, 1600--2026}}
 \author{David Cesarini}
@@ -28,7 +29,7 @@ parent-child correlation near 0.77--0.8 that is essentially unchanged across
 four centuries of upheaval --- the Industrial Revolution, mass education,
 women's enfranchisement, the welfare state --- and a pattern of correlations
 across more distant relatives that declines at a near-constant rate,
-consistent with Fisher's (1918) model of additive genetic transmission under
+consistent with \citet{Fisher1918}'s model of additive genetic transmission under
 assortative mating, fit to the data with reported $R^2$ above 0.97. From this
 Clark concludes that social mobility has long been governed chiefly by
 genetic inheritance and chance rather than by social or institutional
@@ -52,7 +53,7 @@ fertility.
 % =====================================================================
 \section{The Fisher/Goldberger Critique}
 
-The book's central empirical exercise is to fit Ronald Fisher's (1918) classical
+The book's central empirical exercise is to fit \citet{Fisher1918}'s classical
 model of phenotypic assortative mating to the observed pattern of status
 correlations among relatives. It is worth being precise about what that model
 assumes, what it implies, and what those implications cost the author, because
@@ -116,7 +117,7 @@ coefficient $1-h^2$ rather than $h^2$, since $\operatorname{Cov}(E,y)=\operatorn
 \label{eq:ge-cross}
 \end{equation}
 This is the point Arthur Goldberger raised about Fisher's model, and which I
-raised independently in my own referee report on the 2023 PNAS paper: phenotypic
+raised independently in my own referee report on the 2023 PNAS paper \citep{Clark2023}: phenotypic
 assortment does not merely correlate spouses' genes, it \emph{also} correlates
 their environments, and it correlates one spouse's genes with the other's
 environment. Every other pair of relatives in the model --- siblings, cousins,
@@ -225,7 +226,7 @@ fact, the model has exactly two free structural parameters --- one may
 parameterize it as $(h^2,r)$ or as $(h^2,m)$, but not as all three
 $(h^2,r,m)$ simultaneously without imposing the constraint that links them.
 
-This is not a new observation; it is the identical error Goldberger (1978)
+This is not a new observation; it is the identical error \citet{Goldberger1978}
 diagnosed in Jinks and Eaves's reanalysis of the British and American
 IQ-kinship data. Jinks and Eaves treated the genotypic spousal correlation $A$
 as a free parameter, in violation of Fisher's own requirement that
@@ -238,7 +239,7 @@ level, which Goldberger read as "a piece of evidence against the classical
 model" even though the constrained model still fit acceptably well in absolute
 terms.
 
-Clark's book (Technical Appendix, eqs.\ A1--A3) fits $m$ from the
+Clark's book \citep{Clark2026} (Technical Appendix, eqs.\ A1--A3) fits $m$ from the
 collateral-relative decay curve and $r$ from marriage records as two
 essentially separate exercises, and at no point jointly imposes the two-
 parameter constraint across all relationship types --- parent-offspring
@@ -304,5 +305,8 @@ unresolved status unchanged.
 %   unlike much of the criticism the book's argument attracts. Style model:
 %   Bowles (2007), "Genetically Capitalist?", Science 318 -- generous,
 %   substantive, skeptical, never moralizing.
+
+\bibliographystyle{apalike}
+\bibliography{references}
 
 \end{document}

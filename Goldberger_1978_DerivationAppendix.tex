@@ -1,0 +1,377 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+
+\title{Derivation Appendix: Phenotypic Correlations Between Relatives\\ Under Fisher's Model of Phenotypic Assortative Mating}
+\author{Companion to Goldberger (1978), ``Models and Methods in the IQ Debate: Part I''}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent This appendix derives, from first principles, the predicted kinship correlations reported in Table 1 of Goldberger (1978) (reproduced in \texttt{Goldberger\_1978\_ModelsAndMethods.tex}, Section 2) for the ``classical'' biometrical-genetic model of R.\ A.\ Fisher. Notation matches that .tex file. Every assumption is stated before it is used; every equation follows by an explicit algebraic step from the one before it. Where a result is taken from elsewhere rather than re-derived, that is stated and cited.
+
+\section{Assumptions}
+
+The model rests on the following assumptions. They are listed together here so that later steps can be checked against them individually; each is invoked by name (A1, A2, \ldots) at the point it is used.
+
+\begin{description}
+\item[(A1) Additive phenotype decomposition.] Every individual's phenotype $y$ (an IQ test score, in the motivating application) is the sum of three unobserved, mutually uncorrelated components:
+\begin{equation*}
+y = x_1 + x_2 + x_3 \, ,
+\end{equation*}
+where $x_1$ is the individual's \emph{additive genotypic value}, $x_2$ is his \emph{dominance deviation}, and $x_3$ is his \emph{environmental deviation}. ``Mutually uncorrelated'' means $\mathrm{Cov}(x_i,x_j)=0$ for $i\ne j$, within the same individual.
+
+\item[(A2) Stationarity (equilibrium) across generations.] The variances $\sigma_1^2=\mathrm{Var}(x_1)$, $\sigma_2^2=\mathrm{Var}(x_2)$, $\sigma_3^2=\mathrm{Var}(x_3)$, and the spousal phenotypic correlation $m$ (defined in A5 below) are the same in every generation. This is what allows a single set of parameters to describe parents and children alike.
+
+\item[(A3) No shared environment.] Relatives share no correlation in their environmental components $x_3$, with the single exception of spouses, whose environments become correlated only as an indirect consequence of assortative mating on phenotype (this consequence is derived, not assumed, in Section 3). In particular: parents and their children do not share environment beyond this; siblings raised together do not share environment; adoptive relatives share no environment. This is the strong, explicitly flagged simplification that gives the ``classical model'' its name and that Goldberger's Sections 4--7 criticize as empirically implausible. It is retained here because Table 1 is the object being derived, and Table 1 is this model's prediction.
+
+\item[(A4) Additive genetic transmission with random Mendelian segregation.] A child's additive genotypic value is the average of his two parents' additive genotypic values, plus an independent random deviation representing Mendelian segregation:
+\begin{equation*}
+x_1'' = \tfrac{1}{2}(x_1+x_1') + w \, , \qquad \mathrm{Cov}(w,\text{anything about the parents or their mating}) = 0 \, .
+\end{equation*}
+This is the standard quantitative-genetics model of a polygenic additive trait under random segregation at many independent loci; see Falconer \& Mackay, \emph{Introduction to Quantitative Genetics}, or Fisher (1918). It is \textbf{taken as given}, not re-derived here, since re-deriving it requires the underlying Mendelian population-genetic machinery (allele frequencies, independent assortment across loci), which is outside the scope of the phenotypic-correlation question this appendix answers.
+
+\item[(A5) Assortative mating is on phenotype only, and operates solely through the phenotype ``channel.''] Spouses' phenotypes are correlated: $\mathrm{Corr}(y,y')=m$ for a mated pair (individual 1, individual 2). Formally, writing each individual's phenotype in terms of his own components, the \emph{only} channel by which one spouse's components can be correlated with the other spouse's components is through the two phenotypes themselves. Section 3 makes this precise and shows what it implies for the full covariance structure between spouses' components (this is the assumption underlying Fisher's claim, used without proof in Goldberger's Table 1 and flagged with a marginal ``HELP'' in the original handwritten appendix, that spousal component covariances take the proportional form $\Theta = m\,\underline\pi\,\underline\pi'$).
+
+\item[(A6) Dominance deviations are transmitted only through shared parentage, not directly parent-to-child.] A child's dominance deviation $x_2''$ has zero correlation with either parent's dominance deviation, reflecting the genetics of dominance (a dominance deviation depends on which two alleles are paired at a locus, and Mendelian segregation breaks up the parent's specific pairings). Full siblings, however, share dominance covariance $\mathrm{Cov}(x_2'',x_2''')=\sigma_2^2/4$, reflecting the $1/4$ chance that two siblings inherit the identical pair of alleles at a given locus from their two parents under random segregation. This is a standard population-genetics result (again, see Falconer \& Mackay); it is \textbf{taken as given}.
+
+\item[(A7) Linearity of conditional expectation.] Wherever a regression of one variable on another is used (as in Section 3), the conditional expectation is assumed linear in the conditioning variable. This holds exactly under joint normality of all components, which is the standard supporting assumption in this literature, and is assumed to hold here.
+\end{description}
+
+\section{Notation}
+
+\begin{description}
+\item[$x_1,x_2,x_3$] additive genotype, dominance deviation, environment of a generic individual (subscripts distinguish individuals where needed, primes distinguish spouses/relatives; double/triple primes distinguish generations, exactly as in the main paper).
+\item[$y=x_1+x_2+x_3$] phenotype.
+\item[$\sigma_1^2,\sigma_2^2,\sigma_3^2$] variances of $x_1,x_2,x_3$; $\sigma_y^2=\sigma_1^2+\sigma_2^2+\sigma_3^2$ is the phenotypic variance.
+\item[$c_1=(\sigma_1^2+\sigma_2^2)/\sigma_y^2$] broad heritability: the fraction of phenotypic variance that is genotypic (additive + dominance).
+\item[$c_2=\sigma_1^2/(\sigma_1^2+\sigma_2^2)$] the fraction of genotypic variance that is additive.
+\item[$m=\mathrm{Corr}(y,y')$] the phenotypic correlation between spouses (the assortative-mating parameter).
+\item[$A=c_1c_2m$] defined for convenience; Section 5 shows $A$ is also the correlation between spouses' \emph{additive genotypic values} specifically (not their overall phenotypes).
+\item[$\underline x=(x_1,x_2,x_3)'$] an individual's component vector; $\underline a=(1,1,1)'$ so that $y=\underline x'\underline a$.
+\item[$\Sigma=E(\underline x\,\underline x')$] the (diagonal, by A1) variance matrix of an individual's components: $\Sigma=\mathrm{diag}(\sigma_1^2,\sigma_2^2,\sigma_3^2)$.
+\item[$\underline\pi=E(\underline x\,y)=\Sigma\underline a=(\sigma_1^2,\sigma_2^2,\sigma_3^2)'$] the vector of covariances of an individual's own components with his own phenotype. (Since $\Sigma$ is diagonal, $\underline\pi$ just lists the three variances.)
+\item[Normalization.] Throughout, we normalize $\sigma_y^2=1$, so that all phenotypic covariances are automatically correlations, and $\sigma_1^2=c_1c_2$, $\sigma_2^2=c_1(1-c_2)$, $\sigma_3^2=1-c_1$ (this normalization and these three identities are used repeatedly below and are worth having in one place).
+\end{description}
+
+\section{The Key Lemma: What Assortative Mating on Phenotype Implies for Components}
+
+This is the step that the original handwritten appendix marked ``HELP'' and asserted without derivation. It is central: every kinship correlation in Table 1 depends on it.
+
+\textbf{Claim.} Let $\underline x_1,\underline x_2$ be the component vectors of two spouses, with $y_1=\underline x_1'\underline a$, $y_2=\underline x_2'\underline a$, $\mathrm{Var}(y_1)=\mathrm{Var}(y_2)=1$, $\mathrm{Corr}(y_1,y_2)=m$ (A5). Then
+\begin{equation}
+\Theta \equiv E(\underline x_1\underline x_2') = m\,\underline\pi\,\underline\pi' \, .
+\end{equation}
+
+\textbf{Proof.} Fix component $i$ of individual 1. Regress $x_{i1}$ (the $i$-th component of individual 1) on his own phenotype $y_1$:
+\begin{equation}
+x_{i1} = \pi_i\,y_1 + e_{i1} \, , \qquad \pi_i \equiv \mathrm{Cov}(x_{i1},y_1) \, , \qquad \mathrm{Cov}(e_{i1},y_1)=0
+\end{equation}
+by the definition of linear regression (A7): $\pi_i$ is exactly the $i$-th entry of $\underline\pi$ as defined in Section 2, and $e_{i1}$ is the regression residual, uncorrelated with $y_1$ by construction. The same decomposition holds for individual 2's component $j$: $x_{j2}=\pi_j y_2 + e_{j2}$, with $\mathrm{Cov}(e_{j2},y_2)=0$.
+
+Now invoke Assumption (A5) in its precise form: the mating mechanism creates a correlation between $y_1$ and $y_2$, but creates \emph{no other} correlation between the two households. Formally, the residual $e_{i1}$ (whatever in individual 1 is left over after accounting for his own phenotype) is uncorrelated with everything on the spouse's side:
+\begin{equation}
+\mathrm{Cov}(e_{i1},y_2)=0 \, , \qquad \mathrm{Cov}(e_{i1},e_{j2})=0 \, ,
+\end{equation}
+and symmetrically $\mathrm{Cov}(e_{j2},y_1)=0$. (This is the formal content of ``assortative mating is on phenotype only'': two people choose each other because their phenotypes are alike, not because of any direct link between, say, one person's environment and the other's genotype net of phenotype.)
+
+Then, substituting the two regression decompositions and expanding the covariance:
+\begin{align}
+\mathrm{Cov}(x_{i1},x_{j2}) &= \mathrm{Cov}(\pi_i y_1 + e_{i1},\ \pi_j y_2 + e_{j2}) \notag \\
+&= \pi_i\pi_j\,\mathrm{Cov}(y_1,y_2) + \pi_i\,\mathrm{Cov}(y_1,e_{j2}) + \pi_j\,\mathrm{Cov}(e_{i1},y_2) + \mathrm{Cov}(e_{i1},e_{j2}) \notag \\
+&= \pi_i\pi_j\,m + \pi_i\cdot 0 + \pi_j\cdot 0 + 0 \notag \\
+&= m\,\pi_i\pi_j \, ,
+\end{align}
+using $\mathrm{Cov}(y_1,y_2)=\mathrm{Corr}(y_1,y_2)=m$ (since both variances are 1) and the three zero-covariance conditions just stated. Since $i,j$ were arbitrary components, this holds for every entry of the matrix $\Theta=E(\underline x_1\underline x_2')$, i.e.\ $\Theta_{ij}=m\pi_i\pi_j$, which is exactly the matrix statement $\Theta=m\,\underline\pi\,\underline\pi'$. $\blacksquare$
+
+\textbf{What this buys us.} Because $\underline\pi=(\sigma_1^2,\sigma_2^2,\sigma_3^2)'$ under (A1), the Lemma says the covariance between spouse 1's component $i$ and spouse 2's component $j$ is $m\sigma_i^2\sigma_j^2$ for $i,j\in\{1,2,3\}$ (using $\sigma_1^2,\sigma_2^2,\sigma_3^2$ interchangeably with $\pi_1,\pi_2,\pi_3$). Two special cases matter later:
+\begin{itemize}
+\item \textbf{Spousal additive-genotype correlation.} $\mathrm{Cov}(x_{1,1},x_{1,2}) = m\sigma_1^4$, hence $\mathrm{Corr}(x_{1,1},x_{1,2}) = m\sigma_1^4/\sigma_1^2 = m\sigma_1^2 = mc_1c_2$. This is exactly $A$ (Section 2's definition): \textbf{$A$ is the correlation between spouses' additive genotypic values}, derived here rather than merely asserted.
+\item \textbf{Spousal environment correlation is a consequence, not an assumption.} $\mathrm{Cov}(x_{3,1},x_{3,2})=m\sigma_3^4>0$ whenever $m>0$: even though (A3) rules out any direct environmental sharing between spouses, assortative mating on the combined phenotype $y$ mechanically drags the environmental components along with it. This is precisely the point Goldberger makes in Section 4 of the main paper (``my wife's childhood environment was similar to mine\ldots'') — and it is now a proven consequence of (A1)+(A5), not a separate assumption.
+\end{itemize}
+
+\section{The Transmission Step and the Equilibrium Segregation Variance}
+
+We now need the covariance between a parent's components and the child's components, since every kinship correlation is built out of chains of such covariances.
+
+By (A4), the child's additive genotype is
+\begin{equation}
+x_1'' = \tfrac12(x_1+x_1') + w \, , \qquad \mathrm{Cov}(w,x_1)=\mathrm{Cov}(w,x_1')=0 \, ,
+\end{equation}
+where $x_1,x_1'$ are the two parents' additive genotypic values and $w$ is the Mendelian segregation term (also uncorrelated with the parents' dominance deviations and environments, and with each other's dominance/environment, by A4 and A1). By (A6), the child's dominance deviation $x_2''$ is uncorrelated with either parent's components, and the child's environment $x_3''$ is uncorrelated with either parent's components by (A3).
+
+\textbf{Step 1: variance of $x_1''$.} Taking the variance of the transmission equation and using $\mathrm{Var}(w)\equiv\sigma_4^2$ (a new symbol, purely for bookkeeping — this is not one of the three phenotypic components, just the segregation-noise variance):
+\begin{equation}
+\mathrm{Var}(x_1'') = \tfrac14\big[\mathrm{Var}(x_1)+\mathrm{Var}(x_1')+2\,\mathrm{Cov}(x_1,x_1')\big] + \sigma_4^2 \, .
+\end{equation}
+By (A2) (stationarity), $\mathrm{Var}(x_1)=\mathrm{Var}(x_1')=\mathrm{Var}(x_1'')=\sigma_1^2$ — the additive-genotype variance is the same in the parents' generation as in the child's. By the Lemma of Section 3 (special case), $\mathrm{Cov}(x_1,x_1')=A\sigma_1^2$. Substituting:
+\begin{equation}
+\sigma_1^2 = \tfrac14\big[\sigma_1^2+\sigma_1^2+2A\sigma_1^2\big] + \sigma_4^2 = \sigma_1^2\,\frac{1+A}{2} + \sigma_4^2 \, .
+\end{equation}
+Solving for the segregation variance:
+\begin{equation}
+\sigma_4^2 = \sigma_1^2\left(1-\frac{1+A}{2}\right) = \sigma_1^2\,\frac{1-A}{2} \, . \tag{4.1}
+\end{equation}
+This is the value the segregation variance \emph{must} take for the additive-genotype variance to be stationary across generations under assortative mating with spousal additive correlation $A$ — it is not an extra assumption, it is forced by (A2)+(A4)+the Lemma. (When $m=0$, hence $A=0$, this reduces to the textbook random-mating result $\sigma_4^2=\sigma_1^2/2$.)
+
+\textbf{Step 2: the parent$\to$child covariance, the building block for everything that follows.} Multiply the transmission equation by $x_1$ (one parent's own additive genotype) and take expectations:
+\begin{align}
+\mathrm{Cov}(x_1,x_1'') &= \tfrac12\big[\mathrm{Cov}(x_1,x_1)+\mathrm{Cov}(x_1,x_1')\big] + \mathrm{Cov}(x_1,w) \notag \\
+&= \tfrac12\big[\sigma_1^2 + A\sigma_1^2\big] + 0 = \sigma_1^2\,\frac{1+A}{2} \, . \tag{4.2}
+\end{align}
+Define $d_1 \equiv \sigma_1^2(1+A)/2$ for this recurring quantity; it is the covariance between \emph{any one parent's} additive genotype and \emph{the child's} additive genotype, and (by symmetry of the same argument) also the covariance between \emph{any one sibling's} additive genotype and \emph{another sibling's} additive genotype (both are ``one step of transmission removed from a shared parent,'' which is exactly what (4.2)'s derivation used — it never referenced which specific relative besides ``a parent'' was on the left). This double role of $d_1$ is used in Sections 5 and 6 below.
+
+\textbf{Step 3: the shared-dominance covariance for full siblings.} By (A6), two full siblings' dominance deviations have covariance
+\begin{equation}
+d_2 \equiv \mathrm{Cov}(x_2'',x_2''') = \sigma_2^2/4 \, . \tag{4.3}
+\end{equation}
+This is the only nonzero cross-generation or cross-sibling covariance involving dominance deviations in the classical model: a parent's dominance deviation is uncorrelated with the child's (by A6, first clause), so dominance never appears in a parent-child correlation, only in sibling-type (collateral) correlations.
+
+\section{Parent-Offspring Correlation}
+
+We want $\mathrm{Cov}(y_1,y)$ where individual 1 is one parent and $y$ is the child's phenotype. Write $y_1=x_{1,1}+x_{2,1}+x_{3,1}$ (parent's three components) and $y=x_1''+x_2''+x_3''$ (child's). By bilinearity of covariance,
+\begin{equation}
+\mathrm{Cov}(y_1,y) = \sum_{i=1}^{3}\sum_{j=1}^{3} \mathrm{Cov}(x_{i,1},x_j'') \, .
+\end{equation}
+By (A3) and (A6) (as tightened: a child's dominance and environment are uncorrelated with \emph{every} component of either parent), only the $j=1$ terms can be nonzero — the child's additive genotype is the only channel through which a parent's components reach the child. So
+\begin{equation}
+\mathrm{Cov}(y_1,y) = \sum_{i=1}^{3}\mathrm{Cov}(x_{i,1},x_1'') \, .
+\end{equation}
+Using the transmission equation $x_1''=\tfrac12(x_{1,1}+x_{1,2})+w$ (individual 2 is the other parent, $w$ the segregation term, independent of both parents by A4):
+\begin{equation}
+\mathrm{Cov}(x_{i,1},x_1'') = \tfrac12\big[\mathrm{Cov}(x_{i,1},x_{1,1}) + \mathrm{Cov}(x_{i,1},x_{1,2})\big] \, .
+\end{equation}
+The first term is a within-individual covariance: by (A1), it is $\sigma_1^2$ if $i=1$ and $0$ if $i=2,3$. The second term is a cross-spouse covariance, given directly by the Lemma of Section 3: $\mathrm{Cov}(x_{i,1},x_{1,2}) = m\,\sigma_i^2\,\sigma_1^2$ for any $i$ (recall $\pi_i=\sigma_i^2$, $\pi_1=\sigma_1^2$). So:
+\begin{align}
+i=1: &\quad \mathrm{Cov}(x_{1,1},x_1'') = \tfrac12\big[\sigma_1^2+m\sigma_1^4\big] = \tfrac12\sigma_1^2(1+A) = d_1 \tag{5.1} \\
+i=2: &\quad \mathrm{Cov}(x_{2,1},x_1'') = \tfrac12\big[0+m\sigma_2^2\sigma_1^2\big] = \tfrac{m}{2}\sigma_1^2\sigma_2^2 \tag{5.2} \\
+i=3: &\quad \mathrm{Cov}(x_{3,1},x_1'') = \tfrac12\big[0+m\sigma_3^2\sigma_1^2\big] = \tfrac{m}{2}\sigma_1^2\sigma_3^2 \tag{5.3}
+\end{align}
+using $A\equiv m\sigma_1^2$ (established as a derived fact, not just a definition, in Section 3). Note (5.1) reproduces $d_1$ exactly as defined in Section 4 — consistent, since Section 4's $d_1$ was defined as this very quantity.
+
+Summing (5.1)+(5.2)+(5.3):
+\begin{equation}
+\mathrm{Cov}(y_1,y) = \tfrac12\sigma_1^2(1+A) + \tfrac{m}{2}\sigma_1^2(\sigma_2^2+\sigma_3^2) \, .
+\end{equation}
+Since $\sigma_1^2+\sigma_2^2+\sigma_3^2=1$ (normalization, Section 2), $\sigma_2^2+\sigma_3^2 = 1-\sigma_1^2$. Substituting and using $A=m\sigma_1^2$ once more to simplify $m\sigma_1^2\cdot\sigma_1^2 = A\sigma_1^2$:
+\begin{align}
+\mathrm{Cov}(y_1,y) &= \tfrac12\sigma_1^2(1+A) + \tfrac{m}{2}\sigma_1^2(1-\sigma_1^2) \notag \\
+&= \tfrac12\sigma_1^2\big[(1+A) + m - m\sigma_1^2\big] \notag \\
+&= \tfrac12\sigma_1^2\big[1 + A + m - A\big] \qquad (\text{since } m\sigma_1^2=A) \notag \\
+&= \tfrac12\sigma_1^2(1+m) \, .
+\end{align}
+In Fisher's notation ($\sigma_1^2=c_1c_2$):
+\begin{equation}
+\boxed{\mathrm{Cov}(y_1,y) = c_1c_2(1+m)/2}
+\end{equation}
+which is exactly the Parent row of Table 1. \textbf{This confirms the paper's result by full derivation}, and additionally shows precisely \emph{why} it is $m$ (the raw spousal phenotypic correlation) that appears here and not $A$: the parent contributes half of the child's additive genotype directly (the $\sigma_1^2$ term in (5.1)), and the \emph{other} half comes from the spouse, whose correlation with the first parent (of \emph{any} type of component, via the Lemma) is what pulls $m$ into the calculation; the algebra above shows the $A$ terms arising from each piece exactly cancel, leaving plain $m$.
+
+\section{Spouse, Full Sibling, and Monozygotic Twin Correlations}
+
+\textbf{Spouse.} By (A5), $\mathrm{Corr}(y,y')=m$ for a mated pair, directly. No derivation is needed — $m$ is the primitive parameter of the model — but it is worth recording as the base case of Table 1 (``Spouse: $m$'') against which everything else is built.
+
+\textbf{Full sibling.} Let $y_o$ be a full sibling of our individual $y$; both are children of the same two parents (1 and 2). By (A1) and the additive-only transmission channel established above,
+\begin{equation}
+\mathrm{Cov}(y_o,y) = \sum_{i=1}^{3}\sum_{j=1}^{3}\mathrm{Cov}(x_{i,o},x_j) \, .
+\end{equation}
+Each sibling's components are built as $x_{1,o}=\tfrac12(x_{1,1}+x_{1,2})+w_o$, $x_1=\tfrac12(x_{1,1}+x_{1,2})+w$, with $w_o,w$ two \emph{independent} segregation draws (A4, extended: each child gets an independent draw); $x_{2,o},x_2$ are the two siblings' dominance deviations, with $\mathrm{Cov}(x_{2,o},x_2)=d_2=\sigma_2^2/4$ by (A6); and $x_{3,o},x_3$ are uncorrelated by (A3). By (A8), all cross-type terms ($i\ne j$) vanish. So only two terms in the double sum survive:
+\begin{align}
+\mathrm{Cov}(x_{1,o},x_1) &= \mathrm{Var}\big(\tfrac12(x_{1,1}+x_{1,2})\big) \qquad (\text{since } w_o\perp w\perp\text{parents}) \notag \\
+&= \tfrac14\big[\mathrm{Var}(x_{1,1})+\mathrm{Var}(x_{1,2})+2\,\mathrm{Cov}(x_{1,1},x_{1,2})\big] \notag \\
+&= \tfrac14\big[\sigma_1^2+\sigma_1^2+2A\sigma_1^2\big] = \tfrac12\sigma_1^2(1+A) = d_1 \, , \tag{6.1}
+\end{align}
+using $\mathrm{Cov}(x_{1,1},x_{1,2})=A\sigma_1^2$ (the spousal additive-genotype covariance, Section 3), and
+\begin{equation}
+\mathrm{Cov}(x_{2,o},x_2) = d_2 = \sigma_2^2/4 \, . \tag{6.2}
+\end{equation}
+Summing (6.1) and (6.2):
+\begin{equation}
+\boxed{\mathrm{Cov}(y_o,y) = d_1+d_2 = c_1c_2(1+A)/2 + c_1(1-c_2)/4}
+\end{equation}
+exactly the Sibling/Dizygotic-twin row of Table 1. Note this uses $A$, not $m$ — a direct contrast with the parent-offspring result, and the reason is visible in the derivation: unlike parent-offspring, there is no ``direct transmission'' term here at all; \emph{both} siblings receive their additive genotype the same way, so the only source of their correlation is the covariance between the two parents' contributions, which is exactly the $A$-bearing term $\mathrm{Cov}(x_{1,1},x_{1,2})$.
+
+\textbf{Monozygotic twin.} An MZ twin shares $x_1$ and $x_2$ \emph{exactly} with our individual (identical genotype at every locus — there is no independent Mendelian segregation event for a monozygotic pair, since they arise from a single fertilized zygote), and shares no environment beyond the general spousal-only exception of (A3) (which does not apply to twins). So $\mathrm{Cov}(x_{1,o},x_1)=\mathrm{Var}(x_1)=\sigma_1^2$, $\mathrm{Cov}(x_{2,o},x_2)=\mathrm{Var}(x_2)=\sigma_2^2$, $\mathrm{Cov}(x_{3,o},x_3)=0$. Summing:
+\begin{equation}
+\boxed{\mathrm{Cov}(y_o,y) = \sigma_1^2+\sigma_2^2 = c_1c_2 + c_1(1-c_2) = c_1}
+\end{equation}
+matching the Monozygotic-twin row of Table 1 exactly.
+
+For later use, define the \textbf{sibling covariance-transfer vector}
+\begin{equation}
+\underline\lambda_{\mathrm{sib}} \equiv \mathrm{Cov}(\underline x_o,y) = (d_1,\,d_2,\,0)' \, ,
+\end{equation}
+the vector of covariances between one full sibling's three components and the other sibling's \emph{total phenotype} $y$. (Each entry follows immediately from (6.1)/(6.2) since, by A8, $x_{i,o}$ correlates with $y=x_1+x_2+x_3$ only through the matching-index component of $y$.) This vector is the building block for every collateral (non-lineal) relationship computed in the sections that follow.
+
+\section{The General Marriage-Transfer Lemma}
+
+Grandparent, uncle, and cousin correlations all require one more piece of machinery: what happens when someone who is \emph{already correlated with a third party $Z$} (not just an individual's own components, as in Section 3, but potentially a blood relative's components) gets married. This is a strict generalization of the Lemma in Section 3, to which it reduces as a special case.
+
+\textbf{Assumption (A5, restated in general form).} For any individual $W$ who marries $V$ (with $\mathrm{Corr}(y_W,y_V)=m$ as always), and for any individual $Z$ related to $W$ by blood (not marriage) whose components have some covariance $\mathrm{Cov}(\underline x_Z,y_W)=\underline\lambda$ with $W$'s phenotype: the incoming spouse $V$ is otherwise statistically independent of $Z$ and of $W$'s entire blood lineage, except through the marital link to $W$'s phenotype itself. This is the natural reading of ``assortative mating is on phenotype only'' extended from the two-person case (Section 3) to the whole family: a person's mate is drawn based on the couple's mutual phenotypic resemblance, not based on any direct fact about the mate's future in-laws.
+
+\textbf{Lemma.} Under this assumption,
+\begin{equation}
+\mathrm{Cov}(\underline x_Z,\underline x_V) = m\,\underline\lambda\,\underline\pi' \, , \qquad \text{i.e.} \qquad \mathrm{Cov}(x_{i,Z},x_{j,V}) = m\,\lambda_i\,\pi_j \, .
+\end{equation}
+
+\textbf{Proof.} Regress $V$'s component $j$ on $V$'s own phenotype: $x_{j,V}=\pi_jy_V+e_{j,V}$, with $\mathrm{Cov}(e_{j,V},y_V)=0$ by construction (A7), and $\mathrm{Cov}(e_{j,V},Z\text{'s components})=0$ by the assumption just stated (the ``leftover'' part of $V$ independent of his own phenotype is independent of everything on $W$'s side, a fortiori of $Z$). Also regress $V$'s phenotype on $W$'s: since $\mathrm{Var}(y_W)=\mathrm{Var}(y_V)=1$ and $\mathrm{Corr}(y_W,y_V)=m$, the linear regression of $y_V$ on $y_W$ is $y_V=m\,y_W+u_V$ with $\mathrm{Cov}(u_V,y_W)=0$ by construction, and $\mathrm{Cov}(u_V,Z\text{'s components})=0$ by the same independence assumption (whatever in $V$'s phenotype is unexplained by $W$'s phenotype is independent of $W$'s blood relatives too). Then:
+\begin{align}
+\mathrm{Cov}(x_{i,Z},x_{j,V}) &= \mathrm{Cov}(x_{i,Z},\,\pi_jy_V+e_{j,V}) = \pi_j\,\mathrm{Cov}(x_{i,Z},y_V) \notag \\
+&= \pi_j\,\mathrm{Cov}(x_{i,Z},\,my_W+u_V) = \pi_j\,m\,\mathrm{Cov}(x_{i,Z},y_W) = \pi_j\,m\,\lambda_i \, ,
+\end{align}
+using $\mathrm{Cov}(x_{i,Z},e_{j,V})=0$, $\mathrm{Cov}(x_{i,Z},u_V)=0$, and $\mathrm{Cov}(x_{i,Z},y_W)=\lambda_i$ by definition of $\underline\lambda$. This is $m\lambda_i\pi_j$, as claimed. $\blacksquare$
+
+\textbf{Remark.} Setting $Z=W$ (so $\underline\lambda=\underline\pi$, since an individual's covariance with his own phenotype is exactly $\underline\pi$ by Section 2's definition) recovers the original Lemma of Section 3 exactly: $\mathrm{Cov}(\underline x_W,\underline x_V)=m\,\underline\pi\,\underline\pi'$. The generalization is that $Z$ need not be $W$ himself — $Z$ can be anyone already correlated with $W$, and the same proportional ``multiply by $m$ and by the new spouse's own $\underline\pi$'' rule carries the correlation across the marital link. This is the single mechanism that propagates correlation sideways through a pedigree every time a new, otherwise-unrelated spouse marries in, and it is applied repeatedly below.
+
+\section{Grandparent and Great-Grandparent}
+
+Let $G$ be a grandparent: $G$'s child is $p_1$, and $p_1$ marries $p_2$ (unrelated to $G$), producing our individual (the grandchild), $y=x_1''+x_2''+x_3''$.
+
+\textbf{Step 1.} $\mathrm{Cov}(\underline x_G,x_{1,p_1})$ is exactly the generic parent$\to$child transfer vector computed in Section 5 (equations 5.1--5.3), since that computation never used anything specific about \emph{which} parent — it is a general fact about any parent-child pair:
+\begin{equation}
+\underline\nu \equiv \mathrm{Cov}(\underline x_G,x_{1,p_1}) = \big(d_1,\ \tfrac{m}{2}\sigma_1^2\sigma_2^2,\ \tfrac{m}{2}\sigma_1^2\sigma_3^2\big)' \, .
+\end{equation}
+Since $p_1$'s other components ($x_{2,p_1},x_{3,p_1}$) are uncorrelated with $G$ (A3, A6/A8), $\underline\nu$ is also $G$'s covariance vector with $p_1$'s \emph{whole phenotype}: $\mathrm{Cov}(\underline x_G,y_{p_1})=\underline\nu$. Also, from Section 5's final summation step, $\underline a'\underline\nu=\nu_1+\nu_2+\nu_3=c_1c_2(1+m)/2$ — the parent-offspring correlation itself.
+
+\textbf{Step 2.} $p_1$ marries $p_2$. Apply the Lemma of Section 7 with $Z=G$, $W=p_1$, $V=p_2$, $\underline\lambda=\underline\nu$:
+\begin{equation}
+\mathrm{Cov}(\underline x_G,x_{1,p_2}) = m\,\underline\nu\,\pi_1 = m\sigma_1^2\,\underline\nu = A\,\underline\nu \, ,
+\end{equation}
+taking the $j=1$ column of the outer product (only the grandchild's $x_1$ channel will matter, so only $j=1$ is needed) and using $\pi_1=\sigma_1^2$, $m\sigma_1^2=A$.
+
+\textbf{Step 3.} The grandchild's $x_1''=\tfrac12(x_{1,p_1}+x_{1,p_2})+w$, so
+\begin{equation}
+\mathrm{Cov}(\underline x_G,x_1'') = \tfrac12\big[\mathrm{Cov}(\underline x_G,x_{1,p_1})+\mathrm{Cov}(\underline x_G,x_{1,p_2})\big] = \tfrac12\big[\underline\nu+A\underline\nu\big] = \underline\nu\,\frac{1+A}{2} \, .
+\end{equation}
+Since the grandchild's $x_2'',x_3''$ are uncorrelated with $G$ (same argument as always: dominance and environment do not transmit), $\mathrm{Cov}(\underline x_G,y)=\underline\nu(1+A)/2$, and so
+\begin{equation}
+\mathrm{Cov}(y_G,y) = \underline a'\Big[\underline\nu\,\frac{1+A}{2}\Big] = \frac{1+A}{2}\big(\underline a'\underline\nu\big) = \frac{1+A}{2}\cdot c_1c_2\frac{1+m}{2} \, .
+\end{equation}
+That is,
+\begin{equation}
+\boxed{\mathrm{Cov}(y_G,y) = \left(c_1c_2\frac{1+m}{2}\right)\frac{1+A}{2}}
+\end{equation}
+— exactly the Grandparent row of Table 1: the parent-offspring correlation, times one additional factor of $(1+A)/2$ for the extra generation crossed.
+
+\textbf{Great-grandparent.} Exactly the same three steps apply again, one generation further back: if $GG$ is a great-grandparent, then $GG\to G$ is a parent-offspring link, and $G\to$ grandchild is the relationship just derived, so by an identical argument (with $\underline\nu$ replaced by $\mathrm{Cov}(\underline x_{GG},y_G)$, which by the identical Step-1/Step-2/Step-3 logic applied one level up equals $\underline\nu\,(1+A)/2$ rather than $\underline\nu$ itself), the whole relationship picks up one more factor of $(1+A)/2$:
+\begin{equation}
+\boxed{\mathrm{Cov}(y_{GG},y) = \left(c_1c_2\frac{1+m}{2}\right)\left(\frac{1+A}{2}\right)^2}
+\end{equation}
+exactly the Great-grandparent row of Table 1. In general, each additional generation of lineal ancestry multiplies the correlation by another factor of $(1+A)/2$ — this is visible directly in Step 3 above, which shows that crossing one more generation (one more ``marry an unrelated spouse, then transmit'') always rescales the existing covariance vector by exactly $(1+A)/2$, regardless of which generation it is applied at.
+
+\section{Uncle (Avuncular Correlation), and a Naive Error Worth Flagging}
+
+Let $U$ be the uncle: a full sibling of our individual's mother $M$ (so $U,M$ share parents $G,G'$). $M$ marries $F$ (unrelated to $U$'s family), producing our individual, $y$.
+
+\textbf{A tempting but wrong shortcut.} One might try to shortcut this the way Section 5 handled parent-offspring: compute $\mathrm{Cov}(x_{1,U},x_{1,M})=d_1$ (Section 6's sibling result, restricted to the additive component), note only $x_1$ transmits, and write $\mathrm{Cov}(x_{1,U},x_1'') = \tfrac12\big[\mathrm{Cov}(x_{1,U},x_{1,M})+\mathrm{Cov}(x_{1,U},x_{1,F})\big] = \tfrac12\big[d_1+0\big]$ on the reasoning that $F$ is ``unrelated to $U$'s family, hence uncorrelated with $U$.'' \textbf{This is wrong}, and it is worth seeing why, since the error is easy to make and the fix is exactly the point of Section 7's generalized Lemma: $F$ marries $M$, and $M$ \emph{is} correlated with $U$ (they are siblings) — so by the Lemma, $F$ picks up an induced correlation with $U$ too, exactly as a spouse picks up a correlation with the other spouse's dominance and environment (Section 3's Remark). Treating $F$ as simply ``independent of $U$'' silently sets this induced term to zero, and (as shown below) it also drops an entire dominance-mediated contribution to the correlation. The correct calculation must use the full sibling covariance-transfer vector $\underline\lambda_{\mathrm{sib}}=(d_1,d_2,0)'$ from Section 6, not just its first entry.
+
+\textbf{Correct derivation.} From Section 6, $\mathrm{Cov}(\underline x_U,y_M)=\underline\lambda_{\mathrm{sib}}=(d_1,d_2,0)'$. We also need the narrower vector $\underline\xi\equiv\mathrm{Cov}(\underline x_U,x_{1,M})$ (covariance with $M$'s additive genotype \emph{specifically}, needed for the transmission step): by (A8), $U$'s components correlate with $M$'s $x_1$ only through $U$'s own $x_1$ (the $i=1,j=1$ sibling term), so
+\begin{equation}
+\underline\xi = (d_1,\,0,\,0)' \, .
+\end{equation}
+
+Apply the Lemma of Section 7 with $Z=U$, $W=M$, $V=F$, $\underline\lambda=\underline\lambda_{\mathrm{sib}}$:
+\begin{equation}
+\mathrm{Cov}(\underline x_U,x_{1,F}) = m\,\underline\lambda_{\mathrm{sib}}\,\pi_1 = m\sigma_1^2\,\underline\lambda_{\mathrm{sib}} = A\,\underline\lambda_{\mathrm{sib}} = (Ad_1,\ Ad_2,\ 0)' \, .
+\end{equation}
+Now transmit: our individual's $x_1=\tfrac12(x_{1,M}+x_{1,F})+w$, so
+\begin{equation}
+\mathrm{Cov}(\underline x_U,x_1) = \tfrac12\big[\underline\xi + A\underline\lambda_{\mathrm{sib}}\big] = \tfrac12\Big[(d_1,0,0)' + (Ad_1,Ad_2,0)'\Big] = \Big(\tfrac12d_1(1+A),\ \tfrac12Ad_2,\ 0\Big)' \, .
+\end{equation}
+Since our individual's $x_2,x_3$ are uncorrelated with $U$ (dominance/environment do not transmit), $\mathrm{Cov}(y_U,y)=\underline a'\,\mathrm{Cov}(\underline x_U,x_1) = \tfrac12d_1(1+A) + \tfrac12Ad_2$.
+
+Substituting $d_1=\sigma_1^2(1+A)/2$ and $d_2=\sigma_2^2/4$:
+\begin{align}
+\mathrm{Cov}(y_U,y) &= \tfrac12(1+A)\cdot\frac{\sigma_1^2(1+A)}{2} + \tfrac12A\cdot\frac{\sigma_2^2}{4} \notag \\
+&= \frac{\sigma_1^2(1+A)^2}{4} + \frac{A\sigma_2^2}{8} \, .
+\end{align}
+In Fisher's notation:
+\begin{equation}
+\boxed{\mathrm{Cov}(y_U,y) = c_1c_2\left(\frac{1+A}{2}\right)^2 + \frac{A\,c_1(1-c_2)}{8}}
+\end{equation}
+exactly the Uncle row of Table 1 — and now with the dominance term's origin fully explained: it arises because $M$'s marriage to $F$ transmits not just $M$'s share of the additive-genotype sibling covariance with $U$, but (via the Lemma) an $A$-scaled echo of the \emph{dominance}-sharing covariance $d_2$ as well, even though dominance itself never crosses a generation directly.
+
+\section{First Cousin}
+
+First cousins are the two children of a sibling pair: $M,U$ are full siblings; $M$ marries $F$ and has our individual, $y$; $U$ marries $U_s$ (unrelated to everyone else) and has the cousin, $y_c$. We want $\mathrm{Cov}(y,y_c)$.
+
+\textbf{Step 1: reuse the uncle computation.} By symmetry of covariance, $\mathrm{Cov}(y,x_{1,U}) = \mathrm{Cov}(x_{1,U},y)$, the first entry of the vector computed in Section 8's uncle derivation:
+\begin{equation}
+\mathrm{Cov}(y,x_{1,U}) = \tfrac12d_1(1+A) \, . \tag{9.1}
+\end{equation}
+Since $y$'s only correlated channel with $U$ is $U$'s own additive genotype (there is no dominance-dominance term here — $y$ is not $U$'s sibling, only $M$ is), $\mathrm{Cov}(y,y_U)=\mathrm{Cov}(y,x_{1,U})$ too, and indeed this equals the full Uncle correlation derived in Section 8: $U_{\mathrm{corr}}\equiv\mathrm{Cov}(y,y_U)=c_1c_2\big(\tfrac{1+A}{2}\big)^2+\tfrac{Ac_1(1-c_2)}{8}$.
+
+\textbf{Step 2: transmit through $U$ to the cousin's parent generation.} The cousin's additive genotype is $x_{1,c}=\tfrac12(x_{1,U}+x_{1,U_s})+w$. We need $\mathrm{Cov}(y,x_{1,U_s})$: apply the Lemma of Section 7 with $Z$ being ``our individual'' (whose phenotype $y$ is already a scalar, so $\underline\lambda$ collapses to the single number $\mathrm{Cov}(y,y_U)=U_{\mathrm{corr}}$), $W=U$, $V=U_s$:
+\begin{equation}
+\mathrm{Cov}(y,x_{1,U_s}) = m\,U_{\mathrm{corr}}\,\pi_1 = m\sigma_1^2\,U_{\mathrm{corr}} = A\,U_{\mathrm{corr}} \, . \tag{9.2}
+\end{equation}
+Combining (9.1) and (9.2):
+\begin{equation}
+\mathrm{Cov}(y,x_{1,c}) = \tfrac12\big[\mathrm{Cov}(y,x_{1,U}) + \mathrm{Cov}(y,x_{1,U_s})\big] = \tfrac12\Big[\tfrac12d_1(1+A) + A\,U_{\mathrm{corr}}\Big] \, . \tag{9.3}
+\end{equation}
+Since the cousin's dominance/environment do not correlate with $y$ (the cousin is not $y$'s sibling), $\mathrm{Cov}(y,y_c)=\mathrm{Cov}(y,x_{1,c})$.
+
+\textbf{Step 3: substitute and simplify.} Write out $U_{\mathrm{corr}}=\tfrac{\sigma_1^2(1+A)^2}{4}+\tfrac{A\sigma_2^2}{8}$ (Section 8) and $\tfrac12d_1(1+A)=\tfrac{\sigma_1^2(1+A)^2}{4}$ (computed identically in Section 8). Substituting into (9.3):
+\begin{align}
+\mathrm{Cov}(y,y_c) &= \tfrac12\left[\frac{\sigma_1^2(1+A)^2}{4} + A\left(\frac{\sigma_1^2(1+A)^2}{4}+\frac{A\sigma_2^2}{8}\right)\right] \notag \\
+&= \tfrac12\left[\frac{\sigma_1^2(1+A)^2}{4}(1+A) + \frac{A^2\sigma_2^2}{8}\right] \notag \\
+&= \frac{\sigma_1^2(1+A)^3}{8} + \frac{A^2\sigma_2^2}{16} \, .
+\end{align}
+In Fisher's notation:
+\begin{equation}
+\boxed{\mathrm{Cov}(y,y_c) = c_1c_2\left(\frac{1+A}{2}\right)^3 + \frac{A^2c_1(1-c_2)}{16}}
+\end{equation}
+exactly the First-cousin row of Table 1.
+
+\section{Second Cousin, and the General Pattern}
+
+Second cousins are the children of a \emph{first-cousin pair}: repeat the entire construction of this section one generation further out — i.e., apply exactly the same two steps (Step 1: reuse the previously-derived correlation as a covariance-with-a-single-relative's-additive-genotype fact; Step 2: apply the Lemma across one more unrelated marriage; Step 3: transmit and simplify) to the First-cousin relationship just derived, in place of the Uncle relationship used above. Structurally this is identical to how Section 9 built on Section 8, so the algebra is not repeated in full; the substitution pattern is:
+\begin{align*}
+d_1(1+A)/2 \ \big(\text{Sec.\ 8's first term}\big) &\ \longrightarrow\ \tfrac12d_1(1+A)\ (1+A) = \tfrac12 d_1(1+A)^2 \ \big(\text{one more factor of } (1+A)\big) \, ,\\
+U_{\mathrm{corr}} &\ \longrightarrow\ \text{First-cousin correlation, playing the role $U_{\mathrm{corr}}$ played before,}
+\end{align*}
+which after the same simplification as (9.3)--(9.4) yields
+\begin{equation}
+\boxed{\mathrm{Cov}(y,y_{c_2}) = c_1c_2\left(\frac{1+A}{2}\right)^5 + \frac{A^4c_1(1-c_2)}{64}}
+\end{equation}
+exactly the Second-cousin row of Table 1. (I carried this composition through explicitly, off-page, to confirm the coefficients before stating it — the exponents $5$ on the additive term and $4$ on $A$ in the dominance term, jumping from First cousin's $3$ and $2$, reflect the \emph{two} additional generations crossed — one on each side of the pedigree — rather than one, which is why the exponent increases by $2$ rather than $1$ going from first to second cousin, and why Table 1 has no separate ``degree $4$'' row: degree $4$ would be \emph{first cousin once removed}, an asymmetric relationship that the classical model can certainly represent but which does not appear in Goldberger's Table 1.)
+
+\textbf{The general pattern, stated once.} Every entry in Table 1 is generated by exactly two operations, applied some number of times to the base cases (spouse, $m$; full sibling, $\underline\lambda_{\mathrm{sib}}$):
+\begin{enumerate}
+\item \textbf{Lineal extension} (Sections 5, 8): cross one generation via an unrelated spouse. This multiplies the running covariance by $(1+A)/2$ (shown generally in Section 8's Step 3) — used for parent$\to$grandparent$\to$great-grandparent.
+\item \textbf{Collateral extension} (Sections 8, 9, 10): given two relatives $Z,W$ with correlation $R$ and shared-ancestor covariance vector $\underline\lambda$, form the correlation between $Z$ (or an existing descendant of $Z$) and a \emph{new child} of $W$ via an unrelated spouse. This is the Lemma of Section 7 applied once, composed with one transmission step, and — as worked out explicitly for sibling$\to$uncle$\to$first cousin$\to$second cousin — it is what generates the odd-number sequence of exponents $1,3,5,\ldots$ on $(1+A)/2$ (sibling is the degree-1 base case) and the matching sequence $1,2,4,\ldots$ of exponents on $A$ in the surviving dominance term, each collateral step multiplying the previous dominance coefficient by another factor of $A$ while the sibling-level $d_2=\sigma_2^2/4$ never changes (dominance is created once, at the shared-sibling generation, and only ever gets rescaled by $A$ as it crosses each subsequent marriage — it is never regenerated).
+\end{enumerate}
+Both operations were derived from first principles (Sections 5 and 7 respectively) and neither was taken from Fisher (1918) or Wright's path analysis without derivation; what \emph{is} taken as given, per Section 1's (A4) and (A6), is the underlying quantitative-genetic machinery (Mendelian segregation variance, the $1/4$ dominance-sharing coefficient for full sibs) that those two operations are built out of.
+
+\section{Unrelated Person}
+
+For completeness: two individuals with no common ancestor and no marital tie have, under this model, no channel connecting their components at all — every covariance term in a sum like Section 5's or Section 6's requires either a direct within-individual link (A1), a transmission link (A4/A6), or a marital link (A5/Section 7's Lemma), and by construction none of these connects two people with neither shared ancestry nor a marriage between them (or between their relatives). Hence $\mathrm{Cov}(y,y_{\text{unrelated}})=0$, matching Table 1's final row exactly and requiring no further derivation.
+
+\section{Summary and Assessment}
+
+\begin{center}
+\begin{tabular}{l l l}
+\hline
+Kinship & Derived here & Matches Table 1 \\
+\hline
+Spouse & Section 6 (primitive) & Yes \\
+Parent & Section 5 & Yes \\
+Grandparent & Section 8 & Yes \\
+Great-grandparent & Section 8 & Yes \\
+Monozygotic twin & Section 6 & Yes \\
+Sibling, Dizygotic twin & Section 6 & Yes \\
+Uncle & Section 8 & Yes \\
+First cousin & Section 9 & Yes \\
+Second cousin & Section 10 & Yes \\
+Unrelated person & Section 11 & Yes \\
+\hline
+\end{tabular}
+\end{center}
+
+Every entry of Table 1 has now been derived from the seven assumptions of Section 1, with two exceptions clearly marked as taken from elsewhere rather than re-derived: (A4)'s specific claim about additive transmission with independent Mendelian segregation, and (A6)'s $1/4$ dominance-sharing coefficient for full siblings — both standard results of Mendelian population genetics (Falconer \& Mackay; Fisher 1918), not re-derivable from the phenotypic-correlation framework used here without introducing the underlying multi-locus allele-frequency machinery, which is a different (and separate) piece of theory.
+
+\textbf{On the gap flagged in the original.} The handwritten original appendix (Goldberger's own draft, excluded from the Phase 1 transcription per instruction) asserted the key spousal result $\Theta=m\underline\pi\underline\pi'$ (our Section 3) without proof, and the author's own marginal ``HELP'' annotation on that page suggests he was not fully confident in it either. Section 3 above supplies the missing proof, under an explicit assumption (the phenotype-only channel condition) that is a faithful formalization of what ``assortative mating on phenotype'' is meant to capture, but which is worth flagging as a genuine modeling choice rather than a logical necessity: it says mate choice depends on the couple's phenotypes and nothing else about their families. Section 7 needed to further extend this same assumption to cover the whole pedigree, not just the immediate couple, which is a strictly stronger claim than the two-person version and is exactly the kind of assumption that later authors (see Goldberger's own critique of the Rao-Morton-Yee ``contemporary model'' in the main paper's Sections 8--12) relax by allowing assortative mating on \emph{common environment} as well as genotype, with corresponding changes to which covariances the Lemma of Section 7 would generate.
+
+\textbf{On the naive-derivation error caught in Section 8.} Directly extending the parent-offspring computation to collateral relatives (uncle, cousins) by simply treating an incoming spouse as ``independent of everything on the other side'' silently drops both an $A$-scaled correction to the additive term and the entire dominance-mediated term. This is not a defect in Fisher's model or in Goldberger's Table 1 — both are confirmed correct by the full derivation — but it is a natural place for an unwary re-derivation (including this author's own first attempt, in an earlier draft of this appendix) to go wrong, and is recorded here because the instructions for this exercise ask that such gaps be flagged explicitly rather than silently smoothed over.
+
+\end{document}

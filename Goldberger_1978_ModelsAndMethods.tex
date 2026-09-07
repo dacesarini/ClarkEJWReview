@@ -1,0 +1,1635 @@
+﻿\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+
+\title{Models and Methods in the IQ Debate: Part I\\ \large Revised}
+\author{Arthur S. Goldberger\thanks{Professor of Economics, University of Wisconsin--Madison. Financial support was provided by the Graduate School Research Committee and the Institute for Research on Poverty at the University of Wisconsin, by the Center for Advanced Study in the Behavioral Sciences, and by the National Science Foundation. Computational assistance was provided by Chinbang Chung, Carol Treanor, and S. Mostafa Baladi. I am deeply indebted to L. J. Eaves and J. L. Jinks, and to N. Morton and D. C. Rao, for their care in responding to my many inquiries about their work. Over the past few years, my research has been greatly facilitated by the opportunity to draw on the expertise of Glen Cain, Luca Cavalli-Sforza, John Conlisk, Dudley Duncan, Marc Feldman, Robin Hogarth, Leon Kamin, Richard Lewontin, and Sandra Scarr. But I have no reason to believe that any of those persons and institutions would like to be held responsible for the present paper.}}
+\date{Social Systems Research Institute, University of Wisconsin--Madison\\ SSRI Paper 7801, February 1978\\[4pt] \small Pages 73--96 \& F-10--F-11 of the original version (SSRI Workshop Paper 7710, September 1977) have been discarded and replaced by new material. Other changes are numerous, but minor.}
+
+\begin{document}
+\maketitle
+
+% ======================================================================
+\section{Introduction}
+% ======================================================================
+
+In the great IQ debate, evidence that intelligence is a highly heritable trait has been offered to support the position that observed differences in IQ scores are largely genetic in origin and hence can neither be accounted for by environmental differences nor eliminated by environmental policies. A good part of the evidence consists of the fitting of biometrical-genetic models to sets of empirical kinship correlations, it being argued that such model-fitting permits objective discrimination between genetic and environmental factors which to the naked eye appear hopelessly confounded.
+
+Readers who scan this literature may sense a strong consensus among the biometrical geneticists. Social scientists who venture to examine the enterprise closely find themselves being warned off in no uncertain terms.
+
+Christopher Jencks's (1972) imaginative effort at piecing together information obtained from various kinship comparisons arrived at a heritability estimate of 45\%, emphasized the role of gene-environment covariance, and noted the inconsistencies among several kinship comparisons.
+
+Reviewing his book, the British biometrical geneticists John L. Jinks \& Lindon J. Eaves (1974) wrote:
+
+\begin{quote}
+A fundamental weakness of Jencks's approach is his failure to make explicit the mathematical relationships between genetical paths in different pedigrees (path diagrams) and between different paths of the same pedigree. For example, not all the numerically feasible solutions given by Jencks in Table A-5 for the relationships between his paths (between parental and offspring genotype) and $h^2$ (broad heritability) are genetically sensible. Genetical theory indicates that only solutions in which $g \le h^2/2$ for the parent-offspring covariation are genetically sensible. His failure to specify these restraints means that equal weight is given to sense and nonsense answers~\ldots.
+
+A further weakness of Jencks's approach is his failure to deal systematically with dominance. This can be seriously misleading for a trait such as IQ for which there seems to be considerable non-additive genetic variance~\ldots.
+
+We have, therefore, subjected the correlations used by Jencks to a biometrical genetical analysis in which the expectations in terms of a model are fitted to all the statistics simultaneously so that the parameters are estimated from the full data set and the agreement between the observed and expected statistics after fitting the model can be tested~\ldots
+
+Since the model fits his data we cannot support his conclusion that the data give a heterogeneous picture of the genetics of IQ. Neither can we conclude that the data provide any evidence of genotype-environment covariation when proper allowance is made for dominance~\ldots
+\end{quote}
+
+In a more technical elaboration of the same analysis, Eaves (1975) pursued the virtues of biometric model-fitting, writing that Jinks \& Eaves (1974) had
+
+\begin{quote}
+demonstrated that any significant heterogeneity of heritability estimates obtained from different degrees of relationships can be removed if the contribution of dominance is precisely specified and a weighted least squares procedure is adopted.
+\end{quote}
+
+Leon Kamin's (1974) remarkable examination of the data sources underlying the IQ kinship correlations called attention to numerous sampling biases in the original studies, pointed out glaring errors in secondary reports of those studies, and clarified the sensitivity of the classical biometric models to particular kinship correlations. Reviewing that book, the British genetic psychologist David Fulker (1975) wrote:
+
+\begin{quote}
+There is general agreement among those who work in the field that IQ variation reflects both genetic and environmental influences, although there is still considerable debate on the relative importance of these two influences, the extent to which they covary or interact, and their specific nature.
+
+This consensus of opinion is based mainly on the results of a large number of kinship and adoption studies involving tens of thousands of subjects of various degrees of social and biological relationship who were measured on a variety of mental tests~\ldots
+
+The criticism of biometric models in this book completely fails to do justice to work in this area. To show that dominance estimates are very sensitive to the relative size of the correlation for parents and offspring compared with that for $\mathrm{FS}_T$ [siblings] says nothing about what happens when models are fitted to very different genetically and environmentally related groups using proper estimation procedures~\ldots The main point however is that the model-fitting work, including that of Rao, Morton, \& Yee [1974]~\ldots, all points to a heritability of about 60\%--70\% for IQ, not zero~\ldots
+
+His book lacks balanced judgment and presents a travesty of the empirical evidence in the field. By exaggerating the importance of what are, in reality, idiosyncratic details rather than typical features, he totally avoids the necessity to consider the data as a whole. The cumulative picture is overwhelmingly in favor of a substantial heritability of IQ.
+\end{quote}
+
+The American biometrical geneticists D. C. Rao and Newton Morton (1977, pp.\ 24--26) put the case still more broadly:
+
+\begin{quote}
+We have shown that genetic analysis of IQ data is simple, determinate, and consistent over data sets~\ldots So far the literature on inheritance of intelligence has suffered from a high ratio of commentary to data collection and analysis. This was due to lack of an appropriate methodology, domination of the field by psychologists and sociologists with primary interest and competence outside genetics, and strong philosophical commitments of the more extreme protagonists. These problems now have only historical interest, since the present model has no hereditarian or environmentalist bias. The [nature-nurture] controversy [was partly an ideological confusion of individuals] and populations, partly a methodological problem in distinguishing cultural and biological causes of family resemblance. As far as that problem has been formulated, it is solved.
+% UNCLEAR: source page 6 has a scan defect ("The\ntroversy") that clips the start of this sentence; bracketed text is my reconstruction of the evident "[nature-nurture] con[-]troversy [was partly an ideological confusion of individuals]" based on the parallel passage quoted verbatim later in Section 12 from Rao \& Morton (1977, pp. 24-26). Verify against original before quoting.
+\end{quote}
+
+And again Rao, Morton, \& Yee (1976, p.\ 241):
+
+\begin{quote}
+There can be no dialogue between genetics and the social sciences unless the former makes adequate allowance for cultural inheritance, and the latter accepts quantitative models and goodness of fit tests.
+\end{quote}
+
+Such fine language must be deeply moving. But there is less here than meets the eye. I know of one social scientist whose examination of the biometrical-genetic literature on IQ moved him to tears rather to fear and trembling. My awe for the grandeur of the models and methods he employed rapidly diminished as I learned of such idiosyncratic details as the following.
+
+It was Jinks \& Eaves, and not Jencks, who misconstrued genetical theory concerning the relation between $g$ and $h^2$ and thus confused sense and nonsense. They also misspecified one of the expectations in their model, referred to a violation of a basic constraint as ``a small anomaly,'' and avoided Jencks's finding of heterogeneity by simply washing it out of the data before fitting the model. Furthermore, their attempts to amend the classical Fisherian model to allow for environmental correlations were seriously defective.
+
+It was Fulker who, in the paragraph immediately preceding the one in which he announced that all the model-fitting points to IQ heritability of 60 to 70\%, had estimated a model with seven kinship correlations and reported that it ``fits extremely well.'' His model includes two parameters for genetic effects (between- and within-family); had he added them together he would have found that his own estimate of IQ heritability was 50\%. Further, one of his seven correlations is a wholly-invented figure of $.5$
+%UNCLEAR: OCR shows "wholly-invented figure of .S" with the decimal's second digit lost to a scan tear at the page edge; original may read a value other than .50.
+for separated identical twins.
+
+Rao, Morton, \& Yee had also misspecified one of the expectations and thus fitted a series of spurious models. Had they specified the expectation correctly they would have found that their models were indeterminate. And it is Rao \& Morton who, in the paper announcing the final solution of the nature-nurture controversy, select data capriciously and erratically, and disregard the results of their own test procedure.
+
+Nor can the image of consensus among the experts long survive when the following items turn up.
+
+Rao \& Morton's (1977) estimate of narrow heritability of IQ among American children is .69 (the same as broad heritability in their scheme); Jinks \& Eaves's estimate is .34. Rao \& Morton's estimate of broad heritability of IQ among American adults is .30; Jinks \& Eaves's estimate is .68 (the same as for children in their scheme).
+
+Jinks \& Eaves emphasize the role of dominance, while Morton (1974, p.\ 320) maintains that
+
+\begin{quote}
+The notion of dominance deviations for polygenes seems far-fetched~\ldots Estimation of a variance component due to dominance has not been reliable or useful even in plant genetics~\ldots,
+\end{quote}
+
+and Rao, Morton, \& Yee (1976, p.\ 241) assert that
+
+\begin{quote}
+Today the geneticist who fails to differentiate between environment common to children and parents and ascribes any excess of sib correlation over parent-offspring correlation to dominance must defend his integrity and intelligence~\ldots
+\end{quote}
+
+Morton's group fits the models to kinship correlations, or rather to the $z$-transforms thereof, while Eaves, Last, Martin, \& Jinks (1977, pp.\ 11, 38) declare that
+
+\begin{quote}
+\ldots [T]he approach to estimation advocated by Morton is that rejected by experienced quantitative geneticists precisely because it ignores many of the simple and powerful tests of hypotheses available with the raw statistics~\ldots. Any advantage the correlation coefficient may have as a statistic of compelling simplicity for the purpose of communication is rapidly lost in any serious attempt to analyze the causes of individual differences.
+\end{quote}
+
+Incidentally, Jinks \& Eaves (1974), and Eaves (1975), themselves worked with correlation coefficients, not variances and covariances.
+
+It strikes me that the ordinary canons of scientific research and scholarly discourse are not being observed in biometrical-genetic writing on the heritability of intelligence. Simple honesty prevents my claiming any expertise in the field, but it may be worthwhile for me to ignore the ``stay off our reservation'' warnings, and give one social scientist's views on the models and methods being used in the great IQ debate.\footnote{\%UNCLEAR: footnote text not captured in the source extraction for this marker (superscript ``1'' at end of Sec.\ 1). Body text of footnotes throughout this document was not present in the page images/OCR supplied; only the superscript markers survived. Needs re-extraction from original scan.}
+
+% ======================================================================
+\section{The Classical Model}
+% ======================================================================
+
+In the classical biometrical-genetic model of R.\ A.\ Fisher, an individual's observed phenotype $y$ ($=$ IQ test score, say) is determined as the sum of three unobserved components: his additive genotypic value $x_1$, his dominance deviation $x_2$, and his environment $x_3$:
+\begin{equation*}
+y = x_1 + x_2 + x_3 \, .
+\end{equation*}
+The three components are uncorrelated, so that the phenotypic variance is given by
+\begin{equation*}
+\sigma_y^2 = \sigma_1^2 + \sigma_2^2 + \sigma_3^2 \, .
+\end{equation*}
+
+It is assumed that marriage is assortative on the basis of phenotype, that relatives do not share common environments, and that the system is in equilibrium. The model then leads to a simple set of predicted correlations between the IQ test scores of relatives, in terms of only three parameters. (See Fisher (1918), Burt \& Howard (1956), Burt (1971), and the Appendix to the present paper). The predictions, or expected correlations, are displayed in Table 1, the kin being labelled with respect to a typical individual.
+
+The three parameters are:
+\begin{align*}
+c_1 &= (\sigma_1^2 + \sigma_2^2)/\sigma_y^2 = \text{ratio of total genotypic variance to phenotypic variance,} \\
+c_2 &= \sigma_1^2/(\sigma_1^2 + \sigma_2^2) = \text{ratio of additive genotypic variance to total genotypic variance,} \\
+m &= \sigma_{yy'}/\sigma_y^2 = \text{correlation of phenotypes of spouses (where } y' \text{ denotes spouse's phenotype).}
+\end{align*}
+The fourth symbol, $A$, is just the product of the other three:
+\begin{equation*}
+A = c_1 c_2 m \, .
+\end{equation*}
+The parameters are referred to as: broad heritability, $c_1$; the ratio of narrow heritability to broad heritability, $c_2$; and the marital correlation, $m$. Narrow heritability is $c_1 c_2 = \sigma_1^2/\sigma_y^2$, while in the model $A$ gives the correlation between the additive genotypic values of spouses.\footnote{\%UNCLEAR: footnote text not captured (superscript ``2'').}
+
+When empirical IQ correlations are available for an adequate number and variety of kinships, the parameters of the classical model may be estimated by one or another fitting procedure (e.g.\ least squares, weighted least squares, maximum-likelihood, or ad hoc averaging).
+
+\begin{center}
+\textbf{Table 1}\\
+\textbf{PREDICTED KINSHIP CORRELATIONS: CLASSICAL MODEL}
+\end{center}
+\begin{center}
+\begin{tabular}{l l}
+\hline
+Kinship & Predicted Correlation \\
+\hline
+Spouse & $m$ \\
+Parent & $c_1 c_2 (1+m)/2$ \\
+Grandparent & $\big(c_1 c_2 (1+m)/2\big)(1+A)/2$ \\
+Great-grandparent & $\big(c_1 c_2 (1+m)/2\big)\big((1+A)/2\big)^2$ \\
+Monozygotic twin & $c_1$ \\
+Sibling, Dizygotic twin & $c_1 c_2 (1+A)/2 \; + \; c_1(1-c_2)/4$ \\
+Uncle & $c_1 c_2 \big((1+A)/2\big)^2 \; + \; A\, c_1 (1-c_2)/8$ \\
+First cousin & $c_1 c_2 \big((1+A)/2\big)^3 \; + \; A^2 c_1 (1-c_2)/16$ \\
+Second cousin & $c_1 c_2 \big((1+A)/2\big)^5 \; + \; A^4 c_1 (1-c_2)/64$ \\
+Unrelated person & $0$ \\
+\hline
+\end{tabular}
+\end{center}
+
+The classical model rules out all correlation between the environments of relatives, with a single exception: correlation between the (premarital) environments of spouses is induced by the assortative mating scheme. By selecting her husband explicitly on the basis of phenotype, the wife implicitly selects him on the basis of additive genotype, dominance deviation, and environment. If his $y$ value tends to resemble hers, so will his $x_1$, $x_2$, and $x_3$ tend to resemble hers. Thus in the classical model, my wife's childhood environment was similar to mine, but not to her brother's, nor indeed to our children's. This makes the model not only implausible but also empirically inadequate, because most observed data show higher IQ correlations for kin raised together rather than for the same kin raised apart, and also show positive IQ correlations for genetically unrelated persons living together. Consequently, several modifications of the classical model have been proposed. To allow for the possibility that children brought up in the same home tend to have similar environments, one may introduce an additional parameter, say $e$, which is added to the expected IQ correlation of a child with sibs with whom he was raised, be the sib a twin, an adoptive sibling, or an ordinary sibling. (This approach was taken by Jinks \& Fulker (1970), who use the symbol $E_2$). Also to allow for the possibility that parents pass on some of their own environmental background to the children whom they raise, one might also introduce a parameter, say $f$, which would be added to the expected IQ correlation of a child with the parent who raises him, be the parent natural or adoptive. (This approach was taken by Jinks \& Eaves (1974), who impose $f = e$, and use the symbol $E_c$).
+
+% ======================================================================
+\section{The Jencks Study}
+% ======================================================================
+
+By 1972, various scholars had used selected IQ kinship correlations to estimate the parameters of the biometrical-genetic models, and occasionally to test these models: Burt (1966, 1971), Jinks \& Fulker (1970), Jensen (1971, pp.\ 121--128, 294--326). What emerged from those analyses was a rather neat picture: IQ is a trait whose variation is well-accounted for by one or another of the classical models; furthermore IQ is a very highly heritable trait. With broad heritability repeatedly estimated to be around .8, it was asserted that 80\% of the variation in IQ scores was attributable to genes and only 20\% to environments.
+
+This neat picture was disturbed by the publication of the book \textit{Inequality: A Reassessment of the Effect of Family and Schooling in America}, by Christopher Jencks and a team of fellow social scientists, none of whom (as far as I know) had any training in genetics. As an incidental part of their ``reassessment'', Jencks (1972) used an assortment of American kinship correlations, and arrived at an allocation of IQ variance into three components: genetic 45\%, environmental 35\%, and gene-environment covariance 20\%. Jencks's model was not of the classical type: he permitted correlation between the genetic and environmental components of an individual's IQ, and did not handle dominance deviations in a rigorous manner. Nor was the model fitted systematically. Jencks pieced together estimates obtained from separate kinship contrasts rather than fitting the full parameter set to the full data set. In doing so he detected inconsistencies, remarking that some of the comparisons yielded ``drastically different estimates of heritability.'' His estimation procedure was informal, following the path analysis tradition; thus, no standard errors or formal test statistics were provided.
+
+In a critical review of the Jencks book for \textit{Nature}, Professor John L. Jinks and Dr. Lindon J. Eaves of the University of Birmingham's Department of Genetics set out to show that the ``American data do not in fact give a picture for the genetics of intelligence which differs in principle from that which has long been apparent from British studies.''
+
+% ======================================================================
+\section{The Birmingham Models}
+% ======================================================================
+
+The core of Jinks \& Eaves's (1974) review is devoted to their own fits of a classical model to a set of 14 British kinship correlations given by Cyril Burt (1966) and to a set of 9 American kinship correlations taken from Jencks (1972, Appendix A). We display both sets in Table 2, with $r_j$ and $n_j$ denoting the observed correlation and the sample size for the $j$-th kinship. The sample size for British spouses was arbitrarily taken to be 100 -- Burt had given no figure; a figure which he did give, namely a correlation of .56 with sample size 106 for parent tested in childhood, with child, was discarded without an explanation, indeed without a mention.
+
+\begin{center}
+\textbf{Table 2}\\
+\textbf{DATA SETS ANALYZED BY JINKS \& EAVES}
+\end{center}
+\begin{center}
+\begin{tabular}{l l c c c c}
+\hline
+Acronym & Kin & \multicolumn{2}{c}{British} & \multicolumn{2}{c}{American} \\
+ & & $r_j$ & $n_j$ & $r_j$ & $n_j$ \\
+\hline
+SPS & Spouse & .3875 & 100 & .57 & 887 \\
+PT & Parent together & .49 & 374 & .55 & 1250 \\
+PA & Parent apart & -- & -- & .45 & 63 \\
+GP & Grandparent & .33 & 132 & -- & -- \\
+MZT & MZ twin together & .92 & 95 & .97 & 50 \\
+MZA & MZ twin apart & .87 & 53 & .75 & 19 \\
+DZT & DZ twin same sex & .55 & 71 & .70 & 50 \\
+DZTO & DZ twin opposite sex & .52 & 56 & -- & -- \\
+ST & Sib together & .53 & 264 & .59 & 1951 \\
+SA & Sib apart & .44 & 151 & -- & -- \\
+UNC & Uncle & .34 & 161 & -- & -- \\
+FCZ & First cousin & .28 & 215 & -- & -- \\
+SCZ & Second cousin & .16 & 127 & -- & -- \\
+ADP & Adoptive parent & .19 & 88 & .28 & 1181 \\
+ADS & Adoptive sib & .27 & 136 & .38 & 259 \\
+\hline
+\end{tabular}
+\end{center}
+
+Their model, which we henceforth denote B1, is the one which adds the common-environment parameter $f$ to the expected correlations of a child's IQ with that of the parent who raises him \emph{and} that of the sib with whom he is raised. We display the equations of the model, along with the observed and predicted correlation coefficients and their parameter estimates in Table 3.
+
+\begin{center}
+\textbf{Table 3}\\
+\textbf{MODEL-FITTING BY JINKS \& EAVES}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{l l c c c c}
+\hline
+Kin & Equation & \multicolumn{2}{c}{British} & \multicolumn{2}{c}{American} \\
+ & & Observed & Predicted & Observed & Predicted \\
+\hline
+SPS & $m$ & .39 & .41 & .57 & .57 \\
+PT & $c_1c_2(1+m)/2 + f$ & .49 & .48 & .55 & .55 \\
+PA & $c_1c_2(1+m)/2$ & -- & -- & .45 & .27 \\
+GP & $(c_1c_2(1+m)/2)(1+A)/2$ & .33 & .28 & -- & -- \\
+MZT & $c_1 + f$ & .92 & .92 & .97 & .97 \\
+MZA & $c_1$ & .87 & .83 & .75 & .68 \\
+DZT & $c_1c_2(1+A)/2 + c_1(1-c_2)/4 + f$ & .55 & .56 & .70 & .59 \\
+DZTO & $c_1c_2(1+A)/2 + c_1(1-c_2)/4 + f$ & .52 & .56 & -- & -- \\
+ST & $c_1c_2(1+A)/2 + c_1(1-c_2)/4 + f$ & .53 & .56 & .59 & .59 \\
+SA & $c_1c_2(1+A)/2 + c_1(1-c_2)/4$ & .44 & .47 & -- & -- \\
+UNC & $c_1c_2\big((1+A)/2\big)^2 + A c_1(1-c_2)/8$ & .34 & .36 & -- & -- \\
+FCZ & $c_1c_2\big((1+A)/2\big)^3 + A^2 c_1(1-c_2)/16$ & .28 & .22 & -- & -- \\
+SCZ & $c_1c_2\big((1+A)/2\big)^5 + A^4 c_1(1-c_2)/64$ & .16 & .11 & -- & -- \\
+ADP & $f$ & .19 & .10 & .28 & .29 \\
+ADS & $f$ & .27 & .10 & .38 & .29 \\
+\hline
+\multicolumn{6}{l}{Parameter estimates} \\
+\hline
+& $c_1$ & \multicolumn{2}{c}{.83} & \multicolumn{2}{c}{.68} \\
+& $c_2$ & \multicolumn{2}{c}{.65} & \multicolumn{2}{c}{.50} \\
+& $m$ & \multicolumn{2}{c}{.41} & \multicolumn{2}{c}{.57} \\
+& $A$ & \multicolumn{2}{c}{.47} & \multicolumn{2}{c}{.29} \\
+& $f$ & \multicolumn{2}{c}{.10} & \multicolumn{2}{c}{.29} \\
+\hline
+\end{tabular}
+\end{center}
+
+They estimate five parameters on each data set, and report chi-square values of 8.96 for the British data set with 9 ($=14-5$) degrees of freedom and 6.63 for the American data set with 4 ($=9-5$) degrees of freedom. The equations were not published in the review but were provided to me by the authors in terms of their parameterization. I have translated their equations and parameter estimates into the parameterization being used here, namely $c_1, c_2, m, A, f$: see footnote 2.
+
+Their estimation procedure, iterative weighted least squares, may be sketched as follows; see also Eaves (1975). The expected correlation for the $j$-th kinship is
+\begin{equation*}
+\rho_j = \rho_j(\underline{\theta})
+\end{equation*}
+where $\underline{\theta}$ is the vector of $K$ unknown parameters and the $\rho_j(\cdot)$ functions are generally nonlinear (as we have seen in Table 1). The $r_j$'s are taken to be independent and normally distributed with
+\begin{equation*}
+E(r_j) = \rho_j \, , \qquad V(r_j) = (1-\rho_j^2)^2/n_j = \sigma_j^2 \, .
+\end{equation*}
+For a data set with $N$ kinships, a pure weighted least squares procedure would choose $\underline{\theta}$ to minimize the criterion
+\begin{equation*}
+\sum_{j=1}^{N} (r_j - \rho_j(\underline{\theta}))^2/\sigma_j^2 \, .
+\end{equation*}
+But $\sigma_j^2$ is itself unknown, so the criterion is modified to
+\begin{equation*}
+\sum_{j=1}^{N} (r_j - \rho_j(\underline{\theta}))^2/\hat\sigma_j^2 \, ,
+\end{equation*}
+where $\hat\sigma_j^2 = (1-\hat\rho_j^2)^2/n_j$ with $\hat\rho_j = \rho_j(\hat{\underline{\theta}})$. The calculation proceeds iteratively until convergence is attained, at which point the value of the criterion is referred to a chi-square distribution with $N-K$ degrees of freedom as a test of the model, and asymptotic standard errors are obtained.
+
+We see very good fits to the two data sets. As Jinks \& Eaves tell us:
+
+\begin{quote}
+Although individual deviations are sometimes large, the overall weighted sum of squared deviations~\ldots is small in relation to the total weighted sum of squares of the observations.
+\end{quote}
+
+We also have the high estimate of broad heritability obtained in earlier studies. While the British $c_1$ estimate is close to Burt's observed MZA correlation of .87, Jinks \& Eaves tell us:
+
+\begin{quote}
+By adopting a weighted least squares approach we have ensured that statistics based on small samples are given proportionately less weight in determining the final solution. As a result, the small samples of monozygotic twins reared apart, which have been criticized on several grounds, play a relatively small part in our analysis.
+\end{quote}
+
+For the American data, the $c_1$ estimate is only .68, so Jinks \& Eaves tell us
+
+\begin{quote}
+There is some support for Jencks's conclusion that the heritability of IQ is apparently lower in the American studies.
+\end{quote}
+
+The rather low values for $c_2$ indicate a substantial amount of dominance variation. This led Jinks \& Eaves to write:
+
+\begin{quote}
+The analyses strikingly confirm Jinks and Fulker's [1970] conclusion regarding the importance of dominance variation. Even if we make allowance for possible overestimation this can best be explained only if dominance deviations at individual gene loci are large or if increasing dominant alleles are more frequent than their recessive counterparts. Coupled with the evidence for inbreeding depression, this suggests that IQ displays the pattern of genetical variation associated with a fitness character, that is, a trait which has been subject to a history of directional selection for increasing IQ score. Whatever else may be said about its social significance, IQ is clearly a trait of biological relevance.
+\end{quote}
+
+In describing their analysis, Jinks \& Eaves remark that having the common environmental component shared by parents as well as offspring may lead to an overestimation of dominance variation. They go on to say that having it shared only by offspring ``results in a significantly poorer fit to Jencks's data.'' They are referring to the other modification of the classical scheme, which we henceforth refer to as Model B2, in which the common-environment parameter $e$ is added only to the expected correlation of a child's IQ with that of the sib with whom he is raised. Their phrasing suggests that for Burt's data, Models B1 and B2 fit more or less equally well.
+
+Jinks \& Eaves call attention to a peculiar feature of their estimates:
+
+\begin{quote}
+A small anomaly in the results of our analysis of Burt's data is that $A$ is numerically (though not significantly) greater than $m$. This anomaly is removed by stipulating that parents and offspring do not share developmentally important environmental features. The correlation between foster parent and adopted children then has to be accounted for partly by placement.
+\end{quote}
+
+Here we have the suggestion that B2 is better than the B1 for Burt's data. But this time the preference is based on avoidance of anomalous parameter estimates. We also have, by implication, the suggestion that the correlation between adoptive siblings themselves would be better predicted by B2.
+
+% ======================================================================
+\section{Examination of Jinks \& Eaves's Model-Fitting}
+% ======================================================================
+
+When I took a serious look at the Jinks-Eaves review, several problems arose.
+
+Inserting their parameter estimates into the formulary of Table 3, I obtained their numerical predicted values with one exception: for uncle (UNC) the prediction is .31 rather than .36. In correspondence the authors verified that they had accidentally misspecified the avuncular equation setting out their model, in effect dividing $A c_1(1-c_2)$ by 2 instead of 8, and then had fitted this incorrect model. Because this error is isolated in a single equation, we should not expect it to have much effect on the results.
+
+The second misspecification was more substantial and not accidental. Jinks \& Eaves treated $A$ (the correlation between the additive genotypic values of spouses) as a free parameter despite the fact that the logic of the model, following Fisher, requires that $A = c_1 c_2 m$. (There are, to be sure, alternative specifications of the assortative mating process which remove that requirement, but then the formulary of Tables 1 and 3 is not valid). That constraint was not imposed in fitting, and is violated by their estimates: e.g.\ for the British set, $c_1 c_2 m = .22$ while $A = .47$. This is the quantitative underpinning for their qualitative remark about ``a small anomaly''. Because this error permeates many of the correlations, we should expect it to contaminate the estimates.
+
+These problems led me to do some systematic calculations on my own. I fitted four models to the British and to the American data sets. The first pair are of the B1 type, in which parents and siblings together share common environments: one is the proper B1 model, the other is the improper version B1* used by Jinks \& Eaves (correcting the avuncular equation, but with $A$ as a free parameter). The second pair are of the B2 type in which only the siblings raised together share common environments; the equations are not spelled out here but can be read off from Table 3 by deleting $f$ everywhere and adding $e$ to the formulas for MZT, DZT, DZTO, ST, and ADS. Again there are two versions: the proper B2 model, and the improper one B2* which has $A$ as a free parameter (and thus apart from the avuncular correction is the alternative model to which Jinks \& Eaves refer in the course of their review).
+
+In reworking their analysis, I used a conventional nonlinear regression program, modified to iterate on the weights, thus following their estimation procedure, namely iterative weighted least squares applied to the correlation coefficients. In retrospect, it would have been preferable to work instead with the $z$-transforms:
+\begin{equation*}
+z_j = (1/2)\log\big((1+r_j)/(1-r_j)\big) \, .
+\end{equation*}
+These are asymptotically normal with
+\begin{equation*}
+E(z_j) = (1/2)\log\big((1+\rho_j)/(1-\rho_j)\big) \, , \qquad V(z_j) = 1/n_j \, .
+\end{equation*}
+Not only is the normal approximation better for the $z$'s than for the $r$'s, but also their variances are independent of parameters, which obviates the need for iterating on the weights: see Rao, Morton, \& Yee (1974). Some subsequent trial calculations indicated that the final estimates are essentially invariant over the two estimation procedures.
+
+My results are displayed in Tables 4 and 5. These calculations have since been confirmed by Eaves (1975), who corrects the avuncular correlation and imposes $A = c_1 c_2 m$, remarking that the constraint is necessary ``if all the assumptions in Fisher's model are to be tested adequately''.
+
+Examining Table 4, we see that for B1* the estimates and predictions virtually coincide with those given by Jinks \& Eaves, confirming our expectation that the isolated mistake in the avuncular equation was not serious. Moving to B1, we see that when the constraint $A = c_1c_2m$ is imposed, the predictions change somewhat, the estimate of $c_2$ rises, and the fit worsens. A formal test of the constraint might be given by the increment in $\chi^2$, namely 4.60 ($=13.65-9.05$). With 1 degree of freedom, this is significant at the 5\% level, a result which may be interpreted as a piece of evidence against the classical model. To be sure, B1 itself still fits very well: with 10 degrees of freedom, $\chi^2 = 13.65$ is not significant at the 20\% level. Now turn to the right-hand portion of the table. For B2* we have $A=.35 < .42 = m$, so that the qualitative anomaly does disappear as Jinks \& Eaves indicated. Indeed the estimates now come closer to satisfying the quantitative constraint: $c_1c_2m = .28$ while $A=.35$; comparison with B2 shows the violation is not significant since the increment in $\chi^2$ associated with imposing the constraint is only .36. Comparing B2* with B1* (or B2 with B1) we see that the estimate of $c_2$ rises, in accordance with Jinks \& Eaves's remark that dominance may be overestimated when parents as well as siblings are specified to have common environments. On the other hand, as measured by $\chi^2$, B2* fits rather worse than B1*, contrary to an impression left by Jinks \& Eaves. Furthermore the ADS prediction does not improve, contrary to the impression left by them. We may also question whether the importance of dominance variation has been ``strikingly confirmed'' with the British data set. The $c_2$ value which was .65 in B1* comes out as .82 in B2, which says that dominance deviations account for about one-fifth rather than one-third of total genotypic variation. Eaves (1975), who sees ``little grounds for choice between [the B1 and B2] models for Burt's data'', nevertheless feels that imposition of the constraint does not reveal ``any need to alter the earlier conclusions about the magnitudes of the heritable and non-heritable components of variance, the mating system, or the kinds of gene action and their possible evolutionary basis.''
+
+\begin{center}
+\textbf{Table 4}\\
+\textbf{ALTERNATIVE MODELS FITTED TO BRITISH DATA SET}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{l c c c c c}
+\hline
+Kin & Observed Correlation & B1* & B1 & B2* & B2 \\
+\hline
+SPS & .39 & .41 & .41 & .42 & .42 \\
+PT & .49 & .48 & .53 & .47 & .49 \\
+GP & .33 & .28 & .29 & .32 & .32 \\
+MZT & .92 & .92 & .92 & .92 & .92 \\
+MZA & .87 & .83 & .85 & .85 & .85 \\
+DZT & .55 & .57 & .53 & .56 & .56 \\
+DZTO & .52 & .57 & .53 & .56 & .56 \\
+ST & .53 & .57 & .53 & .56 & .56 \\
+SA & .44 & .47 & .47 & .50 & .49 \\
+UNC & .34 & .32 & .27 & .31 & .29 \\
+FCZ & .28 & .22 & .17 & .21 & .19 \\
+SCZ & .16 & .12 & .07 & .09 & .08 \\
+ADP & .19 & .09 & .07 & 0 & 0 \\
+ADS & .27 & .09 & .07 & .07 & .07 \\
+\hline
+\multicolumn{6}{l}{Parameter Estimates ($\pm$ standard errors)} \\
+\hline
+$c_1$ & & $.83\pm.03$ & $.85\pm.03$ & $.85\pm.04$ & $.85\pm.03$ \\
+$c_2$ & & $.65\pm.08$ & $.76\pm.08$ & $.78\pm.10$ & $.82\pm.08$ \\
+$m$ & & $.41\pm.08$ & $.41\pm.10$ & $.42\pm.10$ & $.42\pm.10$ \\
+$A$ & & $.48\pm.11$ & -- & $.35\pm.11$ & -- \\
+$e$ & & -- & -- & $.07\pm.04$ & $.07\pm.03$ \\
+$f$ & & $.09\pm.03$ & $.07\pm.03$ & -- & -- \\
+\hline
+Chi-square (df) & & 9.05 (9) & 13.65 (10) & 13.13 (9) & 13.49 (10) \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\textbf{Table 5}\\
+\textbf{ALTERNATIVE MODELS FITTED TO AMERICAN DATA SET}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{l c c c c c}
+\hline
+Kin & Observed Correlation & B1* & B1 & B2* & B2 \\
+\hline
+SPS & .57 & .57 & .57 & .57 & .57 \\
+PT & .55 & .56 & .56 & .55 & .51 \\
+PA & .45 & .27 & .27 & .55 & .51 \\
+MZT & .97 & .97 & .97 & .97 & .97 \\
+MZA & .75 & .68 & .68 & .61 & .84 \\
+DZT & .70 & .59 & .58 & .59 & .62 \\
+ST & .59 & .59 & .58 & .59 & .62 \\
+ADP & .28 & .29 & .29 & 0 & 0 \\
+ADS & .38 & .29 & .29 & .36 & .13 \\
+\hline
+\multicolumn{6}{l}{Parameter Estimates ($\pm$ standard errors)} \\
+\hline
+$c_1$ & & $.68\pm.03$ & $.68\pm.03$ & $.61\pm.25$ & $.84\pm.13$ \\
+$c_2$ & & $.50\pm.06$ & $.51\pm.05$ & $1.14\pm.51$ & $.77\pm.12$ \\
+$m$ & & $.57\pm.03$ & $.57\pm.03$ & $.57\pm.11$ & $.57\pm.11$ \\
+$A$ & & $.29\pm.14$ & -- & $-.27\pm.57$ & -- \\
+$e$ & & -- & -- & $.36\pm.25$ & $.13\pm.12$ \\
+$f$ & & $.29\pm.03$ & $.29\pm.03$ & -- & -- \\
+\hline
+Chi-square (df) & & 6.92 (4) & 7.63 (5) & 96.29 (4) & 120.74 (5) \\
+\hline
+\end{tabular}
+\end{center}
+
+Examining Table 5, we see that for B1* the predictions and estimates coincide (rounding error aside) with those reported by Jinks \& Eaves, and that moving to B1 involves no substantial change, the violation of the constraint having been nonsignificant anyway. Turning to the right-hand side of the table, we find a rather startling picture, for which Jinks \& Eaves's phrasing ``significantly poorer fit'' failed to prepare us adequately. Not only is the fit very poor but under B2*, which is presumably the version they had in hand, the parameter estimates fall wildly outside the admissible range.
+
+%FIGURE: Figure 1 (original p.\ 25), ``OBSERVED VS. MODEL B1 PREDICTED CORRELATIONS'' -- two scatter plots (British data set, American data set) of observed vs.\ B1-predicted correlations with a 45-degree reference line, hand-plotted on graph paper. Not reproduced here as a figure; see annotation log for a data reconstruction from Table 4/Table 5 values, which is what the plot depicts.
+
+In Figure 1 we plot the observed correlations against the Model B1 predicted values for the British and American data sets. Note the substantial residuals for several of the adopted kinships.
+
+Our examination may lead to more skeptical positions regarding the success of the Birmingham models in accounting for observed IQ kinship correlations, and regarding the precision with which biometrical geneticists specify and describe their own models. But the B1 model at least fits very well, and the broad heritability estimate continues to fall in the familiar high range.
+
+Jinks \& Eaves emphasize the virtues of their ``biometrical genetical analysis in which the expectations in terms of a model are fitted to all the statistics simultaneously so that the parameters are estimated from the full data set and the~\ldots model can be tested.'' Without questioning the virtues of formal model-fitting, we may still wish to determine whether the parameter estimates are in fact sensitive to all of the observations.
+
+To explore this, I undertook some calculations along the following lines. Suppose that a linear regression model were applicable to the correlations, that is,
+\begin{equation*}
+E(r_j) = \rho_j(\underline{\theta}) = \underline{x}_j' \underline{\theta} \, , \qquad V(r_j) = \sigma^2 \, .
+\end{equation*}
+The least squares estimator of $\underline{\theta}$ would be
+\begin{equation*}
+\hat{\underline{\theta}} = (X'X)^{-1}X'\underline{r} = W\underline{r} \, , \quad \text{where } W = (X'X)^{-1}X' \, , \quad \underline{r} = (r_1,\ldots,r_N)' \, .
+\end{equation*}
+Then
+\begin{equation*}
+\hat\theta_i = \sum_{j=1}^{N} w_{ij} r_j \, ,
+\end{equation*}
+so that $w_{ij} = \partial\hat\theta_i/\partial r_j$ would give the change in the $i$-th parameter estimate resulting from a unit change in the $j$-th observed correlation. The present nonlinear iterative weighted least squares situation is of course more complicated, but we can obtain an approximate answer. If $\hat{\underline\theta}^0$ is the estimate when the observed correlation vector is $\underline r^0$, then
+\begin{equation*}
+\hat\theta_i - \hat\theta_i^0 \doteq \sum_{j=1}^{N} \hat w_{ij}(r_j - r_j^0) \, ,
+\end{equation*}
+where
+\begin{align*}
+\hat W &= \{\hat w_{ij}\} = (F'S^{-1}F)^{-1}F'S^{-1} \, , \\
+F &= \{\partial\rho_j/\partial\theta_i\} \quad \text{evaluated at } \hat{\underline\theta}^0 \, , \\
+S &= \mathrm{diag}\{\sigma_j^2\} \quad \text{evaluated at } \hat{\underline\theta}^0 \, .
+\end{align*}
+The $\hat w_{ij}$ then provide local approximations to the $\partial\hat\theta_i/\partial r_j$.
+
+Some results of this calculation for the B1 model are given in Table 6. They indicate, for example, that the broad heritability estimate is sensitive to only a few of the observed correlations. In particular, the $c_1$ estimate for the British data is heavily dependent on the MZT and MZA observations, while that for the American data set is heavily dependent on the MZT and ADP observations. To illustrate, had Burt reported .82 and .77 as the MZT and MZA correlations (rather than .92 and .87), the broad heritability estimate would have been about .73 (rather than .83).
+
+This sort of arithmetic casts some doubt on Jinks-Eaves's contention that under their procedure, small samples (e.g.\ MZAs) play only a small role.
+
+\begin{center}
+\textbf{Table 6}\\
+\textbf{PARTIAL DERIVATIVES OF B1 PARAMETER ESTIMATES WITH RESPECT TO OBSERVATIONS}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{l c c c c c c}
+\hline
+& \multicolumn{2}{c}{British Data Set} & \multicolumn{4}{c}{American Data Set} \\
+Kin & $c_1$ & $f$ & $c_1$ & $c_2$ & $f$ & $m$ \\
+\hline
+SPS & $-.01$ & $-.02$ & $-.01$ & $-.30$ & $.01$ & $1.00$ \\
+PT & $-.16$ & $.16$ & $.10$ & $1.33$ & $-.13$ & $.03$ \\
+PA & -- & -- & $.04$ & $.10$ & $-.05$ & $0$ \\
+GP & $.06$ & $-.07$ & -- & -- & -- & -- \\
+MZT & $.43$ & $.50$ & $1.02$ & $-.94$ & $-.04$ & $.01$ \\
+MZA & $.57$ & $-.50$ & $.04$ & $.04$ & $-.03$ & $0$ \\
+DZT & $-.02$ & $.03$ & $-.01$ & $.02$ & $.01$ & $0$ \\
+DZTO & $-.02$ & $.02$ & -- & -- & -- & -- \\
+ST & $-.07$ & $.11$ & $-.24$ & $-.04$ & $.29$ & $-.05$ \\
+SA & $.13$ & $-.15$ & -- & -- & -- & -- \\
+UNC & $.07$ & $-.09$ & -- & -- & -- & -- \\
+FCZ & $.06$ & $-.07$ & -- & -- & -- & -- \\
+SCZ & $.02$ & $-.02$ & -- & -- & -- & -- \\
+ADP & $-.06$ & $.07$ & $-.72$ & $-.93$ & $.72$ & $.01$ \\
+ADS & $-.09$ & $.11$ & $-.16$ & $-.30$ & $.16$ & $0$ \\
+\hline
+\end{tabular}
+\end{center}
+%UNCLEAR: source Table 6 (p.27) column notes that $c_1$ column figures for the American set include one cell OCR'd as ``.43'' vs.\ British MZT row; cross-checked against original scan pagination -- values above match the clean-page rendering, but the British-side ``$c_2$'' partials, which the original text describes computing, do not appear as a distinct column in the printed table (only $c_1$ and $f$ are shown for the British set). This asymmetry (2 columns British vs.\ 4 columns American) is preserved as printed, not an extraction error.
+
+Another way to investigate the structure of the model and the dependence of estimates on observations will be sketched here for Model B1 applied to the American data set. We rewrite the equations for the nine kinships in Table 7.
+
+\begin{center}
+\textbf{Table 7}\\
+\textbf{ALTERNATIVE FORM FOR MODEL B1 FOR AMERICAN DATA SET}
+\end{center}
+\begin{center}
+\begin{tabular}{l c l}
+\hline
+Kin & Observed Correlation & Predicted Correlation \\
+\hline
+SPS & $r_1$ & $\rho_1 = \theta_3$ \\
+PT & $r_2$ & $\rho_2 = \theta_4 \theta_1 + \theta_2$ \\
+PA & $r_3$ & $\rho_3 = \theta_4 \theta_1$ \\
+MZT & $r_4$ & $\rho_4 = \theta_1 + \theta_2$ \\
+MZA & $r_5$ & $\rho_5 = \theta_1$ \\
+DZT & $r_6$ & $\rho_6 = \theta_5 \theta_1 + \theta_2$ \\
+ST & $r_7$ & $\rho_7 = \theta_5 \theta_1 + \theta_2$ \\
+ADP & $r_8$ & $\rho_8 = \theta_2$ \\
+ADS & $r_9$ & $\rho_9 = \theta_2$ \\
+\hline
+\end{tabular}
+\end{center}
+Here
+\begin{equation*}
+\theta_1 = c_1 \, , \quad \theta_2 = f \, , \quad \theta_3 = m \, , \quad \theta_4 = c_2(1+m)/2 \, ,
+\end{equation*}
+may be considered the free parameters, while
+\begin{equation*}
+\theta_5 = c_2(1+A)/2 + (1-c_2)/4
+\end{equation*}
+is shorthand for the following combination:
+\begin{equation*}
+\theta_5 = \big[(1+\theta_3)^2 + 2\theta_4(1+\theta_3) + 8\theta_1\theta_3\theta_4^2\big]/\big[4(1+\theta_3)^2\big] \, .
+\end{equation*}
+Note that $\theta_4$ and $\theta_5$ may be interpreted as the genotypic correlations for parent and sib respectively.
+
+From this perspective we see that the empirical content of the model consists of the following 5 predictions about the $r$'s:
+\begin{align*}
+r_2 - r_3 &= r_4 - r_5 = r_8 = r_9 \, , \\
+r_6 &= r_7 \, , \\
+r_6 - r_8 - r_4/4 &= [r_3/(1+r_1)]\big[1/2 + 2 r_1 r_3/(1+r_1)\big] \, ,
+\end{align*}
+since in the model the corresponding equations in the $\rho$'s hold exactly. These 5 predictions are the consequence of having 9 kinship correlations expressed in terms of 4 free parameters. Note the variation across the first four contrasts, which are all estimators of $\theta_2$:
+\begin{equation*}
+r_2 - r_3 = .10 \, , \quad r_4 - r_5 = .22 \, , \quad r_8 = .28 \, , \quad r_9 = .38 \, .
+\end{equation*}
+The estimate of $\theta_2$, namely $f=.29$, represents a weighted average of those four distinct estimates.
+
+% ======================================================================
+\section{Jinks \& Eaves's Methods and Data}
+% ======================================================================
+
+In the course of their book review, Jinks \& Eaves offer a number of condescending remarks about Jencks's approach, some of which we have reproduced in the long quotation in Section 1 above. Recall that they maintained that Jencks had mishandled the data and that the inconsistencies which he found among various kinship contrasts vanish when the data are properly handled by the methods of biometrical genetics.
+
+Now the inconsistencies noted by Jencks (1972, Appendix A) all concern adopted children. He found the PA correlation to be too high relative to the PT correlation, and the ADS correlation to be too high relative to the ST correlation. These problems do not vanish in Jinks \& Eaves's analysis; their residuals for PA and ADS are also high. Among ADS, two types may be distinguished: adopted-adopted pairs and adopted-natural pairs; Jencks found the former too high relative to the latter. This problem does vanish in Jinks-Eaves's analysis, but only because they pooled the two types together before fitting. Eaves (1975) persists on this point, maintaining that their 1974 analysis had
+
+\begin{quote}
+demonstrated that any significant heterogeneity of heritability estimates obtained from different degrees of relationship can be removed if the contribution of dominance is precisely specified and a weighted least squares procedure is adopted.
+\end{quote}
+
+Table A-5 in Jencks (p.\ 281) presents various combinations of values for $h^2$ (heritability) and $g$ (the path coefficient from parent's genotype to child's genotype). Jinks \& Eaves devote a full paragraph in their review to explaining that this table gives equal weight to sense and nonsense because it overlooks the fact that ``Genetical theory indicates that only solutions in which $g \le h^2/2 \ldots$ are genetically sensible.'' But genetical theory indicates nothing of the kind, as can be seen directly in the case in which gene-environment covariance is absent. There $h^2 = c_1$ and $g = c_2/2$, so that their inequality reads $c_2 \le c_1$, which is surely no requirement of genetical theory. This point is conceded by Eaves (1975):
+
+\begin{quote}
+Jencks' application of path coefficients to the analysis of intelligence was partly questioned because of what was believed to be an upper limit upon the value of the path between the genotypes of parent and offspring. No such limit exists in fact so his conclusions cannot be discounted on this basis.\footnote{\%UNCLEAR: footnote text not captured (superscript ``3'' at p.\ 31).}
+\end{quote}
+
+Jencks's emphasis on gene-environment covariance is reduced to an apparent absurdity by Jinks \& Eaves when they note that a negative estimate for the covariance is obtained when their model is extended to allow for it. But their extension, which is not spelled out in their article, involves a wholly arbitrary specification: My understanding is that for all genetically-related pairs they specified that the correlation between one individual's genes and the other's environment was the same as the correlation between an individual's genes and his own environment. Eaves, Last, Martin, \& Jinks (1977, pp.\ 7--8) now write:
+
+\begin{quote}
+Often~\ldots there is no attempt at all to decide what restraints may operate upon the parameter values, with the result that quite arbitrary and misleading restraints are applied merely to obtain a solution. Indeed, Jinks \& Eaves (1974) used the approach of specifying arbitrary restraints in order to solve for genotype-environmental correlation in an analysis of IQ data. This approach is undesirable, and is a poor substitute for a theory which enables us to see quite clearly the relationships between genotype-environment covariance parameters in different kinds of statistics.
+\end{quote}
+
+On the other hand, Jinks \& Eaves overlooked a major error in Jencks's specification of the adoptive parent-child correlation. According to Loehlin, Lindzey, \& Spuhler (1975, pp.\ 300--302), correcting this error would bring Jencks's variance allocation more into line with the traditional ones.\footnote{\%UNCLEAR: footnote text not captured (superscript ``4'' at p.\ 32).}
+
+Jinks \& Eaves assert that ``whatever else may be said about the quality of the data, their quantity is such that our estimates are fairly precise and our test of the model fairly sensitive.'' Skeptical readers may be less sanguine about the empirical material.
+
+There are good grounds for believing that Burt's IQ correlations are spurious. He provided virtually no documentation of the tests used, or the sampling frame, or the age and sex of the subjects; nor were his sample means and variances revealed. The figures for various kinship correlations in his series of articles contain numerous inconsistencies; see Jensen (1974), Kamin (1974, pp.\ 33--44). Furthermore, he left many clues that his test scores were adjusted in a manner that make them unsuitable for the estimation of heritability. For example:
+
+\begin{quote}
+To assess intelligence as we have defined the term, it will be unwise to rely exclusively on formal tests of the usual type~\ldots the only way to be sure that no distorting influences have affected the results is to submit the marks to some competent observer who has enjoyed a first-hand knowledge of the testees. With children this will usually be the school teacher; and whenever discrepancies appear between the teacher's verdict and that of the test, the child must be re-examined individually~\ldots The interview, the use of non-verbal tests, and the information available about the child's home circumstances usually made it practicable to allow for the influence of an exceptionally favorable or unfavorable cultural environment. -- Burt \& Howard (1956, pp.\ 121--122).
+
+~\ldots having satisfied ourselves that by these means we can reduce the disturbing effects of environment to relatively slight proportions~\ldots. -- Burt and Howard (1957, p.\ 39).
+
+~\ldots [W]hat I was discussing was not `intelligence' in the popular sense (which usually includes acquired knowledge and skill),~\ldots but rather the psychologist's attempts to assess the individual's `innate general ability' -- a purely `hypothetical factor'. My object was to demonstrate that, when these assessments were reached, not by taking scores on some familiar `group test' just as they stand, but by adopting the more elaborate procedures which my colleagues and I had used, then the errors in assessment resulting from differences in environmental opportunity were comparatively slight. -- Burt (1967, p.\ 153).
+
+Nor were we concerned with any specific observable trait, but with differences in a hypothetical innate general factor. Indeed, our primary aim was to assess the relative accuracy of different methods of assessing this hypothetical factor~\ldots. -- Burt (1971, p.\ 15).
+\end{quote}
+
+It seems that Burt's observations are not correlations of IQ test scores, but rather estimated correlations of the genetic component of IQ test scores. If so, they are hardly suitable for estimating the relative contributions of heredity and environment to variation in IQ test scores. One might say that the 17\% ($=100(1-c_1)\%$) that is left to environment in Burt's data reflects only his failure to completely purify his figures.\footnote{\%UNCLEAR: footnote text not captured (superscript ``5'' at p.\ 33).}
+
+Such objections do not apply to the American data set, which had been assembled by Jencks from a dozen well-documented studies. But this set has its problems too. All of the studies were conducted in the 1920's and 1930's. Of the total of 5710 pairings, fully one-third come from just three studies of adoptive families and matched control families. Surely these are a highly selected group. All 119 twins come from a single study. The ADP figure reported as .29 with sample size 1181 is actually an adjusted average of 6 separate correlations ranging from .07 to .37, each based on a sample of approximately 200. The ADS figure reported as .38 with a sample size of 259 is actually an adjusted average of 7 separate correlations ranging from .06 to .65 with sample sizes ranging from 10 to 93. The raw correlations reported in the original studies were adjusted upward by Jencks to correct for unreliability and nonrepresentativeness, the latter adjustment being quite arbitrary. Several minor errors were made by Jencks in transcribing and adjusting. Nor was Jencks's compilation a definitive one; for example, he overlooked two studies of sibs raised apart. Since Jinks \& Eaves had set themselves the task of fitting the classical models to the same data that Jencks had used, these defects may be irrelevant.
+
+Still, when we display in Figure 2 the separate raw correlations which enter into Jinks \& Eaves's ``observed correlations'' for kinships that have the same expected values in Model B1, we see a substantial amount of heterogeneity, which may surprise readers who have relied on the descriptions provided by Jinks \& Eaves (1974) and Eaves (1975). Further discussion of the American data set is deferred until we examine the work of Newton Morton and colleagues who also draw heavily on Jencks's compilation.
+
+%FIGURE: Figure 2 (original p.\ 35), ``ORIGINAL CORRELATIONS UNDERLYING JINKS \& EAVES'S AMERICAN DATA SET'' -- a strip plot showing the individual study correlations (dots) along a 0-to-1.0 axis, grouped by kinship row (SPS, PT, PA, MZT, MZA, DZT/ST, ADP/ADS). Not reproduced graphically; underlying individual-study values are the ones itemized in Table 2's American column plus the additional studies listed in Section 6's text (Willoughby, Hart, Conrad, McNemar, Hildreth, Madsen, Outhit, Leahy, Freeman, Skodak, etc. -- see Table 15 later in the paper for the fullest itemization, which duplicates/extends this figure's data for the Rao--Morton discussion).
+
+% ======================================================================
+\section{The Environments of Birmingham}
+% ======================================================================
+
+Fisher's own model is coherent, internally consistent -- and empirically invalid because it rules out environmental correlation. The Birmingham models gain empirical validity by tacking on environmental correlations to Fisher's scheme. But do these modifications leave us with a coherent and internally consistent specification?
+
+A moment's reflection suggests that they do not. Consider Table 1, in which biological siblings share some dominance variance. Note how that shared variance reappears in diluted form in the equations for uncles and cousins. In Model B2, siblings together share some environmental variance. Shouldn't that shared variance reappear in diluted form in the equations for uncles and cousins? Alternatively, take Model B1 in which siblings and parents together share the same amount of environmental variance. What equates those two shares? Further, if parents provide environment as well as genes to their biological offspring, why does gene-environment covariance not arise?
+
+I examine these issues in detail in the Appendix. As a result of that examination, I would maintain that the Birmingham models are inconsistent and/or far-fetched with respect to environmental components. [The Appendix is developed in terms of a matrix formulation which is potentially useful in analyzing more general processes of biological and cultural transmission from assortatively-mated parents to their children]. In any event, one wonders what theory and evidence the biometrical-geneticists have used in specifying the psychological, sociological, and economic processes involved in the determination of IQ.
+
+% ======================================================================
+\section{The Contemporary Model}
+% ======================================================================
+
+We now turn to a quite different approach to kinship correlations, which traces back to the path-analytic systems introduced by Sewall Wright (1931; 1934; 1969, Chapter 15). The current formulation is due to the American biometrical geneticists D.\ C.\ Rao, Newton Morton, and S.\ Yee (1976). Here an individual's observed phenotype $P$ ($=$ IQ test score, say) is determined linearly by three unobserved components: his common environment $C$, his genotype $G$, and his specific environment $V$, with the first two components being correlated. Also observed is his index $I$, a fallible measure of his common environment. Marriage is assortative on the basis of common environment and genotype. The common environment provided to children is determined linearly by the parents' own (childhood) common environments and their (adult) phenotypes. The determination of phenotype is different for adults and children. All genetic effects are additive, and the system is an equilibrium.
+
+As presented by Rao, Morton, \& Yee (1976), the model implies a set of predicted correlations among the IQ test scores and the indexes of biological and social relatives, in terms of 10 parameters. The ten parameters -- which include correlations as well as path coefficients ($=$ standardized regression coefficients) -- are:
+\begin{align*}
+c &= \text{path from common environment to child's phenotype} \\
+h &= \text{path from genotype to child's phenotype} \\
+p &= \text{path from (childhood) common environment to adult's phenotype} \\
+q &= \text{path from genotype to adult's phenotype} \\
+f &= \text{path from parent's (childhood) common environment to child's common environment} \\
+x &= \text{path from parent's (adult) phenotype to child's common environment} \\
+u &= \text{correlation between (childhood) common environments of spouses} \\
+m &= \text{correlation between genotypes of spouses} \\
+s &= \text{correlation of one spouse's genotype with the other spouse's common environment} \\
+i &= \text{path from common environment to index.}
+\end{align*}
+The authors developed the formulary for a host of kinships by path-diagram considerations, introducing additional assumptions as required. For present purposes, I sketch out the model and its predictions for a selected set of kinships, which include many though not all of those they have used in practice.\footnote{\%UNCLEAR: footnote text not captured (superscript ``6'' at p.\ 39).}
+
+The core structural equations of the contemporary model refer to a nuclear family consisting of father, mother, and child. In our presentation, all variables are standardized to have unit variance (except when indicated otherwise). The disturbances ($V$'s) are mutually independent and independent of prior variables. We begin with
+\begin{align}
+P &= p\,C + q\,G + \sigma_1 V_P \\
+P' &= p\,C' + q\,G' + \sigma_1 V_{P'} \\
+C'' &= f\,(C+C') + x\,(P+P') + \sigma_3 V_{C''} \\
+G'' &= \tfrac{1}{2}(G+G') + \sigma_4 V_{G''} \\
+P'' &= c\,C'' + h\,G'' + \sigma_5 V_{P''}
+\end{align}
+
+Equation (1) determines the father's phenotype $P$ in terms of his (childhood) common environment $C$, his genotype $G$, and a disturbance $V_P$ (which may be interpreted as specific environment). Equation (2) does the same for his spouse, the mother, distinguished by a prime $'$. The following correlations are taken as given:
+\begin{equation*}
+r_{CG} = a \, , \qquad r_{CC'} = u \, , \qquad r_{GG'} = m \, , \qquad r_{CG'} = s \, .
+\end{equation*}
+As will be seen shortly, $a = r_{CG}$ is a function of the 10 original parameters. Using (1), (2) we derive the following display:
+
+\begin{center}
+\emph{Correlations of Adult Spouse Variables}
+\end{center}
+\begin{center}
+\begin{tabular}{c|c c c c c c}
+ & $C$ & $G$ & $P$ & $C'$ & $G'$ & $P'$ \\
+\hline
+$C$ & 1 & $a$ & $p+qa$ & $u$ & $s$ & $pu+qs$ \\
+$G$ & & 1 & $pa+q$ & & $m$ & $ps+qm$ \\
+$P$ & & & 1 & & & $p^2u+q^2m+2pqs$ \\
+\end{tabular}
+\end{center}
+
+The decomposition of adult phenotypic variance is
+\begin{equation*}
+1 = r_{PP} = p^2 r_{CC} + q^2 r_{GG} + 2pq\,r_{CG} + \sigma_1^2 = p^2 + q^2 + 2pqa + \sigma_1^2 \, ,
+\end{equation*}
+which can be solved for $\sigma_1$ in terms of the parameters. It will be convenient to define
+\begin{align*}
+t_1 &= r_{CP} + r_{CP'} = p(1+u) + q(a+s) \\
+t_2 &= r_{GP} + r_{GP'} = p(a+s) + q(1+m) \\
+t_3 &= r_{PP} + r_{PP'} = 1 + p^2 u + q^2 m + 2pqs \, .
+\end{align*}
+
+Equation (3) says that the common environment $C''$ which the parents provide is determined by their own childhood common environments ($C, C'$), their adult phenotypes ($P, P'$), and a disturbance $V_{C''}$ (which may be interpreted as non-transmitted family environment). Using (3) together with the display above, we can derive
+\begin{align*}
+r_{CC''} &= f(r_{CC}+r_{CC'}) + x(r_{CP}+r_{CP'}) = f(1+u) + x\,t_1 = t_4 \\
+r_{GC''} &= f(a+s) + x\,t_2 = t_5 \\
+r_{PC''} &= f\,t_1 + x\,t_3 = t_6 \, .
+\end{align*}
+A decomposition of common-environment variance is
+\begin{equation*}
+1 = r_{C''C''} = 2\big[f^2(1+u) + x^2 t_3 + 2fx\,t_1\big] + \sigma_3^2 \, ,
+\end{equation*}
+which defines $\sigma_3$ in terms of the parameters.
+
+Equation (4) says that the child's genotype $G''$ is equal to the midparental genotype $\tfrac12(G+G')$ plus a disturbance $V_{G''}$ (which is the Mendelian segregation term). Using (4) together with the display above we derive
+\begin{align*}
+r_{CG''} &= \tfrac12(a+s) \\
+r_{GG''} &= \tfrac12(1+m) \\
+r_{PG''} &= \tfrac12 t_2 \, .
+\end{align*}
+From (3) and (4) together we calculate
+\begin{align*}
+r_{C''G''} &= \tfrac12 f(r_{CG}+r_{CG'}+r_{C'G}+r_{C'G'}) + \tfrac12 x(r_{PG}+r_{PG'}+r_{P'G}+r_{P'G'}) \\
+&= f(a+s) + x\,t_2 = t_5 \, .
+\end{align*}
+It is assumed that $r_{C''G''} = r_{CG}$ -- i.e.\ that the gene-common environment correlation is constant across generations. This establishes the functional relation between $a$ and the original parameters:
+\begin{equation*}
+a = f(a+s) + x\big(p(a+s) + q(1+m)\big) \, ,
+\end{equation*}
+which may be solved for
+\begin{equation}
+a = \big(s(f+px) + qx(1+m)\big)/(1-f-px) \, . \tag{6}
+\end{equation}
+The decomposition of genotypic variance is
+\begin{equation*}
+1 = r_{G''G''} = \tfrac12(1+m) + \sigma_4^2 \, ,
+\end{equation*}
+which defines $\sigma_4$ as $\big(\tfrac12(1-m)\big)^{1/2}$.
+
+Equation (5) says that the child's phenotype $P''$ is determined by his common environment $C''$, his genotype $G''$, and a disturbance $V_{P''}$ (which may be interpreted as specific environment). Using (5) together with the preceding displays we can derive the correlations of parental variables with child's phenotype:
+\begin{align*}
+r_{CP''} &= c\,r_{CC''} + h\,r_{CG''} = c\,t_4 + \tfrac12 h(a+s) \\
+r_{GP''} &= c\,t_5 + \tfrac12 h(1+m) \\
+r_{PP''} &= c\,t_6 + \tfrac12 h\,t_2 \, .
+\end{align*}
+We also obtain the correlations of the child's variables with his phenotype:
+\begin{equation*}
+r_{C''P''} = c + ha \, , \qquad r_{G''P''} = ca + h \, ,
+\end{equation*}
+and the decomposition of his phenotypic variance:
+\begin{equation*}
+1 = r_{P''P''} = c^2 + h^2 + 2cha + \sigma_5^2 \, ,
+\end{equation*}
+which defines $\sigma_5$ in terms of the parameters.
+
+For another child of the same parents, distinguished by a triple prime $'''$, equations (1)--(3) still apply -- he receives the same common environment $C''$ -- but his genotype $G'''$ and phenotype $P'''$ are determined by
+\begin{equation*}
+G''' = \tfrac12(G+G') + \sigma_4 V_{G'''} \, , \qquad P''' = c\,C'' + h\,G''' + \sigma_5 V_{P'''} \, ,
+\end{equation*}
+where the new disturbances are mutually independent and independent also of all prior variables. Of the correlations involving this sibling, we need only derive
+\begin{align*}
+r_{G''G'''} &= \tfrac12(1+m) \\
+r_{P''P'''} &= c^2 + \tfrac12(1+m)h^2 + 2cha \, .
+\end{align*}
+One exception is worth noting here: if the sibling is an identical twin, so that $V_{G'''}=V_{G''}$ and $G'''=G''$, these sibling correlations change to $1$ and $c^2+h^2+2cha$, respectively.
+
+Apart from observations on phenotypes, the contemporary model also utilizes observations on indexes, that is fallible measures, of common environment. For father, mother, and child, these indexes are determined by
+\begin{equation*}
+I = iC + \sigma_6 V_I \, , \qquad I' = iC' + \sigma_6 V_{I'} \, , \qquad I'' = iC'' + \sigma_6 V_{I''} \, ,
+\end{equation*}
+where the disturbances (interpreted as measurement errors) are mutually independent and independent of all prior variables. (The indexes are standardized, too, so that $\sigma_6 = (1-i^2)^{1/2}$). Consequently the correlation of an index with any other variable is simply $i$ times the correlation of the corresponding common environment with that other variable.
+
+At this point, it is convenient to collect the results for predicted phenotypic and index correlations in nuclear families. This is done in Table 8, in which redundant entries have been omitted, there being only 10 distinct predictions for nuclear families.
+
+\begin{center}
+\textbf{Table 8}\\
+\textbf{PREDICTED CORRELATIONS FOR NUCLEAR FAMILIES: CONTEMPORARY MODEL}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{l c c c c}
+\hline
+ & Father's index $I$ & Father's phenotype $P$ & Child's index $I''$ & Child's phenotype $P''$ \\
+\hline
+Father index $I$ & 1 & $i(p+qa)$ & $i^2 t_4$ & $i\big(c\,t_4 + \tfrac12 h(a+s)\big)$ \\
+Father pheno $P$ & -- & 1 & $i\,t_6$ & $c\,t_6 + \tfrac12 h\,t_2$ \\
+Mother index $I'$ & $i^2 u$ & $i(pu+qs)$ & -- & -- \\
+Mother pheno $P'$ & -- & $t_3-1$ & -- & -- \\
+Child index $I''$ & -- & -- & 1 & $i(c+ha)$ \\
+Sib pheno $P'''$ & -- & -- & -- & $c^2+\tfrac12 h^2(1+m)+2cha$ \\
+\hline
+\end{tabular}
+\end{center}
+\emph{Note}: dash ``--'' indicates that entry is equal to another in the table.\\
+\emph{Free parameters}: $c, h, p, q, f, x, u, m, s, i$.\\
+\emph{Derived parameters}:
+\begin{align*}
+a &= [s(f+px) + qx(1+m)]/(1-f-px) \\
+t_1 &= p(1+u) + q(a+s) \\
+t_2 &= p(a+s) + q(1+m) \\
+t_3 &= 1 + p^2u + q^2m + 2pqs \\
+t_4 &= f(1+u) + x\,t_1 \\
+t_6 &= f\,t_1 + x\,t_3
+\end{align*}
+
+We now proceed to adoptive families. For an adopted child, let $P, P'$ refer to his adoptive parents, and $P^*, P^{*\prime}$ refer to his natural parents. Equations (1), (2), (3), and (5) continue to hold, while the natural parents' phenotypes are determined by
+\begin{align}
+P^* &= q\,C^* + p\,G^* + \sigma_1 V_{P^*} \tag{1*} \\
+P^{*\prime} &= q\,C^{*\prime} + p\,G^{*\prime} + \sigma_1 V_{P^{*\prime}} \tag{2*}
+\end{align}
+and the child's genotype is determined not by (4) but rather by
+\begin{equation}
+G'' = \tfrac12(G^*+G^{*\prime}) + \sigma_4 V_{G''} \, . \tag{4*}
+\end{equation}
+It is assumed that the adoptive and natural parents are each representative of the full population, so that the display of ``Correlations of adult spouse variables'' continues to hold for each pair of parents, and furthermore that all correlations between adoptive parent variables on the one hand, and natural parent variables on the other hand, are zero. We can then develop the correlations of parental variables with the child variables:
+\begin{center}
+\begin{tabular}{l l}
+Adoptive parent & Natural Parent \\
+$r_{CC''}=t_4$ & $r_{C^*C''}=0$ \\
+$r_{GC''}=t_5$ & $r_{G^*C''}=0$ \\
+$r_{PC''}=t_6$ & $r_{P^*C''}=0$ \\
+$r_{CG''}=0$ & $r_{C^*G''}=\tfrac12(a+s)$ \\
+$r_{GG''}=0$ & $r_{G^*G''}=\tfrac12(1+m)$ \\
+$r_{PG''}=0$ & $r_{P^*G''}=\tfrac12 t_2$ \\
+\end{tabular}
+\end{center}
+As a consequence, the correlation between genes and common environment vanishes for adoptive children: $r_{C''G''}=0$. Then the phenotypic variance for adoptive children will be
+\begin{equation*}
+\sigma_{P''P''} = c^2+h^2+\sigma_5^2 = 1-2cha = 1/\theta^2 \, , \quad \text{say, where } \theta = (1-2cha)^{-1/2} \, .
+\end{equation*}
+We then derive the covariances between parental variables and the child's phenotype, bearing in mind that these will have to be multiplied by $\theta$ to produce the corresponding correlations:
+\begin{center}
+\begin{tabular}{l l}
+Adoptive Parent & Natural Parent \\
+$\sigma_{CP''}=c\,t_4$ & $\sigma_{C^*P''}=\tfrac12 h(a+s)$ \\
+$\sigma_{GP''}=c\,t_5$ & $\sigma_{G^*P''}=\tfrac12 h(1+m)$ \\
+$\sigma_{PP''}=c\,t_6$ & $\sigma_{P^*P''}=\tfrac12 h\,t_2$ \\
+\end{tabular}
+\end{center}
+We also get $\sigma_{C''P''}=c$, $\sigma_{G''P''}=h$.
+
+For adoptive sibling correlations, at least two cases arise. If the sibling is a natural child of the adopting parents, then $r_{G''G'''}=0$, but $r_{C''G'''}=a$. The sibling has phenotypic variance 1, and then
+\begin{equation*}
+\sigma_{P''P'''} = c^2+cha \, ,
+\end{equation*}
+which will be multiplied by $\theta$ to give the ``adopted-natural'' sibling correlation. Alternatively, if the sibling is also adopted (being the natural child of a third pair of parents) then $r_{C''G'''}=0$, the sibling also has phenotypic variance $1/\theta^2$. And then
+\begin{equation*}
+\sigma_{P''P'''} = c^2
+\end{equation*}
+which will be multiplied by $\theta^2$ to give the ``adopted-adopted'' sibling correlation.
+
+The index determination equations are again assumed to hold for adoptive and natural families. We can now collect our results for predicted phenotypic and index correlations in adoptive families. Table 9 displays compactly the additional distinct correlations which arise in the present scheme.
+
+\begin{center}
+\textbf{Table 9}\\
+\textbf{PREDICTED CORRELATIONS FOR ADOPTIVE FAMILIES: CONTEMPORARY MODEL}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{l c c c c}
+\hline
+ & Adop Father index $I$ & Adop Father pheno $P$ & Child's index $I''$ & Child's phenotype $P''$ \\
+\hline
+Adop Father index $I$ & 1 & $i(p+qa)$ & $i^2 t_4$ & $\theta\,i\,c\,t_4$ \\
+Adop Father pheno $P$ & -- & 1 & $i\,t_6$ & $\theta\,c\,t_6$ \\
+Nat Father index $I^*$ & 0 & 0 & 0 & $\theta\,i\,\tfrac12 h(a+s)$ \\
+Nat Father pheno $P^*$ & 0 & 0 & 0 & $\theta\,\tfrac12 h\,t_2$ \\
+Child index $I''$ & -- & -- & 1 & $\theta\,i\,c$ \\
+Sib (Adop) pheno $P'''$ & -- & -- & -- & $\theta^2 c^2$ \\
+Sib (Nat) pheno $P'''$ & \multicolumn{3}{c}{same as in Table 8} & $\theta(c^2+cha)$ \\
+\hline
+\end{tabular}
+\end{center}
+\emph{Free parameters}: same as in Table 8.\\
+\emph{Derived parameters}: same as in Table 8, and $\theta = (1-2cha)^{-1/2}$.
+
+When empirical IQ and index correlations are available for an adequate number and variety of kinships, the parameters of the contemporary model may be estimated by one or another fitting procedure.\footnote{\%UNCLEAR: footnote text not captured (superscript ``7'' at p.\ 49).} Hypotheses may be tested by setting certain parameter values a priori and examining the consequent worsening of fit.
+
+We note that the contemporary model permits correlation between the environments of relatives. Indeed this correlation is induced in the model as a consequence of the transmission mechanism (equation (3)), which also generates correlation between an individual's genes and environment. On the other hand, dominance deviations are ruled out. Also in contrast to the classical model, assortative mating takes place not on the basis of phenotypes, but rather on the basis of (childhood) common environment and genotype. And a sharp distinction is made between the determination of phenotypes for adults on the one hand and children on the other.
+
+The contemporary model bears a strong family resemblance to that of Jencks (1972), a fact which may have escaped the authors' attention. Of course, in the hands of Rao, Morton, \& Yee, the path analytic approach has been fully developed in a consistent manner and is combined with a formal procedure for estimation and hypothesis testing which follows the conventional principles of statistical inference.\footnote{\%UNCLEAR: footnote text not captured (superscript ``8'' at p.\ 49).}
+
+% ======================================================================
+\section{The Honolulu Models}
+% ======================================================================
+
+A substantial part of Rao, Morton, \& Yee's (1976) article is devoted to their fits of a contemporary model to a set of 11 American kinship correlations drawn from Burks (1928) and Jencks (1972, Appendix A), as assembled in their earlier article, Rao, Morton, \& Yee (1974). We display their data set in Table 10, with $r_j$ and $n_j$ again denoting the observed correlation and sample size for the $j$-th kinship. My figures may differ slightly from those they actually used, since I've calculated the $r$'s by untransforming the $z$-transforms which they tabulated.
+
+\begin{center}
+\textbf{Table 10}\\
+\textbf{DATA SET ANALYZED BY RAO, MORTON, \& YEE}
+\end{center}
+\begin{center}
+\begin{tabular}{c l l c c}
+\hline
+$j$ & Acronym & Variables correlated & $r_j$ & $n_j$ \\
+\hline
+1 & MZTXY & IQs of identical twins & .89 & 50 \\
+2 & MZAXY & IQs of separated identical twins & .69 & 19 \\
+3 & SSTXY & IQs of siblings & .52 & 2001 \\
+4 & FSTXY & IQs of adopted-adopted siblings & .23 & 21 \\
+5 & FSPXY & IQs of adopted-natural siblings & .26 & 94 \\
+6 & OFPYIY & IQ of adopted child with his index & .25 & 186 \\
+7 & SSTXIX & IQ of child with his index & .44 & 101 \\
+8 & OPTXIY & IQ of parent with child's index & .69 & 205 \\
+9 & OFPXY & IQs of adoptive parent and child & .23 & 1181 \\
+10 & OPTXY & IQs of parent and child & .48 & 1250 \\
+11 & FMTXY & IQs of spouses & .50 & 887 \\
+\hline
+\end{tabular}
+\end{center}
+
+Their main model, which we henceforth denote H1, is the special case of the contemporary model in which $m=s=0$: that is, correlation between one spouse's genotype and the other spouse's genotype \emph{and} environment are both ruled out a priori. We display the equations for this model in the upper panel of Table 11. The lower panel of the table gives their parameter estimates (and some ancillary statistics) for H1, and for the four further specializations which they fit, namely
+\begin{equation*}
+\text{H2: } x=0, \quad \text{H3: } x=0 \ \& \ q=h, \quad \text{H4: } f=0, \quad \text{H5: } x=0 \ \& \ f=0,
+\end{equation*}
+it being understood that $m=s=0$ is maintained throughout.
+
+The equations were not given explicitly in the article, but were obtained by me by specializing those in our Tables 8 and 9 to have $m=s=0$. (Exceptions: the MZTXY equation is taken from the text, the MZAXY equation is based on assuming that the twins were raised in random adoptive homes). Alternatively the equations are obtained by the same specialization of the elaborate formulary provided in the earlier part of their article. For the paths in the adult phenotype equations, I have translated their estimates into the parameterization being used here (namely $p=cy$ and $q=hz$) and have also calculated out the value of $\theta$.
+
+\begin{center}
+\textbf{Table 11}\\
+\textbf{MODEL-FITTING BY RAO, MORTON, \& YEE}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{c l l}
+\hline
+Kinship & Correlation & Equation \\
+\hline
+1 & MZTXY & $c^2+h^2+2cha$ \\
+2 & MZAXY & $\theta^2 h^2$ \\
+3 & SSTXY & $c^2+\tfrac12 h^2+2cha$ \\
+4 & FSTXY & $\theta^2 c^2$ \\
+5 & FSPXY & $\theta(c^2+cha)$ \\
+6 & OFPYIY & $\theta\,i\,c$ \\
+7 & SSTXIX & $i(c+ha)$ \\
+8 & OPTXIY & $i\big[f(p(1+u)+qa) + x(1+p^2u)\big]$ \\
+9 & OFPXY & $\theta\,c\big[f(p(1+u)+qa) + x(1+p^2u)\big]$ \\
+10 & OPTXY & $c\big[f(p(1+u)+qa) + x(1+p^2u)\big] + \tfrac12 h(pa+q)$ \\
+11 & FMTXY & $p^2 u$ \\
+\hline
+\multicolumn{3}{l}{Parameter estimates} \\
+\hline
+ & H1 & \\
+\multicolumn{3}{l}{$c=.306$, \quad $h=.819$, \quad $p=.711$, \quad $q=.459$} \\
+\multicolumn{3}{l}{$f=.274$, \quad $x=.243$, \quad $u=.985$, \quad $i=.858$} \\
+\multicolumn{3}{l}{Chi-square $=2.71$, degrees of freedom $=3$} \\
+\multicolumn{3}{l}{$a = qx/(1-f-px) = .201$, \quad $\theta = (1-2cha)^{-1/2}=1.055$} \\
+\hline
+\end{tabular}
+\end{center}
+\emph{Note}: full H1--H5 parameter comparison table (equations same as above; H2 sets $x=0$; H3 sets $x=0,\ q=h$; H4 sets $f=0$; H5 sets $x=0,\ f=0$):
+\begin{center}
+\small
+\begin{tabular}{l c c c c c}
+\hline
+ & H1 & H2 ($x=0$) & H3 ($x=0,q=h$) & H4 ($f=0$) & H5 ($x=0,f=0$) \\
+\hline
+$c$ & .306 & .423 & .496 & .266 & .424 \\
+$h$ & .819 & .835 & .757 & .789 & .835 \\
+$p$ & .711 & .916 & 1.074 & .714 & .918 \\
+$q$ & .459 & .558 & .757 & .369 & 1.159 \\
+$f$ & .274 & .406 & .284 & 0 & 0 \\
+$x$ & .243 & 0 & 0 & .577 & 0 \\
+$u$ & .985 & .595 & .434 & .980 & .595 \\
+$i$ & .858 & .752 & .642 & .812 & .752 \\
+Chi-square & 2.71 & 3.88 & 9.38 & 3.60 & 81.32 \\
+Degrees of freedom & 3 & 4 & 5 & 4 & 5 \\
+$a=qx/(1-f-px)$ & .201 & 0 & 0 & .363 & 0 \\
+$\theta=(1-2cha)^{-1/2}$ & 1.055 & 1 & 1 & 1.086 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+Their estimation procedure was in essence the following. Let $\rho_j=\rho_j(\underline\theta)$ be the expected correlation for the $j$-th kinship, where $\underline\theta$ denotes the set of $K$ free parameters, while $r_j$ is the corresponding observed correlation. Let the corresponding $z$-transforms be
+\begin{equation*}
+\zeta_j = \tfrac12\log\big((1+\rho_j)/(1-\rho_j)\big) = \zeta_j(\underline\theta) \, , \qquad z_j = \tfrac12\log\big((1+r_j)/(1-r_j)\big) \, .
+\end{equation*}
+For a data set with $N$ kinships, choose $\underline\theta$ to minimize the weighted least squares criterion
+\begin{equation*}
+\sum_{j=1}^{N} n_j\big(z_j - \zeta_j(\underline\theta)\big)^2 \, .
+\end{equation*}
+The value of the criterion when minimized is a chi-square statistic, with degrees of freedom $N-K$.\footnote{\%UNCLEAR: footnote text not captured (superscript ``9'' at p.\ 53).}
+
+For the main model H1, they also give (pp.\ 238--239) the estimated decompositions of variance for children's phenotypes, adult phenotypes, and common environment. We summarize those here in Table 12, again in our notation. They do not present predicted correlation values for any of the models.
+
+\begin{center}
+\textbf{Table 12}\\
+\textbf{DECOMPOSITION OF VARIANCES: MODEL H1}
+\end{center}
+\begin{center}
+\begin{tabular}{l l l}
+\hline
+Source & Adult phenotype & Child phenotype \\
+\hline
+Common environment & $p^2=.506$ & $c^2=.094$ \\
+Genotype & $q^2=.211$ & $h^2=.670$ \\
+Covariance & $2pqa=.132$ & $2cha=.101$ \\
+Residual & $\sigma_1^2=.151$ & $\sigma_5^2=.135$ \\
+\hline
+Total & 1.000 & 1.000 \\
+\hline
+\end{tabular}
+\qquad
+\begin{tabular}{l l}
+\hline
+Source & Common environment \\
+\hline
+Parental common environment & $2f^2(1+u)=.298$ \\
+Parental phenotype & $2x^2(1+p^2u)=.176$ \\
+Covariance & $4fx(p(1+u)+qa)=.400$ \\
+Residual & $\sigma_3^2=.126$ \\
+\hline
+Total & 1.000 \\
+\hline
+\end{tabular}
+\end{center}
+
+Their discussion of results begins with:
+
+\begin{quote}
+Analysis by the methods used here shows the genetic correlation of mates ($m$) is not significantly different from zero, and that all of the marital correlation may be due to preference for a spouse from the same environment.
+\end{quote}
+
+The first remark presumably refers to an unreported fit of a more general model in which $m$ (and $s$?) are free parameters; the second presumably says that $r_{11}$ is closely predicted by $p^2u$ in the main model. They go on to say that
+
+\begin{quote}
+The effect of parental childhood environment or the effect of parental adult phenotype on the child's environment may be null, but not both simultaneously.
+\end{quote}
+
+We see this in our Table 11, where H4 ($f=0$) and H2 ($x=0$) give satisfactory fits, while H5 ($x=0 \& f=0$) does not. They also note that gene-environment correlation is nonsignificant, by comparing the chi-square for H1 and H2.
+
+Heavy weight is put on the contrast between $p,q$ on the one hand, and $c,h$ on the other:
+
+\begin{quote}
+Adult heritability remains significantly less than heritability in childhood, presumably because the leveling effect of the school system is replaced by varying stimulation in different occupations. The effect of family environment is significantly greater for adults than children. Under the present model, the causal path is from childhood environment to adult I.Q. Since family environment is so important, it is conceivable that adult education of parents could, by diminishing the intergenerational path between family environments, have greater effects on academic performance than preschool education of their children.
+\end{quote}
+
+They remark on the ``low power'' of the IQ data, without explaining what is meant. They note that ``disturbing questions have been raised'' about the British IQ data, perhaps forgetting that their own selection from among the American adoption studies was in part based on compatibility with Cyril Burt's figures (see Rao, Morton, \& Yee (1974, p.\ 353)). The good fit of H1 is offered as evidence in support of the quality of the data set:
+
+\begin{quote}
+[T]here is remarkable agreement between the observations and a simple model of biological and cultural inheritance ($\chi_3^2=2.71$). Surely gross errors would be erratic in direction and magnitude, and the close agreement of all relations would not be observed.
+\end{quote}
+
+Their article concludes rather confidently:
+
+\begin{quote}
+Applied to a large body of published data on IQ, neither genetic assortative mating nor gene-environment covariance is significant~\ldots but heritability is less and cultural inheritance is greater for adults than children. Whereas family resemblance of children is largely genetic, for adults it is largely due to their childhood environments, presumably acting on occupational aspirations. Further resolution is more likely to come from nuclear families than from the rare relationships that were favored by classical human genetics.
+\end{quote}
+
+% ======================================================================
+\section{Examination of Rao, Morton, \& Yee's Model-Fitting}
+% ======================================================================
+
+When I took a serious look at the empirical portion of Rao, Morton, \& Yee (1976), several problems arose.
+
+Inserting their parameter estimates into the equations of Table 11, and comparing the predicted with the observed correlations, I found total chi-square values much larger than they reported; recall that they did not publish predicted values. Indeed for $r_8$ alone, my chi-square values under H1--H5 respectively .35, 26.80, 62.04, .15, 143.14. In the course of doing those calculations I happened to note that the estimated value of $i(p+qa)$ remained constant over the five models, and that its constant value .69, was precisely the observed value of $r_8$. That led me to conjecture that they had misspecified the $r_8$ equation by using $i(p+qa)$ rather than the correct formula given in Table 11 above. I also realized that with $m=s=0$, $i(p+qa)$ would be the correct formula for the correlation between the parent's IQ and his own index (see the $I,P$ entry in Table 8), a concept which is readily confused with the correlation between the parent's IQ and his child's index.
+
+Correspondence with the authors confirmed my conjectures. My conclusion was that they had fitted a series of non-models, so that the numerical results and the interpretations put upon them (recapitulated in the preceding section of this paper) should be discarded in their entirety.
+
+Wondering what would happen when the correct models were fitted led me to the second problem. An algebraic analysis of the equations in Table 11 showed me that the model was indeterminate, that is ``non-estimable,'' that is ``not identified'': Even if the population values of all 11 kinship correlations were known, unique values of the Honolulu parameters could not be obtained. The demonstration is as follows.
+
+In the Honolulu formulation of H1 -- see the upper panel of Table 11 -- the 11 kinship correlations are expressed in terms of 8 free parameters,
+\begin{equation*}
+c, h, p, q, f, x, u, i \, ,
+\end{equation*}
+with
+\begin{equation}
+a = qx/(1-f-px) \tag{6}
+\end{equation}
+and $\theta = (1-2cha)^{-1/2}$ being shorthand expressions for known functions of the free parameters. Let us introduce
+\begin{align}
+t &= f\big(p(1+u)+qa\big) + x(1+p^2u) \tag{7} \\
+v &= pa+q \tag{8} \\
+w &= p^2u \, . \tag{9}
+\end{align}
+As the display in the H1 column of Table 13 shows, the H1 model can be expressed in terms of the following 7 free parameters:
+\begin{equation*}
+c, h, a, i, t, v, w \, ;
+\end{equation*}
+with $\theta$ still being shorthand for $(1-2cha)^{-1/2}$. These 7 parameters completely determine the population values of the 11 kinship correlations, and, as we now show, the 7 parameters are uniquely determined by the population values of the 11 kinship correlations: Correlations $r_1$--$r_5$ depend only on $c,h,a$ and indeed suffice to determine $c,h,a$ (and hence $\theta$). With $c,h,a,\theta$ in hand, $r_6$ and $r_7$ will both determine $i$. With $i,c,\theta$ in hand, $r_8$ and $r_9$ will both determine $t$. With $c,h,t$ in hand, $r_{10}$ will determine $v$. Finally, $r_{11}$ depends only on $w$, and suffices to determine $w$.
+
+Of Rao \emph{et al.}'s 8 parameters for H1, only $c,h,i$ are determined in terms of their data set. For, even with $a,t,v,w$ known, the 4 relationships (6)--(9) cannot be solved uniquely for \emph{any} of the remaining 5 parameters $p,q,f,u,x$. To put it another way, any set of values of those 5 parameters which produce the same set of values for $a,t,v,w$ are observationally equivalent.
+
+\begin{center}
+\textbf{Table 13}\\
+\textbf{REFORMULATION OF THE MODELS OF RAO, MORTON, \& YEE}
+\end{center}
+\begin{center}
+\footnotesize
+\begin{tabular}{l l l l l l}
+\hline
+ & H1 & H2 & H3 & H4 & H5 \\
+\hline
+$r_1$ & $h^2+c^2+2cha$ & $h^2+c^2$ & $h^2+c^2$ & $h^2+c^2+2cha$ & $h^2+c^2$ \\
+$r_2$ & $\theta^2h^2$ & $h^2$ & $h^2$ & $\theta^2h^2$ & $h^2$ \\
+$r_3$ & $\tfrac12h^2+c^2+2cha$ & $\tfrac12h^2+c^2$ & $\tfrac12h^2+c^2$ & $\tfrac12h^2+c^2+2cha$ & $\tfrac12h^2+c^2$ \\
+$r_4$ & $\theta^2c^2$ & $c^2$ & $c^2$ & $\theta^2c^2$ & $c^2$ \\
+$r_5$ & $\theta(c^2+cha)$ & $c^2$ & $c^2$ & $\theta(c^2+cha)$ & $c^2$ \\
+$r_6$ & $\theta ic$ & $ic$ & $ic$ & $\theta ic$ & $ic$ \\
+$r_7$ & $i(c+ha)$ & $ic$ & $ic$ & $i(c+ha)$ & $ic$ \\
+$r_8$ & $it$ & $it$ & $it$ & $it$ & $0$ \\
+$r_9$ & $\theta ct$ & $ct$ & $ct$ & $\theta ct$ & $0$ \\
+$r_{10}$ & $\tfrac12hv+ct$ & $\tfrac12hv+ct$ & $\tfrac12hv+ct$ & $\tfrac12hv+ct$ & $\tfrac12hv$ \\
+$r_{11}$ & $w$ & $w$ & $w$ & $w$ & $w$ \\
+\hline
+$\theta$ & $(1-2cha)^{-1/2}$ & 1 & 1 & $(1-2cha)^{-1/2}$ & 1 \\
+$a$ & $qx/(1-f-px)$ & 0 & 0 & $qx/(1-px)$ & 0 \\
+$t$ & $f(p(1+u)+qa)+x(1+p^2u)$ & $fp(1+u)$ & $fp(1+u)$ & $x(1+p^2u)$ & 0 \\
+$v$ & $pa+q$ & $q$ & $h$ & $pa+q$ & $q$ \\
+$w$ & $p^2u$ & $p^2u$ & $p^2u$ & $p^2u$ & $p^2u$ \\
+\hline
+\end{tabular}
+\end{center}
+
+When certain parameters are fixed a priori as in H2--H5, the identifiability of the other parameters may improve. The remaining columns of Table 13 set out the equations for H2--H5, again in terms of our reduced parameter set. (I obtained these equations by specializing the H1 column appropriately). For each case, it is easy to verify that the reduced parameter set $(c,h,a,i,t,v,w)$ is fully determined. As for Rao \emph{et al.}'s set, $c,h,i$ remain determinate, while the status of the others can be deduced as follows.
+
+H2 ($x=0$): Here $q=v$ and $x=0$ are determinate. But $f,p,u$ cannot be extracted from the two available relations $t=fp(1+u)$ and $w=p^2u$.
+
+H3 ($x=0$ and $q=h$): Same conclusion as for H2, because, with $q=h$, equation $r_{10}$ merely re-determines $h$.
+
+H4 ($f=0$): Here $x$ is determined by $x=t/(1+w)$, and also by $x=a/v$ (since $v=pa+q=p(qx/(1-px))+q=q/(1-px)=a/x$); $f=0$ is also determinate. But $p,q,u$ cannot be extracted from the two available relations $v=pa+q$ and $w=p^2u$.
+
+H5 ($x=0$ and $f=0$): Here $q=v$, $x=0$, $f=0$ are determinate. But $p$ and $u$ cannot be extracted from the single available relation $w=p^2u$.
+
+We conclude that even the restricted variants of Rao \emph{et al.}'s model are not fully identified in terms of the population values of the 11 kinship correlations, and hence unique estimates of their parameters could not be obtained from their sample data set.
+
+An instructive aspect of all this concerns the emphasis given by Rao, Morton, \& Yee (1976) to the contrast between the decomposition of IQ variance for adults and that for children. That contrast rests on a comparison of the $p,q$ estimates with the $c,h$ estimates. But the $p,q$ pair, we now see, was indeterminate throughout.\footnote{\%UNCLEAR: footnote text not captured (superscript ``10'' at p.\ 61).}
+
+Rao, Morton, \& Yee, ``Resolution of cultural and biological inheritance by path analysis: corrigenda'' (University of Hawaii: Population Genetics Laboratory PGL paper, July 21, 1977) agree with my finding of indeterminacy and report estimates of their parameters for the corrected H1 model, obtained by fixing the parameter $u$ at several selected values. Translated into our formulation, their estimates are:
+\begin{equation*}
+c=.286, \quad h=.823, \quad a=.228, \quad i=.903, \quad t=.762, \quad v=.646, \quad w=.501 \, .
+\end{equation*}
+I take the liberty of using those, although I have not fitted the model myself. (Inserting the figures into our equations (6)--(9) will permit readers to trace out the possible combinations of the non-identified parameters $p,q,f,x,u$). In Table 14, I display the implied predicted correlations for H1, along with the observed correlations and the individual $\chi^2$-discrepancy values. The fit is clearly very good ($\chi_4^2=2.96$), and the $c$ and $h$ parameter estimates have changed very little.
+
+Still, our examination will not dispel the skepticism previously expressed about the precision with which biometrical geneticists specify and interpret their own models.
+
+\begin{center}
+\textbf{Table 14}\\
+\textbf{CORRECTED H1 MODEL FITTED TO HONOLULU DATA SET}
+\end{center}
+\begin{center}
+\begin{tabular}{c l c c c}
+\hline
+ & Kinship & Observed Correlation & Predicted Correlation & $\chi^2$ \\
+\hline
+1 & MZTXY & .89 & .866 & .44 \\
+2 & MZAXY & .69 & .759 & .51 \\
+3 & SSTXY & .52 & .528 & .10 \\
+4 & FSTXY & .23 & .092 & .39 \\
+5 & FSPXY & .26 & .143 & 1.37 \\
+6 & OFPYIY & .25 & .273 & .12 \\
+7 & SSTXIX & .44 & .428 & .02 \\
+8 & OPTXIY & .69 & .688 & .00 \\
+9 & OFPXY & .23 & .231 & .01 \\
+10 & OPTXY & .48 & .484 & .00 \\
+11 & FMTXY & .50 & .501 & .00 \\
+\hline
+\multicolumn{4}{r}{Total} & 2.96 \\
+\hline
+\end{tabular}
+\end{center}
+
+% ======================================================================
+\section{Rao, Morton, \& Yee's Data and Methods}
+% ======================================================================
+
+The Honolulu group drew their observations from Jencks (1972, Appendix A) and from Barbara Burks (1928). Thus there is substantial overlap between their source material and that used by the Birmingham group. Table 15 gives an annotated display of their data set. The kinship correlations to which the models were fitted (i.e.\ those in our Table 11) were in most cases averages of figures found in individual studies; these average values are first listed. (Throughout the table, the numbers in parentheses denote sample sizes). The next column lists the individual correlations which are explicitly itemized by Rao, Morton, \& Yee (1974, p.\ 353; 1976, p.\ 236). (Author's names identify the studies concisely; for full bibliographic citations, see Jencks). The last column contains some comments, derived from my reading of Jencks and of several of the original studies.\footnote{\%UNCLEAR: footnote text not captured (superscript ``11'' at p.\ 63).}
+
+Introducing their data set, Rao, Morton, \& Yee (1974, p.\ 352) wrote:
+
+\begin{quote}
+Since the classical study of Burks [1928], many investigations of familial resemblance for IQ have been made [Jencks (1972)]. Relevant American data are summarized in~\ldots [the table]; they are from a restricted range of families and may not apply to a particular social class. The phenotype is Binet IQ for children and MA (mental age) for adults. The index of common environment is Burks's culture index.
+\end{quote}
+
+\begin{center}
+\textbf{Table 15}\\
+\textbf{ANNOTATED DISPLAY OF DATA SET USED BY RAO, MORTON, \& YEE}
+\end{center}
+\begin{center}
+\footnotesize
+\begin{tabular}{l l l p{6.5cm}}
+\hline
+Kinship & Average & Individual Studies (Rao, Morton, \& Yee) & Comments \\
+\hline
+1. MZTXY & .89 (50) & .89 (50) Newman & -- \\
+2. MZAXY & .69 (19) & .69 (19) Newman & -- \\
+3. SSTXY & .52 (2001) & .63 (50) Newman; .52 (1951) Jencks & Same-sex DZTs; Jencks's weighted mean of 7 studies: .42(280) Willoughby, .45(399) Hart, .50(312) Conrad, .53(384) McNemar, .63(450) Hildreth, .63(63) Madsen, .67(63) Outhit \\
+4. FSTXY & .23 (21) & .23(21) Burks & Jencks also has .12(10) Leahy, .40(93) Freeman, .65(41) Skodak \\
+5. FSPXY & .26 (94) & .06(25) Leahy, .21(22) Skodak, .38(47) Freeman & -- \\
+6. OFPYIY & .25 (186) & .25(186) Burks & Burks also has .35(164) for an index of home environment obtained by regression of child's IQ. Jencks cites .03(100) Skodak for correlation of adopted child's IQ with adoptive father's education. Freeman has .37(394) for correlation of adopted child's IQ with father's occupation. \\
+7. SSTXIX & .44 (101) & .44(101) Burks & Burks also has .53(95) for an index of home environment obtained by regression of child's IQ. \\
+8. OPTXIY & .69 (205) & .67(100) Burks F, .71(105) Burks M & F \& M refer to father \& mother. Burks also has .46(?) for correlation of father's IQ with his education. \\
+9. OFPXY & .23 (1181) & .07(178) Burks F, .19(178) Leahy F, .19(204) Burks M, .24(186) Leahy M, .28(255) Freeman M, .37(180) Freeman F & F \& M refer to father \& mother. \\
+10. OPTXY & .48 (1250) & .35(141) Willoughby, .46(200) Burks, .49(441) Conrad, .51(366) Leahy, .58(102) Outhit & -- \\
+11. FMTXY & .50 (887) & .50(887) Jencks & Jencks's weighted mean of 6 studies: .40(141) Willoughby, .42(100) Burks (Adoptive families), .43(164) Leahy (Control families), .52(134) Conrad, .55(174) Burks (Control families), .61(174) Leahy (Adoptive families). Jencks also has .74(51) Outhit. Freeman has .49(180) in adoptive families. \\
+\hline
+\end{tabular}
+\end{center}
+
+Our discussion begins with the remark that the tests for children included not only the Stanford-Binet but also Army Alpha, and in the case of Willoughby's study, an assortment of 11 brief tests. The tests for adults included the Stanford-Binet, Army Alpha, Otis IQ, and Stanford Achievement; ``MA (mental age)'' is of course not a test at all. The range of families sampled is indeed restricted: Burks, Leahy, Freeman, and Skodak studied adoptive families, and, in the case of the first two, ordinary families statistically matched to the adoptive families (as controls). None of the studies in the entire data set were undertaken after 1940. Burks's culture index is the total score on five 5-point items referring to the parents' speech, education, interests, home library, and artistic taste.
+
+The variation across the individual studies for each kinship is substantially understated by Rao, Morton, \& Yee (1974, p.\ 354): They report proper chi-square statistics for heterogeneity in the OPTXY, OFPXY, OPTXIY sets, but treat the .52 (1951) in the SSTXY set as though it were a single sample rather than being itself an average over 7 studies. For FMTXY, an average of 6 studies, they report no heterogeneity at all; this kinship, to be sure, was not introduced until their 1976 article.
+
+They follow Jencks's treatment of Outhit's study -- excluding it from the FMT set, including it in the SST and OPT sets. But Jencks's decision (1972, p.\ 272) was based on a misunderstanding: if anything, the FMT should be included, and SST and OPT excluded. They follow Jencks' error in reversing the sample sizes for the two Burks items in the FMT set.
+
+Rao \emph{et al.}\ depart explicitly from Jencks's averages in the case of adopted-adopted pairs (FSTXY). Their explanation (1974, p.\ 353) is that with Skodak's figure in the pool, the FSTXY studies would be significantly heterogeneous, and would have a mean larger than that for adopted-natural pairs (FSPXY). This leads them to discard the Skodak figure, and at the same time (for reasons that are not stated) discard the Freeman and Leahy studies as well. Thus for FSTXY they end up with the single figure .23 (21) from Burks, rather than with Jencks's average of .42 (165). Referring back to our Table 14, one notes that this kinship is already underpredicted in the H1 model. They do use Skodak, Freeman, and Leahy for other kinships.
+
+For the correlations involving indexes, which Jencks did not collect systematically, the Honolulu group relied entirely on Burks, and then only on her culture index. My comments in the table suggest a few other choices that might have been made from Burks's study and from the other sources.\footnote{\%UNCLEAR: footnote text not captured (superscript ``12'' at p.\ 67).}
+
+At this point in our examination, readers may appreciate the extent of heterogeneity to be found when one scans across the original studies, and may also begin to appreciate the number of arbitrary decisions that were made in constructing the Honolulu data set from Jencks's compilation. Now Jencks's compilation of IQ studies was by no means authoritative -- he overlooked some articles, and misread some others. Furthermore, various more recent studies are available. Nichols (1970) -- as reported by Loehlin \emph{et al.}\ (1975, p.\ 109) -- found an MZT correlation of .62 ($n=36$) and a DZT correlation of .51 ($n=65$). Scarr \& Weinberg (1977a, Table 5) have these IQ correlations (sample sizes in parentheses): OFP .09 (184) \& .16 (175), FMT .31 (175) \& .24 (270), SST .35 (168) in families with adolescent adoptees and similarly situated biological families; while Scarr \& Weinberg (1977b, Table 6) have these IQ correlations: SST .42 (107), FST .39 (53), FSP .30 (134) in families adopting black and interracial children.
+
+The Honolulu data set entirely ignores relationships on which Jencks (pp.\ 278, 322) provides usable information. I assemble some of this information in Table 16, along with the equations appropriate for the H1 model (as obtained by setting $m=s=0$ into the formulary of our Tables 8 and 9). Comparison of the observed and predicted values may reduce one's confidence in the ability of the Honolulu models to account for observed IQ and index correlations.
+
+\begin{center}
+\textbf{Table 16}\\
+\textbf{KINSHIPS NOT USED BY RAO, MORTON, \& YEE}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{l l p{6.5cm}}
+\hline
+Variables Correlated & Equation & Observed Correlations \\
+\hline
+$P, I$ & $i(p+qa)$ & Adult's AFQT score with father's education: .305 (?) NORC. \\
+$P^*, P''$ & $\tfrac12 hv$ & Adopted child IQ with natural parent IQ: .41 (63) Skodak. \\
+$I^{*\prime\prime}, I''$ & 0 & Adoptive parent education with natural parent education: .31(124), .25(94), .29(836) Leahy; .27(100) Skodak. Adoptive parent occupation with natural parent occupation: .09(89), .08(1046) Leahy; $-.02$(86) Burks. \\
+$I^{*\prime\prime}, \tfrac12(P+P')$ & 0 & Natural mother education with adoptive midparent IQ: .20(89) Leahy. \\
+$P^*, I''$ & 0 & Natural mother IQ with adoptive midparent education: .24(100) Leahy. \\
+\hline
+\end{tabular}
+\end{center}
+%UNCLEAR: original Table 16 notation for the third and fourth rows uses starred/double-primed index symbols ($I^{*\prime\prime}$) whose precise typeset form in the 1978 original is ambiguous from the scan; rendered here as best approximation of the intended ``natural-parent-as-child index'' vs.\ ``adoptive-child index'' contrast described in the surrounding prose.
+
+That adoptive families have been mishandled in the Honolulu research is immediately apparent from the table. The observed correlations between characteristics of adoptive and natural parents run directly counter to the ``critical assumption'' that ``foster parents are random'' (Rao, Morton, \& Yee, 1976, p.\ 234).\footnote{\%UNCLEAR: footnote text not captured (superscript ``13'' at p.\ 68).} There is also considerable evidence in the original studies that adoptive families are drawn from the upper ranges of the socioeconomic distribution. As a consequence the range of environmental variation they provide is relatively limited.\footnote{\%UNCLEAR: footnote text not captured (superscript ``14'' at p.\ 68).} By failing to incorporate essential features of the adoption process -- selection of children, selection of adopting families, and possible matching of natural and adoptive parents, Rao, Morton, \& Yee have developed a model which is simply inappropriate for their data set.\footnote{\%UNCLEAR: footnote text not captured (superscript ``15'' at p.\ 68).}
+
+Another elementary failure to match model and data appears when we consider the separated identical twins. For this kinship in H1, Rao \emph{et al.}\ use $\theta^2h^2$, which in their system applies to MZs reared apart in random adoptive homes, and tested as children. But in the Newman, Freeman \& Holzinger (1937) sample of 19 pairs -- which provides their only observation for this kinship -- 14 of the pairs were adults, having been at least 19 years old at the time of testing (of those, 10 pairs were aged 25 or more). It seems that the correct equation should be $\theta^2q^2$. It is remarkable that the Honolulu group was so unconcerned with the age composition of samples while being so concerned with the distinction between adult and childhood heritability. On the other hand, 5 of the MZA pairs were reared in different branches of the same family, and in at least another 5 cases there was substantial contact between the ``separated'' twins. Perhaps the random placement and independent environment assumptions are also questionable?
+
+Information on means and variances is systematically ignored by the Honolulu group. Table 17 gives some of this information for the adoptive studies whose correlations entered their data set.
+
+\begin{center}
+\textbf{Table 17}\\
+\textbf{IQ MEANS AND VARIANCES IN ADOPTIVE STUDIES}
+\end{center}
+\begin{center}
+\begin{tabular}{l l c c c}
+\hline
+Sample & & Mean & Variance & Sample size \\
+\hline
+Burks: & Adopted children & 107.4 & 228 & 214 \\
+ & Control children & 115.4 & 229 & 105 \\
+Freeman: & Adopted children & 98.5 & 231 & 285 \\
+Leahy: & Adopted children & 110.5 & 156 & 194 \\
+ & Control children & 109.7 & 237 & 194 \\
+Skodak: & Adopted children & 107 & 210 & 100 \\
+\hline
+\end{tabular}
+\end{center}
+
+There are clear indications of high means. My understanding is that the Honolulu models predict that all means and variances be at their population values (nominally 100 and 225 for Stanford-Binet IQ) -- apart from sampling error -- except that variances for adopted children should be reduced by the factor $1/\theta^2$.\footnote{\%UNCLEAR: footnote text not captured (superscript ``16'' at p.\ 70).} An interesting exercise would be to see how well the children's means are predicted when allowance is made for the high average environments provided by adoptive parents. If natural parents are average in genotype, while common environment in adoptive homes runs one standard deviation, say, above the national average, then the H1 model would predict children's IQ scores to be $c$ standard deviations above the mean. If we take the corrected-H1 estimate of $c=.286$, then the prediction is a mean of 104 ($=100+(.286\times15)$).\footnote{\%UNCLEAR: footnote text not captured (superscript ``17'' at p.\ 70).}
+
+A methodological theme which runs through the Honolulu articles is that specification errors will lead to poor fits. Thus Rao, Morton, \& Yee (1974, pp.\ 336--337, 356) write:
+
+\begin{quote}
+Failure of either assumption tends to give spuriously high estimates of heritability, an error that may in principle be detected by a goodness-of-fit test against other pairs of relatives~\ldots In sufficiently large samples such discrepancies should be detected by significant deviations from our model.
+\end{quote}
+
+Rao, Morton, \& Yee (1976, pp.\ 230, 234, 239), write
+
+\begin{quote}
+A test of goodness of fit should reveal such discrepancies in a well-designed study~\ldots The critical assumptions are: (1) maternal and paternal effects are equal; (2) foster parents are random; and (3) true parents exert no environmental effect~\ldots on an adopted child. These assumptions are best tested by residual $\chi^2$ in an overdetermined system~\ldots Surely gross errors would be erratic in direction and magnitude, and the close agreement of all relations would not be observed.
+\end{quote}
+
+Grounds for such optimism are not apparent. A general principle is that specification errors lead to biased estimates, but not necessarily to bad fits.\footnote{\%UNCLEAR: footnote text not captured (superscript ``18'' at p.\ 72).} Consider the simplest version of the twin method, where
+\begin{equation*}
+r_{MZ} = h^2+c^2 \, , \qquad r_{DZ} = \tfrac12 h^2+c^2
+\end{equation*}
+follow from the assumptions of random mating, additive gene effects, and equal environmental correlations. If MZs share more environmental resemblance than DZs, $2(r_{MZ}-r_{DZ})$ will overestimate $h^2$, but the model will fit perfectly. Similarly, if the selective nature of adoptive families is ignored, one would expect bad parameter estimates, not bad fits. Reliance on numerous kinships (i.e.\ on overdeterminacy) is perilous when all, or most, of the misspecifications run in the same direction.\footnote{\%UNCLEAR: footnote text not captured (superscript ``19'' at p.\ 72).} With direct evidence of misspecification available in the samples themselves, it is inappropriate to rely on the indirect evidence of goodness of fit. In any event, what justification is there for using significance tests whose power against plausible rival hypotheses has not been established?
+
+Rao, Morton, \& Yee (1977) note that the indeterminacy in the H1 model will be avoided if the MZA equation is respecified as $\theta^2q^2$ instead of $\theta^2h^2$. (For then $r_2$ determines $q$; and $p,f,u,x$ can be recovered from $a,t,v,w$). Their estimates for this variant of H1, which we denote by H1*, are:
+\begin{equation*}
+c=.290, \quad f=.290, \quad h=.843, \quad u=.9996, \quad p=.707, \quad x=.179, \quad q=.566, \quad i=.969 \, .
+\end{equation*}
+(In terms of our parameterization, these correspond to $a=.174$, $t=.707$, $v=.688$, $w=.499$). The estimates are not too different from those obtained for H1, and the authors conclude that ``the biological and cultural factors involved in the inheritance of IQ' are resolved'', while recognizing that $p$ and $u$ are highly collinear and thus poorly distinguished.
+
+Using these estimates for H1*, I display in Table 18, the equations, observed and predicted correlations, and $\chi^2$-discrepancy values. (The authors report 6.45 as the total chi-square; the difference is attributable to the difference in our criteria; see footnote 9).
+
+\begin{center}
+\textbf{Table 18}\\
+\textbf{RAO, MORTON, \& YEE'S FIT OF H1* MODEL}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{c l l c c c}
+\hline
+ & Kinship & Equation & Observed & Predicted & $\chi^2$ \\
+\hline
+1 & MZTXY & $h^2+c^2+2cha$ & .89 & .880 & .08 \\
+2 & MZAXY & $\theta^2q^2$ & .69 & .350 & 4.09 \\
+3 & SSTXY & $\tfrac12h^2+c^2+2cha$ & .52 & .524 & .08 \\
+4 & FSTXY & $\theta^2c^2$ & .23 & .092 & .42 \\
+5 & FSPXY & $\theta(c^2+cha)$ & .26 & .132 & 1.66 \\
+6 & OFPYIY & $\theta ic$ & .25 & .294 & .42 \\
+7 & SSTXIX & $i(c+ha)$ & .44 & .423 & .05 \\
+8 & OPTXIY & $it$ & .69 & .685 & .02 \\
+9 & OFPXY & $ct$ & .23 & .214 & .33 \\
+10 & OPTXY & $\tfrac12hv+ct$ & .48 & .495 & .49 \\
+11 & FMTXY & $w$ & .50 & .499 & .00 \\
+\hline
+\multicolumn{5}{r}{Total} & 7.64 \\
+\hline
+\end{tabular}
+\end{center}
+
+Several remarks are in order. First, the fit is worsened, and the MZA correlation is so far out of line that the authors might reconsider the remark in Rao, Morton, \& Yee (1976, p.\ 239) quoted above about ``remarkable agreement''.
+
+Second, in the H1* specification, the burden of determining adult heritability rests squarely on the MZA observation, so that the authors might want to reconsider the suggestion in Rao, Morton \& Yee (1976, p.\ 236) that ``twin research might profitably be left to twins''.
+
+Third, the estimate $u=1$ is highly implausible. It says that the common environments of spouses are perfectly correlated: by the time the typical bride and groom walk down the aisle together, they have shared as much IQ-relevant environmental experience as identical twins who have been raised together since birth.
+
+Fourth, the estimates do not give the best fit for H1*. Note that the only distinction between the H1* model and the corrected-H1 model lies in the second equation, where $q$ replaces $h$. Take the corrected-H1 estimates for the 7 identified parameters $c,h,a,i,t,v,w$ from p.\ 61; append $q=h=.823$; solve our equations (6)--(9) for $p,f,x,u$; insert into the H1* formulary. For all kinships, the predicted correlations will clearly be the same as they were in the corrected-H1 model in Table 14. Hence the $\chi^2$ will be the same, namely 2.96, which is much less than 7.64. Clearly, Rao, Morton, \& Yee's (1977) H1* estimates do not give the best fit.
+
+Upon fitting H1* myself, I found the following:
+\begin{equation*}
+c=.285, \quad h=.835, \quad p=-.782, \quad q=.789, \quad f=-.159, \quad u=.817, \quad x=.375, \quad i=.906 \, .
+\end{equation*}
+These produce a chi-square of 2.61 on 3 degrees of freedom. The negative signs for $p$ and $f$ are of course implausible, which might be interpreted as evidence against the Honolulu specification for this data set.\footnote{\%UNCLEAR: footnote text not captured (superscript ``20'' at p.\ 75).}
+
+% ======================================================================
+\section{More Honolulu Models}
+% ======================================================================
+
+A fresh analysis of American kinship correlations was recently provided by Rao \& Morton (1977) in ``IQ as a paradigm in genetic epidemiology.''\footnote{\%UNCLEAR: footnote text not captured (superscript ``21'' at p.\ 76).} The new data set, which we display in Table 19, covers 16 kinships, and is drawn from 65 underlying correlations.
+
+\begin{center}
+\textbf{Table 19}\\
+\textbf{DATA SET ANALYZED BY RAO \& MORTON}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{c l l c c}
+\hline
+$j$ & Acronym & Variables correlated & $r_j$ & $n_j$ \\
+\hline
+1 & MZTXY & IQs of identical twins & .842 & 421 \\
+2 & MZAXY & IQs of separated identical twins & .679 & 19 \\
+3 & SSTXY & IQs of siblings & .516 & 2467 \\
+4 & FSTXY & IQs of adopted-adopted siblings & .360 & 421 \\
+5 & FSPXY & IQs of adopted-natural siblings & .283 & 228 \\
+6 & OFPYIY & IQ of adopted child with his index & .286 & 774 \\
+7 & SSTXIX & IQ of child with his index & .304 & 4717 \\
+8 & OPTXIY & IQ of parent with child's index & .570 & 1272 \\
+9 & OFPXY & IQs of adoptive parent and child & .228 & 1181 \\
+10 & OPTXY & IQs of parent and child & .484 & 1310 \\
+11 & FMTXY & IQs of spouses & .511 & 1118 \\
+12 & FMTIXIY & Indexes of spouses & .226 & 1165 \\
+13 & OPTIXIY & Indexes of parent and child & .343 & 17432 \\
+14 & OPTXIX & IQ of parent with his index & .347 & 887 \\
+15 & OPAXY & IQs of natural parent and adopted child & .407 & 63 \\
+16 & SSAXY & IQs of separated siblings & .249 & 125 \\
+\hline
+\end{tabular}
+\end{center}
+
+The framework for their analysis is a new variant of the contemporary model, in which the path from common environment to its index is allowed to be different for adults than for children. For this new path, which they denote $i_p$, I will use the symbol $j$.\footnote{\%UNCLEAR: footnote text not captured (superscript ``22'' at p.\ 77).}
+
+The main model they report, which we henceforth refer to as P1 (``P'' for ``paradigm'') has $m=s=x=0$ (hence $a=0$, $\theta=1$). There are 8 free parameters:
+\begin{equation*}
+c, h, p, q, f, u, i, j \, .
+\end{equation*}
+In Table 20 (adapted from their Tables III, V), I set out the equations of the model, and their parameter estimates, along with the observed and predicted correlations and chi-square values.\footnote{\%UNCLEAR: footnote text not captured (superscript ``23'' at p.\ 77).}
+
+\begin{center}
+\textbf{Table 20}\\
+\textbf{RAO \& MORTON'S FIT OF MODEL P1}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{c l l c c c}
+\hline
+ & Kinship & Equation & Observed & Predicted & Chi-square \\
+\hline
+1 & MZTXY & $h^2+c^2$ & .842 & .846 & .09 \\
+2 & MZAXY & $q^2$ & .679 & .301 & 4.32 \\
+3 & SSTXY & $\tfrac12h^2+c^2$ & .516 & .502 & .96 \\
+4 & FSTXY & $c^2$ & .360 & .157 & 19.91 \\
+5 & FSPXY & $c^2$ & .283 & .157 & 3.94 \\
+6 & OFPYIY & $ic$ & .286 & .314 & .74 \\
+7 & SSTXIX & $ic$ & .304 & .314 & .57 \\
+8 & OPTXIY & $it$ & .570 & .544 & 1.77 \\
+9 & OFPXY & $ct$ & .228 & .272 & 2.62 \\
+10 & OPTXY & $\tfrac12hq+ct$ & .484 & .500 & .59 \\
+11 & FMTXY & $p^2u$ & .511 & .516 & .05 \\
+12 & FMTIXIY & $j^2u$ & .226 & .206 & .48 \\
+13 & OPTIXIY & $ijt/p$ & .343 & .344 & .04 \\
+14 & OPTXIX & $jp$ & .347 & .347 & .00 \\
+15 & OPAXY & $\tfrac12hq$ & .407 & .228 & 2.41 \\
+16 & SSAXY & $\tfrac12h^2$ & .249 & .345 & 1.34 \\
+\hline
+\multicolumn{5}{r}{Total} & 39.83 \\
+\hline
+\end{tabular}
+\end{center}
+\emph{Parameter estimates}: $c=.396$, $h=.830$, $p=.741$, $q=.549$, $f=.478$, $u=.940$, $i=.792$, $j=.469$.\\
+\emph{Derived estimate}: $t=fp(1+u)=.687$.
+
+Rao \& Morton (1977, Table V) also give the decompositions of variance for adult and childhood phenotypes; these are reproduced in Table 21, along with my calculation of the decomposition of variance for childhood common environment which they did not provide.
+
+\begin{center}
+\textbf{Table 21}\\
+\textbf{DECOMPOSITION OF VARIANCES: MODEL P1}
+\end{center}
+\begin{center}
+\begin{tabular}{l l l}
+\hline
+Source & Adult phenotype & Child phenotype \\
+\hline
+Common environment & $p^2=.549$ & $c^2=.157$ \\
+Genotype & $q^2=.301$ & $h^2=.689$ \\
+Residual & $\sigma_1^2=.150$ & $\sigma_5^2=.154$ \\
+\hline
+Total & 1.000 & 1.000 \\
+\hline
+\end{tabular}
+\qquad
+\begin{tabular}{l l}
+\hline
+Source & Common environment \\
+\hline
+Parental common environment & $2f^2(1+u)=.887$ \\
+Residual & $\sigma_3^2=.113$ \\
+\hline
+Total & 1.000 \\
+\hline
+\end{tabular}
+\end{center}
+
+With a chi-square of 39.83 on 8 ($=N-K=16-8$) degrees of freedom, model P1 should be decisively rejected. However the Honolulu group adopts a new test procedure, which is intended to ``offset~\ldots as well as possible'' the variation across studies, of observations on the same kinship, a variation which arises because of ``differences in sampling and measurement''. The construction is essentially as follows. Let $z_{ji}$ denote the $z$-transform of the correlation, and $n_{ji}$ the sample size, found in the $i$-th study on the $j$-th kinship; $i=1,\ldots,m_j$; $j=1,\ldots,N$. In this notation, the pooled values to which the model was fitted are
+\begin{equation*}
+z_j = \sum_{i=1}^{m_j} n_{ji} z_{ji}/n_j \, , \qquad n_j = \sum_{i=1}^{m_j} n_{ji} \, .
+\end{equation*}
+Define the ``heterogeneity chi-square'' as
+\begin{equation*}
+\sum_{j=1}^{N}\sum_{i=1}^{m_j} n_{ji}(z_{ji}-z_j)^2 = \chi_*^2 \, ,
+\end{equation*}
+and divide by its degrees of freedom, $\sum_{j=1}^N m_j - N$, to estimate $\sigma^2$, ``the error variance''. Finally divide the model's chi-square $\chi^2$ by \emph{its} degrees of freedom ($N-K$) and then by $\sigma^2$, to get an ``F-ratio''. Refer that F-ratio to the F distribution with degrees of freedom $\sum_{j=1}^N m_j - N$ and $N-K$, as the test of goodness of fit of the model.
+
+For their data set, Rao \& Morton have $N=16$, $\sum_{j=1}^{N} m_j = 65$, $\chi_*^2=142.46$, so
+\begin{equation*}
+\sigma^2 = 142.46/49 = 2.907 \, ;
+\end{equation*}
+for model P1, they have
+\begin{equation*}
+\chi^2/(N-K) = 39.83/8 = 4.979 \, ;
+\end{equation*}
+thus their new test statistic is
+\begin{equation*}
+F = 4.979/2.907 = 1.71 \, .
+\end{equation*}
+This is non-significant at the 10\% level, so they accept their P1 model, instead of rejecting it.
+
+With an acceptable model in hand, Rao \& Morton (1977, pp.\ 11--12, Table II) pause to take up two alternatives, which maintain $m=s=0$ but not $x=0$: P0 has no further restrictions, while P2 sets $f=0$ instead of $x=0$.\footnote{\%UNCLEAR: footnote text not captured (superscript ``24'' at p.\ 80).} The chi-squares are
+\begin{align*}
+\text{P0 } (m=s=0): & \quad \chi_7^2 = 39.74 \\
+\text{P2 } (m=s=f=0): & \quad \chi_8^2 = 94.26 \, .
+\end{align*}
+By the new test procedure P0 ``fits well'', after which P2, in contrast to P1, is rejectable.
+
+In the preferred model, P1, the chi-square discrepancies are particularly large for three adopted-child IQ correlations ($r_2, r_4, r_5$ in our Table 20). Noting this, Rao \& Morton (1977, p.\ 12) announce that
+
+\begin{quote}
+These three observed correlations are elevated due to assortative placement, and it is a small wonder that these correlations are under-predicted by our model. Hence these discrepancies do not constitute evidence against our model.\footnote{\%UNCLEAR: footnote text not captured (superscript ``25'' at p.\ 80).}
+\end{quote}
+
+Relating their results to previous work (pp.\ 12--13), they again remark on the distinction between the composition of IQ variance at the childhood and adult levels (see Table 21), as first found by Wright. The empirical distinction is again attributed to ``the varying stimulation in different occupations'' replacing ``the leveling effect of the school system.'' Furthermore
+
+\begin{quote}
+Even Jencks~\ldots [1972], despite arbitrary assumptions and failure to recognize inter-generational differences, obtained estimates of $h$ and $c$ not too far from Wright and us.\footnote{\%UNCLEAR: footnote text not captured (superscript ``26'' at p.\ 81).}
+\end{quote}
+
+Rao \& Morton (1977, pp.\ 13--14; Tables IV, V) also fit the P1 model to nine reduced data sets, obtained by deleting various combinations of kinships in turn, primarily MZs and adoptions. They do so in order to locate possible misspecifications (e.g.\ excess environmental similarity for MZs, assortative placement of adoptive children). To their reassurance, the parameter estimates change very little over the reduced data sets, and they remark:
+
+\begin{quote}
+Clearly the rare relationships that have borne the brunt of published criticism have made no difference in the conclusions.
+\end{quote}
+
+The persistent uncomfortably high estimate of $u$ (the correlation of common environment of spouses) makes them suspect that their FMTXY observation is contaminated by post-marital developments. To investigate this, they replace the $r_{11}$ value of .511 with a .33 ($n=1016$) taken from Higgins, \emph{et al.}\ (1962).\footnote{\%UNCLEAR: footnote text not captured (superscript ``27'' at p.\ 81).} When P1 is fitted to this revised data set, $u$ falls from .940 to .681, $f$ rises from .478 to .545, while the other parameters are essentially unchanged (their Tables IV, V). This is taken as confirmation of their suspicion (p.\ 14).\footnote{\%UNCLEAR: footnote text not captured (superscript ``28'' at p.\ 82).}
+
+Rao \& Morton (1977, pp.\ 14--15, Tables VI--VIII) go on to a 10-kinship British data set ``collected by English workers, nearly all by Sir Cyril Burt.'' Applying their American P1 estimates gives a poor fit, but
+
+\begin{quote}
+the fit improves substantially when $h$ and $c$ are estimated ($\chi_8^2=12.84$);~\ldots the estimates of $h$ and $c$ do not differ much from the American values.
+\end{quote}
+
+This leads to the conclusion:
+
+\begin{quote}
+Whether the errors in Burt's material are trivial or profound, accidental or systematic, the published results are not so discordant with other evidence as to play any critical role in the controversy over determination of family resemblance for IQ.
+\end{quote}
+
+Variants of the contemporary model are also applied to Russian twin correlations and to Colchester nuclear family data.
+
+An extended critique of the Birmingham school follows (pp.\ 20--24):
+
+\begin{quote}
+It is characterized by an emphasis on the role of dominance in family resemblance, neglect of environmental causes of the marital correlation and of intergenerational differences in genetic and cultural heritability, radical simplification of family environment as unique to sibs or shared equally with sibs and children (but no other relatives), omission of environmental indices, and use of large-sample theory for tests of hypotheses.
+\end{quote}
+
+The excess of the sib correlation over the parent-child correlation should not be taken as an indication of dominance because
+
+\begin{quote}
+Sibs may resemble each other more than their parents because contemporaries share more of the environment than do members of successive generations. Reduction of heritability with age may have the same effect.
+\end{quote}
+
+Consequently,
+
+\begin{quote}
+It seems to us that the attempt to estimate from family resemblance a variance component due to dominance for a trait like IQ is poorly motivated~\ldots [W]e prefer to elaborate cultural inheritance realistically even though in so doing we sacrifice the estimate of dominance.
+\end{quote}
+
+Nevertheless they do obtain an estimate of dominance by introducing the extra terms $d^2$ into the MZTXY and MZAXY equations and $d^2/4$ into the SSTXY and SSAXY equations. When this variant of the P1 model is fitted to their 16-kinship American data set, the estimate of $d^2$ is a nonsignificant .003 (p.\ 23, Table XIV); in contrast, the hypothesis that $p=c$ and $q=h$ is strongly rejected.
+
+They infer that
+
+\begin{quote}
+Other investigators looking at dominance for IQ have ignored intergenerational differences rather than test for their significance as we have done here. Only a proper likelihood ratio test under a model that includes both intergenerational differences and dominance is a proper test of either.\footnote{\%UNCLEAR: footnote text not captured (superscript ``29'' at p.\ 83).}
+\end{quote}
+
+Rao \& Morton (1977, pp.\ 24--26) wrap up their analysis as follows:
+
+\begin{quote}
+We have shown that genetic analysis of IQ data is simple, determinate, and consistent over data sets~\ldots This discussion illustrates that data on family resemblance for IQ can be analyzed dispassionately~\ldots So far the literature on inheritance of intelligence has suffered from a high ratio of commentary to data collection and analysis. This was due to lack of an appropriate methodology, domination of the field by psychologists and sociologists with primary interests and competence outside genetics, and strong philosophical commitments of the more extreme protagonists. These problems now have only historical interest, since the present model has no hereditarian or environmentalist bias. The ``nature-nurture controversy'' was partly an ideological confusion of individuals and populations, partly a methodological problem in distinguishing cultural and biological causes of family resemblance. As far as that problem has been formulated, it is solved~\ldots
+\end{quote}
+
+% ======================================================================
+\section{Rao \& Morton's Data}
+% ======================================================================
+
+Introducing their data set, Rao \& Morton (1977, pp.\ 9--10) write:
+
+\begin{quote}
+To assemble a suitable data set is not easy. We seek a measure of IQ which is comparable to the Stanford-Binet or Wechsler test and an index comparable to the Duncan occupational scale. The population should be defined, and we choose Americans (predominantly white, nonfarm) as providing the greatest amount of information~\ldots We found 65 estimates of 16 relevant correlations in samples which appeared representative of the white, nonfarm American population~\ldots Any attempt to select data on family resemblance is liable to capriciousness, and so we have been inclusive: except through oversight no relevant data have been omitted, even though their compatibility may be questioned~\ldots
+\end{quote}
+
+To see if their collection lives up to that billing, we consider the itemization (in the Appendix of their paper). Their search has taken them beyond Jencks's sources, \emph{inter alia} to Duncan, Featherman, \& Duncan (1972) and Duncan \& Featherman (1973), henceforth DFD and D\&F respectively.
+
+I will run through the kinships, indicating what changes were made from the data set previously analyzed by Rao, Morton, \& Yee (1976), and providing some comments. I use author's names to identify the original studies. Readers are directed to Jencks (1972) and Rao \& Morton (1977) for bibliographic citations, although it is not clear whether Rao \& Morton actually went back to the original sources or relied on secondary sources. Sample sizes are in parentheses, and some trivial numerical discrepancies from my Table 15 (due to my inverting the $z$-transforms) are ignored.\footnote{\%UNCLEAR: footnote text not captured (superscript ``30'' at p.\ 86).}
+
+\textbf{1 MZTXY.} Schoenfeldt's .85 (335) and Nichols .62 (36) are added in~\ldots The Schoenfeldt figure comes from an ``IQ composite'' in the Project Talent sample, as cited by Jencks.
+
+\textbf{2 MZAXY.} No change.
+
+\textbf{3 SSTXY.} Schoenfeldt's .54 (156), Sims's .40 (203), and Scarr \& Weinberg's .42 (107) are added in~\ldots The Schoenfeldt figure, again an ``IQ composite'' from the Project Talent sample, refers to same-sex DZTs~\ldots Scarr \& Weinberg's (1977b) figures (here and under FSTXY and FSPXY) refer to families adopting black/interracial children~\ldots Jencks's compilation of seven sibling studies is now itemized. One of the seven, Hildreth's .63 (450), refers to a sample in which the children had been tested with a view toward placement in special classes; the mean IQ was 89. Another of the seven, Conrad's .50 (312) was drawn from a rural population.
+
+\textbf{4 FSTXY.} Six studies are now used: .23(21) Burks, .12(10) Leahy, .40(93) Freeman, .65(41) Skodak, .29(203) Sims, .39(53) Scarr \& Weinberg. The Sims figure is spurious: the 203 pairs were not adoptive siblings but entirely unrelated children, matched with regard to home background and age; see Kamin (1972, pp.\ 79--80). Deleting that item from the set would raise the observed $r_4$ figure from .360 (421) to approximately .42 (218). We recall that this kinship was already substantially underpredicted in the P1 model.
+
+\textbf{5 FSPXY.} Scarr \& Weinberg's .30 (134) is added in.
+
+\textbf{6 OFPYIY.} Freeman's .37 (394) and Leahy's .14 (194) are added in~\ldots They are apparently correlation ratios of child's IQ with father's occupation measured on a 5- or 6-category scale.
+
+\textbf{7 SSTXIX.} To Burks .44 (101) are added Freeman's .47 (36), Leahy's .45 (194), and DFD .293 (4386)~\ldots This last figure comes from a preliminary analysis of the sample of Wisconsin male high school seniors in 1957, where it is the correlation between the child's score on the Henmon-Nelson IQ test and the ``socioeconomic status of the family.'' The latter is a composite of six items: father's occupation, father's education, mother's education, and the child's perceptions of: parent's ability to support college, amount of parental support available, and level of family's economic status. This composite actually correlated .79 with father's occupation alone; DFD (p.\ 156).
+
+\textbf{8 OPTXIY.} Freeman's .57 (180) and D\&F's .539 (887) are added in. The latter is the correlation between the score on the similarities subtest of the Wechsler IQ test and current occupation in the Detroit Area Study (DAS) after Rao \& Morton have divided by .8, that being the normal correlation of the subtest with the full test.
+
+\textbf{9 OFPXY.} No change.
+
+\textbf{10 OPTXY.} No change.
+
+\textbf{11 FMTXY.} The pool now consists of the 8 studies listed in the ``Comments'' column of our Table 15.
+
+The final five kinships did not appear at all in the original data set.
+
+\textbf{12 FMTIXIY.} The single item here is DFD's .226 (1165), the correlation between the occupations of husband's father and wife's father in the Family Growth in Metropolitan America (FGMA) sample of young families with two children~\ldots Occupation is measured on the North-Hatt prestige scale, which DFD (1972, p.\ 48) indicate correlates about .85 with the Duncan occupational score.
+
+\textbf{13 OPTIXIY.} The pool here consists of six parent-child occupational correlations all taken from DFD: .328 (4386) from the Wisconsin sample; .297 (1165) and .260 (1165) for men and women respectively in the FGMA sample; .371 (9389) from the Occupational Changes in a Generation (OCG) sample; and .282 (314) from a Survey Research Center sample~\ldots For the Wisconsin figure, Rao \& Morton (1977, Appendix) indicate that the ``index is composite dominated by father's occupation.'' The basis for that assertion is not apparent: see our discussion of this index under SSTXIX.
+
+\textbf{14 OPTXIX.} The single item here is .348 (887) from the DAS as cited by D\&F, being the correlation between the Wechsler IQ score (corrected for part-whole correlation as under OPTXIY) and father's occupation.
+
+\textbf{15 OPAXY.} The single item here is Skodak's .41 (63), which is the IQ correlation of adopted children with their natural mothers.
+
+\textbf{16 SSAXY.} The single item here is Freeman's .25 (125), which is the IQ correlation for biological siblings raised in separate adoptive homes~\ldots Their average age at separation was 5 years.
+
+We proceed to further comments on this data set, which clearly represents a considerable extension of that used by Rao, Morton, \& Yee (1976).
+
+A major change has been the reliance on occupation, as measured on the Duncan scale, as the standard index of common environment. The Duncan score is based on the mean income and education levels of members of an occupation. According to Morton \& Rao (1977, p.\ 2), this score is ``nearly proportional to the mean IQ for each occupation.'' Those who read DFD (pp.\ 81--88) will get a quite different impression.\footnote{\%UNCLEAR: footnote text not captured (superscript ``31'' at p.\ 89).}
+
+The heterogeneity across individual studies of the same kinship, which Rao \& Morton emphasize, can be seen in our Figure 3, which displays the separate items whose expectations are the same in Model P1. Of the 65 underlying correlations, 49 come from studies undertaken prior to 1940, while 35 come from studies of adoptive families and their matched controls, a highly selected group.
+
+%FIGURE: Figure 3 (original p.\ 90), ``ORIGINAL CORRELATIONS UNDERLYING RAO \& MORTON'S AMERICAN DATA SET'' -- a strip plot analogous to Figure 2, but with 15 kinship rows (11 IQ-correlation rows, 5 index-correlation rows). Not reproduced graphically; the underlying individual-study values are itemized in the numbered list above (Sections ``1 MZTXY'' through ``16 SSAXY'').
+
+However thorough their search may have been, Rao \& Morton's (1977) American data set cannot be regarded as definitive. In Table 22, we assemble 28 additional observations for the kinships they cover, and in Table 23 we provide figures for several additional kinships that are not covered at all in their data set.\footnote{\%UNCLEAR: footnote text not captured (superscript ``32'' at p.\ 89).} Readers are invited to compare this new material with the observed values and/or the predicted values using the P1 parameter estimates.
+
+\begin{center}
+\textbf{Table 22}\\
+\textbf{ADDITIONAL OBSERVATIONS AVAILABLE FOR RAO \& MORTON'S 16 KINSHIPS}
+\end{center}
+\begin{center}
+\footnotesize
+\begin{tabular}{l l l l}
+\hline
+Kinship & Texas Adoption Project & Minnesota Adolescent Study & Other \\
+\hline
+3. SSTXY & .37(86) & .35(168) & .694(82) Opp.-sex DZTs (Philadelphia); .52(1100), .51(65) DZTs (Nichols) \\
+4. FSTXY & .22(317) & $-.03$(84) & \\
+5. FSPXY & .30(317) & & \\
+6. OFPYIY & & .12(150) & \\
+7. SSTXIX & & .10(237) & .212(3427) (Wisconsin) \\
+8. OPTXIY & & .37(237), .13(237), .40(150), .19(150) & \\
+9. OFPXY & .19(458), .12(461) & .09(184), .16(175) & \\
+10. OPTXY & .20(163), .25(164) & .41(270), .40(270) & \\
+11. FMTXY & .24(292) & .24(120), .31(103) & \\
+14. OPTXIX & & & .186(1165) (FGMA) \\
+15. OPAXY & .29(345) & & \\
+\hline
+\end{tabular}
+\end{center}
+\emph{Notes}: Texas Adoption Project: as cited by Scarr (1977, p.\ 66). Minnesota Adolescent Study: Scarr \& Weinberg (1977a); families with adolescent adoptees and similarly-situated biological families. Philadelphia: Scarr-Salapatek (1971, Table 5). Nichols: (1970), as cited by Loehlin, \emph{et al.}\ (1975, pp.\ 107, 109). Wisconsin: Hauser (1973, p.\ 261), reanalysis of Wisconsin high school seniors sample. FGMA: as cited by DFD (p.\ 182); wife's IQ (measured by short verbal test) correlated with her father's occupation.
+
+\begin{center}
+\textbf{Table 23}\\
+\textbf{AMERICAN KINSHIPS NOT USED BY RAO \& MORTON}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{p{5.5cm} l l}
+\hline
+Variables correlated & Equation & Observed correlation \\
+\hline
+IQ of child with his subsequent occupation & $jct/p$ & .363 (4386) FGMA, as cited by DFD \\
+IQ of wife with father-in-law's occupation & $jpu$ & .188 (4386) FGMA, as cited by DFD \\
+IQs of parent (as child) and child & $\tfrac12h^2+c^2t/p$ & .44 (2032) Higgins, as cited by Jencks (1972, p.\ 274) \\
+Half-siblings & $\tfrac14h^2+c^2$ & .44 (50) Nichols, as cited by Loehlin \emph{et al.}\ (1975, p.\ 119) \\
+\hline
+\end{tabular}
+\end{center}
+
+We turn from the American to the British data set. Rao \& Morton's (1977) main results refer to a fit of the P1 model ($m=s=x=0$), in which $p/c$, $q/h$, $f$, and $u$ are pre-assigned at the American values, while only $c$ and $h$ are freely estimated. In Table 24, I display the equations for this model along with the parameter estimates, observed and predicted correlations, and chi-squares, taken from their Table VIII.\footnote{\%UNCLEAR: footnote text not captured (superscript ``33'' at p.\ 92).}
+
+The total chi-square of 12.84 on 8 degrees of freedom (10 observations, 2 free parameters) is satisfactory.\footnote{\%UNCLEAR: footnote text not captured (superscript ``34'' at p.\ 92).} This, together with the fact that the freely fitted parameters $c$ and $h$ turn out close to their American values, led to their conclusion that Burt's figures were in line with other evidence.
+
+\begin{center}
+\textbf{Table 24}\\
+\textbf{RAO \& MORTON'S ANALYSIS OF BRITISH DATA SET}
+\end{center}
+\begin{center}
+\small
+\begin{tabular}{c l c c l c c}
+\hline
+Kin & Acronym & Observed & Sample Size & Equation & Predicted & Chi-square \\
+\hline
+1 & MZTXY & .869 & 211 & $h^2+c^2$ & .883 & .70 \\
+2 & MZAXY & .824 & 91 & $h^2$ & .750 & 3.41 \\
+3 & SSTXY & .505 & 676 & $\tfrac12h^2+c^2$ & .508 & .01 \\
+4 & FSTXY & .251 & 136 & $c^2$ & .132 & 2.02 \\
+9 & OFPXY & .189 & 88 & $ct$ & .229 & .15 \\
+10 & OPTXY & .489 & 963 & $\tfrac12hq+ct$ & .477 & .21 \\
+11 & FMTXY & .377 & 95 & $p^2u$ & .434 & .43 \\
+16 & SSAXY & .422 & 151 & $\tfrac12h^2$ & .375 & .46 \\
+17 & UNTXY\textsuperscript{*} & .354 & 375 & $\tfrac14hq+ct$ & .353 & .00 \\
+18 & FCTXY\textsuperscript{**} & .289 & 552 & $h^2/8+\tfrac12(cf)^2(2+5u)$ & .195 & 5.45 \\
+\hline
+\multicolumn{6}{r}{Total} & 12.84 \\
+\hline
+\end{tabular}
+\end{center}
+\textsuperscript{*} IQ scores of uncle and nephew. \quad \textsuperscript{**} IQ scores of first cousins.\\
+\emph{Parameter estimates}: $c=.363$, $h=.866$, $p=.680$, $q=.573$, $f=.478$, $u=.940$.\\
+\emph{Derived estimate}: $t=fp(1+u)=.630$.
+
+As itemized by Rao \& Morton (1977, Table VI), this British data set comes from Jencks (1972) and Jensen (1974). For 7 of the 10 kinships, the figures originate in individual Burt samples. For MZT, the figure is Jencks's weighted mean of 4 studies (one of which is Burt's). For MZA, the figure is an average of Burt's .86 (53) with Shields's .77 (38). For SST, the figure is Jencks's weighted mean of 4 DZT studies (one of which is Burt's), averaged in with Burt's figure for ordinary siblings.
+
+Looking at this material revealed several problems: Rao \& Morton ignore other Burt kinship correlations which were clearly reported in Jensen's (1974) article: e.g.\ grandparents, second cousins, biological sibs adopted together, parent-as-child with child. No explanation for this neglect is offered, nor is any apparent.\footnote{\%UNCLEAR: footnote text not captured (superscript ``35'' at p.\ 94).} In Table 25, I set out the observations and equations for several of the missing kinships, along with predictions and chi-squares obtained with the parameter estimates of Table 24.\footnote{\%UNCLEAR: footnote text not captured (superscript ``36'' at p.\ 94).}
+
+\begin{center}
+\textbf{Table 25}\\
+\textbf{BURT KINSHIPS NOT USED BY RAO \& MORTON}
+\end{center}
+\begin{center}
+\begin{tabular}{l c c l c c}
+\hline
+Kin & Observed & Sample Size & Equation & Predicted & Chi-square \\
+\hline
+Grandparent & .335 & 321 & $\tfrac14hq+cpt^2$ & .228 & 4.8 \\
+Biological sib adopted together & .51 & 157 & $\tfrac12h^2+c^2$ & .508 & 0 \\
+Parent-as-child & .56 & 106 & $\tfrac12h^2+c^2t/p$ & .432 & 3.1 \\
+\hline
+\end{tabular}
+\end{center}
+
+It appears that inclusion of these missing kinships would have worsened the fit. I note, in a similar vein, that Rao \& Morton took the uncles to have been cognate rather than affine, although Burt himself was quite silent on this point. For affine uncles, the equation would be $ct$; evaluated at the parameter estimates of Table 24, this would give a prediction of .229 instead of .353, and hence a chi-square of 7 instead of 0. For the key MZA kinship, using Burt's figure alone rather than pooling it in with Shields's figure would give another 1- or 2-point increase in chi-square.
+
+Clearly, the Honolulu group's numerical exercise on a ``British data set'' may not be construed as evidence on the quality of Cyril Burt's numbers.\footnote{\%UNCLEAR: footnote text not captured (superscript ``37'' at p.\ 95).}
+
+\begin{center}
+\rule{0.5\textwidth}{0.4pt}\\[2pt]
+\textsc{To be continued in ``Models and Methods in the IQ Debate: Part II''.}\\[2pt]
+\rule{0.5\textwidth}{0.4pt}
+\end{center}
+
+\newpage
+\appendix
+\section*{Appendix: The Classical \& Birmingham Models}
+
+The Appendix (pages A-1--A-15 of the original) is a working draft in which the mathematical derivation was completed by hand over a typed skeleton, rather than typeset. Per instruction, no handwritten content is transcribed here. See the annotation log (\texttt{Goldberger\_1978\_annotation\_log.md}) for what the appendix contains and why it was omitted; it is a candidate for Phase 2 (the derivation appendix), which will re-derive the needed results from first principles rather than transcribing the handwritten original.
+
+\end{document}

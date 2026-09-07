@@ -10,3 +10,5 @@
 *.blg
 *.run.xml
 _outputs/
+main.pdf
+

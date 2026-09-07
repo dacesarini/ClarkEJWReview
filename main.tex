@@ -64,6 +64,18 @@ assumes, what it implies, and what those implications cost the author, because
 the costs are severe enough to undercut the book's central causal claim on its
 own terms --- using only the numbers Clark himself reports.
 
+Before turning to those costs, it is worth saying why a full derivation is
+the right way to proceed at all, rather than simply reporting that the model
+fits. A model's moment conditions are only as trustworthy as the assumptions
+used to derive them, and those assumptions are only available for scrutiny if
+they are written down. Stating a fitted $R^2$ without showing where the
+underlying formula comes from invites the reader to take the assumptions on
+faith; deriving the formula from stated primitives lets the reader see
+exactly what would have to be true of the world for the fit to mean what the
+author says it means --- and, just as importantly, lets the reader judge for
+themselves whether each assumption is plausible, and reject the ones that are
+not. That is the spirit in which the rest of this section proceeds.
+
 \subsection{What has to be explained}
 
 Strip away the historical narrative and the book's empirical exercise is this:
@@ -272,10 +284,10 @@ imply $h^2=m/r=0.75$. Equation~\eqref{eq:gap} predicts
 \begin{equation}
 \rho_{PO}-\rho_S \;\approx\; \tfrac{1}{2}(0.75)(0.8-0.6) \;=\; 0.075.
 \end{equation}
-% TODO: cite exact table/figure and observed gap from the book (Table 4.5,
-% occupational status, births 1780-1859): observed gap approx 0.001.
-The gap Clark's own data actually show is smaller than this by roughly two
-orders of magnitude. This is not a subtle specification-testing exercise
+The book's own Table 4.5 reports raw sibling and parent-child (``Full
+Sibling'' and ``Child'') correlations in occupational status for people born
+1780--1859 of $0.584$ and $0.585$ respectively --- a gap of $0.001$, smaller
+than the model's own prediction by roughly two orders of magnitude. This is not a subtle specification-testing exercise
 requiring auxiliary assumptions --- it is arithmetic, performed entirely with
 numbers the author reports himself. Clark comes close to seeing the problem
 (p.~61: parity between the two correlations "would only be predicted\ldots if
@@ -370,39 +382,218 @@ above --- are given in the companion file
 
 % =====================================================================
 \section{The Identification Problem}
-% PLACEHOLDER — ~900 words
-% - General point: a handful of kinship-correlation moments cannot discriminate
-%   among structurally different models that all fit comparably well.
-% - Jinks & Eaves vs. Rao-Morton-Yee (Goldberger 1978): incompatible substantive
-%   conclusions from overlapping data, both claiming excellent fit;
-%   Rao-Morton-Yee's own model later shown not even identified.
-% - [CONFIRM: Jencks 1980 ASR reference]
-% - Modern within-family vs. population (GWAS) effect decompositions
-%   (Young et al. 2019 Science; Young et al. 2022 Nature Genetics w/ Benjamin;
-%   Kong et al. 2018) as the kind of external evidence needed to adjudicate
-%   between observationally similar models; undermines treating m ~ 0.6 as a
-%   clean estimate of direct genetic transmission.
-% - Book's engagement with genetic-nurture literature (Ch.2) doesn't seriously
-%   grapple with population-vs-direct distinction; Clark's unpublished
-%   simulation counter was already flagged as insufficient in the 2023 PNAS review.
+
+\subsection{Good fit does not imply unbiased estimates}
+
+Set aside, for a moment, whether Clark's fit claims are even correct on their
+own terms. There is a prior, more basic problem: good fit would not settle
+the matter even if it held up perfectly. A correctly specified model should
+generally be expected to fit the data well and to yield unbiased parameter
+estimates. The converse does not hold. A misspecified model can fit
+observed correlations closely while its parameter estimates mean nothing
+close to what the author claims they mean, because the fitted parameters are
+absorbing the specification error along with the genuine signal. Treating
+close agreement between predicted and observed correlations as validation of
+the assumptions used to derive the predictions --- rather than as one
+necessary, but far from sufficient, condition for those assumptions to be
+right --- is a fallacy with a long and specifically relevant history in
+exactly this empirical literature.
+
+\subsection{The 1970s precedent}
+
+In the mid-1970s two rival groups --- Jinks and Eaves at Birmingham, and Rao,
+Morton, and Yee at Honolulu --- fit competing biometric models of essentially
+the same kind to overlapping British and American IQ kinship-correlation
+data, and each group reported an excellent fit. Goldberger's (1978)
+re-examination of both efforts, transcribed in full in the companion file
+\texttt{Goldberger\_1978\_ModelsAndMethods.tex} included in this repository,
+is instructive on two counts.
+
+First, the two models, despite each fitting its own data well, produced
+substantively incompatible conclusions. Fit to overlapping American data,
+Rao and Morton's own estimate of narrow heritability of IQ among children was
+$.69$, against Jinks and Eaves's $.34$ --- roughly a twofold disagreement on
+the same underlying quantity, from ostensibly similar exercises. The two
+groups also disagreed about the sign of the adult-versus-childhood pattern:
+Rao and Morton's estimate of broad heritability among American adults was
+$.30$, falling relative to children, while Jinks and Eaves's corresponding
+estimate was $.68$, unchanged from their childhood estimate. A reader told
+only that both models ``fit the data well'' would have no way to know that
+the two exercises disagreed this sharply about what the data implied.
+
+Second, and more pointed, Goldberger showed algebraically that the Honolulu
+group's own model was not even \emph{identified}: ``the model was
+indeterminate, that is `non-estimable,' that is `not identified': even if the
+population values of all 11 kinship correlations were known, unique values of
+the [model's] parameters could not be obtained.'' This was true despite the
+model's reported fit being, in Goldberger's words, ``clearly very good.'' A
+model can fit the available correlations closely while having no unique
+solution for its own parameters --- the appearance of a well-fitting,
+informative estimate can coexist with there being, mathematically, no
+information about the parameters of interest in the data at all.
+
+\subsection{The same pattern, on Clark's own data}
+
+This is not merely a historical curiosity; Section 2 already showed a version
+of it playing out in Clark's own numbers. Table~\ref{tab:table45} reproduces
+the raw sibling and parent-child (``Full Sibling'' and ``Child'') correlations
+from the book's Table 4.5, for the two outcomes with two separate birth-year
+windows: occupational status and higher-education attainment.
+
+\begin{table}[h]
+\centering
+\caption{Raw correlations from Clark's Table 4.5}
+\label{tab:table45}
+\begin{tabular}{lcccc}
+\hline
+ & \multicolumn{2}{c}{Occupational status} & \multicolumn{2}{c}{Higher education} \\
+ & 1780--1859 & 1860--1919 & 1780--1859 & 1860--1919 \\
+\hline
+Full Sibling ($\hat\rho_S$)      & 0.584 & 0.496 & 0.558 & 0.359 \\
+Child ($\hat\rho_{PO}$)          & 0.585 & 0.513 & 0.500 & 0.305 \\
+\hline
+$\hat\rho_{PO}-\hat\rho_S$       & $+0.001$ & $+0.017$ & $-0.058$ & $-0.054$ \\
+\hline
+\end{tabular}
+\end{table}
+
+Because a common, phenotype-specific attenuation factor is assumed to scale
+every raw correlation for a given outcome by the same constant (this is the
+premise of Clark's own ratio method for correcting these raw numbers), that
+factor cancels in the comparison of $\hat\rho_{PO}$ to $\hat\rho_S$ for a
+given outcome and period, and the sign of the gap can be read directly off
+the raw table without needing Clark's separately estimated $h^2,r,m$ at all.
+Equation~\eqref{eq:gap} shows the model requires $\rho_{PO}>\rho_S$
+\emph{strictly}, for any heritability less than $1$. For occupational status
+the raw gap is at least the right sign, if two orders of magnitude too small
+relative to the model's own prediction under Clark's reported parameters.
+For higher education, in both periods, the sign is wrong: siblings are more
+alike than parent and child, which the model forbids outright regardless of
+what values $h^2$, $r$, and $m$ take. This is a sharper and more direct
+disconfirmation than a goodness-of-fit statistic computed over many outcomes
+at once could ever reveal, precisely because it does not depend on any
+particular parameter estimate.
+
+\subsection{External evidence the book does not engage}
+
+A further way to adjudicate between observationally similar models --- short
+of the kind of kinship-correlation moment-matching this section has just
+shown to be unreliable on its own --- is to bring in evidence external to the
+correlations being fit. The clearest example concerns the value of $m$ (the
+genotypic spousal correlation) that Clark treats as consistent with modern
+genetic evidence. Genome-wide association study estimates of the kind Clark
+cites for parental genetic similarity are estimates of \emph{population}
+effects, not \emph{direct} (causal) effects, and a substantial recent
+literature shows these need not be proportional to one another
+\citep{YoungEtAl2019,YoungEtAl2022}. Treating an $m\approx0.6$ derived from
+population-genetic estimates as evidence about \emph{direct} genetic
+transmission of status --- the quantity the book's causal claims actually
+rest on --- is not obviously licensed once that distinction is taken
+seriously. Related work on ``genetic nurture,'' in which a parent's genotype
+affects a child's outcomes through the environment the parent provides rather
+than through the genes transmitted to the child \citep{KongEtAl2018}, is
+exactly the kind of indirect, non-additive-transmission channel that the
+sole-genetic-channel assumption of Section~2.2 rules out by fiat.
+
+The book's own Chapter 6 takes up genetic nurture directly and concludes that
+recent attempts to demonstrate its importance fail, arguing that twin and
+adoption studies would already have detected such effects if they were large.
+This does not engage the population-versus-direct-effects distinction above,
+which is a separate concern from the twin/adoption evidence Chapter 6
+addresses; nor does it engage \citet{KongEtAl2018}'s design, which detects
+genetic nurture using a method (non-transmitted parental alleles) that does
+not rely on the twin/adoption comparisons Chapter 6 critiques. I raised a
+version of this gap directly in my referee report on the underlying PNAS
+paper, where Clark's response offered an unpublished personal simulation
+arguing that direct-effects-only models with sufficient assortment could
+reproduce apparent genetic-nurture patterns; that simulation was not, and has
+not since been, made available for independent scrutiny.
+
+% TODO: locate and cite the specific literature (David mentioned but has not
+% yet supplied exact reference) on MZ-twin-difference studies that do not
+% control for cognitive ability, as a further instance of external evidence
+% bearing on the model's assumptions that the book does not engage.
 
 % =====================================================================
 \section{What ``Genetic'' Does Not Mean}
-% PLACEHOLDER — ~900 words
-% - Conceptual: "genetic" in the variance-decomposition sense captures any
-%   pathway correlated with genotype, including channels ordinary usage calls
-%   "environmental" (BMI via food choice/health behavior). Jencks's point:
-%   genes being fixed (you don't choose your genotype) is different from
-%   genes' effects being fixed/immutable.
-% - External evidence from reared-together/reared-apart comparisons and
-%   unrelated-adoptee resemblance: direct evidence shared environment matters,
-%   which the "no shared environment except via spouses" assumption has to
-%   explain away and doesn't.
-% - Policy level: sympathy for skepticism of quasi-experimental policy
-%   estimates is a separate question from whether this specific variance
-%   decomposition correctly identifies genetic transmission.
-% - Net: even taking Clark's numbers at face value, "the model fits" does not
-%   get you to "society has little room to alter outcomes."
+
+\subsection{Genes fixed is not the same as genes' effects fixed}
+
+Even granting Clark's estimates at face value, the inferential leap from
+``status is highly heritable'' to ``society has little room to change social
+outcomes'' does not go through. ``Genetic,'' in the variance-decomposition
+sense used throughout this model, means only that an outcome is statistically
+associated with genotype; it says nothing about the causal pathway by which
+that association arises, and that pathway can run through channels ordinary
+usage would call environmental and modifiable. Body-mass index is highly
+heritable by exactly this kind of estimate, yet the pathway from genotype to
+body mass runs substantially through food choice and health behavior --- both
+manifestly alterable. The point, due to Christopher Jencks, is that a
+genotype being fixed (nobody chooses their own genes) is a completely
+different claim from a genotype's \emph{effects} being fixed or immutable.
+Reared-together versus reared-apart comparisons already discussed in
+Section~2.2 make the same point from the environmental side: if shared
+environment truly contributed nothing, as the model's sole-genetic-channel
+assumption requires for every relationship except marriage, those comparisons
+should show no difference, and they do.
+
+\subsection{Heritable is not the same as unchangeable}
+
+The book goes further than the general inference above and states the
+stronger claim directly: ``The second implication of direct genetic
+transmission is that social outcomes will change \ldots\ only when the
+genetic endowment of the society changes'' (p.~10). This is not a defensible
+reading of what heritability estimates license, and standard examples from
+outside the social sciences make the point sharply. Phenylketonuria is,
+absent intervention, about as close to a purely genetic determinant of
+outcome as exists in human biology --- yet it is entirely preventable by a
+change in diet, an intervention that has nothing to do with the genetic
+endowment of anyone. Myopia is highly heritable and is fully correctable with
+eyeglasses. Closer to the social outcomes this book studies, a literacy
+program that teaches a population to read can change welfare enormously
+regardless of the heritability of whatever cognitive or social trait
+``literacy'' loads onto --- heritability describes the sources of variation
+\emph{within} a given environmental range, not a ceiling on what a new
+environmental intervention outside that range can do.
+
+\subsection{Ordinal mobility is not the only thing policy can be for}
+
+There is also a narrower, more specific problem with how the book gets from
+its estimates to its policy conclusions. The Introduction's own overview of Part III states:
+``The first
+implication of the importance of direct genetic transmission of social
+outcomes is that modern societies spend too much on education \ldots\ What
+drives much of this expenditure is a belief that boosting years of education
+by less advantaged students increases social mobility rates. Yet despite a
+substantial narrowing of the gap in years of education between high and low
+status students 1851--2022, social mobility rates are unchanged'' (p.~9). The
+argument silently assumes that the \emph{only} legitimate justification for
+education spending is changing relative, ordinal mobility --- moving people
+up and down the status distribution relative to one another, which is what
+the book's intergenerational transmission coefficients measure. But a policy
+can be worth its cost by raising everyone's \emph{absolute} outcomes even if
+it leaves the ordinal ranking, and the estimated transmission coefficients,
+completely untouched: a literacy program that lifts the reading level of an
+entire cohort improves welfare regardless of whether the same families end up
+in the same relative positions afterward. Evidence that an intervention did
+not change the intergenerational correlation is evidence about mobility; it
+is not, by itself, evidence about whether the intervention was worthwhile.
+
+The specific empirical claim that follows --- ``studies of the effect of
+increases in compulsory years of education for less able students in
+1918--22, 1947, and 1972 find no effect on employment, income, or health''
+(p.~9) --- is also not uncontested.
+% TODO: cite Barcellos et al. on effects of the UK's Raising of the School
+% Leaving Age (ROSLA) reforms once David supplies the exact reference; this
+% literature reportedly finds effects the book's claim above does not
+% acknowledge.
+Nor is the birth-order test in Part II as distinctively confirmatory of the
+genetic model as the book presents it: prior labor-economics literature
+already finds birth-order effects on educational and economic outcomes to be
+real but small \citep{BlackDevereuxSalvanes2005}, so a modest or null
+birth-order effect in the FOE data is also compatible with ordinary
+environmental accounts of status transmission, not only with the additive
+genetic model.
 
 % =====================================================================
 \section{Conclusion}

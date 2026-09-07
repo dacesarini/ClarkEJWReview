@@ -41,18 +41,34 @@ already have detected it if it mattered much. From this foundation the book
 goes on, in later chapters, to draw out implications for education spending,
 immigration selection, and differential fertility.
 
-% PLACEHOLDER — remainder of Introduction, ~200 words
-% - Credit the FOE (436,000+ individuals, linked 1600-2026, out to 4th cousins)
-%   and MOE (1.7M marriages, 1837-2022) as a genuinely novel, durable data
-%   resource, independent of the model fit to it.
-% - Credit the measurement-error / attenuation point as a real, underappreciated
-%   methodological contribution (Song et al. 2020 vs. Ward 2023 divergence, Fig. 4.1).
-% - Credit the Part II test battery (gender symmetry, family size, birth order,
-%   father's-death-age) as well-designed, falsifiable tests.
-% - Transition: despite this, the central causal claim -- that the correlational
-%   patterns specifically identify additive genetic transmission -- does not
-%   survive scrutiny. Some of this was flagged in peer review on the 2023 PNAS
-%   paper and never resolved; the book inherits it unchanged.
+Whatever one concludes about that argument, the underlying data are a
+genuine, durable contribution independent of it. The Families of England and
+Marriages of England databases will outlive any particular model fit to
+them, and give the mobility literature a depth of genealogical linkage --
+out to fourth cousins, across four centuries -- that no other single dataset
+currently matches. The book's insistence on the severity of measurement
+error in conventional mobility proxies is also well taken and, if anything,
+underappreciated outside this literature: Clark shows two recent, careful
+studies of the same underlying process (long-run American occupational
+mobility) reaching starkly different pictures of American history purely as
+an artifact of measurement choices -- \citet{SongEtAl2020} find high and
+rising mobility from 1830 to 1980, while \citet{Ward2023}, correcting for
+measurement error in historical occupational data, finds persistently low
+mobility throughout (Fig.~4.1) -- which is exactly the kind of problem his
+own attenuation-correction method is designed to address. And the book's
+Part II battery of falsifiable tests (gender symmetry between mothers' and
+fathers' status, family size, birth order, birthplace, longevity, the effect
+of losing a parent young, and others) is a well-designed set of sharp,
+independently checkable predictions, whatever one makes of how they turn
+out. None of this is in question below.
+
+What is in question is the book's central causal claim: that this
+correlational pattern specifically identifies additive genetic transmission
+of status, as opposed to some other data-generating process that would fit
+comparably well. That claim does not survive scrutiny, for reasons developed
+over the next three sections. Some of what follows is new; some was raised
+in peer review on the underlying 2023 PNAS paper and never resolved, and the
+book inherits it unchanged.
 
 % =====================================================================
 \section{The Fisher/Goldberger Critique}
@@ -145,7 +161,7 @@ require some real channel of environmental resemblance among relatives who
 are not spouses --- precisely the channel equation~\eqref{eq:sole-channel}
 sets to zero by assumption, not by test.
 
-\subsection{Assortative mating and its consequence for spouses}
+\subsection{Assortative mating and what it implies for spouses' genes and environments}
 
 Mating is assortative on the \emph{phenotype}: spouses' $y$ values have
 correlation
@@ -160,8 +176,6 @@ simplified, dominance-free version of Fisher's model; it is the version whose
 moment conditions generate the book's Table A1 and the decay curve
 $\rho_n = h^2\left(\frac{1+m}{2}\right)^n$ fit to collateral relatives $n$
 steps removed.
-
-\subsection{What phenotypic assortment implies for spouses' genes and environments}
 
 Because $G$ and $E$ are the only two components of $y$, and because $y$ is what
 spouses match on, both components are dragged into correlation across spouses
@@ -287,13 +301,26 @@ imply $h^2=m/r=0.75$. Equation~\eqref{eq:gap} predicts
 The book's own Table 4.5 reports raw sibling and parent-child (``Full
 Sibling'' and ``Child'') correlations in occupational status for people born
 1780--1859 of $0.584$ and $0.585$ respectively --- a gap of $0.001$, smaller
-than the model's own prediction by roughly two orders of magnitude. This is not a subtle specification-testing exercise
-requiring auxiliary assumptions --- it is arithmetic, performed entirely with
-numbers the author reports himself. Clark comes close to seeing the problem
-(p.~61: parity between the two correlations "would only be predicted\ldots if
-parents were actually matching on the genotype itself") but never computes the
-size of the discrepancy his own model predicts, and does not revise the model,
-or his confidence in its fit, in light of it.
+than the model's own prediction by roughly two orders of magnitude. This is
+not a subtle specification-testing exercise requiring auxiliary assumptions
+--- it is arithmetic, performed entirely with numbers the author reports
+himself.
+
+Clark does notice the near-equality, but reads it in only one direction. He
+writes that ``such equality would only be predicted on the Fisher model if
+the parents were actually matching on the genotype itself'' (p.~61) --- and
+then argues, via a separate calculation, that this same near-equality is
+``good evidence against social transmission explaining the patterns of
+correlation'' (p.~61), since a plausible model of purely environmental,
+family-mediated transmission would predict the parent-child correlation to
+run noticeably \emph{below} the sibling correlation, which is not what is
+observed. That argument against the rival social-transmission model is fine
+as far as it goes. But equation~\eqref{eq:gap} shows the same near-equality
+is evidence against Clark's \emph{own} model too, and by a comparable
+margin: the Fisher model requires the parent-child correlation to run
+\emph{above} the sibling correlation by a specific, computable amount, and
+it does not. The book uses this one fact to reject a competing model without
+registering that it counts equally against its own.
 
 \subsection{Two parameters, not three: the Jinks-and-Eaves precedent}
 
@@ -422,15 +449,22 @@ only that both models ``fit the data well'' would have no way to know that
 the two exercises disagreed this sharply about what the data implied.
 
 Second, and more pointed, Goldberger showed algebraically that the Honolulu
-group's own model was not even \emph{identified}: ``the model was
-indeterminate, that is `non-estimable,' that is `not identified': even if the
-population values of all 11 kinship correlations were known, unique values of
-the [model's] parameters could not be obtained.'' This was true despite the
-model's reported fit being, in Goldberger's words, ``clearly very good.'' A
-model can fit the available correlations closely while having no unique
-solution for its own parameters --- the appearance of a well-fitting,
-informative estimate can coexist with there being, mathematically, no
-information about the parameters of interest in the data at all.
+group's original 8-parameter model was not even \emph{identified}: ``the
+model was indeterminate, that is `non-estimable,' that is `not identified':
+even if the population values of all 11 kinship correlations were known,
+unique values of the [model's] parameters could not be obtained.'' Five of
+the eight parameters could take on any of an entire family of values without
+changing a single one of the model's predictions. Rao, Morton, and Yee
+themselves eventually conceded the indeterminacy and published a
+``corrected'' version of the model that forced identification by simply
+fixing one of the indeterminate parameters at an arbitrarily chosen value.
+Goldberger then computed that this patched model's predicted correlations
+still matched the data closely (``the fit is clearly very good,''
+$\chi^2_4=2.96$). The sequence is the point: a model can be shown
+mathematically not to pin down its own parameters, be patched by fixing one
+of them by fiat, and still return an excellent-looking fit --- fit is simply
+not informative about whether the underlying model was identified in the
+first place, let alone correctly specified.
 
 \subsection{The same pattern, on Clark's own data}
 
@@ -474,7 +508,7 @@ disconfirmation than a goodness-of-fit statistic computed over many outcomes
 at once could ever reveal, precisely because it does not depend on any
 particular parameter estimate.
 
-\subsection{External evidence the book does not engage}
+\subsection{External evidence: population versus direct genetic effects}
 
 A further way to adjudicate between observationally similar models --- short
 of the kind of kinship-correlation moment-matching this section has just
@@ -509,6 +543,8 @@ arguing that direct-effects-only models with sufficient assortment could
 reproduce apparent genetic-nurture patterns; that simulation was not, and has
 not since been, made available for independent scrutiny.
 
+\subsection{External evidence: confounding within monozygotic twin pairs}
+
 A related, longer-standing literature makes the same kind of point about
 within-family comparisons more generally. MZ-twin-difference designs, widely
 used to estimate the return to schooling on the logic that identical twins
@@ -537,7 +573,9 @@ sense used throughout this model, means only that an outcome is statistically
 associated with genotype; it says nothing about the causal pathway by which
 that association arises, and that pathway can run through channels ordinary
 usage would call environmental and modifiable. Body-mass index is highly
-heritable by exactly this kind of estimate, yet the pathway from genotype to
+heritable by exactly this kind of estimate --- classic twin studies find
+substantial resemblance even among monozygotic twins reared apart in
+different homes \citep{StunkardEtAl1990} --- yet the pathway from genotype to
 body mass runs substantially through food choice and health behavior --- both
 manifestly alterable. The point, due to Christopher Jencks, is that a
 genotype being fixed (nobody chooses their own genes) is a completely
@@ -596,11 +634,12 @@ increases in compulsory years of education for less able students in
 (p.~9) --- is also not uncontested. Using the same 1972 reform (the raising of
 the minimum school-leaving age in England, Scotland, and Wales from 15 to
 16), \citet{BarcellosEtAl2018} find that the additional year of compulsory
-schooling it induced had real effects on health in middle age --- reducing
-body size and improving lung function, with the improvement in body size
-concentrated at the upper end of the distribution and larger for individuals
-with higher genetic predisposition to obesity --- directly on the health
-margin the book says these reforms show ``no effect'' on.
+schooling it induced had real effects on middle-age health: it reduced body
+size and improved lung function (with larger improvements on both margins
+for individuals with higher genetic predisposition to obesity), and also
+increased blood pressure. Whatever one makes of the mixed direction of these
+effects, they are effects --- directly on the health margin the book says
+these reforms show ``no effect'' on.
 
 Nor is the birth-order test in Part II as distinctively confirmatory of the
 genetic model as the book presents it: prior labor-economics literature
@@ -612,22 +651,64 @@ genetic model.
 
 % =====================================================================
 \section{Conclusion}
-% PLACEHOLDER — ~600 words
-% - Name the recurring pattern: evidence pointing either direction gets
-%   absorbed as confirmation (r>m confirms assortment; r<m for education also
-%   confirms assortment via an unformalized "broader phenotype" story;
-%   Collado's rejection becomes a measurement-error artifact; the
-%   parent-child/sibling anomaly becomes "an interesting exception").
-% - This need not be bad faith, but the "the model fits remarkably well"
-%   framing is doing far less epistemic work than the book presents it as doing.
-% - Close generously: real, lasting value in the data infrastructure and the
-%   measurement-quality critique. The genetic-transmission interpretation is a
-%   separable claim that hasn't met its own evidentiary bar.
-% - FINAL NOTE (tone): end skeptical but explicit that this is a disagreement
-%   about evidence and analysis, not discomfort with the hypothesis itself --
-%   unlike much of the criticism the book's argument attracts. Style model:
-%   Bowles (2007), "Genetically Capitalist?", Science 318 -- generous,
-%   substantive, skeptical, never moralizing.
+
+A pattern recurs across the specific problems catalogued above: evidence that
+would seem to cut against the genetic-transmission story is consistently
+absorbed as further confirmation of it, rather than treated as a live threat
+to the model. Strong marital assortment in the English data is read as
+confirming the model. When a far richer Swedish extended-kinship dataset,
+spanning 141 distinct relationship types, is used by \citet{ColladoEtAl2023}
+to reject the additive genetic model outright on its own terms, the
+rejection is attributed not to a real specification failure but to Collado,
+Ortu\~no-Ort\'in, and Stuhler's failure to correct for measurement error in
+years of education --- even though, by that same logic, essentially all of
+Clark's own point estimates would need to be treated with equal suspicion,
+not only the ones that happen to be inconvenient. And the near-equality of
+the English parent-child and sibling correlations is invoked in the book as
+an argument against a rival social-transmission model (Section~2.6) without
+ever registering that the identical fact is arithmetic evidence against the
+Fisher model's own central prediction. In each case, the same body of
+evidence would be read one way if it favored the model and the opposite way
+if it did not, and the book consistently finds the model favored.
+
+None of this need reflect bad faith, and it is not a new phenomenon. It is a
+documented occupational hazard of exactly this kind of model-fitting
+exercise, which is why this review has tried to root the critique
+historically rather than treat it as a one-off lapse specific to this book:
+the same asymmetry --- treating a close fit as confirmation and treating a
+poor fit as someone else's data problem --- is what let two incompatible
+research programs each claim vindication from the same 1970s IQ-kinship
+data, and it is what let a model later shown not even to be identified pass
+as ``clearly very good'' once patched (Section~3.2). The lesson from that
+history was that goodness of fit, on its own, says nothing about correct
+specification. \emph{To Have and Have Not} does not appear to have absorbed
+that lesson.
+
+None of this should obscure what the book gets right, and it is worth
+restating plainly rather than as a rhetorical concession. The genealogical
+infrastructure --- Families of England, Marriages of England --- is a
+genuine and lasting contribution to the study of long-run mobility,
+independent of any conclusion drawn from it. The book's insistence that
+measurement error in conventional status proxies is severe enough to distort
+mobility estimates is a real methodological point, well illustrated, and
+likely to outlast the debate over its author's preferred model. And the
+falsifiable test battery in Part II is good scientific practice, whatever
+one makes of how any individual test comes out.
+
+What has not been established is the specific causal claim the book is
+organized around: that this pattern of kinship correlations identifies
+additive genetic transmission of status, as opposed to some other
+data-generating process --- including some the book never considers --- that
+would fit comparably well. That is a strong, specific, and separable claim,
+and on the evidence presented it has not met its own evidentiary bar.
+
+I want to be explicit about what kind of disagreement this is. I am not
+troubled by the hypothesis that genes influence social outcomes, and I do
+not regard raising that possibility as objectionable, dangerous, or a mark
+against the author's character, in the way much of the criticism this book
+will attract is likely to suggest. My disagreement is narrower, and I hope
+more useful, than that: on the specific evidence and the specific model
+presented here, I am not persuaded.
 
 \bibliographystyle{apalike}
 \bibliography{references}

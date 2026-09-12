@@ -12,3 +12,6 @@
 _outputs/
 main.pdf
 
+
+_build/
+

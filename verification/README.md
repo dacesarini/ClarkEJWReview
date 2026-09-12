@@ -53,3 +53,39 @@ Dependent cross-references were updated. The later parent/sibling comparison now
 ## Revised criticism of the assortment discussion
 
 The concluding discussion now distinguishes acknowledging the parameter relationship (Clark p. 75) from treating it consistently as a binding implication of the fitted model. Clark p. 16 appeals to matching on broader characteristics; pp. 74–75 appeal to measurement error in an underlying phenotype; p. 286 gives the strong-assortment genetic interpretation. The new text explains why latent measurement error preserves the restriction at the latent level, whereas a different matching rule requires a corresponding formal specification and rederived moments. It criticizes the gap between the fitted pattern and its genetic interpretation without claiming that the numerical implementation has been shown to violate the constraint. Equations and verification code are unchanged.
+
+## Measurement-error extension
+
+Editable source: ../sections/measurement_error.tex. It is included immediately after the Fisher-model section. The baseline section now calls its latent environmental loading e_P; the observed model uses Y=aA+eE+uU. The baseline Python verifier continues to call the latent loading e internally.
+
+Run python verification/verify_measurement_error.py. Dependencies are the same NumPy/SymPy environment as the baseline script. The full report is written to _build/measurement_error_verification.json; measurement_error_results.json is the saved report for this revision. The baseline verifier was made importable without running simulations automatically; its command-line report was rerun and confirmed byte-for-byte identical to the previous saved result.
+
+### Definitions and source checks
+
+- Theta is written eta: the noise share; theta=1-eta is Clark's signal-retention/attenuation factor.
+- Clark explicitly calls his theta an attenuation factor on printed p. 42. In Table A1 (printed p. 296), theta multiplies individual-relative correlations. The notation is aligned directly: theta is the attenuation factor and eta is the noise share.
+- The displayed model has Var(Y)=1, a^2+e^2+u^2=1, latent h^2=a^2/theta, and rho_A=h^2*rho.
+- Clark's Table A1 was visually checked against the original PDF. Its average-parent row says theta*h^2 under a table labeled correlations. A literal correlation with the arithmetic mean of the observed parents is instead theta*h^2*(1+rho)/sqrt(2*(1+theta*rho)). The text distinguishes correlations, covariances, and regression slopes and does not assume the table's average rows are interchangeable with individual-relative moments.
+- Equations A1–A3 on printed p. 297 supply the logarithmic regression structure. Its intercept identifies theta*h^2. Separating noise and latent heritability additionally requires the PH restriction and enough information to identify the lineal contrast, or other suitable information. The draft derives the inversion under positive assortment. It does not claim identification from the collateral-only regression.
+
+### Analytical and simulation checks
+
+71 new symbolic checks passed, alongside the 46 baseline symbolic checks imported by the script. They cover the error cross-terms, observed-versus-latent scaling, spouse matrix, every table row, distant-cousin recurrence, population regression inversion, midparent correlation and slope, and nonidentification from collateral moments alone.
+
+The Jacobian determinant of (alpha,beta,gamma) with respect to (h^2,rho,eta) is
+-rho / [(1-eta)(1+rho)(1+h^2*rho)].
+It is nonzero in the stated positive-assortment interior and vanishes at random mating. An exact pair of different admissible parameter triples is checked to have the same entire set of collateral moments but different parent–child moments.
+
+Thirteen core simulations use 200,000 independently generated pedigrees each: h^2 in {0.2,0.6}, rho in {0.25,0.75}, and eta in {0,0.25,0.6}, plus (h^2,rho,eta)=(0.36,0,0.4). Each pedigree is extended through fourth cousins with fresh outside mates and births. Total: 2.6 million core pedigrees.
+
+All 156 individual-relative moment checks, 26 midparent checks, 468 observed covariance checks, and 1,664 error-versus-true-component cross-covariance checks passed the six-standard-error diagnostic. Largest absolute standardized discrepancies were 2.515, 1.881, 2.713, and 3.545 respectively. Individual product-moment standard errors are exact Gaussian formulas; the sample midparent correlation and slope use asymptotic Gaussian standard errors. These diagnostics are not empirical specification tests.
+
+An additional 200,000 pedigrees were used for two error counterexamples:
+- Unequal reliability obeys the square-root-product attenuation rule; maximum absolute standardized discrepancy 2.061.
+- Correlated errors require an additive covariance term; maximum discrepancy 2.513 for the correct formula. Applying the incorrect common-multiplier formula instead produced a discrepancy exceeding 45 standard errors.
+
+Regression inversion was tested on exact population moments by fitting the log-linear representation and recovering the structural parameters to numerical precision. It is not a claim of finite-sample unbiasedness, and no simulated negative correlations were discarded to make a log regression appear well behaved.
+
+### Substantive restrictions
+
+The common factor assumes errors uncorrelated with all relevant people's true components and errors, equal signal shares in the compared samples, a common latent phenotype, and mating on that latent phenotype rather than on recording noise. The inherited restrictions excluding shared environmental transmission remain in place. Different error correlations, cohort/sex-specific reliability, or averaging relatives require rederived moments and cannot be repaired by applying a universal factor without justification.

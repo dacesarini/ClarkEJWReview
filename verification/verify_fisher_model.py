@@ -155,25 +155,30 @@ def simulation(h2, r, n, seed):
             "minimum_eigenvalue":min_eigenvalue,
             "component_covariance_checks":len(upper[0]),
             "component_max_abs_z":component_max,"phenotype_moments":moments}
-scenarios=[]
-for h2 in [.1,.36,.8]:
-    for r in [0,.35,.8]:
-        scenarios.append(simulation(h2,r,250000,20260912+len(scenarios)))
-report={
- "symbolic_checks":len(checks),"symbolic_check_names":checks,
- "pedigree_members_in_matrix_order":list(people),
- "simulation_scenarios":scenarios,
- "families_total":sum(s["families"] for s in scenarios),
- "component_covariance_checks_total":sum(s["component_covariance_checks"] for s in scenarios),
- "phenotype_checks_total":len(scenarios)*len(targets),
- "diagnostic":"Six-standard-error threshold, with known zero means and Gaussian product variances; not a hypothesis test or proof.",
- "scope":"Explicit stationary Gaussian moment construction; not a simulation of allele frequencies or convergence of a multilocus population."
-}
-(OUT/"fisher_model_verification.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
-chosen=next(s for s in scenarios if s["h2"]==.36 and s["rho"]==.35)
-print(json.dumps({"symbolic_checks":len(checks),"families_total":report["families_total"],
- "component_checks":report["component_covariance_checks_total"],
- "phenotype_checks":report["phenotype_checks_total"],
- "largest_component_abs_z":max(s["component_max_abs_z"] for s in scenarios),
- "largest_phenotype_abs_z":max(abs(m["z"]) for s in scenarios for m in s["phenotype_moments"].values()),
- "example":chosen},indent=2))
+def run_verification():
+    scenarios=[]
+    for h2 in [.1,.36,.8]:
+        for r in [0,.35,.8]:
+            scenarios.append(simulation(h2,r,250000,20260912+len(scenarios)))
+    report={
+     "symbolic_checks":len(checks),"symbolic_check_names":checks,
+     "pedigree_members_in_matrix_order":list(people),
+     "simulation_scenarios":scenarios,
+     "families_total":sum(s["families"] for s in scenarios),
+     "component_covariance_checks_total":sum(s["component_covariance_checks"] for s in scenarios),
+     "phenotype_checks_total":len(scenarios)*len(targets),
+     "diagnostic":"Six-standard-error threshold, with known zero means and Gaussian product variances; not a hypothesis test or proof.",
+     "scope":"Explicit stationary Gaussian moment construction; not a simulation of allele frequencies or convergence of a multilocus population."
+    }
+    (OUT/"fisher_model_verification.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
+    chosen=next(s for s in scenarios if s["h2"]==.36 and s["rho"]==.35)
+    print(json.dumps({"symbolic_checks":len(checks),"families_total":report["families_total"],
+     "component_checks":report["component_covariance_checks_total"],
+     "phenotype_checks":report["phenotype_checks_total"],
+     "largest_component_abs_z":max(s["component_max_abs_z"] for s in scenarios),
+     "largest_phenotype_abs_z":max(abs(m["z"]) for s in scenarios for m in s["phenotype_moments"].values()),
+     "example":chosen},indent=2))
+
+
+if __name__ == '__main__':
+    run_verification()

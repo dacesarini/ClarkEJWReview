@@ -1,0 +1,1529 @@
+{
+  "symbolic_checks": 71,
+  "symbolic_check_names": [
+    "all error cross terms removed from observed covariance",
+    "observed variance normalization",
+    "observed additive genetic variance share",
+    "latent heritability from observed genetic share",
+    "observed spouse correlation",
+    "true genetic spouse correlation from observed quantities",
+    "spouses no noise limit",
+    "spouses all noise limit",
+    "parent_child no noise limit",
+    "parent_child all noise limit",
+    "parent_child log regression representation",
+    "full_siblings no noise limit",
+    "full_siblings all noise limit",
+    "full_siblings log regression representation",
+    "grandparent no noise limit",
+    "grandparent all noise limit",
+    "grandparent log regression representation",
+    "avuncular no noise limit",
+    "avuncular all noise limit",
+    "avuncular log regression representation",
+    "first_cousins no noise limit",
+    "first_cousins all noise limit",
+    "first_cousins log regression representation",
+    "second_cousins no noise limit",
+    "second_cousins all noise limit",
+    "second_cousins log regression representation",
+    "third_cousins no noise limit",
+    "third_cousins all noise limit",
+    "third_cousins log regression representation",
+    "fourth_cousins no noise limit",
+    "fourth_cousins all noise limit",
+    "fourth_cousins log regression representation",
+    "first_cousins_removed no noise limit",
+    "first_cousins_removed all noise limit",
+    "first_cousins_removed log regression representation",
+    "second_cousins_removed no noise limit",
+    "second_cousins_removed all noise limit",
+    "second_cousins_removed log regression representation",
+    "third_cousins_removed no noise limit",
+    "third_cousins_removed all noise limit",
+    "third_cousins_removed log regression representation",
+    "cousin degree 1 transmission recurrence",
+    "cousin degree 2 transmission recurrence",
+    "cousin degree 3 transmission recurrence",
+    "cousin degree 4 transmission recurrence",
+    "recover genetic spouse correlation",
+    "recover latent spouse correlation",
+    "recover latent heritability",
+    "recover signal share",
+    "recover noise share",
+    "identification Jacobian determinant",
+    "random mating loses the lineal contrast",
+    "random mating decay independent of heritability",
+    "midparent covariance as average of parent covariances",
+    "midparent correlation",
+    "midparent no noise correlation",
+    "midparent slope",
+    "midparent no noise slope",
+    "midparent error slope differs from lambda times h2",
+    "observed parent minus sibling gap",
+    "collateral nonidentification full_siblings",
+    "collateral nonidentification avuncular",
+    "collateral nonidentification first_cousins",
+    "collateral nonidentification second_cousins",
+    "collateral nonidentification third_cousins",
+    "collateral nonidentification fourth_cousins",
+    "collateral nonidentification first_cousins_removed",
+    "collateral nonidentification second_cousins_removed",
+    "collateral nonidentification third_cousins_removed",
+    "unequal reliability attenuation",
+    "correlated error contribution"
+  ],
+  "base_symbolic_checks_imported": 46,
+  "scenarios": [
+    {
+      "h2": 0.2,
+      "rho": 0.25,
+      "noise_share": 0,
+      "n": 200000,
+      "seed": 19940912,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.658380350101007,
+      "max_error_cross_abs_z": 2.6456373218519382,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.25,
+          "simulated": 0.2519986126667862,
+          "mc_se": 0.002304886114323222,
+          "z": 0.8671199216161881
+        },
+        "parent_child": {
+          "predicted": 0.125,
+          "simulated": 0.1229778897659952,
+          "mc_se": 0.002253469547164993,
+          "z": -0.8973319548732032
+        },
+        "full_siblings": {
+          "predicted": 0.10500000000000001,
+          "simulated": 0.10764163473585978,
+          "mc_se": 0.002248360513796664,
+          "z": 1.1749159975234595
+        },
+        "grandparent": {
+          "predicted": 0.065625,
+          "simulated": 0.06414278590565448,
+          "mc_se": 0.00224087777514192,
+          "z": -0.6614435248489423
+        },
+        "avuncular": {
+          "predicted": 0.05512500000000001,
+          "simulated": 0.05501022604463067,
+          "mc_se": 0.00223946284365805,
+          "z": -0.05125066294105612
+        },
+        "first_cousins": {
+          "predicted": 0.028940625000000005,
+          "simulated": 0.029450958277949413,
+          "mc_se": 0.0022370042018013633,
+          "z": 0.22813246284403882
+        },
+        "second_cousins": {
+          "predicted": 0.007976759765625003,
+          "simulated": 0.008067221581077335,
+          "mc_se": 0.002236139115413393,
+          "z": 0.04045446673187362
+        },
+        "third_cousins": {
+          "predicted": 0.0021985944104003915,
+          "simulated": 0.0037971372479908496,
+          "mc_se": 0.002236073381865387,
+          "z": 0.7148883621417266
+        },
+        "fourth_cousins": {
+          "predicted": 0.0006059875843666079,
+          "simulated": 0.0005010043691905731,
+          "mc_se": 0.0022360683880652582,
+          "z": -0.046949912505525306
+        },
+        "first_cousins_removed": {
+          "predicted": 0.015193828125000003,
+          "simulated": 0.01708589549939608,
+          "mc_se": 0.00223632606344993,
+          "z": 0.8460606015015661
+        },
+        "second_cousins_removed": {
+          "predicted": 0.004187798876953127,
+          "simulated": 0.004211906004610574,
+          "mc_se": 0.0022360875851131523,
+          "z": 0.010780940701044588
+        },
+        "third_cousins_removed": {
+          "predicted": 0.0011542620654602055,
+          "simulated": -0.0007580061763216166,
+          "mc_se": 0.002236069467079361,
+          "z": -0.8551917862728694
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.15811388300841897,
+          "simulated": 0.15401247995577774,
+          "mc_se_asymptotic": 0.002180166278062295,
+          "z": -1.8812340571960893
+        },
+        "midparent_slope": {
+          "predicted": 0.2,
+          "simulated": 0.19490056296387595,
+          "mc_se_asymptotic": 0.002792848008753788,
+          "z": -1.8258913553980003
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -1.609437912434099,
+          -0.6443570163905138,
+          0.174353387144777
+        ],
+        "recovered_h2_rho_noise": [
+          0.19999999999999876,
+          0.24999999999999845,
+          -7.549516567451064e-15
+        ]
+      }
+    },
+    {
+      "h2": 0.2,
+      "rho": 0.25,
+      "noise_share": 0.25,
+      "n": 200000,
+      "seed": 19940913,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 1.8541263040054337,
+      "max_error_cross_abs_z": 2.6870791157093223,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.1875,
+          "simulated": 0.18328179898694846,
+          "mc_se": 0.002275034340400162,
+          "z": -1.8541263040054095
+        },
+        "parent_child": {
+          "predicted": 0.09375,
+          "simulated": 0.09502714416290434,
+          "mc_se": 0.0022458729511038687,
+          "z": 0.5686626940658455
+        },
+        "full_siblings": {
+          "predicted": 0.07875000000000001,
+          "simulated": 0.07995260188677931,
+          "mc_se": 0.002242990818639256,
+          "z": 0.5361599685498832
+        },
+        "grandparent": {
+          "predicted": 0.049218750000000006,
+          "simulated": 0.0463367788522534,
+          "mc_se": 0.0022387747601663307,
+          "z": -1.2872983915239808
+        },
+        "avuncular": {
+          "predicted": 0.041343750000000005,
+          "simulated": 0.03906211233990023,
+          "mc_se": 0.002237978223379377,
+          "z": -1.019508427858817
+        },
+        "first_cousins": {
+          "predicted": 0.021705468750000005,
+          "simulated": 0.020031573213104194,
+          "mc_se": 0.0022365946518911927,
+          "z": -0.7484125634836953
+        },
+        "second_cousins": {
+          "predicted": 0.005982569824218752,
+          "simulated": 0.008183871474383632,
+          "mc_se": 0.002236107992854663,
+          "z": 0.9844344088921444
+        },
+        "third_cousins": {
+          "predicted": 0.0016489458078002936,
+          "simulated": 0.000836210190504927,
+          "mc_se": 0.0022360710174570454,
+          "z": -0.3634659234659031
+        },
+        "fourth_cousins": {
+          "predicted": 0.00045449068827495596,
+          "simulated": 0.0027356129977983475,
+          "mc_se": 0.002236068208442875,
+          "z": 1.02014880445525
+        },
+        "first_cousins_removed": {
+          "predicted": 0.011395371093750002,
+          "simulated": 0.01192279773728968,
+          "mc_se": 0.002236213154511846,
+          "z": 0.23585705256921805
+        },
+        "second_cousins_removed": {
+          "predicted": 0.003140849157714845,
+          "simulated": 0.0014459865032700643,
+          "mc_se": 0.002236079006803462,
+          "z": -0.7579618829603139
+        },
+        "third_cousins_removed": {
+          "predicted": 0.0008656965490951541,
+          "simulated": 0.0034429960134871856,
+          "mc_se": 0.0022360688153884208,
+          "z": 1.152602928253054
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.12166606584807194,
+          "simulated": 0.1228302341907874,
+          "mc_se_asymptotic": 0.0022029682870433782,
+          "z": 0.5284544264946729
+        },
+        "midparent_slope": {
+          "predicted": 0.15789473684210528,
+          "simulated": 0.15969510204875376,
+          "mc_se_asymptotic": 0.0028803470089499216,
+          "z": 0.6250514958976514
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -1.8971199848858802,
+          -0.644357016390514,
+          0.17435338714477633
+        ],
+        "recovered_h2_rho_noise": [
+          0.19999999999999876,
+          0.24999999999999734,
+          0.24999999999999456
+        ]
+      }
+    },
+    {
+      "h2": 0.2,
+      "rho": 0.25,
+      "noise_share": 0.6,
+      "n": 200000,
+      "seed": 19940914,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.4840913698801455,
+      "max_error_cross_abs_z": 3.5445900247830626,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.1,
+          "simulated": 0.10182528775303959,
+          "mc_se": 0.002247220505424423,
+          "z": 0.8122423894912126
+        },
+        "parent_child": {
+          "predicted": 0.05,
+          "simulated": 0.050876238084212856,
+          "mc_se": 0.002238861317723811,
+          "z": 0.3913766687003644
+        },
+        "full_siblings": {
+          "predicted": 0.04200000000000001,
+          "simulated": 0.04018122299982268,
+          "mc_se": 0.0022380393204767426,
+          "z": -0.8126653466436411
+        },
+        "grandparent": {
+          "predicted": 0.026250000000000002,
+          "simulated": 0.027697228576460294,
+          "mc_se": 0.0022368382401282394,
+          "z": 0.6469974227449368
+        },
+        "avuncular": {
+          "predicted": 0.022050000000000004,
+          "simulated": 0.019989621779493767,
+          "mc_se": 0.0022366115023624467,
+          "z": -0.9212052331528914
+        },
+        "first_cousins": {
+          "predicted": 0.011576250000000003,
+          "simulated": 0.013129200736371008,
+          "mc_se": 0.0022362177997279943,
+          "z": 0.6944541522565022
+        },
+        "second_cousins": {
+          "predicted": 0.0031907039062500013,
+          "simulated": 0.004877495507392236,
+          "mc_se": 0.0022360793597180507,
+          "z": 0.7543522969394627
+        },
+        "third_cousins": {
+          "predicted": 0.0008794377641601567,
+          "simulated": 0.0006770986058722473,
+          "mc_se": 0.0022360688421991627,
+          "z": -0.09048878749587591
+        },
+        "fourth_cousins": {
+          "predicted": 0.0002423950337466432,
+          "simulated": 0.0030377941262560264,
+          "mc_se": 0.00223606804319027,
+          "z": 1.25014044229222
+        },
+        "first_cousins_removed": {
+          "predicted": 0.006077531250000001,
+          "simulated": 0.008727188971898186,
+          "mc_se": 0.0022361092732535396,
+          "z": 1.184941073135899
+        },
+        "second_cousins_removed": {
+          "predicted": 0.0016751195507812508,
+          "simulated": -0.0012551626856347694,
+          "mc_se": 0.002236071114729482,
+          "z": -1.3104602161861578
+        },
+        "third_cousins_removed": {
+          "predicted": 0.0004617048261840822,
+          "simulated": 0.0014823846609829914,
+          "mc_se": 0.002236068215832588,
+          "z": 0.4564618501224323
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.06741998624632423,
+          "simulated": 0.07109969577457487,
+          "mc_se_asymptotic": 0.002225904032147518,
+          "z": 1.6531303574217948
+        },
+        "midparent_slope": {
+          "predicted": 0.09090909090909093,
+          "simulated": 0.09572298981855172,
+          "mc_se_asymptotic": 0.0030082531105044175,
+          "z": 1.600230676285617
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -2.525728644308255,
+          -0.6443570163905135,
+          0.17435338714477783
+        ],
+        "recovered_h2_rho_noise": [
+          0.1999999999999993,
+          0.25,
+          0.5999999999999985
+        ]
+      }
+    },
+    {
+      "h2": 0.2,
+      "rho": 0.75,
+      "noise_share": 0,
+      "n": 200000,
+      "seed": 19940915,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.1530540118026646,
+      "max_error_cross_abs_z": 2.3050400822708004,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.75,
+          "simulated": 0.7547209960904755,
+          "mc_se": 0.002795084971874737,
+          "z": 1.689034908770232
+        },
+        "parent_child": {
+          "predicted": 0.17500000000000002,
+          "simulated": 0.17353648852192996,
+          "mc_se": 0.0022700495589303774,
+          "z": -0.6447046375320753
+        },
+        "full_siblings": {
+          "predicted": 0.11499999999999999,
+          "simulated": 0.11446833815424423,
+          "mc_se": 0.002250805411402772,
+          "z": -0.2362095999335685
+        },
+        "grandparent": {
+          "predicted": 0.100625,
+          "simulated": 0.09994461578982082,
+          "mc_se": 0.002247359996334588,
+          "z": -0.3027482073583594
+        },
+        "avuncular": {
+          "predicted": 0.06612499999999999,
+          "simulated": 0.07094988911425429,
+          "mc_se": 0.0022409512663431573,
+          "z": 2.153054011802621
+        },
+        "first_cousins": {
+          "predicted": 0.038021875,
+          "simulated": 0.03736903024473021,
+          "mc_se": 0.00223768369411152,
+          "z": -0.2917502402094404
+        },
+        "second_cousins": {
+          "predicted": 0.012570982421874996,
+          "simulated": 0.01369745626204829,
+          "mc_se": 0.002236244652983044,
+          "z": 0.5037346153832635
+        },
+        "third_cousins": {
+          "predicted": 0.00415628106323242,
+          "simulated": 0.006059327191366847,
+          "mc_se": 0.002236087291087131,
+          "z": 0.8510607504992403
+        },
+        "fourth_cousins": {
+          "predicted": 0.0013741704265312186,
+          "simulated": -0.0009682628530962396,
+          "mc_se": 0.002236070088731971,
+          "z": -1.0475670201177831
+        },
+        "first_cousins_removed": {
+          "predicted": 0.021862578124999994,
+          "simulated": 0.024321184939821924,
+          "mc_se": 0.0022366023029612033,
+          "z": 1.099259717101605
+        },
+        "second_cousins_removed": {
+          "predicted": 0.007228314892578122,
+          "simulated": 0.010733538546433231,
+          "mc_se": 0.0022361263923760953,
+          "z": 1.5675427229005952
+        },
+        "third_cousins_removed": {
+          "predicted": 0.0023898616113586413,
+          "simulated": 0.0020229462465297214,
+          "mc_se": 0.0022360743630730636,
+          "z": -0.16408907095766875
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.18708286933869708,
+          "simulated": 0.1856857352599836,
+          "mc_se_asymptotic": 0.002157805598287297,
+          "z": -0.647479124079766
+        },
+        "midparent_slope": {
+          "predicted": 0.2,
+          "simulated": 0.19790414052471386,
+          "mc_se_asymptotic": 0.002348251629252222,
+          "z": -0.89251911898111
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -1.6094379124340992,
+          -0.5533852381847871,
+          0.41985384556026273
+        ],
+        "recovered_h2_rho_noise": [
+          0.20000000000000012,
+          0.7499999999999969,
+          -4.440892098500626e-16
+        ]
+      }
+    },
+    {
+      "h2": 0.2,
+      "rho": 0.75,
+      "noise_share": 0.25,
+      "n": 200000,
+      "seed": 19940916,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.4745417856460254,
+      "max_error_cross_abs_z": 2.591979244532522,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.5625,
+          "simulated": 0.5576184948955788,
+          "mc_se": 0.002565546968971724,
+          "z": -1.9027151572195609
+        },
+        "parent_child": {
+          "predicted": 0.13125,
+          "simulated": 0.1271173049823602,
+          "mc_se": 0.002255245621323762,
+          "z": -1.832481118049585
+        },
+        "full_siblings": {
+          "predicted": 0.08625,
+          "simulated": 0.08237814874013387,
+          "mc_se": 0.0022443696915838084,
+          "z": -1.7251397015318957
+        },
+        "grandparent": {
+          "predicted": 0.07546875,
+          "simulated": 0.07245269131880988,
+          "mc_se": 0.002242426734841701,
+          "z": -1.3449976466691707
+        },
+        "avuncular": {
+          "predicted": 0.04959374999999999,
+          "simulated": 0.04939685110449998,
+          "mc_se": 0.002238816138095157,
+          "z": -0.08794777389247427
+        },
+        "first_cousins": {
+          "predicted": 0.028516406249999997,
+          "simulated": 0.0246676755408944,
+          "mc_se": 0.0022369769616889384,
+          "z": -1.7205052957719202
+        },
+        "second_cousins": {
+          "predicted": 0.009428236816406248,
+          "simulated": 0.006996489356197645,
+          "mc_se": 0.0022361673591767077,
+          "z": -1.087462192947804
+        },
+        "third_cousins": {
+          "predicted": 0.0031172107974243145,
+          "simulated": 0.0045778404197973814,
+          "mc_se": 0.0022360788414131955,
+          "z": 0.653210251499877
+        },
+        "fourth_cousins": {
+          "predicted": 0.001030627819898414,
+          "simulated": -0.004592759875260553,
+          "mc_se": 0.002236069165068137,
+          "z": -2.5148540944115263
+        },
+        "first_cousins_removed": {
+          "predicted": 0.016396933593749996,
+          "simulated": 0.016517129614600442,
+          "mc_se": 0.002236368551280488,
+          "z": 0.053746070065966836
+        },
+        "second_cousins_removed": {
+          "predicted": 0.005421236169433592,
+          "simulated": 0.0031793349878895777,
+          "mc_se": 0.0022361008360554818,
+          "z": -1.0025939552434335
+        },
+        "third_cousins_removed": {
+          "predicted": 0.001792396208518981,
+          "simulated": 0.0021274714192352287,
+          "mc_se": 0.002236071569387,
+          "z": 0.14984994903723303
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.148492424049175,
+          "simulated": 0.14449345211331632,
+          "mc_se_asymptotic": 0.002186762678595919,
+          "z": -1.8287178462485714
+        },
+        "midparent_slope": {
+          "predicted": 0.16800000000000004,
+          "simulated": 0.16420950360167028,
+          "mc_se_asymptotic": 0.0025017753696125475,
+          "z": -1.5151225982837941
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -1.8971199848858809,
+          -0.553385238184787,
+          0.41985384556026295
+        ],
+        "recovered_h2_rho_noise": [
+          0.19999999999999993,
+          0.7499999999999976,
+          0.24999999999999933
+        ]
+      }
+    },
+    {
+      "h2": 0.2,
+      "rho": 0.75,
+      "noise_share": 0.6,
+      "n": 200000,
+      "seed": 19940917,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 1.9461511397819191,
+      "max_error_cross_abs_z": 2.693203083220834,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.30000000000000004,
+          "simulated": 0.2991279226335572,
+          "mc_se": 0.0023345235059857505,
+          "z": -0.3735569011007294
+        },
+        "parent_child": {
+          "predicted": 0.07,
+          "simulated": 0.07053280678483613,
+          "mc_se": 0.002241539649437413,
+          "z": 0.23769679245684927
+        },
+        "full_siblings": {
+          "predicted": 0.046,
+          "simulated": 0.043730923197052324,
+          "mc_se": 0.0022384324872553115,
+          "z": -1.0136900781537257
+        },
+        "grandparent": {
+          "predicted": 0.04025000000000001,
+          "simulated": 0.04205537153733087,
+          "mc_se": 0.002237878529433624,
+          "z": 0.8067334815477115
+        },
+        "avuncular": {
+          "predicted": 0.026449999999999998,
+          "simulated": 0.028301889469376642,
+          "mc_se": 0.002236850020117576,
+          "z": 0.8279005980379959
+        },
+        "first_cousins": {
+          "predicted": 0.01520875,
+          "simulated": 0.016294859118815844,
+          "mc_se": 0.0022363265706025165,
+          "z": 0.4856665985608811
+        },
+        "second_cousins": {
+          "predicted": 0.005028392968749999,
+          "simulated": 0.007131661553385982,
+          "mc_se": 0.002236096246515172,
+          "z": 0.9405984147211046
+        },
+        "third_cousins": {
+          "predicted": 0.001662512425292968,
+          "simulated": 0.0010317078984951485,
+          "mc_se": 0.002236071067684974,
+          "z": -0.28210397062688064
+        },
+        "fourth_cousins": {
+          "predicted": 0.0005496681706124875,
+          "simulated": 0.002180958023515996,
+          "mc_se": 0.0022360683152970726,
+          "z": 0.7295348902105363
+        },
+        "first_cousins_removed": {
+          "predicted": 0.008745031249999998,
+          "simulated": 0.013303890692250003,
+          "mc_se": 0.0022361534781534602,
+          "z": 2.0387059684358317
+        },
+        "second_cousins_removed": {
+          "predicted": 0.002891325957031249,
+          "simulated": 0.0017208300133346322,
+          "mc_se": 0.0022360773239825473,
+          "z": -0.5234595115037948
+        },
+        "third_cousins_removed": {
+          "predicted": 0.0009559446445434566,
+          "simulated": -0.0011665276364429156,
+          "mc_se": 0.0022360689991927393,
+          "z": -0.9491980264261177
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.08682431421244592,
+          "simulated": 0.08678205543752121,
+          "mc_se_asymptotic": 0.002219211465054022,
+          "z": -0.01904224792912305
+        },
+        "midparent_slope": {
+          "predicted": 0.1076923076923077,
+          "simulated": 0.10810844889871678,
+          "mc_se_asymptotic": 0.0027630272395738737,
+          "z": 0.15061060580541302
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -2.5257286443082543,
+          -0.553385238184787,
+          0.41985384556026456
+        ],
+        "recovered_h2_rho_noise": [
+          0.19999999999999923,
+          0.7500000000000002,
+          0.599999999999998
+        ]
+      }
+    },
+    {
+      "h2": 0.6,
+      "rho": 0.25,
+      "noise_share": 0,
+      "n": 200000,
+      "seed": 19940918,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.668616696597073,
+      "max_error_cross_abs_z": 2.4892000882633116,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.25,
+          "simulated": 0.24915010740117285,
+          "mc_se": 0.002304886114323222,
+          "z": -0.36873518112052034
+        },
+        "parent_child": {
+          "predicted": 0.375,
+          "simulated": 0.3742382959236822,
+          "mc_se": 0.00238812164681785,
+          "z": -0.31895530838338104
+        },
+        "full_siblings": {
+          "predicted": 0.345,
+          "simulated": 0.34598808635529543,
+          "mc_se": 0.002365401657224413,
+          "z": 0.41772455526850766
+        },
+        "grandparent": {
+          "predicted": 0.21562499999999998,
+          "simulated": 0.21600011418387116,
+          "mc_se": 0.0022874594429464754,
+          "z": 0.16398725014682386
+        },
+        "avuncular": {
+          "predicted": 0.19837499999999997,
+          "simulated": 0.19816540725424137,
+          "mc_se": 0.002279641025057454,
+          "z": -0.09194111855980475
+        },
+        "first_cousins": {
+          "predicted": 0.11406562499999998,
+          "simulated": 0.11145864495389882,
+          "mc_se": 0.002250567669285508,
+          "z": -1.1583655455820185
+        },
+        "second_cousins": {
+          "predicted": 0.037712947265624984,
+          "simulated": 0.03502686988217748,
+          "mc_se": 0.002237657554666777,
+          "z": -1.2003969856091339
+        },
+        "third_cousins": {
+          "predicted": 0.01246884318969726,
+          "simulated": 0.008334248708976696,
+          "mc_se": 0.0022362417937809064,
+          "z": -1.8489031428618614
+        },
+        "fourth_cousins": {
+          "predicted": 0.004122511279593655,
+          "simulated": 0.005807017343700445,
+          "mc_se": 0.002236086978517663,
+          "z": 0.7533276121591098
+        },
+        "first_cousins_removed": {
+          "predicted": 0.06558773437499997,
+          "simulated": 0.06231399647568178,
+          "mc_se": 0.002240872319991085,
+          "z": -1.4609212091705486
+        },
+        "second_cousins_removed": {
+          "predicted": 0.021684944677734366,
+          "simulated": 0.01947122778318773,
+          "mc_se": 0.002236593656462519,
+          "z": -0.9897716056513965
+        },
+        "third_cousins_removed": {
+          "predicted": 0.0071695848340759235,
+          "simulated": 0.004274748415071163,
+          "mc_se": 0.0022361254470027983,
+          "z": -1.2945769312204145
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.4743416490252569,
+          "simulated": 0.4746771208339662,
+          "mc_se_asymptotic": 0.001732952682562337,
+          "z": 0.19358394033775378
+        },
+        "midparent_slope": {
+          "predicted": 0.6,
+          "simulated": 0.6019296828853855,
+          "mc_se_asymptotic": 0.0024899799195977463,
+          "z": 0.7749792960970019
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -0.5108256237659894,
+          -0.5533852381847872,
+          0.0833816089390504
+        ],
+        "recovered_h2_rho_noise": [
+          0.6000000000000008,
+          0.24999999999999845,
+          0.0
+        ]
+      }
+    },
+    {
+      "h2": 0.6,
+      "rho": 0.25,
+      "noise_share": 0.25,
+      "n": 200000,
+      "seed": 19940919,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.4452471583721915,
+      "max_error_cross_abs_z": 2.499830714320917,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.1875,
+          "simulated": 0.18981545833174535,
+          "mc_se": 0.002275034340400162,
+          "z": 1.0177685191943404
+        },
+        "parent_child": {
+          "predicted": 0.28125,
+          "simulated": 0.28229919743701787,
+          "mc_se": 0.0023228232417685166,
+          "z": 0.4516906057040508
+        },
+        "full_siblings": {
+          "predicted": 0.25875,
+          "simulated": 0.25613635791848066,
+          "mc_se": 0.0023097094649544127,
+          "z": -1.131589111607552
+        },
+        "grandparent": {
+          "predicted": 0.16171875,
+          "simulated": 0.1566242141924613,
+          "mc_se": 0.002265119151503473,
+          "z": -2.2491248657525094
+        },
+        "avuncular": {
+          "predicted": 0.14878124999999998,
+          "simulated": 0.1466142587012753,
+          "mc_se": 0.002260681158800996,
+          "z": -0.9585568005857035
+        },
+        "first_cousins": {
+          "predicted": 0.08554921874999999,
+          "simulated": 0.08668743700087655,
+          "mc_se": 0.00224423558124892,
+          "z": 0.5071741399996635
+        },
+        "second_cousins": {
+          "predicted": 0.028284710449218736,
+          "simulated": 0.02478708945831808,
+          "mc_se": 0.002236962253643539,
+          "z": -1.563558341319247
+        },
+        "third_cousins": {
+          "predicted": 0.009351632392272945,
+          "simulated": 0.009310481229074198,
+          "mc_se": 0.002236165750820364,
+          "z": -0.018402554991127477
+        },
+        "fourth_cousins": {
+          "predicted": 0.003091883459695241,
+          "simulated": 0.0043303418582837415,
+          "mc_se": 0.0022360786655922105,
+          "z": 0.5538527859709724
+        },
+        "first_cousins_removed": {
+          "predicted": 0.049190800781249974,
+          "simulated": 0.04910618549053623,
+          "mc_se": 0.0022387716887631716,
+          "z": -0.037795408588754936
+        },
+        "second_cousins_removed": {
+          "predicted": 0.016263708508300775,
+          "simulated": 0.016839451013098847,
+          "mc_se": 0.0022363636871207274,
+          "z": 0.25744582963575513
+        },
+        "third_cousins_removed": {
+          "predicted": 0.005377188625556943,
+          "simulated": 0.00843002481609531,
+          "mc_se": 0.0022361003042769734,
+          "z": 1.365250111857339
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.36499819754421575,
+          "simulated": 0.3652985539904713,
+          "mc_se_asymptotic": 0.0019381707633920875,
+          "z": 0.15496903158825162
+        },
+        "midparent_slope": {
+          "predicted": 0.47368421052631576,
+          "simulated": 0.4738255390357209,
+          "mc_se_asymptotic": 0.0027016974247811784,
+          "z": 0.05231100570655949
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -0.7985076962177693,
+          -0.5533852381847874,
+          0.08338160893905042
+        ],
+        "recovered_h2_rho_noise": [
+          0.6000000000000012,
+          0.24999999999999822,
+          0.24999999999999978
+        ]
+      }
+    },
+    {
+      "h2": 0.6,
+      "rho": 0.25,
+      "noise_share": 0.6,
+      "n": 200000,
+      "seed": 19940920,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.712205494367391,
+      "max_error_cross_abs_z": 2.560549340815989,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.1,
+          "simulated": 0.101435921707917,
+          "mc_se": 0.002247220505424423,
+          "z": 0.6389767735079469
+        },
+        "parent_child": {
+          "predicted": 0.15000000000000002,
+          "simulated": 0.14730263836612267,
+          "mc_se": 0.0022610838109190026,
+          "z": -1.1929507525778198
+        },
+        "full_siblings": {
+          "predicted": 0.13799999999999998,
+          "simulated": 0.13619660112334533,
+          "mc_se": 0.002257259400246237,
+          "z": -0.7989329345390798
+        },
+        "grandparent": {
+          "predicted": 0.08625,
+          "simulated": 0.0891381292940152,
+          "mc_se": 0.0022443696915838084,
+          "z": 1.2868331384287706
+        },
+        "avuncular": {
+          "predicted": 0.07934999999999999,
+          "simulated": 0.0794362401676951,
+          "mc_se": 0.002243096545514704,
+          "z": 0.038446926356136994
+        },
+        "first_cousins": {
+          "predicted": 0.04562624999999999,
+          "simulated": 0.04244626146572853,
+          "mc_se": 0.002238394239950888,
+          "z": -1.420656146051034
+        },
+        "second_cousins": {
+          "predicted": 0.015085178906249995,
+          "simulated": 0.010226043777301474,
+          "mc_se": 0.002236322385773833,
+          "z": -2.172824079327506
+        },
+        "third_cousins": {
+          "predicted": 0.004987537275878904,
+          "simulated": 0.006099000979016589,
+          "mc_se": 0.0022360957890127137,
+          "z": 0.49705549672736576
+        },
+        "fourth_cousins": {
+          "predicted": 0.001649004511837462,
+          "simulated": 0.0032956543895988496,
+          "mc_se": 0.0022360710176734994,
+          "z": 0.7364032111442641
+        },
+        "first_cousins_removed": {
+          "predicted": 0.02623509374999999,
+          "simulated": 0.02592101481071989,
+          "mc_se": 0.002236837365728755,
+          "z": -0.1404120586021123
+        },
+        "second_cousins_removed": {
+          "predicted": 0.008673977871093747,
+          "simulated": 0.009526843712306388,
+          "mc_se": 0.002236152094438243,
+          "z": 0.38139885177483607
+        },
+        "third_cousins_removed": {
+          "predicted": 0.0028678339336303694,
+          "simulated": 0.0009919494207341322,
+          "mc_se": 0.0022360771727195274,
+          "z": -0.8389176079351401
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.20225995873897262,
+          "simulated": 0.2019924806201035,
+          "mc_se_asymptotic": 0.002144592469329344,
+          "z": -0.12472211979405583
+        },
+        "midparent_slope": {
+          "predicted": 0.2727272727272727,
+          "simulated": 0.27168092232021146,
+          "mc_se_asymptotic": 0.0029527966852566753,
+          "z": -0.3543591105631074
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -1.4271163556401447,
+          -0.553385238184787,
+          0.08338160893905144
+        ],
+        "recovered_h2_rho_noise": [
+          0.5999999999999979,
+          0.25,
+          0.5999999999999982
+        ]
+      }
+    },
+    {
+      "h2": 0.6,
+      "rho": 0.75,
+      "noise_share": 0,
+      "n": 200000,
+      "seed": 19940921,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.354939965286016,
+      "max_error_cross_abs_z": 3.284612707114744,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.75,
+          "simulated": 0.7512889869616235,
+          "mc_se": 0.002795084971874737,
+          "z": 0.4611619949281676
+        },
+        "parent_child": {
+          "predicted": 0.525,
+          "simulated": 0.5264391856935242,
+          "mc_se": 0.0025254950009849556,
+          "z": 0.5698628161856992
+        },
+        "full_siblings": {
+          "predicted": 0.435,
+          "simulated": 0.4381048375337054,
+          "mc_se": 0.0024384677566045444,
+          "z": 1.2732739751411477
+        },
+        "grandparent": {
+          "predicted": 0.380625,
+          "simulated": 0.3831983890245922,
+          "mc_se": 0.0023925670216579094,
+          "z": 1.075576567468104
+        },
+        "avuncular": {
+          "predicted": 0.315375,
+          "simulated": 0.31865935396303247,
+          "mc_se": 0.0023446336500880047,
+          "z": 1.4007962237124647
+        },
+        "first_cousins": {
+          "predicted": 0.22864687499999997,
+          "simulated": 0.22763464130107924,
+          "mc_se": 0.002293773521347809,
+          "z": -0.4412962698801864
+        },
+        "second_cousins": {
+          "predicted": 0.12018251367187498,
+          "simulated": 0.12019844381003149,
+          "mc_se": 0.002252158782804279,
+          "z": 0.007073274885474951
+        },
+        "third_cousins": {
+          "predicted": 0.06317093374877929,
+          "simulated": 0.06443070558851476,
+          "mc_se": 0.002240525124686948,
+          "z": 0.5622663302700018
+        },
+        "fourth_cousins": {
+          "predicted": 0.033204222051702106,
+          "simulated": 0.034568506709955385,
+          "mc_se": 0.002237300293168151,
+          "z": 0.6097905866366155
+        },
+        "first_cousins_removed": {
+          "predicted": 0.16576898437499998,
+          "simulated": 0.16775935127991132,
+          "mc_se": 0.0022665826216804,
+          "z": 0.878135606385138
+        },
+        "second_cousins_removed": {
+          "predicted": 0.08713232241210934,
+          "simulated": 0.08844731069338105,
+          "mc_se": 0.002244540088313113,
+          "z": 0.5858609022483463
+        },
+        "third_cousins_removed": {
+          "predicted": 0.04579892696786498,
+          "simulated": 0.046388551805115225,
+          "mc_se": 0.002238411871965711,
+          "z": 0.26341212921304474
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.5612486080160912,
+          "simulated": 0.5601767363914067,
+          "mc_se_asymptotic": 0.0015317065645873561,
+          "z": -0.6997891433423715
+        },
+        "midparent_slope": {
+          "predicted": 0.6,
+          "simulated": 0.6006602604132913,
+          "mc_se_asymptotic": 0.001978455385973036,
+          "z": 0.33372519692509645
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -0.5108256237659903,
+          -0.32158362412746255,
+          0.1880522315029395
+        ],
+        "recovered_h2_rho_noise": [
+          0.5999999999999999,
+          0.7499999999999993,
+          -6.661338147750939e-16
+        ]
+      }
+    },
+    {
+      "h2": 0.6,
+      "rho": 0.75,
+      "noise_share": 0.25,
+      "n": 200000,
+      "seed": 19940922,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 1.9419734017299703,
+      "max_error_cross_abs_z": 2.6313534716197964,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.5625,
+          "simulated": 0.5636520661519052,
+          "mc_se": 0.002565546968971724,
+          "z": 0.44905283974082455
+        },
+        "parent_child": {
+          "predicted": 0.39375000000000004,
+          "simulated": 0.3896132121699146,
+          "mc_se": 0.002403163605021514,
+          "z": -1.721392510040275
+        },
+        "full_siblings": {
+          "predicted": 0.32625,
+          "simulated": 0.3270712363501648,
+          "mc_se": 0.0023520619278624448,
+          "z": 0.34915592163473735
+        },
+        "grandparent": {
+          "predicted": 0.28546875,
+          "simulated": 0.28446563802630664,
+          "mc_se": 0.002325395027975422,
+          "z": -0.4313727180223211
+        },
+        "avuncular": {
+          "predicted": 0.23653125000000003,
+          "simulated": 0.2340901403359244,
+          "mc_se": 0.002297767429731045,
+          "z": -1.0623832649422478
+        },
+        "first_cousins": {
+          "predicted": 0.17148515625,
+          "simulated": 0.1696039857644952,
+          "mc_se": 0.0022687079569813375,
+          "z": -0.829181420074803
+        },
+        "second_cousins": {
+          "predicted": 0.09013688525390623,
+          "simulated": 0.08735215794839492,
+          "mc_se": 0.002245133245581736,
+          "z": -1.240339436864809
+        },
+        "third_cousins": {
+          "predicted": 0.04737820031158446,
+          "simulated": 0.049842665860924874,
+          "mc_se": 0.0022385762147677313,
+          "z": 1.1009075916569224
+        },
+        "fourth_cousins": {
+          "predicted": 0.02490316653877658,
+          "simulated": 0.025819561418932806,
+          "mc_se": 0.002236761238603327,
+          "z": 0.40969722844823603
+        },
+        "first_cousins_removed": {
+          "predicted": 0.12432673828124999,
+          "simulated": 0.12671677729595357,
+          "mc_se": 0.002253283313136249,
+          "z": 1.060691747358209
+        },
+        "second_cousins_removed": {
+          "predicted": 0.06534924180908201,
+          "simulated": 0.06671580946075653,
+          "mc_se": 0.0022408374811719632,
+          "z": 0.6098468376920404
+        },
+        "third_cousins_removed": {
+          "predicted": 0.034349195225898736,
+          "simulated": 0.038071035665031346,
+          "mc_se": 0.0022373867202750922,
+          "z": 1.6634765932082585
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.44547727214752486,
+          "simulated": 0.44326738122297643,
+          "mc_se_asymptotic": 0.0017923202873649567,
+          "z": -1.2329776882665204
+        },
+        "midparent_slope": {
+          "predicted": 0.5039999999999999,
+          "simulated": 0.5005454856520625,
+          "mc_se_asymptotic": 0.0022649326700809455,
+          "z": -1.525217236507945
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -0.7985076962177714,
+          -0.3215836241274625,
+          0.18805223150293882
+        ],
+        "recovered_h2_rho_noise": [
+          0.6000000000000011,
+          0.7499999999999982,
+          0.2500000000000011
+        ]
+      }
+    },
+    {
+      "h2": 0.6,
+      "rho": 0.75,
+      "noise_share": 0.6,
+      "n": 200000,
+      "seed": 19940923,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 1.8127520696083383,
+      "max_error_cross_abs_z": 2.397362138870301,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.30000000000000004,
+          "simulated": 0.29864292297423284,
+          "mc_se": 0.0023345235059857505,
+          "z": -0.5813079295572059
+        },
+        "parent_child": {
+          "predicted": 0.21000000000000002,
+          "simulated": 0.21183634742478208,
+          "mc_se": 0.002284841351166422,
+          "z": 0.8037089419116977
+        },
+        "full_siblings": {
+          "predicted": 0.17400000000000002,
+          "simulated": 0.17583020593961868,
+          "mc_se": 0.002269665173544327,
+          "z": 0.8063770643141156
+        },
+        "grandparent": {
+          "predicted": 0.15225,
+          "simulated": 0.1511620196162274,
+          "mc_se": 0.0022618356068688987,
+          "z": -0.48101656038508345
+        },
+        "avuncular": {
+          "predicted": 0.12615,
+          "simulated": 0.12733605261186412,
+          "mc_se": 0.002253789944182909,
+          "z": 0.5262480715762092
+        },
+        "first_cousins": {
+          "predicted": 0.09145874999999999,
+          "simulated": 0.09171443993036592,
+          "mc_se": 0.00224540052435146,
+          "z": 0.11387274902315149
+        },
+        "second_cousins": {
+          "predicted": 0.04807300546874999,
+          "simulated": 0.05148503812180615,
+          "mc_se": 0.002238650278465574,
+          "z": 1.5241472443810435
+        },
+        "third_cousins": {
+          "predicted": 0.025268373499511717,
+          "simulated": 0.02494868317067679,
+          "mc_se": 0.002236781717892149,
+          "z": -0.1429242407865299
+        },
+        "fourth_cousins": {
+          "predicted": 0.013281688820680843,
+          "simulated": 0.012821805909503318,
+          "mc_se": 0.002236265193640872,
+          "z": -0.20564775254977113
+        },
+        "first_cousins_removed": {
+          "predicted": 0.06630759374999999,
+          "simulated": 0.06609303837565346,
+          "mc_se": 0.002240978242853905,
+          "z": -0.09574183731176837
+        },
+        "second_cousins_removed": {
+          "predicted": 0.03485292896484374,
+          "simulated": 0.03512152349085837,
+          "mc_se": 0.0022374256710083447,
+          "z": 0.1200462341587346
+        },
+        "third_cousins_removed": {
+          "predicted": 0.01831957078714599,
+          "simulated": 0.01632714367911414,
+          "mc_se": 0.002236443165691703,
+          "z": -0.8908910088111363
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.2604729426373377,
+          "simulated": 0.26107335762509076,
+          "mc_se_asymptotic": 0.002084359365487881,
+          "z": 0.2880573272030286
+        },
+        "midparent_slope": {
+          "predicted": 0.32307692307692304,
+          "simulated": 0.3232716938178371,
+          "mc_se_asymptotic": 0.0026777629098154736,
+          "z": 0.07273636519503696
+        }
+      },
+      "population_regression_inversion": {
+        "alpha_beta_gamma": [
+          -1.4271163556401454,
+          -0.3215836241274626,
+          0.18805223150293976
+        ],
+        "recovered_h2_rho_noise": [
+          0.5999999999999998,
+          0.7499999999999996,
+          0.5999999999999996
+        ]
+      }
+    },
+    {
+      "h2": 0.36,
+      "rho": 0,
+      "noise_share": 0.4,
+      "n": 200000,
+      "seed": 19940924,
+      "observed_matrix_checks": 36,
+      "error_true_component_checks": 128,
+      "max_cov_abs_z": 2.0530986903550015,
+      "max_error_cross_abs_z": 2.565036989552903,
+      "individual_moments": {
+        "spouses": {
+          "predicted": 0.0,
+          "simulated": 0.0017998912417404496,
+          "mc_se": 0.00223606797749979,
+          "z": 0.8049358337276303
+        },
+        "parent_child": {
+          "predicted": 0.108,
+          "simulated": 0.10883054047844312,
+          "mc_se": 0.0022490709192908966,
+          "z": 0.369281587040831
+        },
+        "full_siblings": {
+          "predicted": 0.108,
+          "simulated": 0.10796841412614602,
+          "mc_se": 0.0022490709192908966,
+          "z": -0.014043965258300772
+        },
+        "grandparent": {
+          "predicted": 0.054,
+          "simulated": 0.05465980171224375,
+          "mc_se": 0.002239325791393472,
+          "z": 0.2946430192424903
+        },
+        "avuncular": {
+          "predicted": 0.054,
+          "simulated": 0.05235962254974796,
+          "mc_se": 0.002239325791393472,
+          "z": -0.7325318435381749
+        },
+        "first_cousins": {
+          "predicted": 0.027,
+          "simulated": 0.028390216891841392,
+          "mc_se": 0.0022368828757894322,
+          "z": 0.6214974001939024
+        },
+        "second_cousins": {
+          "predicted": 0.00675,
+          "simulated": 0.003511224880475588,
+          "mc_se": 0.002236118917343172,
+          "z": -1.448391270430527
+        },
+        "third_cousins": {
+          "predicted": 0.0016875,
+          "simulated": 0.004980066298425791,
+          "mc_se": 0.0022360711612739986,
+          "z": 1.4724783161864383
+        },
+        "fourth_cousins": {
+          "predicted": 0.000421875,
+          "simulated": 0.0006802958852896896,
+          "mc_se": 0.0022360681764858107,
+          "z": 0.11556932297825644
+        },
+        "first_cousins_removed": {
+          "predicted": 0.0135,
+          "simulated": 0.012072800282253042,
+          "mc_se": 0.002236271729911193,
+          "z": -0.6382049634923548
+        },
+        "second_cousins_removed": {
+          "predicted": 0.003375,
+          "simulated": 0.004334666309781096,
+          "mc_se": 0.002236080712569428,
+          "z": 0.4291733766078442
+        },
+        "third_cousins_removed": {
+          "predicted": 0.00084375,
+          "simulated": 0.0015051746312569757,
+          "mc_se": 0.002236068773443767,
+          "z": 0.2957979822053131
+        }
+      },
+      "averages": {
+        "midparent_correlation": {
+          "predicted": 0.15273506473629425,
+          "simulated": 0.15140306340810816,
+          "mc_se_asymptotic": 0.0021839049837206748,
+          "z": -0.6099172528636227
+        },
+        "midparent_slope": {
+          "predicted": 0.216,
+          "simulated": 0.21422731457335725,
+          "mc_se_asymptotic": 0.003125175195089069,
+          "z": -0.5672275363724761
+        }
+      },
+      "population_regression_inversion": null
+    }
+  ],
+  "core_pedigrees_total": 2600000,
+  "individual_moment_checks": 156,
+  "midparent_checks": 26,
+  "observed_covariance_checks": 468,
+  "error_true_component_checks": 1664,
+  "counterexamples": {
+    "additional_pedigrees": 200000,
+    "unequal_reliability_max_abs_z": 2.0601378769639482,
+    "correlated_error_max_abs_z": 2.5123473839894532,
+    "incorrect_common_multiplier_max_abs_z": 45.56589580459348
+  },
+  "notes": [
+    "Six-SE diagnostics are not empirical specification tests.",
+    "Midparent correlation/slope SEs are asymptotic Gaussian SEs.",
+    "Regression inversion uses exact population moments; no finite-sample unbiasedness is claimed.",
+    "Baseline verifier's symbol e is the review's latent loading e_P.",
+    "No-error and all-noise limits are symbolic checks; the model excludes the all-noise boundary lambda=0."
+  ]
+}

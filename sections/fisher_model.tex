@@ -22,8 +22,8 @@ For person $i$, define the two column vectors
 \[
  X_i=\underbrace{\begin{pmatrix}A_i\\E_i\end{pmatrix}}_{\text{random components}},
  \qquad
- q=\underbrace{\begin{pmatrix}h\\e\end{pmatrix}}_{\text{common parameters}},
- \qquad P_i=q^{\mathsf T}X_i=hA_i+eE_i.
+ q=\underbrace{\begin{pmatrix}h\\e_P\end{pmatrix}}_{\text{common parameters}},
+ \qquad P_i=q^{\mathsf T}X_i=hA_i+e_P E_i.
 \]
 $A_i$ is the person's standardized additive genetic value; $E_i$ is the
 standardized environmental component. $X_i$ varies across people, whereas
@@ -35,14 +35,14 @@ devices, not extra components of the model. There are no dominance or other nona
  \mathbb E[A_i]=\mathbb E[E_i]=0,\qquad
  \operatorname{Var}(A_i)=\operatorname{Var}(E_i)=1,\\
  \operatorname{Cov}(A_i,E_i)=0,\qquad
- 0<h<1,\qquad e=\sqrt{1-h^2}.
+ 0<h<1,\qquad e_P=\sqrt{1-h^2}.
  \end{gathered}
  \label{eq:model-raw}
 \end{equation}
 Thus $\operatorname{Cov}(X_i,X_i)=I_2$, the two-dimensional identity
 matrix, and
 \[
- \operatorname{Var}(P_i)=h^2+e^2+2he\operatorname{Cov}(A_i,E_i)=1.
+ \operatorname{Var}(P_i)=h^2+e_P^2+2h e_P\operatorname{Cov}(A_i,E_i)=1.
 \]
 The contribution of genes on the phenotype scale is $hA_i$, with variance
 $h^2$. Consequently $h^2$ is narrow-sense heritability in this population;
@@ -117,15 +117,15 @@ $h$, write a linear conditional mean as $\alpha+\beta P_i$. Zero means give
 $\alpha=0$, and
 \[
  \beta=\frac{\operatorname{Cov}(A_i,P_i)}{\operatorname{Var}(P_i)}
- =\frac{h\operatorname{Var}(A_i)+e\operatorname{Cov}(A_i,E_i)}{1}=h.
+ =\frac{h\operatorname{Var}(A_i)+e_P\operatorname{Cov}(A_i,E_i)}{1}=h.
 \]
 A population linear projection always has this coefficient, but its
 conditional mean need not equal that projection. Thus (L) is a real
-assumption. From $eE_i=P_i-hA_i$ it follows that
+assumption. From $e_P E_i=P_i-hA_i$ it follows that
 \[
  \mathbb E[E_i\mid P_i]
- =\frac{P_i-h\mathbb E[A_i\mid P_i]}{e}
- =\frac{1-h^2}{e}P_i=eP_i,\qquad
+ =\frac{P_i-h\mathbb E[A_i\mid P_i]}{e_P}
+ =\frac{1-h^2}{e_P}P_i=e_P P_i,\qquad
  \mathbb E[X_i\mid P_i]=qP_i.
 \]
 Otto et al.'s Gaussian specification supplies such linearity. Joint
@@ -140,7 +140,7 @@ identity from the assumptions that give the model its content.
 
 For this argument, the four components $(A_M,E_M,A_F,E_F)$ are assumed
 to have an ordinary joint density.
-Because $e>0$, replacing each $E_i$ by $P_i=hA_i+eE_i$ is an invertible
+Because $e_P>0$, replacing each $E_i$ by $P_i=hA_i+e_P E_i$ is an invertible
 change of variables, so $(A_M,A_F,P_M,P_F)$ also has an ordinary density.
 We do not assume an ordinary joint density for $(A_i,E_i,P_i)$, which
 contains a redundant variable.
@@ -236,11 +236,11 @@ of each vector. Their conditional means are $qP_M$ and $qP_F$, so
  C:=\mathbb E[X_MX_F^{\mathsf T}]
  =\mathbb E_{(P_M,P_F)}[(qP_M)(qP_F)^{\mathsf T}]
  =\rho qq^{\mathsf T}
- =\rho\begin{pmatrix}h^2&he\\he&e^2\end{pmatrix}.
+ =\rho\begin{pmatrix}h^2&h e_P\\h e_P&e_P^2\end{pmatrix}.
  \label{eq:ge-cross}
 \end{equation}
-Thus $\operatorname{Cov}(E_M,E_F)=\rho e^2$ and
-$\operatorname{Cov}(A_M,E_F)=\operatorname{Cov}(E_M,A_F)=\rho he$.
+Thus $\operatorname{Cov}(E_M,E_F)=\rho e_P^2$ and
+$\operatorname{Cov}(A_M,E_F)=\operatorname{Cov}(E_M,A_F)=\rho h e_P$.
 The full component covariance matrix is
 $\left(\begin{smallmatrix}I_2&C\\C^{\mathsf T}&I_2\end{smallmatrix}\right)$.
 Here the off-diagonal blocks are matrices, not scalars; $C$ happens to
@@ -268,7 +268,7 @@ genetic variance is a separate condition, to which we now turn.
 
 For child $j$ of parents $M,F$, assume additive transmission:
 \begin{equation}
- A_j=\tfrac12(A_M+A_F)+S_j,\qquad P_j=hA_j+eE_j.
+ A_j=\tfrac12(A_M+A_F)+S_j,\qquad P_j=hA_j+e_P E_j.
  \label{eq:model-transmission}
 \end{equation}
 $S_j$ is the segregation deviation: the child's departure from the
@@ -335,9 +335,9 @@ within-person assumptions and the spouse block $C$,
 \begin{align*}
  \operatorname{Cov}(P_M,A_M)&=h,\\
  \operatorname{Cov}(P_M,A_F)
- &=h\operatorname{Cov}(A_M,A_F)+e\operatorname{Cov}(E_M,A_F)\\
- &=h(\rho h^2)+e(\rho he)
-   =\rho h(h^2+e^2)=\rho h.
+ &=h\operatorname{Cov}(A_M,A_F)+e_P\operatorname{Cov}(E_M,A_F)\\
+ &=h(\rho h^2)+e_P(\rho h e_P)
+   =\rho h(h^2+e_P^2)=\rho h.
 \end{align*}
 The second line is where the PH-derived spouse covariances enter.
 Using transmission and the zero segregation covariance,
@@ -348,7 +348,7 @@ Using transmission and the zero segregation covariance,
 The child's fresh environment has zero covariance with $P_M$. Therefore
 \begin{equation}
  \rho_{PO}:=\operatorname{Corr}(P_M,P_j)
- =h\operatorname{Cov}(P_M,A_j)+e\operatorname{Cov}(P_M,E_j)
+ =h\operatorname{Cov}(P_M,A_j)+e_P\operatorname{Cov}(P_M,E_j)
  =\boxed{\tfrac12h^2(1+\rho).}
  \label{eq:po}
 \end{equation}
@@ -361,12 +361,12 @@ To expose the environmental qualification explicitly,
  \operatorname{Cov}(E_M,A_j)
  &=\tfrac12\{\operatorname{Cov}(E_M,A_M)
              +\operatorname{Cov}(E_M,A_F)\}+0
-   =\tfrac12\rho he.
+   =\tfrac12\rho h e_P.
 \end{align*}
 Consequently
 \[
  \operatorname{Cov}(X_M,X_j)=
- \begin{pmatrix}(1+\rho h^2)/2&0\\\rho he/2&0\end{pmatrix}.
+ \begin{pmatrix}(1+\rho h^2)/2&0\\\rho h e_P/2&0\end{pmatrix}.
 \]
 The parent's environmental component is associated with the other
 parent's genes through assortment, and those genes enter the child.
@@ -389,15 +389,15 @@ $\operatorname{Cov}(A_1,E_2)=\operatorname{Cov}(E_1,A_2)
 \begin{align}
  \rho_S:=\operatorname{Corr}(P_1,P_2)
  &=h^2\operatorname{Cov}(A_1,A_2)
-   +he\operatorname{Cov}(A_1,E_2)\notag\\
- &\quad+eh\operatorname{Cov}(E_1,A_2)
-   +e^2\operatorname{Cov}(E_1,E_2)\notag\\
+   +h e_P\operatorname{Cov}(A_1,E_2)\notag\\
+ &\quad+e_P h\operatorname{Cov}(E_1,A_2)
+   +e_P^2\operatorname{Cov}(E_1,E_2)\notag\\
  &=\boxed{\tfrac12h^2(1+\rho h^2).}
  \label{eq:sib}
 \end{align}
 These are the zero-cultural-transmission, zero-shared-environment
 specializations of Otto et al.'s equations~(46) and~(55).
-Adding sibling environmental covariance $c$ would add $e^2c$ if the
+Adding sibling environmental covariance $c$ would add $e_P^2c$ if the
 genetic--environmental cross-covariances remained zero. The classical
 formula excludes that contribution by setting $c=0$.
 
@@ -440,7 +440,7 @@ on the existing person's phenotype. Hence for their child $c(i)$,
  \mathbb E[A_{c(i)}\mid\mathcal F]
  &=\tfrac12\{A_i+h\rho P_i\}+0\notag\\
  &=\underbrace{\tfrac12(1+\rho h^2)}_{k}A_i
-   +\underbrace{\tfrac12\rho he}_{d}E_i
+   +\underbrace{\tfrac12\rho h e_P}_{d}E_i
    =kA_i+dE_i.
  \label{eq:model-child-mean}
 \end{align}
@@ -461,7 +461,7 @@ of $i$ gives $\operatorname{Cov}(P_g,E_i)=0$. Therefore
  \operatorname{Corr}(P_g,P_{c(i)})
  &=h\{k\operatorname{Cov}(P_g,A_i)
        +d\operatorname{Cov}(P_g,E_i)\}
-       +e\operatorname{Cov}(P_g,E_{c(i)})\\
+       +e_P\operatorname{Cov}(P_g,E_{c(i)})\\
  &=h\{kh(1+\rho)/2+d\cdot0\}+0
    =\boxed{\tfrac12h^2(1+\rho)k}.
 \end{align*}
@@ -473,7 +473,7 @@ $\operatorname{Cov}(P_u,A_i)=hk$ and
 $\operatorname{Cov}(P_u,E_i)=0$. Their niece/nephew satisfies
 \[
  \operatorname{Corr}(P_u,P_{c(i)})
- =h\{k(hk)+d\cdot0\}+e\cdot0=\boxed{h^2k^2}.
+ =h\{k(hk)+d\cdot0\}+e_P\cdot0=\boxed{h^2k^2}.
 \]
 
 For first cousins $c(i)$ and $c(u)$, independent outside-mate draws
@@ -504,21 +504,23 @@ match the individual-relative rows of Clark's Technical Appendix,
 Table~A1, with measurement error suppressed. In Clark's notation
 $r=\rho$ and $m=\rho_A=h^2\rho$; his attenuation parameter is set to
 one here. Goldberger's notation has $A=\rho_A$, $c_1=h^2$, and $c_2=1$
-when dominance is omitted.
+when dominance is omitted. The first three rows require the nuclear-family
+assumptions; the extended-relative rows also require the outside-mate
+conditions in Section~\ref{sec:model-extended}.
 \begin{table}[htbp]
 \centering
 \caption{Predicted phenotype correlations; $k=(1+h^2\rho)/2$}
 \label{tab:notation}
-\begin{tabular}{ll}
+\begin{tabular}{lll}
 \hline
-Relationship & Correlation\\
+Relationship & Correlation & Random mating\\
 \hline
-Spouses & $\rho$\\
-Parent--child & $h^2(1+\rho)/2$\\
-Full siblings & $h^2k$\\
-Grandparent--grandchild & $h^2(1+\rho)k/2$\\
-Aunt/uncle--niece/nephew & $h^2k^2$\\
-First cousins & $h^2k^3$\\
+Spouses & $\rho$ & $0$\\
+Parent--child & $h^2(1+\rho)/2$ & $h^2/2$\\
+Full siblings & $h^2k$ & $h^2/2$\\
+Grandparent--grandchild & $h^2(1+\rho)k/2$ & $h^2/4$\\
+Aunt/uncle--niece/nephew & $h^2k^2$ & $h^2/4$\\
+First cousins & $h^2k^3$ & $h^2/8$\\
 \hline
 \end{tabular}
 \end{table}
@@ -538,7 +540,7 @@ Comparisons with estimated correlations must account for sampling
 uncertainty and comparable measurement and sampling across kinships.
 
 For estimation, the no-error model has two free structural parameters,
-$\theta=(h^2,\rho)$, not three independent parameters
+$\boldsymbol\psi=(h^2,\rho)$, not three independent parameters
 $(h^2,\rho,\rho_A)$. For population correlations $r_\ell$ of the
 relationships in the table, write
 \[

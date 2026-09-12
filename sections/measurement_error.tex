@@ -1,0 +1,380 @@
+\section{Adding classical measurement error}
+\label{sec:measurement-error}
+
+The previous section concerns a phenotype measured without error. We now
+separate that phenotype from the recorded outcome. This is a specific
+measurement model: adding a residual and calling it noise is not enough
+to justify multiplying every kinship correlation by the same factor.
+
+\subsection{The observed outcome and the meaning of the attenuation factor}
+
+Retain the standardized genetic and environmental components $A_i,E_i$,
+but let the recorded outcome be
+\begin{equation}
+ Y_i=aA_i+eE_i+uU_i,\qquad
+ X_i^+=\begin{pmatrix}A_i\\E_i\\U_i\end{pmatrix},\qquad
+ w=\begin{pmatrix}a\\e\\u\end{pmatrix},\qquad Y_i=w^{\mathsf T}X_i^+.
+ \label{eq:me-outcome}
+\end{equation}
+$U_i$ represents pure measurement error, with mean zero and variance
+one. Assume $a,e>0$, $u\geq0$, and, for every pair of people $i,j$,
+\begin{equation}
+ \operatorname{Cov}(U_i,A_j)=\operatorname{Cov}(U_i,E_j)=0,\qquad
+ \operatorname{Cov}(U_i,U_j)=0\quad(i\ne j).
+ \label{eq:me-orthogonality}
+\end{equation}
+Thus error is uncorrelated with both true components within the person
+and across people, and with other people's errors. Its variance within
+the person is one, not zero. The original within-person condition
+$\operatorname{Cov}(A_i,E_i)=0$ is retained; the nonzero cross-person
+genetic--environmental covariances derived earlier are also retained.
+These orthogonality conditions suffice for the moment calculations.
+Independent errors, independent of all true family components, are a
+stronger sufficient specification used in the simulations.
+
+Standardize each recorded outcome to unit variance. The three
+within-person components are uncorrelated, so
+\[
+ \operatorname{Var}(Y_i)=a^2+e^2+u^2=1.
+\]
+Define the attenuation factor and noise share as
+\begin{equation}
+ \eta:=u^2,\qquad
+ \theta:=1-\eta=a^2+e^2>0.
+ \label{eq:me-shares}
+\end{equation}
+Here $\eta$ is the fraction of observed variance attributable to
+measurement error, whereas $\theta$ is the fraction attributable to
+the true phenotype. This distinction matters for translating Clark's
+notation: his $\theta$ is the \emph{attenuation factor}
+\citep[p.~42 and Table~A1]{Clark2026}, so
+\[
+ \boxed{\theta_{\rm Clark}=\theta=1-\eta.}
+\]
+Thus $1-\theta=\eta$ is the noise share.
+
+The standardized latent phenotype is
+\begin{equation}
+ P_i=\frac{aA_i+eE_i}{\sqrt{\theta}}
+     =hA_i+e_P E_i,\qquad
+ h=\frac{a}{\sqrt{\theta}},\quad
+ e_P=\frac{e}{\sqrt{\theta}}=\sqrt{1-h^2}.
+ \label{eq:me-latent}
+\end{equation}
+Consequently
+\[
+ Y_i=\sqrt{\theta}P_i+\sqrt{\eta}U_i,\qquad
+ h^2=\frac{a^2}{\theta},\quad
+ a^2=\theta h^2,\quad e^2=\theta(1-h^2).
+\]
+$h^2$ is heritability of the latent phenotype; $a^2$ is the additive
+genetic share of variance of the recorded outcome. They coincide only
+when $\eta=0$. The symbol $e_P$ denotes the environmental loading in
+the error-free model; $e$ denotes its loading on the observed scale.
+
+Assume PH and own-person conditional linearity for this same latent
+$P_i$, together with the earlier transmission and pedigree assumptions.
+Spouses match on $P$, not on the recording error $U$. Therefore
+\begin{equation}
+ \rho_A=h^2\rho=\frac{a^2}{\theta}\rho,\qquad
+ \rho:=\operatorname{Corr}(P_M,P_F).
+ \label{eq:me-spouse-restriction}
+\end{equation}
+No new transmission term is introduced: $A_j=(A_M+A_F)/2+S_j$ and
+$\operatorname{Var}(S_j)=(1-h^2\rho)/2$ as before. $U$ changes what is
+recorded, not what is inherited or how mates are selected.
+
+\subsection{Why the same attenuation factor appears for individual relatives}
+\label{sec:me-attenuation}
+
+For distinct people, expanding the two observed outcomes gives
+\begin{align}
+ \operatorname{Cov}(Y_i,Y_j)
+ &=\theta\operatorname{Cov}(P_i,P_j)
+   +\sqrt{\theta\eta}\operatorname{Cov}(P_i,U_j)\notag\\
+ &\quad+\sqrt{\theta\eta}\operatorname{Cov}(U_i,P_j)
+   +\eta\operatorname{Cov}(U_i,U_j).
+ \label{eq:me-expansion}
+\end{align}
+For example,
+$\operatorname{Cov}(P_i,U_j)
+=h\operatorname{Cov}(A_i,U_j)+e_P\operatorname{Cov}(E_i,U_j)=0$
+by \eqref{eq:me-orthogonality}; the other cross-term vanishes in the
+same way, and the error--error covariance is zero. Since both observed
+and latent individual phenotypes have unit variance,
+\begin{equation}
+ \boxed{\operatorname{Corr}(Y_i,Y_j)
+   =\theta\operatorname{Corr}(P_i,P_j)
+   =(1-\eta)\operatorname{Corr}(P_i,P_j),\quad i\ne j.}
+ \label{eq:me-attenuation}
+\end{equation}
+This is the source of the common multiplier in the individual-relative
+rows of Clark's Table~A1. On the unstandardized signal-plus-error scale,
+measurement error adds variance without adding covariance; the
+correlation is therefore reduced. Attenuation occurs at the two observed
+endpoints, not anew at each intervening generation.
+
+In particular, the observed spouse correlation is
+$s_Y:=\operatorname{Corr}(Y_M,Y_F)=\theta\rho$. Thus the latent
+restriction may also be written
+\[
+ \rho_A=\frac{a^2s_Y}{\theta^2};
+\]
+it is not generally $a^2s_Y$. Substituting observed quantities into the
+error-free restriction without the scaling factors is incorrect.
+The complete spouse block for the standardized components is
+\[
+ \operatorname{Cov}(X_M^+,X_F^+)
+ =\rho\begin{pmatrix}
+ h^2&he_P&0\\he_P&e_P^2&0\\0&0&0
+ \end{pmatrix}.
+\]
+Multiplying on the left by $w^{\mathsf T}$ and on the right by $w$
+gives $\rho(ah+ee_P)^2
+=\rho\{\sqrt{\theta}(h^2+e_P^2)\}^2=\theta\rho$, confirming the result.
+
+\subsection{The adjusted moment table}
+\label{sec:me-table}
+
+Apply \eqref{eq:me-attenuation} to each moment already derived. For
+example,
+\[
+ r_{PO}^{Y}=\theta\frac{h^2(1+\rho)}{2},\qquad
+ r_S^{Y}=\theta h^2k,\qquad
+ k:=\frac{1+h^2\rho}{2}.
+\]
+Here $r^Y$ denotes a correlation of recorded outcomes. The analogous
+substitution gives the grandparent, avuncular, and first-cousin rows
+in Table~\ref{tab:measurement-moments}.
+
+The more distant collateral rows follow from the same pedigree
+extension, rather than from adding further error factors.
+For two collateral relatives $i,j$ whose cross-component environmental
+covariances vanish, equation~\eqref{eq:model-child-mean} implies
+\[
+ \operatorname{Cov}(A_{c(i)},A_j)
+ =k\operatorname{Cov}(A_i,A_j)+d\operatorname{Cov}(E_i,A_j)
+ =k\operatorname{Cov}(A_i,A_j).
+\]
+Fresh offspring environments preserve the zero environmental
+cross-covariances. Descending one side therefore multiplies genetic
+covariance by $k$; descending both sides multiplies it by $k^2$,
+using conditionally independent outside mates and births as in the
+first-cousin derivation. Starting with sibling covariance $k$ gives
+$k^3,k^5,k^7,k^9$ for first through fourth cousins. Removing a cousin
+relationship by $t$ generations on one side supplies another $k^t$.
+The observed phenotype correlation remains $\theta h^2$ times that
+genetic covariance.
+
+\begin{table}[htbp]
+\centering
+\caption{Correlations with classical measurement error:
+$\theta=1-\eta$, $k=(1+h^2\rho)/2$}
+\label{tab:measurement-moments}
+\begin{tabular}{lccc}
+\hline
+Relationship & $n$ & $D$ & Observed correlation $r^Y$\\
+\hline
+Spouses & --- & --- & $\theta\rho$\\
+Parent--child & 1 & 1 & $\theta h^2(1+\rho)/2$\\
+Full siblings & 1 & 0 & $\theta h^2k$\\
+Grandparent--grandchild & 2 & 1 & $\theta h^2(1+\rho)k/2$\\
+Aunt/uncle--niece/nephew & 2 & 0 & $\theta h^2k^2$\\
+First cousins & 3 & 0 & $\theta h^2k^3$\\
+Second cousins & 5 & 0 & $\theta h^2k^5$\\
+Third cousins & 7 & 0 & $\theta h^2k^7$\\
+Fourth cousins & 9 & 0 & $\theta h^2k^9$\\
+Degree-$c$ cousins, $t$ removed & $2c+1+t$ & 0
+ & $\theta h^2k^{2c+1+t}$\\
+\hline
+\end{tabular}
+\end{table}
+In the final row $c\geq1$ and $t\geq0$. The columns $n,D$ specify the
+regression representation below; the spouse row is a separate moment.
+The single-parent and single-grandparent rows, and the collateral rows,
+agree with Clark's Table~A1 after using $\theta$ as the common attenuation factor,
+$r=\rho$, and $m=h^2\rho$. Averages of relatives require a different
+normalization and are treated separately below.
+
+\subsection{What the appendix regression can identify}
+\label{sec:me-identification}
+
+For the nonspousal rows, both the collateral and lineal formulas can
+be written
+\begin{equation}
+ r^Y_{n,D}
+ =\theta h^2 k^n
+  \left(\frac{1+\rho}{1+h^2\rho}\right)^D,\qquad D\in\{0,1\}.
+ \label{eq:me-regression-moment}
+\end{equation}
+For example, $n=1,D=1$ cancels $1+h^2\rho$ from $k$, leaving the
+parent--child formula. $n=2,D=1$ leaves the extra factor $k$ for a
+grandparent. For positive population correlations, taking logarithms gives
+\begin{align}
+ \log r^Y_{n,D}&=\alpha+\beta n+\gamma D,\notag\\
+ \alpha&=\log(\theta h^2),\quad
+ \beta=\log\left(\frac{1+\rho_A}{2}\right),\quad
+ \gamma=\log\left(\frac{1+\rho}{1+\rho_A}\right).
+ \label{eq:me-log-regression}
+\end{align}
+This is the structure of Clark's equations~A1--A3; Greek letters here
+avoid confusing the regression intercept with the loading $a$.
+
+With sufficient variation to identify all three regression coefficients,
+invert them in sequence:
+\begin{align}
+ k&=\exp(\beta),&
+ \rho_A&=2\exp(\beta)-1,\notag\\
+ 1+\rho&=(1+\rho_A)\exp(\gamma),&
+ \rho&=2\exp(\beta+\gamma)-1,\notag\\
+ h^2&=\frac{\rho_A}{\rho},&
+ \theta&=\frac{\exp(\alpha)}{h^2},&
+ \boxed{\eta=1-\frac{\exp(\alpha)}{h^2}.}
+ \label{eq:me-inversion}
+\end{align}
+The crucial third line invokes the \emph{derived PH restriction}
+$\rho_A=h^2\rho$. Without it, the intercept determines only
+$\theta h^2=a^2$, not the separate noise and heritability shares.
+Thus estimating noise by this route is possible in principle, but
+its interpretation depends on the same substantive model being tested.
+The exponentiated intercept is the observed genetic variance share $a^2$;
+calling it latent heritability $h^2$ would be incorrect when noise is present.
+
+The separation works because genuine $E$ enters the phenotype on which
+spouses match, whereas $U$ does not. Their effects on the pattern of
+parent--child and sibling resemblance therefore differ under the model.
+Without that assumed distinction, two independent, untransmitted sources
+of variation need not be distinguishable from these data. The recovered
+noise share is consequently not an independent validation of the mating
+assumptions used to identify it.
+
+Two limits are important. With \emph{collateral relatives alone}, $D=0$:
+the regression identifies $\theta h^2$ and $\rho_A$, but not $\rho$,
+$h^2$, and $\eta$ separately. Even after imposing PH, different pairs
+$(\theta,h^2)$ can have the same product, with
+$\rho=\rho_A/h^2$, provided all parameters remain admissible.
+Also, under random mating $\rho=\rho_A=0$, $\gamma=0$ for all $h^2$;
+the ratio $\rho_A/\rho$ cannot identify heritability. The preceding
+inversion therefore presumes positive assortment and an identified
+lineal--collateral contrast. Identification can be weak near random
+mating.
+
+Estimation must enforce $0<h^2<1$, $0<\rho<1$, and
+$0<\theta\leq1$. Arbitrary fitted log-regression coefficients need
+not imply admissible shares. One can instead fit the three structural
+parameters $(h^2,\rho,\eta)$ jointly to the moment table, imposing
+the constraints directly. The spouse moment $\theta\rho$, if available,
+provides an additional check on the predictions recovered from the
+nonspousal regression.
+
+Equation~\eqref{eq:me-log-regression} is exact for population moments;
+using logarithms of estimated correlations introduces sampling issues.
+Logs require positive estimates, and
+$\operatorname{SE}(\log\widehat r)\simeq
+\operatorname{SE}(\widehat r)/r$ by the delta method. For inverse-variance weighting of the log regression, the relevant
+uncertainty is on the log scale. Inference must also account for
+dependence between estimates from overlapping families. A small
+residual sum of squares does not by itself verify the measurement or
+transmission assumptions that identify $\eta$.
+
+\subsection{Averaging parents changes the correlation}
+\label{sec:me-averages}
+
+The common multiplier $\theta$ above applies to pairs of \emph{individuals}.
+It cannot be carried over mechanically to the correlation of a child
+with an average of relatives. For the observed midparent value
+$\overline Y=(Y_M+Y_F)/2$,
+\begin{align*}
+ \operatorname{Var}(\overline Y)
+ &=\tfrac14\{1+1+2\operatorname{Cov}(Y_M,Y_F)\}
+   =\tfrac12(1+\theta\rho),\\
+ \operatorname{Cov}(Y_j,\overline Y)
+ &=\tfrac12\{\operatorname{Cov}(Y_j,Y_M)
+             +\operatorname{Cov}(Y_j,Y_F)\}\\
+ &=\theta h^2(1+\rho)/2.
+\end{align*}
+Since $\operatorname{Var}(Y_j)=1$, the correlation is
+\begin{equation}
+ \boxed{\operatorname{Corr}(Y_j,\overline Y)
+ =\frac{\theta h^2(1+\rho)}
+        {\sqrt{2(1+\theta\rho)}}.}
+ \label{eq:me-midparent}
+\end{equation}
+Even without measurement error this is
+$h^2\sqrt{(1+\rho)/2}$, not $h^2$. The familiar $h^2$ is instead the
+error-free \emph{regression slope} on the midparent phenotype.
+With error, that slope becomes
+\[
+ \frac{\operatorname{Cov}(Y_j,\overline Y)}
+      {\operatorname{Var}(\overline Y)}
+ =\frac{\theta h^2(1+\rho)}{1+\theta\rho},
+\]
+which is generally not $\theta h^2$ either.
+
+Clark's Table~A1 labels the average-parent entry a correlation and gives
+$\theta h^2$. Interpreted literally as the correlation with the arithmetic
+mean of the parents' outcomes, that entry does not follow from this model.
+It needs a different definition or a correction. The average-grandparent
+entry requires the same care: its denominator depends on the joint
+covariance matrix of the four grandparents. Averaging individual-relative
+correlations is not the same as correlating with an average.
+
+\subsection{Substantive content of the common-noise correction}
+\label{sec:me-meaning}
+
+The adjustment assumes more than imperfect measurement. First, each
+person's error must be uncorrelated with \emph{every} relevant relative's
+true components and error. A shared informant, shared record linkage
+error, or common error in assigning status to an occupation can violate
+that requirement. For example, if the two error--signal terms in
+\eqref{eq:me-expansion} remain zero but
+$\operatorname{Cov}(U_i,U_j)=c_{ij}$, then
+\[
+ r^Y_{ij}=\theta r^P_{ij}+\eta c_{ij}.
+\]
+This is not a uniform attenuation of the original formula.
+
+Second, the common multiplier presumes the same signal share for the
+people entering each correlation. If instead
+$Y_i=\sqrt{\theta_i}P_i+\sqrt{1-\theta_i}U_i$ with the analogous
+orthogonality conditions, expansion gives
+\[
+ r^Y_{ij}=\sqrt{\theta_i\theta_j}\,r^P_{ij}.
+\]
+Different reliability by sex, age, cohort, outcome definition, or kinship
+sample can therefore prevent cancellation in ratios. Those restrictions
+must hold in the actual selected samples, not merely in a hypothetical
+unselected population.
+
+Third, the latent phenotype must be the same trait whose components
+drive transmission and assortment. If an observed characteristic
+affects partner choice, the part of that characteristic labeled error
+relative to an unobserved trait cannot automatically be treated as
+irrelevant noise. Nor does an imperfect proxy for intelligence
+automatically satisfy classical measurement-error assumptions for
+intelligence. A substantive difference between traits may contain
+systematic genetic or environmental variation.
+
+Finally, pure measurement error is distinct from the true environmental
+component $E$. Independent, untransmitted environmental variation can
+also reduce familial resemblance, and its separation from recording
+error here depends on the modeled assortment and transmission
+restrictions. Correcting attenuation does not remove the exclusion
+of shared upbringing, validate PH, or establish a genetic explanation
+for a close fit. Under a common positive $\theta$ the parent--child
+minus sibling gap retains its sign:
+\[
+ r^Y_{PO}-r^Y_S
+ =\theta h^2\rho(1-h^2)/2>0.
+\]
+Allowing arbitrary relationship-specific errors would change that test,
+but it would also change the model being fitted.
+
+\paragraph{Verification.}
+The measurement-error verification script checks the covariance
+expansion, scaling, regression inversion, and midparent normalization
+symbolically. It then adds fresh measurement errors to generated
+pedigrees and checks the predicted individual-relative and midparent
+moments numerically. All 71 new symbolic checks passed, along with the 46 baseline checks. Across 13 parameter settings, 2.6 million simulated pedigrees passed 156 individual-relative and 26 midparent checks, including distant cousins and relatives once removed. It also checks counterexamples with unequal
+reliability and correlated measurement errors. These calculations
+verify the stated model; they do not verify its empirical assumptions.

@@ -1,6 +1,6 @@
 # Main Clark review
 
-**Edit main.tex.** It is the main review source, with references.bib as its bibliography. Compiled output is main.pdf. The Fisher-model section is included from sections/fisher_model.tex; edit that file to revise the mathematical section.
+**Edit main.tex.** It is the main review source, with references.bib as its bibliography. Compiled output is main.pdf. The Fisher-model section is included from sections/fisher_model.tex; edit that file to revise the mathematical section. The measurement-error extension is in sections/measurement_error.tex; it uses theta for Clark's attenuation factor and eta for the noise share. Both sources are included in the main build.
 
 The Git repository and its existing GitHub/Overleaf remotes remain in this directory. No remote changes were made during the folder cleanup.
 

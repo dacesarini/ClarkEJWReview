@@ -1,6 +1,6 @@
 # Main Clark review
 
-**Edit main.tex.** It is the main review source, with references.bib as its bibliography. Compiled output is main.pdf.
+**Edit main.tex.** It is the main review source, with references.bib as its bibliography. Compiled output is main.pdf. The Fisher-model section is included from sections/fisher_model.tex; edit that file to revise the mathematical section.
 
 The Git repository and its existing GitHub/Overleaf remotes remain in this directory. No remote changes were made during the folder cleanup.
 
@@ -21,4 +21,4 @@ supporting/ holds the previously tracked Goldberger transcription and derivation
 
 The source-PDF catalog and full bibliography audit are in ../references/. A concise bibliography audit summary is kept here as BIBLIOGRAPHY_NOTES.md for future Git/Overleaf users.
 
-The manuscript's substantive claims have not been re-audited or rewritten as part of this organizational pass. Consult ../notes/review_criticisms_2026-09-12.md for the current discussion framework.
+The opening includes the eight-point criticism framework. The Fisher-model section has been replaced with an explicit, analytically and computationally checked derivation. Other sections remain working drafts; the consistency edits made alongside this replacement are not a complete audit of their substantive claims. Verification instructions and source crosswalk: verification/README.md.

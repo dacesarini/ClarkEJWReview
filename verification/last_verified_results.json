@@ -1,0 +1,491 @@
+{
+  "symbolic_checks": 46,
+  "symbolic_check_names": [
+    "phenotype variance",
+    "spouse phenotype covariance",
+    "spouse genetic covariance",
+    "PH Gaussian conditional cross covariance given wife's phenotype",
+    "PH Gaussian conditional cross covariance given husband's phenotype",
+    "mate residual covariance",
+    "determinant of full spouse covariance",
+    "grandmother marginal component covariance",
+    "grandmother marginal phenotype variance",
+    "grandfather marginal component covariance",
+    "grandfather marginal phenotype variance",
+    "mother marginal component covariance",
+    "mother marginal phenotype variance",
+    "uncle marginal component covariance",
+    "uncle marginal phenotype variance",
+    "father marginal component covariance",
+    "father marginal phenotype variance",
+    "aunt_by_marriage marginal component covariance",
+    "aunt_by_marriage marginal phenotype variance",
+    "child marginal component covariance",
+    "child marginal phenotype variance",
+    "cousin marginal component covariance",
+    "cousin marginal phenotype variance",
+    "grandmother/grandfather spouse block",
+    "mother/father spouse block",
+    "uncle/aunt_by_marriage spouse block",
+    "stationarity",
+    "full sibling component block",
+    "parent child component block",
+    "grandparent child component block",
+    "avuncular component block",
+    "first cousin component block",
+    "spouses phenotype correlation",
+    "parent_child phenotype correlation",
+    "full_siblings phenotype correlation",
+    "grandparent phenotype correlation",
+    "avuncular phenotype correlation",
+    "first_cousins phenotype correlation",
+    "parent minus sibling gap",
+    "spouses random mating limit",
+    "parent_child random mating limit",
+    "full_siblings random mating limit",
+    "grandparent random mating limit",
+    "avuncular random mating limit",
+    "first_cousins random mating limit",
+    "cousin sensitivity to additional mate genetic covariance"
+  ],
+  "pedigree_members_in_matrix_order": [
+    "grandmother",
+    "grandfather",
+    "mother",
+    "uncle",
+    "father",
+    "aunt_by_marriage",
+    "child",
+    "cousin"
+  ],
+  "simulation_scenarios": [
+    {
+      "h2": 0.1,
+      "rho": 0,
+      "families": 250000,
+      "seed": 20260912,
+      "minimum_eigenvalue": 0.19906133804338108,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 2.2181218147026316,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.0,
+          "simulated": -0.0011113160146004667,
+          "mc_se": 0.002,
+          "z": -0.5556580073002333
+        },
+        "parent_child": {
+          "predicted": 0.05,
+          "simulated": 0.05058218297326765,
+          "mc_se": 0.0020024984394500784,
+          "z": 0.2907283031029604
+        },
+        "full_siblings": {
+          "predicted": 0.05,
+          "simulated": 0.05418632963318922,
+          "mc_se": 0.0020024984394500784,
+          "z": 2.090553256230681
+        },
+        "grandparent": {
+          "predicted": 0.025,
+          "simulated": 0.02510831128985951,
+          "mc_se": 0.0020006249023742555,
+          "z": 0.05413872921953964
+        },
+        "avuncular": {
+          "predicted": 0.025,
+          "simulated": 0.02497671585040864,
+          "mc_se": 0.0020006249023742555,
+          "z": -0.011638438351801676
+        },
+        "first_cousins": {
+          "predicted": 0.0125,
+          "simulated": 0.011895339830745024,
+          "mc_se": 0.002000156243896961,
+          "z": -0.30230646785718085
+        }
+      }
+    },
+    {
+      "h2": 0.1,
+      "rho": 0.35,
+      "families": 250000,
+      "seed": 20260913,
+      "minimum_eigenvalue": 0.19316116982806236,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 2.862643913277868,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.35,
+          "simulated": 0.34904585148537065,
+          "mc_se": 0.002118962010041709,
+          "z": -0.4502905243735568
+        },
+        "parent_child": {
+          "predicted": 0.0675,
+          "simulated": 0.06547831542869986,
+          "mc_se": 0.002004551071936058,
+          "z": -1.0085472999934773
+        },
+        "full_siblings": {
+          "predicted": 0.05175,
+          "simulated": 0.050212384722099976,
+          "mc_se": 0.00200267627189219,
+          "z": -0.7677802446060019
+        },
+        "grandparent": {
+          "predicted": 0.03493125,
+          "simulated": 0.032902544757832865,
+          "mc_se": 0.0020012198202362104,
+          "z": -1.0137343342560328
+        },
+        "avuncular": {
+          "predicted": 0.026780625,
+          "simulated": 0.026407732003831078,
+          "mc_se": 0.002000717073326852,
+          "z": -0.18637967413796483
+        },
+        "first_cousins": {
+          "predicted": 0.013858973437499998,
+          "simulated": 0.013062014152286706,
+          "mc_se": 0.002000192061922796,
+          "z": -0.3984413798978737
+        }
+      }
+    },
+    {
+      "h2": 0.1,
+      "rho": 0.8,
+      "families": 250000,
+      "seed": 20260914,
+      "minimum_eigenvalue": 0.17508589348043324,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 2.777221596271853,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.8,
+          "simulated": 0.7991002569993961,
+          "mc_se": 0.0025612496949731396,
+          "z": -0.3512906228431391
+        },
+        "parent_child": {
+          "predicted": 0.09000000000000001,
+          "simulated": 0.09071846813463548,
+          "mc_se": 0.002008083663595718,
+          "z": 0.35778794861015145
+        },
+        "full_siblings": {
+          "predicted": 0.054000000000000006,
+          "simulated": 0.05478909739830741,
+          "mc_se": 0.002002913877329727,
+          "z": 0.3939747021771218
+        },
+        "grandparent": {
+          "predicted": 0.04860000000000001,
+          "simulated": 0.047209039778159045,
+          "mc_se": 0.0020023605669309413,
+          "z": -0.6946602149546517
+        },
+        "avuncular": {
+          "predicted": 0.029160000000000005,
+          "simulated": 0.030009185088186473,
+          "mc_se": 0.002000850124921904,
+          "z": 0.4244121424235172
+        },
+        "first_cousins": {
+          "predicted": 0.015746400000000004,
+          "simulated": 0.019515321123490786,
+          "mc_se": 0.0020002479337451746,
+          "z": 1.8842269800194331
+        }
+      }
+    },
+    {
+      "h2": 0.36,
+      "rho": 0,
+      "families": 250000,
+      "seed": 20260915,
+      "minimum_eigenvalue": 0.19906133804338108,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 3.401648605693987,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.0,
+          "simulated": 0.0011603375629486358,
+          "mc_se": 0.002,
+          "z": 0.5801687814743179
+        },
+        "parent_child": {
+          "predicted": 0.18,
+          "simulated": 0.17717536394943337,
+          "mc_se": 0.002032141727340886,
+          "z": -1.3899798486312962
+        },
+        "full_siblings": {
+          "predicted": 0.18,
+          "simulated": 0.1808942186451603,
+          "mc_se": 0.002032141727340886,
+          "z": 0.44003753927656714
+        },
+        "grandparent": {
+          "predicted": 0.09,
+          "simulated": 0.08947631217540268,
+          "mc_se": 0.002008083663595718,
+          "z": -0.26078984361617147
+        },
+        "avuncular": {
+          "predicted": 0.09,
+          "simulated": 0.09046972480761843,
+          "mc_se": 0.002008083663595718,
+          "z": 0.2339169508392573
+        },
+        "first_cousins": {
+          "predicted": 0.045,
+          "simulated": 0.04808890207875855,
+          "mc_se": 0.002002023975880409,
+          "z": 1.5428896536567096
+        }
+      }
+    },
+    {
+      "h2": 0.36,
+      "rho": 0.35,
+      "families": 250000,
+      "seed": 20260916,
+      "minimum_eigenvalue": 0.17733739567044116,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 2.647469257342542,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.35,
+          "simulated": 0.34924058117880435,
+          "mc_se": 0.002118962010041709,
+          "z": -0.3583919001835597
+        },
+        "parent_child": {
+          "predicted": 0.243,
+          "simulated": 0.24065268300092837,
+          "mc_se": 0.002058202128071973,
+          "z": -1.1404696200904598
+        },
+        "full_siblings": {
+          "predicted": 0.20267999999999997,
+          "simulated": 0.20372743303087895,
+          "mc_se": 0.0020406657564628265,
+          "z": 0.5132800545908807
+        },
+        "grandparent": {
+          "predicted": 0.136809,
+          "simulated": 0.1342974902419323,
+          "mc_se": 0.0020186299338719816,
+          "z": -1.244165518367352
+        },
+        "avuncular": {
+          "predicted": 0.11410883999999998,
+          "simulated": 0.11258501174413495,
+          "mc_se": 0.0020129787156014795,
+          "z": -0.757001673219236
+        },
+        "first_cousins": {
+          "predicted": 0.06424327691999998,
+          "simulated": 0.06305726862193377,
+          "mc_se": 0.0020041229489524037,
+          "z": -0.5917842010073103
+        }
+      }
+    },
+    {
+      "h2": 0.36,
+      "rho": 0.8,
+      "families": 250000,
+      "seed": 20260917,
+      "minimum_eigenvalue": 0.13742292658634755,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 2.4077111211746405,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.8,
+          "simulated": 0.8023161080911123,
+          "mc_se": 0.0025612496949731396,
+          "z": 0.904288283824103
+        },
+        "parent_child": {
+          "predicted": 0.324,
+          "simulated": 0.32494928666282547,
+          "mc_se": 0.0021023567727671724,
+          "z": 0.45153452312281944
+        },
+        "full_siblings": {
+          "predicted": 0.23184,
+          "simulated": 0.23455414258591195,
+          "mc_se": 0.0020530463079044274,
+          "z": 1.322007484907792
+        },
+        "grandparent": {
+          "predicted": 0.208656,
+          "simulated": 0.2108325160693459,
+          "mc_se": 0.0020430734948464284,
+          "z": 1.0653146227172223
+        },
+        "avuncular": {
+          "predicted": 0.14930496000000001,
+          "simulated": 0.15017748771826492,
+          "mc_se": 0.0020221691037898898,
+          "z": 0.4314810846578746
+        },
+        "first_cousins": {
+          "predicted": 0.09615239424,
+          "simulated": 0.0990227033952619,
+          "mc_se": 0.0020092240123172774,
+          "z": 1.4285660223379066
+        }
+      }
+    },
+    {
+      "h2": 0.8,
+      "rho": 0,
+      "families": 250000,
+      "seed": 20260918,
+      "minimum_eigenvalue": 0.19906133804338108,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 2.270836579157699,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.0,
+          "simulated": 0.0015718141748926637,
+          "mc_se": 0.002,
+          "z": 0.7859070874463319
+        },
+        "parent_child": {
+          "predicted": 0.39999999999999997,
+          "simulated": 0.40076502816916,
+          "mc_se": 0.0021540659228538013,
+          "z": 0.35515541146785207
+        },
+        "full_siblings": {
+          "predicted": 0.39999999999999997,
+          "simulated": 0.3968626596107044,
+          "mc_se": 0.0021540659228538013,
+          "z": -1.4564737114169177
+        },
+        "grandparent": {
+          "predicted": 0.19999999999999998,
+          "simulated": 0.2028161136042347,
+          "mc_se": 0.002039607805437114,
+          "z": 1.3807132904314405
+        },
+        "avuncular": {
+          "predicted": 0.19999999999999998,
+          "simulated": 0.20157256705537113,
+          "mc_se": 0.002039607805437114,
+          "z": 0.771014432862561
+        },
+        "first_cousins": {
+          "predicted": 0.09999999999999999,
+          "simulated": 0.09846147066231024,
+          "mc_se": 0.002009975124224178,
+          "z": -0.7654469546152212
+        }
+      }
+    },
+    {
+      "h2": 0.8,
+      "rho": 0.35,
+      "families": 250000,
+      "seed": 20260919,
+      "minimum_eigenvalue": 0.14905934912358484,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 2.51058828109452,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.35,
+          "simulated": 0.3479907292510341,
+          "mc_se": 0.002118962010041709,
+          "z": -0.9482334933066341
+        },
+        "parent_child": {
+          "predicted": 0.54,
+          "simulated": 0.537896596155515,
+          "mc_se": 0.00227297162322806,
+          "z": -0.9253981981076387
+        },
+        "full_siblings": {
+          "predicted": 0.512,
+          "simulated": 0.510561189495105,
+          "mc_se": 0.002246903647244358,
+          "z": -0.6403525610275321
+        },
+        "grandparent": {
+          "predicted": 0.3456,
+          "simulated": 0.34427067283819535,
+          "mc_se": 0.00211607122753465,
+          "z": -0.6282053007040873
+        },
+        "avuncular": {
+          "predicted": 0.32767999999999997,
+          "simulated": 0.327095284068974,
+          "mc_se": 0.0021046369590976967,
+          "z": -0.2778227040528036
+        },
+        "first_cousins": {
+          "predicted": 0.20971520000000002,
+          "simulated": 0.20728692788971,
+          "mc_se": 0.002043507245018759,
+          "z": -1.1882865187824265
+        }
+      }
+    },
+    {
+      "h2": 0.8,
+      "rho": 0.8,
+      "families": 250000,
+      "seed": 20260920,
+      "minimum_eigenvalue": 0.07342686911039085,
+      "component_covariance_checks": 136,
+      "component_max_abs_z": 3.089924764251293,
+      "phenotype_moments": {
+        "spouses": {
+          "predicted": 0.8,
+          "simulated": 0.801827517826979,
+          "mc_se": 0.0025612496949731396,
+          "z": 0.7135258348944973
+        },
+        "parent_child": {
+          "predicted": 0.72,
+          "simulated": 0.7215403411674938,
+          "mc_se": 0.002464467488119898,
+          "z": 0.6250198774863523
+        },
+        "full_siblings": {
+          "predicted": 0.656,
+          "simulated": 0.656101590862689,
+          "mc_se": 0.0023919331094326194,
+          "z": 0.04247228414891335
+        },
+        "grandparent": {
+          "predicted": 0.5904,
+          "simulated": 0.5906639181728897,
+          "mc_se": 0.002322560793606919,
+          "z": 0.11363240678826679
+        },
+        "avuncular": {
+          "predicted": 0.5379200000000001,
+          "simulated": 0.5381622098046508,
+          "mc_se": 0.0022709979536758725,
+          "z": 0.10665346670994733
+        },
+        "first_cousins": {
+          "predicted": 0.44109440000000005,
+          "simulated": 0.44088703738784757,
+          "mc_se": 0.002185922477775788,
+          "z": -0.09486274754056188
+        }
+      }
+    }
+  ],
+  "families_total": 2250000,
+  "component_covariance_checks_total": 1224,
+  "phenotype_checks_total": 54,
+  "diagnostic": "Six-standard-error threshold, with known zero means and Gaussian product variances; not a hypothesis test or proof.",
+  "scope": "Explicit stationary Gaussian moment construction; not a simulation of allele frequencies or convergence of a multilocus population."
+}

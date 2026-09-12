@@ -1,0 +1,629 @@
+\section{The Fisher model with phenotypic assortment}
+\label{sec:fisher-model}
+
+A close fit to correlations between relatives is informative only to the
+extent that we understand what generates the fitted formulas. The same
+pattern of resemblance can support different explanations when different
+transmission mechanisms are allowed. Spelling out the model therefore
+serves two purposes: it identifies which conclusions follow from the
+assumptions, and it makes clear which explanations have been excluded
+before the data are examined. In particular, the absence of environmental
+transmission must not be mistaken for an empirical finding that
+environmental transmission is unimportant. We derive the additive,
+dominance-free version of \citet{Fisher1918}'s model, following the organization of
+\citet{Goldberger1978} and \citet{OttoEtAl1994}: individual components,
+mating, and transmission. Measurement error is omitted throughout this
+section.
+
+\subsection{Individuals, parameters, and environmental restrictions}
+\label{sec:model-components}
+
+For person $i$, define the two column vectors
+\[
+ X_i=\underbrace{\begin{pmatrix}A_i\\E_i\end{pmatrix}}_{\text{random components}},
+ \qquad
+ q=\underbrace{\begin{pmatrix}h\\e\end{pmatrix}}_{\text{common parameters}},
+ \qquad P_i=q^{\mathsf T}X_i=hA_i+eE_i.
+\]
+$A_i$ is the person's standardized additive genetic value; $E_i$ is the
+standardized environmental component. $X_i$ varies across people, whereas
+$q$ contains coefficients common to the population. The superscript
+$\mathsf T$ turns a column into a row. These vectors are bookkeeping
+devices, not extra components of the model. There are no dominance or other nonadditive genetic components, and no gene--environment interaction term. Assume
+\begin{equation}
+ \begin{gathered}
+ \mathbb E[A_i]=\mathbb E[E_i]=0,\qquad
+ \operatorname{Var}(A_i)=\operatorname{Var}(E_i)=1,\\
+ \operatorname{Cov}(A_i,E_i)=0,\qquad
+ 0<h<1,\qquad e=\sqrt{1-h^2}.
+ \end{gathered}
+ \label{eq:model-raw}
+\end{equation}
+Thus $\operatorname{Cov}(X_i,X_i)=I_2$, the two-dimensional identity
+matrix, and
+\[
+ \operatorname{Var}(P_i)=h^2+e^2+2he\operatorname{Cov}(A_i,E_i)=1.
+\]
+The contribution of genes on the phenotype scale is $hA_i$, with variance
+$h^2$. Consequently $h^2$ is narrow-sense heritability in this population;
+it is not $\operatorname{Var}(A_i)$, which we normalized to one.
+$E_i$ is a substantive environmental component, not measurement error.
+
+The sexes have the same marginal distributions, and sampling people as
+parents does not change those distributions. We use the same parameters
+and component variances across generations. These assumptions exclude
+changes in the composition of the sampled population; stationarity of
+the variances is checked below.
+
+The model also excludes a common environmental component among biological
+relatives. For the pedigrees derived below, distinct biological relatives
+have $\operatorname{Cov}(E_i,E_j)=0$; an offspring's environment has zero
+covariance with the components of its parents and with the genes and
+environments of its siblings. We implement these exclusions formally in
+the birth process below. They are additional family assumptions, not
+consequences of phenotypic assortment.
+
+\citet[pp.~10--11]{Goldberger1978} emphasizes the substantive severity of
+this restriction: the classical model allows the premarital environments
+of spouses to resemble one another through assortment, while excluding
+environmental resemblance between siblings or between parents and
+children. Shared rearing supplies no additional source of similarity;
+being raised together rather than apart has no effect on the predicted
+correlation for otherwise comparable biological relatives. Genes are the
+only component transmitted in the model. This is an assumption about the
+sources of familial resemblance, not evidence establishing their relative
+importance. It does \emph{not}, however, set
+$\operatorname{Cov}(E_{\rm parent},A_{\rm child})$ to zero: assortment
+generates that covariance, as we show below.
+
+\subsection{What phenotypic homogamy assumes}
+\label{sec:model-ph}
+
+Let $M$ denote the wife/mother and $F$ the husband/father. Define
+\[
+ \rho=\operatorname{Corr}(P_M,P_F),\qquad
+ \rho_A=\operatorname{Corr}(A_M,A_F),\qquad 0<\rho<1.
+\]
+These definitions alone say nothing about the matching mechanism.
+Our formal phenotype-only matching assumption is
+\begin{equation}
+ X_M\perp X_F\mid P_F,\qquad X_F\perp X_M\mid P_M.
+ \tag{PH}\label{eq:model-ph}
+\end{equation}
+Once the wife's phenotype is known, learning her particular genetic and
+environmental components gives no further information about the
+distribution of the husband's components; the analogous statement holds
+with husband and wife exchanged. The two statements are separate
+restrictions. Symmetry of conditional independence exchanges the two
+vectors but does not change the conditioning phenotype.
+
+For clarity, $Z\perp W\mid V$ means that, conditional on $V$, the joint
+probability of any event concerning $Z$ and any event concerning $W$
+is the product of their conditional probabilities. Equivalently, learning
+$W$ does not change the conditional distribution of $Z$ once $V$ is known.
+All conditional statements hold wherever the conditional laws are
+defined, up to events of probability zero. Independence is preserved by
+taking functions: an event about a function of $Z$ is itself an event
+about $Z$, so the same factorization applies.
+
+We additionally assume the \emph{own-person} conditional mean is linear:
+\begin{equation}
+ \mathbb E[A_i\mid P_i]=hP_i.
+ \tag{L}\label{eq:model-linearity}
+\end{equation}
+Here the prediction is of a person's genetic value from that same person's
+phenotype, not from the spouse's phenotype. To see why the coefficient is
+$h$, write a linear conditional mean as $\alpha+\beta P_i$. Zero means give
+$\alpha=0$, and
+\[
+ \beta=\frac{\operatorname{Cov}(A_i,P_i)}{\operatorname{Var}(P_i)}
+ =\frac{h\operatorname{Var}(A_i)+e\operatorname{Cov}(A_i,E_i)}{1}=h.
+\]
+A population linear projection always has this coefficient, but its
+conditional mean need not equal that projection. Thus (L) is a real
+assumption. From $eE_i=P_i-hA_i$ it follows that
+\[
+ \mathbb E[E_i\mid P_i]
+ =\frac{P_i-h\mathbb E[A_i\mid P_i]}{e}
+ =\frac{1-h^2}{e}P_i=eP_i,\qquad
+ \mathbb E[X_i\mid P_i]=qP_i.
+\]
+Otto et al.'s Gaussian specification supplies such linearity. Joint
+normality is sufficient here, but the spouse derivation needs only (L)
+together with (PH) and the stated normalization.
+
+\subsection{Deriving the restriction on spousal genetic resemblance}
+\label{sec:model-spouses}
+
+We spell out the conditioning steps because they separate a probability
+identity from the assumptions that give the model its content.
+
+For this argument, the four components $(A_M,E_M,A_F,E_F)$ are assumed
+to have an ordinary joint density.
+Because $e>0$, replacing each $E_i$ by $P_i=hA_i+eE_i$ is an invertible
+change of variables, so $(A_M,A_F,P_M,P_F)$ also has an ordinary density.
+We do not assume an ordinary joint density for $(A_i,E_i,P_i)$, which
+contains a redundant variable.
+
+Subscripts distinguish different density functions; lower-case letters
+denote values of the corresponding random variables. Let
+\[
+ J=f_{A_M,A_F,P_M,P_F}(a_m,a_f,p_m,p_f),\quad
+ D=f_{A_F,P_M,P_F}(a_f,p_m,p_f),\quad
+ H=f_{P_M,P_F}(p_m,p_f).
+\]
+By the definition of a conditional density, at points with positive
+denominators,
+\begin{align}
+ f_{A_M,A_F\mid P_M,P_F}
+ &=\frac{J}{H}
+   =\frac{J}{D}\frac{D}{H}\notag\\
+ &=f_{A_M\mid A_F,P_M,P_F}\,
+   f_{A_F\mid P_M,P_F}.
+ \label{eq:model-multiplication}
+\end{align}
+Arguments on the last line are respectively
+$(a_m\mid a_f,p_m,p_f)$ and $(a_f\mid p_m,p_f)$.
+This multiplication rule is an identity; no independence has been used.
+
+Now invoke (PH). Its second restriction, by symmetry and preservation
+under functions, gives $A_M\perp(A_F,P_F)\mid P_M$, because
+$A_M$ is an element of $X_M$ and $(A_F,P_F)$ is a function of $X_F$.
+Conditional independence therefore factors the numerator in the
+following definition:
+\begin{align}
+ f_{A_M\mid A_F,P_M,P_F}
+ &=\frac{f_{A_M,A_F,P_F\mid P_M}}{f_{A_F,P_F\mid P_M}}\notag\\
+ &=\frac{f_{A_M\mid P_M}\,f_{A_F,P_F\mid P_M}}
+         {f_{A_F,P_F\mid P_M}}
+ =f_{A_M\mid P_M}.
+ \label{eq:model-wife-reduction}
+\end{align}
+The cancellation is valid on the conditional support. Similarly, the
+first PH restriction gives $A_F\perp P_M\mid P_F$, and hence
+\begin{align}
+ f_{A_F\mid P_M,P_F}
+ &=\frac{f_{A_F,P_M\mid P_F}}{f_{P_M\mid P_F}}\notag\\
+ &=\frac{f_{A_F\mid P_F}\,f_{P_M\mid P_F}}{f_{P_M\mid P_F}}
+ =f_{A_F\mid P_F}.
+ \label{eq:model-husband-reduction}
+\end{align}
+Substitute \eqref{eq:model-wife-reduction} into the first factor of
+\eqref{eq:model-multiplication}, and
+\eqref{eq:model-husband-reduction} into the second:
+\begin{equation}
+ f_{A_M,A_F\mid P_M,P_F}(a_m,a_f\mid p_m,p_f)
+ =f_{A_M\mid P_M}(a_m\mid p_m)
+  f_{A_F\mid P_F}(a_f\mid p_f).
+ \label{eq:model-density-factor}
+\end{equation}
+Thus, given both phenotypes, the genetic values are independent, and
+each retains its own-phenotype conditional distribution. Independence
+given both phenotypes \emph{alone} would not establish the latter fact.
+
+The conditional product mean is consequently
+\begin{align*}
+ \mathbb E[A_MA_F\mid p_m,p_f]
+ &=\int\!\!\int a_ma_f
+ f_{A_M\mid P_M}(a_m\mid p_m)
+ f_{A_F\mid P_F}(a_f\mid p_f)\,da_m\,da_f\\
+ &=\left\{\int a_m f_{A_M\mid P_M}(a_m\mid p_m)\,da_m\right\}
+   \left\{\int a_f f_{A_F\mid P_F}(a_f\mid p_f)\,da_f\right\}\\
+ &=\mathbb E[A_M\mid p_m]\mathbb E[A_F\mid p_f]
+   =(hp_m)(hp_f).
+\end{align*}
+The factorization uses PH; the final equality uses (L).
+Finite second moments justify these product expectations. Finally,
+average over the \emph{joint spousal phenotype distribution}, using the
+law of iterated expectations:
+\begin{align}
+ \rho_A
+ &=\operatorname{Cov}(A_M,A_F)
+   =\mathbb E[A_MA_F]\notag\\
+ &=\mathbb E_{(P_M,P_F)}
+       \{\mathbb E[A_MA_F\mid P_M,P_F]\}\notag\\
+ &=h^2\mathbb E_{(P_M,P_F)}[P_MP_F]
+   =\boxed{h^2\rho}.
+ \label{eq:m-def}
+\end{align}
+The first line uses zero means and unit genetic variances; the last uses
+zero means and unit phenotype variances. The outer average is not over
+independently drawn spouses.
+
+The same functional-independence argument applies to either component
+of each vector. Their conditional means are $qP_M$ and $qP_F$, so
+\begin{equation}
+ C:=\mathbb E[X_MX_F^{\mathsf T}]
+ =\mathbb E_{(P_M,P_F)}[(qP_M)(qP_F)^{\mathsf T}]
+ =\rho qq^{\mathsf T}
+ =\rho\begin{pmatrix}h^2&he\\he&e^2\end{pmatrix}.
+ \label{eq:ge-cross}
+\end{equation}
+Thus $\operatorname{Cov}(E_M,E_F)=\rho e^2$ and
+$\operatorname{Cov}(A_M,E_F)=\operatorname{Cov}(E_M,A_F)=\rho he$.
+The full component covariance matrix is
+$\left(\begin{smallmatrix}I_2&C\\C^{\mathsf T}&I_2\end{smallmatrix}\right)$.
+Here the off-diagonal blocks are matrices, not scalars; $C$ happens to
+be symmetric. Since $q^{\mathsf T}q=1$, $C$ has eigenvalue $\rho$ along $q$ and zero in the perpendicular direction. The full matrix therefore has eigenvalues
+$1+\rho,1-\rho,1,1$, all positive in the stated parameter range.
+Also $q^{\mathsf T}Cq=\rho(q^{\mathsf T}q)^2=\rho$, verifying the
+specified spouse phenotype correlation. This is Otto et al.'s
+equation~(22) after deleting the cultural component.
+
+The intuition is that spouses match on a phenotype reflecting both
+components. A high phenotype predicts a genetic value of $hP$, not
+$P$ itself. Applying that prediction on both sides of the marriage
+multiplies phenotype covariance by $h^2$. The relationship
+$\rho_A=h^2\rho$ is therefore a \emph{derived restriction}, not a third
+freely chosen parameter. Without (L), PH instead gives
+$\operatorname{Cov}\{\mu(P_M),\mu(P_F)\}$, where
+$\mu(p)=\mathbb E[A\mid P=p]$; it need not equal $h^2\rho$.
+
+Although this restriction appears in the equilibrium model, its
+derivation requires no intergenerational argument. Stationarity of
+genetic variance is a separate condition, to which we now turn.
+
+\subsection{Births and stationarity of genetic variance}
+\label{sec:model-transmission}
+
+For child $j$ of parents $M,F$, assume additive transmission:
+\begin{equation}
+ A_j=\tfrac12(A_M+A_F)+S_j,\qquad P_j=hA_j+eE_j.
+ \label{eq:model-transmission}
+\end{equation}
+$S_j$ is the segregation deviation: the child's departure from the
+midparental genetic value. The coefficient $1/2$ describes additive
+Mendelian transmission; it does not specify the variance of $S_j$.
+
+Let $\mathcal H$ collect the already realized ancestral and parental
+components in the pedigree before these births. For distinct births,
+assume
+\[
+ \mathbb E[S_j\mid\mathcal H]=0,\qquad
+ \mathbb E[S_jS_k\mid\mathcal H]=0\quad(j\ne k).
+\]
+Draw offspring environmental values independently of one another,
+of $\mathcal H$, and of the segregation deviations for these births,
+with mean zero and variance one. These are sufficient
+no-shared-environment and no-environmental-transmission assumptions.
+They concern fresh offspring environments; they do not assert
+independence from mates subsequently selected on offspring phenotypes.
+
+For any mean-zero variable $Z$ with finite variance determined by $\mathcal H$,
+\[
+ \operatorname{Cov}(Z,S_j)
+ =\mathbb E_{\mathcal H}\{Z\,\mathbb E[S_j\mid\mathcal H]\}=0,\qquad
+ \operatorname{Cov}(S_j,S_k)
+ =\mathbb E_{\mathcal H}\{\mathbb E[S_jS_k\mid\mathcal H]\}=0.
+\]
+Here the inner means use the conditional segregation distribution given
+the existing family; the outer mean uses that family's joint
+distribution. These equations explain why segregation cross-terms
+vanish in what follows.
+
+Write $W=(A_M+A_F)/2$. For an arbitrary spouse genetic correlation
+$\rho_A$,
+\begin{align*}
+ \operatorname{Var}(A_j)
+ &=\operatorname{Var}(W)+2\operatorname{Cov}(W,S_j)
+   +\operatorname{Var}(S_j)\\
+ &=\tfrac14\{\operatorname{Var}(A_M)+\operatorname{Var}(A_F)
+              +2\operatorname{Cov}(A_M,A_F)\}
+   +0+\operatorname{Var}(S_j)\\
+ &=\tfrac12(1+\rho_A)+\operatorname{Var}(S_j).
+\end{align*}
+Stationarity, $\operatorname{Var}(A_j)=1$, therefore requires
+\begin{equation}
+ \boxed{\operatorname{Var}(S_j)=\tfrac12(1-\rho_A)
+          =\tfrac12(1-h^2\rho).}
+ \label{eq:model-segregation}
+\end{equation}
+Random mating is the special case $\rho=\rho_A=0$, giving variance
+$1/2$; zero correlation by itself need not imply independent mating
+outside a Gaussian specification. Fresh $E_j$ then implies
+$\operatorname{Cov}(A_j,E_j)=0$ and $\operatorname{Var}(P_j)=1$.
+This is a stationary moment specification, not a proof of convergence
+of a multilocus population to equilibrium. Nor does it derive $h^2$
+from allele frequencies or a random-mating genetic variance.
+
+\subsection{Parent--child and full-sibling correlations}
+\label{sec:model-nuclear}
+
+All phenotype variances equal one, so phenotype covariances below
+are correlations. Start with the mother and child. From the
+within-person assumptions and the spouse block $C$,
+\begin{align*}
+ \operatorname{Cov}(P_M,A_M)&=h,\\
+ \operatorname{Cov}(P_M,A_F)
+ &=h\operatorname{Cov}(A_M,A_F)+e\operatorname{Cov}(E_M,A_F)\\
+ &=h(\rho h^2)+e(\rho he)
+   =\rho h(h^2+e^2)=\rho h.
+\end{align*}
+The second line is where the PH-derived spouse covariances enter.
+Using transmission and the zero segregation covariance,
+\[
+ \operatorname{Cov}(P_M,A_j)
+ =\tfrac12 h+\tfrac12\rho h+0=\tfrac12h(1+\rho).
+\]
+The child's fresh environment has zero covariance with $P_M$. Therefore
+\begin{equation}
+ \rho_{PO}:=\operatorname{Corr}(P_M,P_j)
+ =h\operatorname{Cov}(P_M,A_j)+e\operatorname{Cov}(P_M,E_j)
+ =\boxed{\tfrac12h^2(1+\rho).}
+ \label{eq:po}
+\end{equation}
+Sex symmetry gives the same formula for the father.
+
+To expose the environmental qualification explicitly,
+\begin{align*}
+ \operatorname{Cov}(A_M,A_j)
+ &=\tfrac12\{1+\rho h^2\}+0,\\
+ \operatorname{Cov}(E_M,A_j)
+ &=\tfrac12\{\operatorname{Cov}(E_M,A_M)
+             +\operatorname{Cov}(E_M,A_F)\}+0
+   =\tfrac12\rho he.
+\end{align*}
+Consequently
+\[
+ \operatorname{Cov}(X_M,X_j)=
+ \begin{pmatrix}(1+\rho h^2)/2&0\\\rho he/2&0\end{pmatrix}.
+\]
+The parent's environmental component is associated with the other
+parent's genes through assortment, and those genes enter the child.
+No parental environment is transmitted. Goldberger makes this
+distinction explicitly in his Appendix, p.~A-5. It would be incorrect
+to obtain parent--child resemblance by retaining only
+$h^2\operatorname{Cov}(A_M,A_j)$.
+
+For full siblings 1 and 2, $A_1=W+S_1$ and $A_2=W+S_2$, so
+\begin{align*}
+ \operatorname{Cov}(A_1,A_2)
+ &=\operatorname{Var}(W)+\operatorname{Cov}(W,S_2)
+   +\operatorname{Cov}(S_1,W)+\operatorname{Cov}(S_1,S_2)\\
+ &=\operatorname{Var}(W)+0+0+0
+   =\tfrac12(1+\rho h^2).
+\end{align*}
+Fresh environments give
+$\operatorname{Cov}(A_1,E_2)=\operatorname{Cov}(E_1,A_2)
+=\operatorname{Cov}(E_1,E_2)=0$. Expanding both phenotypes,
+\begin{align}
+ \rho_S:=\operatorname{Corr}(P_1,P_2)
+ &=h^2\operatorname{Cov}(A_1,A_2)
+   +he\operatorname{Cov}(A_1,E_2)\notag\\
+ &\quad+eh\operatorname{Cov}(E_1,A_2)
+   +e^2\operatorname{Cov}(E_1,E_2)\notag\\
+ &=\boxed{\tfrac12h^2(1+\rho h^2).}
+ \label{eq:sib}
+\end{align}
+These are the zero-cultural-transmission, zero-shared-environment
+specializations of Otto et al.'s equations~(46) and~(55).
+Adding sibling environmental covariance $c$ would add $e^2c$ if the
+genetic--environmental cross-covariances remained zero. The classical
+formula excludes that contribution by setting $c=0$.
+
+\subsection{Extending the pedigree}
+\label{sec:model-extended}
+
+A single mating pair does not specify how a new spouse relates to the
+rest of a pedigree. To derive extended-family moments we make that
+extension explicit. For each existing person $i$, draw an outside mate
+$\widetilde i$ so that the pair satisfies PH and the same marginal
+assumptions. Given the existing person's phenotype, the mate's
+components are independent of the rest of the already realized family.
+Draw distinct outside mates independently conditional on that family.
+Also assume the mate-phenotype conditional mean is linear:
+\begin{equation}
+ \mathbb E[P_{\widetilde i}\mid P_i]=\rho P_i.
+ \tag{ML}\label{eq:model-mate-linearity}
+\end{equation}
+The coefficient is $\rho$ because both phenotype variances are one.
+Neither PH nor (L) by itself implies (ML). These additional conditions
+exclude other routes connecting an incoming spouse to the pedigree.
+They supply a sufficient family sampling model for the following
+formulas; they were not needed for the nuclear-family results.
+
+Let $\mathcal F$ denote the existing family before these outside mates
+and their children are drawn. PH, (L), and (ML) give
+\begin{align*}
+ \mathbb E[A_{\widetilde i}\mid\mathcal F]
+ &=\mathbb E[A_{\widetilde i}\mid P_i]\\
+ &=\mathbb E_{P_{\widetilde i}\mid P_i}
+       \{\mathbb E[A_{\widetilde i}\mid P_{\widetilde i},P_i]\}\\
+ &=\mathbb E_{P_{\widetilde i}\mid P_i}[hP_{\widetilde i}]
+   =h\rho P_i.
+\end{align*}
+The first equality uses the family extension, the third uses the
+PH conditioning reduction and (L), and the last uses (ML).
+The displayed outer average is over the mate's phenotype conditional
+on the existing person's phenotype. Hence for their child $c(i)$,
+\begin{align}
+ \mathbb E[A_{c(i)}\mid\mathcal F]
+ &=\tfrac12\{A_i+h\rho P_i\}+0\notag\\
+ &=\underbrace{\tfrac12(1+\rho h^2)}_{k}A_i
+   +\underbrace{\tfrac12\rho he}_{d}E_i
+   =kA_i+dE_i.
+ \label{eq:model-child-mean}
+\end{align}
+The zero term follows by averaging the zero segregation mean first
+over births and then over the incoming mate. For any centered
+existing-family variable $Z$, the law of iterated expectations now gives
+\[
+ \operatorname{Cov}(Z,A_{c(i)})
+ =\mathbb E_{\mathcal F}[Z(kA_i+dE_i)]
+ =k\operatorname{Cov}(Z,A_i)+d\operatorname{Cov}(Z,E_i).
+\]
+
+For a grandparent $g$, their child $i$, and grandchild $c(i)$, the
+parent--child calculation gives
+$\operatorname{Cov}(P_g,A_i)=h(1+\rho)/2$, whereas the fresh environment
+of $i$ gives $\operatorname{Cov}(P_g,E_i)=0$. Therefore
+\begin{align*}
+ \operatorname{Corr}(P_g,P_{c(i)})
+ &=h\{k\operatorname{Cov}(P_g,A_i)
+       +d\operatorname{Cov}(P_g,E_i)\}
+       +e\operatorname{Cov}(P_g,E_{c(i)})\\
+ &=h\{kh(1+\rho)/2+d\cdot0\}+0
+   =\boxed{\tfrac12h^2(1+\rho)k}.
+\end{align*}
+
+For an aunt/uncle $u$ and their full sibling $i$,
+$\operatorname{Cov}(A_u,A_i)=k$ and all cross-component environmental
+covariances between the siblings are zero. Thus
+$\operatorname{Cov}(P_u,A_i)=hk$ and
+$\operatorname{Cov}(P_u,E_i)=0$. Their niece/nephew satisfies
+\[
+ \operatorname{Corr}(P_u,P_{c(i)})
+ =h\{k(hk)+d\cdot0\}+e\cdot0=\boxed{h^2k^2}.
+\]
+
+For first cousins $c(i)$ and $c(u)$, independent outside-mate draws
+and the birth assumptions make their genetic values conditionally
+uncorrelated given $\mathcal F$. The law of total covariance
+(the sum of the mean conditional covariance and the covariance of
+the conditional means) therefore gives
+\begin{align*}
+ \operatorname{Cov}(A_{c(i)},A_{c(u)})
+ &=\mathbb E_{\mathcal F}
+       [\operatorname{Cov}(A_{c(i)},A_{c(u)}\mid\mathcal F)]\\
+ &\quad+\operatorname{Cov}_{\mathcal F}(kA_i+dE_i,kA_u+dE_u)\\
+ &=0+k^2\operatorname{Cov}(A_i,A_u)
+   +kd\operatorname{Cov}(A_i,E_u)\\
+ &\quad+dk\operatorname{Cov}(E_i,A_u)
+   +d^2\operatorname{Cov}(E_i,E_u)\\
+ &=k^2k+0+0+0=k^3.
+\end{align*}
+Both cousins have fresh environments, so their phenotype correlation is
+$\boxed{h^2k^3}$. This calculation exposes exactly where the additional
+assumption about different incoming mates is used.
+
+\subsection{Model restrictions, estimation, and interpretation}
+\label{sec:model-tests}
+
+Table~\ref{tab:notation} collects the moments derived above. They
+match the individual-relative rows of Clark's Technical Appendix,
+Table~A1, with measurement error suppressed. In Clark's notation
+$r=\rho$ and $m=\rho_A=h^2\rho$; his attenuation parameter is set to
+one here. Goldberger's notation has $A=\rho_A$, $c_1=h^2$, and $c_2=1$
+when dominance is omitted.
+\begin{table}[htbp]
+\centering
+\caption{Predicted phenotype correlations; $k=(1+h^2\rho)/2$}
+\label{tab:notation}
+\begin{tabular}{ll}
+\hline
+Relationship & Correlation\\
+\hline
+Spouses & $\rho$\\
+Parent--child & $h^2(1+\rho)/2$\\
+Full siblings & $h^2k$\\
+Grandparent--grandchild & $h^2(1+\rho)k/2$\\
+Aunt/uncle--niece/nephew & $h^2k^2$\\
+First cousins & $h^2k^3$\\
+\hline
+\end{tabular}
+\end{table}
+
+One directly testable implication is
+\begin{equation}
+ \rho_{PO}-\rho_S
+ =\tfrac12h^2\{(1+\rho)-(1+h^2\rho)\}
+ =\boxed{\tfrac12h^2\rho(1-h^2)>0}.
+ \label{eq:gap}
+\end{equation}
+The strict inequality uses both positive assortment and
+$0<h^2<1$. Under random mating, parent--child and full-sibling
+correlations both reduce to $h^2/2$; grandparent and avuncular
+correlations reduce to $h^2/4$, and first-cousin correlation to $h^2/8$.
+Comparisons with estimated correlations must account for sampling
+uncertainty and comparable measurement and sampling across kinships.
+
+For estimation, the no-error model has two free structural parameters,
+$\theta=(h^2,\rho)$, not three independent parameters
+$(h^2,\rho,\rho_A)$. For population correlations $r_\ell$ of the
+relationships in the table, write
+\[
+ r_\ell=f_\ell(h^2,\rho).
+\]
+A joint minimum-distance estimator, for example, minimizes
+\[
+ [\widehat{\boldsymbol r}-\boldsymbol f(h^2,\rho)]^{\mathsf T}
+ W[\widehat{\boldsymbol r}-\boldsymbol f(h^2,\rho)]
+\]
+over admissible parameters, imposing $\rho_A=h^2\rho$ by substitution.
+$\widehat{\boldsymbol r}$ is the vector of estimated kinship correlations;
+$W$ is a positive-definite weighting matrix. A covariance-based choice
+should account for dependence between correlation estimates from
+overlapping families. This formulation constrains the entire collection
+of moments jointly rather than choosing each relationship separately.
+
+\citet[p.~19]{Goldberger1978} identifies precisely the error of treating
+the spousal genetic correlation as free while retaining formulas
+derived under Fisher's restriction. He also notes that alternative
+mating specifications may remove that restriction but then require
+rederiving the kinship formulas. A broader assortment trait therefore
+cannot simply be invoked to free $\rho_A$ while leaving the formulary
+unexamined.
+
+A statistically established failure of $\rho_A=h^2\rho$ rejects the
+joint assumptions underlying that restriction. It does not identify
+which assumption failed. Small discrepancies among estimates can be
+sampling error, and a formal comparison requires a coherent unrestricted
+model and its sampling covariance. Under misspecification, fitted
+parameters need not identify heritability or the claimed assortment
+parameters; good fit supplies no guarantee against bias. Rejection
+alone does not prove that every estimate is biased, or determine the
+bias's direction or magnitude. Conversely, imposing the restriction is
+necessary to estimate this particular model coherently, but does not
+make its environmental exclusions empirically true.
+
+Clark's presentation obscures this distinction. On p.~16 he questions
+the implication that genetic resemblance must be weaker than phenotype
+resemblance for educational attainment, appealing to matching on a wider
+set of characteristics. On p.~75 he instead invokes an imperfectly
+measured underlying phenotype and notes that the three parameters are
+linked. The latter acknowledgment does not resolve the former departure
+from the model. The issue is not whether the relationship appears
+somewhere in the book, but whether it is consistently treated as a
+restriction required by the assumptions generating the fitted equations.
+
+Two different arguments need to be separated. If years of education
+is merely a noisy measure of the phenotype on which spouses assort,
+then $\rho_A=h^2\rho$ still applies to that underlying phenotype:
+$\rho$ must refer to its spousal correlation, and a measurement model
+must connect its moments to those observed. If spouses instead match
+on several characteristics in a way that violates PH for the modeled
+phenotype, the matching model has changed. That possibility is legitimate,
+but it requires specifying the new joint distribution and deriving the
+resulting kinship moments. The book's appeal to broader matching does
+not supply that specification or demonstrate that the same kinship
+formulas remain valid. The restriction cannot be treated as an optional
+extra while retaining the interpretation of formulas derived using it.
+
+This leaves a gap between the fit and the substantive conclusion.
+Clark interprets the pattern as evidence for additive genetic
+transmission combined with very strong assortment on underlying social
+abilities \citep[pp.~16,75,286 and Technical Appendix]{Clark2026}.
+But a close fit of the correlation formulas does not, by itself,
+demonstrate that this genetic mechanism---or assortment on a particular
+social or cognitive trait---generated the data. That interpretation
+requires a coherent specification connecting the matching process,
+the transmitted components, and the observed outcomes, with its
+restrictions imposed and tested. Moving between the classical model
+and informal alternatives leaves the reader without a clear account
+of which model the reported fit actually supports.
+
+\paragraph{Verification.}
+The accompanying verification script checks the spouse and family
+covariance matrices algebraically and simulates an explicit Gaussian
+construction satisfying the assumptions. It checks parent--child,
+full-sibling, grandparent, avuncular, and first-cousin moments, as well
+as component covariances and stationary variances. All 46 symbolic checks passed. Across nine combinations of $h^2$ and
+$\rho$, simulations of 2.25 million independent pedigrees checked 1,224
+component covariances and 54 phenotype moments. The largest absolute
+standardized Monte Carlo discrepancies were 3.402 and 2.091, respectively,
+within the prespecified six-standard-error diagnostic threshold.
+The script is \texttt{verify\_fisher\_model.py}, in the repository's
+\texttt{verification/} directory. The construction
+provides an existence and calculation check for this moment model;
+simulation is not a proof of empirical adequacy or of multilocus
+equilibrium.

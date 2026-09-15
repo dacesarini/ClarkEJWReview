@@ -3,7 +3,17 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{natbib}
 \usepackage[skip=0.5\baselineskip,indent=0pt]{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
 \usepackage{titlesec}
+\renewcommand{\thesection}{\Roman{section}}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.5em}{}
+\usepackage{enumitem}
+\setlist{leftmargin=*,labelindent=0pt,labelsep=0.5em}
+\setlist[enumerate]{label=\roman*.,ref=\roman*}
+\renewenvironment{itemize}{\begin{enumerate}}{\end{enumerate}}
+\setlist[description]{style=unboxed,leftmargin=0pt}
 \titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
 \titlespacing*{\subsection}{0pt}{\baselineskip}{\baselineskip}
 

@@ -6,6 +6,8 @@ The Git repository and its existing GitHub/Overleaf remotes remain in this direc
 
 ## Build
 
+The section `sections/assortment_comparison.tex` records the 14 September 2026 comparison of genetic and phenotypic assortment, including illustrative fits to the published PNAS education correlations. Reproduce the estimates with `python verification/fit_assortment_models.py`; saved output is `verification/assortment_fit_results.json`. Detailed discussion is in `../notes/assortment_and_measurement_error_2026-09-14.md`.
+
 Windows PowerShell: ./build.ps1
 
 Portable sequence, from this directory:

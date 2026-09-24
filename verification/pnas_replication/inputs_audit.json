@@ -1,0 +1,1354 @@
+{
+  "published": {
+    "1780-1859": {
+      "rho": [
+        0.479,
+        0.538,
+        0.382,
+        0.381,
+        0.291,
+        0.234,
+        0.176,
+        0.032,
+        0.071,
+        0.094,
+        0.08
+      ],
+      "N": [
+        10772,
+        8337,
+        12030,
+        4619,
+        14635,
+        12319,
+        15935,
+        12212,
+        15349,
+        12503,
+        15953
+      ],
+      "clark": {
+        "b": 0.774,
+        "m": 0.548,
+        "h2": 0.627,
+        "R2": 0.983
+      }
+    },
+    "1860-1919": {
+      "rho": [
+        0.326,
+        0.374,
+        0.228,
+        0.249,
+        0.173,
+        0.162,
+        0.186,
+        0.125,
+        0.085,
+        0.032,
+        0.014
+      ],
+      "N": [
+        15806,
+        15394,
+        34874,
+        15661,
+        26829,
+        51001,
+        33813,
+        57201,
+        33900,
+        53447,
+        30104
+      ],
+      "clark": {
+        "b": 0.766,
+        "m": 0.531,
+        "h2": 0.42,
+        "R2": 0.886
+      }
+    }
+  },
+  "relationship_names": [
+    "Full sibling",
+    "Child",
+    "Sibling-rem",
+    "Grandchild",
+    "Cousin",
+    "Cousin-rem",
+    "Cousin2",
+    "Cousin2-rem",
+    "Cousin3",
+    "Cousin3-rem",
+    "Cousin4"
+  ],
+  "raw_labels": [
+    "sons",
+    "father-son",
+    "siblings-rem",
+    "grandson",
+    "cousin",
+    "cousin-rem",
+    "cousin2",
+    "cousin2-rem",
+    "cousin3",
+    "cousin3-rem",
+    "cousin4"
+  ],
+  "n": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "d_lin": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "pair_audit": {
+    "group_stats": [
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "cousin",
+        "N": 14530,
+        "cells": [
+          13719,
+          377,
+          279,
+          155
+        ],
+        "rho": 0.29946149629002705,
+        "px": 0.029869236063317275,
+        "py": 0.03661390227116311,
+        "se_binary": 0.019891013053236206
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "cousin-rem",
+        "N": 37272,
+        "cells": [
+          35222,
+          920,
+          848,
+          282
+        ],
+        "rho": 0.21750360662267737,
+        "px": 0.030317664734921656,
+        "py": 0.03224940974458038,
+        "se_binary": 0.011983246350804725
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "cousin2",
+        "N": 15935,
+        "cells": [
+          15266,
+          261,
+          336,
+          72
+        ],
+        "rho": 0.17630347944040398,
+        "px": 0.025604016316284905,
+        "py": 0.020897395669909002,
+        "se_binary": 0.019861732857188716
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "cousin2-rem",
+        "N": 36661,
+        "cells": [
+          35122,
+          771,
+          695,
+          73
+        ],
+        "rho": 0.07025539781906182,
+        "px": 0.020948692070592728,
+        "py": 0.0230217397234118,
+        "se_binary": 0.010014415592146851
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "cousin3",
+        "N": 15349,
+        "cells": [
+          14884,
+          166,
+          279,
+          20
+        ],
+        "rho": 0.07055920038993807,
+        "px": 0.019480096423219753,
+        "py": 0.012118053293374162,
+        "se_binary": 0.017874700877440808
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "cousin3-rem",
+        "N": 34779,
+        "cells": [
+          33665,
+          778,
+          304,
+          32
+        ],
+        "rho": 0.047116406378567004,
+        "px": 0.009661002328991633,
+        "py": 0.023289916328819115,
+        "se_binary": 0.01038847067364796
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "cousin4",
+        "N": 15953,
+        "cells": [
+          15352,
+          295,
+          275,
+          31
+        ],
+        "rho": 0.0799355527910081,
+        "px": 0.019181345201529493,
+        "py": 0.020435027894439916,
+        "se_binary": 0.016511274793548022
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "father-son",
+        "N": 17629,
+        "cells": [
+          17021,
+          222,
+          190,
+          196
+        ],
+        "rho": 0.47601857192427577,
+        "px": 0.021895739973906633,
+        "py": 0.023710930852572466,
+        "se_binary": 0.022004393741078737
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "grandson",
+        "N": 19587,
+        "cells": [
+          18833,
+          382,
+          233,
+          139
+        ],
+        "rho": 0.30010338872028264,
+        "px": 0.01899218869658447,
+        "py": 0.026599275029356207,
+        "se_binary": 0.02048811564724747
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "random",
+        "N": 105792,
+        "cells": [
+          100452,
+          2640,
+          2618,
+          82
+        ],
+        "rho": 0.004743398207868579,
+        "px": 0.025521778584392012,
+        "py": 0.025729733817301873,
+        "se_binary": 0.003325234208948281
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "siblings-rem",
+        "N": 31122,
+        "cells": [
+          29787,
+          552,
+          505,
+          278
+        ],
+        "rho": 0.32742770636075724,
+        "px": 0.02515905147484095,
+        "py": 0.026669237195552985,
+        "se_binary": 0.015473882322145489
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1780-1859",
+        "raw_label": "sons",
+        "N": 15935,
+        "cells": [
+          15266,
+          261,
+          336,
+          72
+        ],
+        "rho": 0.17630347944040398,
+        "px": 0.025604016316284905,
+        "py": 0.020897395669909002,
+        "se_binary": 0.019861732857188716
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "cousin",
+        "N": 26826,
+        "cells": [
+          25988,
+          423,
+          329,
+          86
+        ],
+        "rho": 0.17296430689053965,
+        "px": 0.015470066353537613,
+        "py": 0.018974129575784687,
+        "se_binary": 0.017474074951963774
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "cousin-rem",
+        "N": 51060,
+        "cells": [
+          48702,
+          1259,
+          865,
+          234
+        ],
+        "rho": 0.16169681483363846,
+        "px": 0.021523697610654133,
+        "py": 0.02924010967489228,
+        "se_binary": 0.01042127179757558
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "cousin2",
+        "N": 33813,
+        "cells": [
+          32148,
+          866,
+          608,
+          191
+        ],
+        "rho": 0.18575773478347118,
+        "px": 0.023629964806435394,
+        "py": 0.03126016620826309,
+        "se_binary": 0.012847868589944201
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "cousin2-rem",
+        "N": 57510,
+        "cells": [
+          54535,
+          1601,
+          1137,
+          237
+        ],
+        "rho": 0.12499484502858225,
+        "px": 0.02389149713093375,
+        "py": 0.03195965918970614,
+        "se_binary": 0.008724176230961783
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "cousin3",
+        "N": 33900,
+        "cells": [
+          32273,
+          740,
+          794,
+          93
+        ],
+        "rho": 0.08499283122082352,
+        "px": 0.02616519174041298,
+        "py": 0.02457227138643068,
+        "se_binary": 0.010458089894296266
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "cousin3-rem",
+        "N": 54085,
+        "cells": [
+          51439,
+          1614,
+          959,
+          73
+        ],
+        "rho": 0.03172751811286642,
+        "px": 0.019081076083941946,
+        "py": 0.03119164278450587,
+        "se_binary": 0.0062953028461109175
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "cousin4",
+        "N": 30104,
+        "cells": [
+          28435,
+          768,
+          865,
+          36
+        ],
+        "rho": 0.014433365157130878,
+        "px": 0.029929577464788734,
+        "py": 0.026707414297103375,
+        "se_binary": 0.006957530087158915
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "father-son",
+        "N": 15360,
+        "cells": [
+          14900,
+          233,
+          121,
+          106
+        ],
+        "rho": 0.3708899275123386,
+        "px": 0.014778645833333333,
+        "py": 0.0220703125,
+        "se_binary": 0.02622545379642419
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "grandson",
+        "N": 15511,
+        "cells": [
+          14994,
+          294,
+          148,
+          75
+        ],
+        "rho": 0.24768995128353247,
+        "px": 0.014376893817290955,
+        "py": 0.023789568693185482,
+        "se_binary": 0.024216228597312282
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "random",
+        "N": 122438,
+        "cells": [
+          116675,
+          2855,
+          2849,
+          59
+        ],
+        "rho": -0.0035927445464819,
+        "px": 0.023750796321403485,
+        "py": 0.023799800715464153,
+        "se_binary": 0.0026484381054257106
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "siblings-rem",
+        "N": 34855,
+        "cells": [
+          33777,
+          577,
+          356,
+          145
+        ],
+        "rho": 0.22783375759264762,
+        "px": 0.014373834457036293,
+        "py": 0.020714388179601206,
+        "se_binary": 0.016447999927979323
+      },
+      {
+        "rule": "birth_rule",
+        "cohort": "1860-1919",
+        "raw_label": "sons",
+        "N": 33813,
+        "cells": [
+          32148,
+          866,
+          608,
+          191
+        ],
+        "rho": 0.18575773478347118,
+        "px": 0.023629964806435394,
+        "py": 0.03126016620826309,
+        "se_binary": 0.012847868589944201
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "cousin",
+        "N": 14635,
+        "cells": [
+          13798,
+          395,
+          287,
+          155
+        ],
+        "rho": 0.2905271455026268,
+        "px": 0.030201571574991457,
+        "py": 0.037581141100102494,
+        "se_binary": 0.01955148658524622
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "cousin-rem",
+        "N": 12318,
+        "cells": [
+          11695,
+          230,
+          302,
+          91
+        ],
+        "rho": 0.2341611883306217,
+        "px": 0.03190452995616171,
+        "py": 0.02605942523136873,
+        "se_binary": 0.02197344183776891
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "cousin2",
+        "N": 11507,
+        "cells": [
+          10935,
+          216,
+          289,
+          67
+        ],
+        "rho": 0.18874222818173256,
+        "px": 0.03093769010167724,
+        "py": 0.024593725558355782,
+        "se_binary": 0.02198678835084848
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "cousin2-rem",
+        "N": 12212,
+        "cells": [
+          11814,
+          125,
+          264,
+          9
+        ],
+        "rho": 0.031925873098595764,
+        "px": 0.02235506059613495,
+        "py": 0.010972813625941696,
+        "se_binary": 0.015243225520827085
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "cousin3",
+        "N": 13545,
+        "cells": [
+          13147,
+          130,
+          249,
+          19
+        ],
+        "rho": 0.08158445290484873,
+        "px": 0.019785898855666298,
+        "py": 0.011000369139904024,
+        "se_binary": 0.020351611291157135
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "cousin3-rem",
+        "N": 12503,
+        "cells": [
+          12195,
+          171,
+          120,
+          17
+        ],
+        "rho": 0.09431791893806199,
+        "px": 0.010957370231144525,
+        "py": 0.015036391266096136,
+        "se_binary": 0.023783541535532984
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "cousin4",
+        "N": 15953,
+        "cells": [
+          15352,
+          295,
+          275,
+          31
+        ],
+        "rho": 0.0799355527910081,
+        "px": 0.019181345201529493,
+        "py": 0.020435027894439916,
+        "se_binary": 0.016511274793548022
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "father-son",
+        "N": 8337,
+        "cells": [
+          7998,
+          102,
+          108,
+          129
+        ],
+        "rho": 0.5383729179124588,
+        "px": 0.028427491903562432,
+        "py": 0.027707808564231738,
+        "se_binary": 0.028222860472864427
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "grandson",
+        "N": 4619,
+        "cells": [
+          4357,
+          107,
+          89,
+          66
+        ],
+        "rho": 0.3811272445568145,
+        "px": 0.03355704697986577,
+        "py": 0.03745399437107599,
+        "se_binary": 0.0350148632920946
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "random",
+        "N": 105792,
+        "cells": [
+          100452,
+          2640,
+          2618,
+          82
+        ],
+        "rho": 0.004743398207868579,
+        "px": 0.025521778584392012,
+        "py": 0.025729733817301873,
+        "se_binary": 0.003325234208948281
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "siblings-rem",
+        "N": 12030,
+        "cells": [
+          11358,
+          243,
+          259,
+          170
+        ],
+        "rho": 0.382261526425067,
+        "px": 0.03566084788029925,
+        "py": 0.034330839567747296,
+        "se_binary": 0.02185367384910452
+      },
+      {
+        "rule": "flags",
+        "cohort": "1780-1859",
+        "raw_label": "sons",
+        "N": 15935,
+        "cells": [
+          15266,
+          261,
+          336,
+          72
+        ],
+        "rho": 0.17630347944040398,
+        "px": 0.025604016316284905,
+        "py": 0.020897395669909002,
+        "se_binary": 0.019861732857188716
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "cousin",
+        "N": 26829,
+        "cells": [
+          25991,
+          423,
+          329,
+          86
+        ],
+        "rho": 0.17296591724632535,
+        "px": 0.015468336501546835,
+        "py": 0.0189720079018972,
+        "se_binary": 0.0174740549509813
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "cousin-rem",
+        "N": 51001,
+        "cells": [
+          48643,
+          1259,
+          865,
+          234
+        ],
+        "rho": 0.16167191097836522,
+        "px": 0.02154859708633164,
+        "py": 0.02927393580518029,
+        "se_binary": 0.010421459791127217
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "cousin2",
+        "N": 33813,
+        "cells": [
+          32148,
+          866,
+          608,
+          191
+        ],
+        "rho": 0.18575773478347118,
+        "px": 0.023629964806435394,
+        "py": 0.03126016620826309,
+        "se_binary": 0.012847868589944201
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "cousin2-rem",
+        "N": 57201,
+        "cells": [
+          54235,
+          1601,
+          1128,
+          237
+        ],
+        "rho": 0.12544936577125596,
+        "px": 0.02386321917448996,
+        "py": 0.03213230537927658,
+        "se_binary": 0.008748899530471045
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "cousin3",
+        "N": 33900,
+        "cells": [
+          32273,
+          740,
+          794,
+          93
+        ],
+        "rho": 0.08499283122082352,
+        "px": 0.02616519174041298,
+        "py": 0.02457227138643068,
+        "se_binary": 0.010458089894296266
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "cousin3-rem",
+        "N": 53477,
+        "cells": [
+          50843,
+          1606,
+          955,
+          73
+        ],
+        "rho": 0.03180334357947685,
+        "px": 0.019223217457972588,
+        "py": 0.0313966752061634,
+        "se_binary": 0.006322089215592655
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "cousin4",
+        "N": 30104,
+        "cells": [
+          28435,
+          768,
+          865,
+          36
+        ],
+        "rho": 0.014433365157130878,
+        "px": 0.029929577464788734,
+        "py": 0.026707414297103375,
+        "se_binary": 0.006957530087158915
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "father-son",
+        "N": 15394,
+        "cells": [
+          14930,
+          233,
+          123,
+          108
+        ],
+        "rho": 0.37351483100766836,
+        "px": 0.015005846433675458,
+        "py": 0.022151487592568533,
+        "se_binary": 0.02610300465607203
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "grandson",
+        "N": 15661,
+        "cells": [
+          15135,
+          296,
+          153,
+          77
+        ],
+        "rho": 0.2489824893572224,
+        "px": 0.014686163080263074,
+        "py": 0.023817125343209247,
+        "se_binary": 0.024017731978820754
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "random",
+        "N": 122438,
+        "cells": [
+          116675,
+          2855,
+          2849,
+          59
+        ],
+        "rho": -0.0035927445464819,
+        "px": 0.023750796321403485,
+        "py": 0.023799800715464153,
+        "se_binary": 0.0026484381054257106
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "siblings-rem",
+        "N": 34874,
+        "cells": [
+          33794,
+          579,
+          356,
+          145
+        ],
+        "rho": 0.22748429604576192,
+        "px": 0.014366003326260252,
+        "py": 0.020760451912599648,
+        "se_binary": 0.016429561138041483
+      },
+      {
+        "rule": "flags",
+        "cohort": "1860-1919",
+        "raw_label": "sons",
+        "N": 33813,
+        "cells": [
+          32148,
+          866,
+          608,
+          191
+        ],
+        "rho": 0.18575773478347118,
+        "px": 0.023629964806435394,
+        "py": 0.03126016620826309,
+        "se_binary": 0.012847868589944201
+      }
+    ],
+    "label_totals": {
+      "father-son": 23731,
+      "sons": 43560,
+      "grandson": 20280,
+      "siblings-rem": 46904,
+      "cousin": 37028,
+      "cousin-rem": 63319,
+      "cousin2": 43560,
+      "cousin2-rem": 69413,
+      "cousin3": 42500,
+      "cousin3-rem": 65980,
+      "cousin4": 38618,
+      "random": 228230
+    },
+    "duplicate_ordered_pairs": {
+      "sons": 504,
+      "grandson": 10,
+      "siblings-rem": 23,
+      "cousin": 125,
+      "cousin-rem": 604,
+      "cousin2": 504,
+      "cousin2-rem": 2054,
+      "cousin3": 1133,
+      "cousin3-rem": 3573,
+      "cousin4": 2654,
+      "random": 25
+    },
+    "cross_label_overlap": [
+      {
+        "label_a": "cousin",
+        "label_b": "cousin-rem",
+        "identical_ordered_pair_ids": 13
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "cousin2",
+        "identical_ordered_pair_ids": 326
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "cousin2-rem",
+        "identical_ordered_pair_ids": 32
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "cousin3",
+        "identical_ordered_pair_ids": 106
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "cousin3-rem",
+        "identical_ordered_pair_ids": 32
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "cousin4",
+        "identical_ordered_pair_ids": 346
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "random",
+        "identical_ordered_pair_ids": 1
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 3
+      },
+      {
+        "label_a": "cousin",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 326
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "cousin2",
+        "identical_ordered_pair_ids": 26
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "cousin2-rem",
+        "identical_ordered_pair_ids": 1262
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "cousin3",
+        "identical_ordered_pair_ids": 13
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "cousin3-rem",
+        "identical_ordered_pair_ids": 245
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "father-son",
+        "identical_ordered_pair_ids": 93
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "grandson",
+        "identical_ordered_pair_ids": 8
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 388
+      },
+      {
+        "label_a": "cousin-rem",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 26
+      },
+      {
+        "label_a": "cousin2",
+        "label_b": "cousin2-rem",
+        "identical_ordered_pair_ids": 73
+      },
+      {
+        "label_a": "cousin2",
+        "label_b": "cousin3",
+        "identical_ordered_pair_ids": 716
+      },
+      {
+        "label_a": "cousin2",
+        "label_b": "cousin3-rem",
+        "identical_ordered_pair_ids": 12
+      },
+      {
+        "label_a": "cousin2",
+        "label_b": "cousin4",
+        "identical_ordered_pair_ids": 159
+      },
+      {
+        "label_a": "cousin2",
+        "label_b": "father-son",
+        "identical_ordered_pair_ids": 2
+      },
+      {
+        "label_a": "cousin2",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 2
+      },
+      {
+        "label_a": "cousin2",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 43056
+      },
+      {
+        "label_a": "cousin2-rem",
+        "label_b": "cousin3",
+        "identical_ordered_pair_ids": 75
+      },
+      {
+        "label_a": "cousin2-rem",
+        "label_b": "cousin3-rem",
+        "identical_ordered_pair_ids": 2300
+      },
+      {
+        "label_a": "cousin2-rem",
+        "label_b": "father-son",
+        "identical_ordered_pair_ids": 67
+      },
+      {
+        "label_a": "cousin2-rem",
+        "label_b": "grandson",
+        "identical_ordered_pair_ids": 1
+      },
+      {
+        "label_a": "cousin2-rem",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 142
+      },
+      {
+        "label_a": "cousin2-rem",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 73
+      },
+      {
+        "label_a": "cousin3",
+        "label_b": "cousin3-rem",
+        "identical_ordered_pair_ids": 27
+      },
+      {
+        "label_a": "cousin3",
+        "label_b": "cousin4",
+        "identical_ordered_pair_ids": 1334
+      },
+      {
+        "label_a": "cousin3",
+        "label_b": "father-son",
+        "identical_ordered_pair_ids": 1
+      },
+      {
+        "label_a": "cousin3",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 2
+      },
+      {
+        "label_a": "cousin3",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 716
+      },
+      {
+        "label_a": "cousin3-rem",
+        "label_b": "cousin4",
+        "identical_ordered_pair_ids": 292
+      },
+      {
+        "label_a": "cousin3-rem",
+        "label_b": "father-son",
+        "identical_ordered_pair_ids": 66
+      },
+      {
+        "label_a": "cousin3-rem",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 338
+      },
+      {
+        "label_a": "cousin3-rem",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 12
+      },
+      {
+        "label_a": "cousin4",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 159
+      },
+      {
+        "label_a": "father-son",
+        "label_b": "grandson",
+        "identical_ordered_pair_ids": 4
+      },
+      {
+        "label_a": "father-son",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 10
+      },
+      {
+        "label_a": "father-son",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 2
+      },
+      {
+        "label_a": "grandson",
+        "label_b": "siblings-rem",
+        "identical_ordered_pair_ids": 1
+      },
+      {
+        "label_a": "siblings-rem",
+        "label_b": "sons",
+        "identical_ordered_pair_ids": 2
+      }
+    ],
+    "missing_births": {
+      "father-son": 276,
+      "grandson": 570,
+      "siblings-rem": 50,
+      "cousin": 216
+    },
+    "flag_disagreement": [
+      {
+        "cohort": "1780-1859",
+        "label": "cousin-rem",
+        "direction": "birth_only",
+        "N": 24954
+      },
+      {
+        "cohort": "1780-1859",
+        "label": "cousin2",
+        "direction": "birth_only",
+        "N": 4428
+      },
+      {
+        "cohort": "1780-1859",
+        "label": "cousin2-rem",
+        "direction": "birth_only",
+        "N": 24449
+      },
+      {
+        "cohort": "1780-1859",
+        "label": "cousin3",
+        "direction": "birth_only",
+        "N": 1804
+      },
+      {
+        "cohort": "1780-1859",
+        "label": "cousin3-rem",
+        "direction": "birth_only",
+        "N": 22276
+      },
+      {
+        "cohort": "1780-1859",
+        "label": "father-son",
+        "direction": "birth_only",
+        "N": 9396
+      },
+      {
+        "cohort": "1780-1859",
+        "label": "grandson",
+        "direction": "birth_only",
+        "N": 15103
+      },
+      {
+        "cohort": "1780-1859",
+        "label": "siblings-rem",
+        "direction": "birth_only",
+        "N": 19098
+      },
+      {
+        "cohort": "1860-1919",
+        "label": "cousin-rem",
+        "direction": "birth_only",
+        "N": 59
+      },
+      {
+        "cohort": "1860-1919",
+        "label": "cousin2-rem",
+        "direction": "birth_only",
+        "N": 309
+      },
+      {
+        "cohort": "1860-1919",
+        "label": "cousin3-rem",
+        "direction": "birth_only",
+        "N": 608
+      }
+    ]
+  },
+  "sibling_reconstruction": {
+    "duplicate_eligible_person_ids": 0,
+    "orientation": "ascending numeric person ID, each unordered pair once",
+    "estimates": [
+      {
+        "definition": "same_known_parents",
+        "cohort": "1780-1859",
+        "N": 16743,
+        "cells": [
+          13411,
+          950,
+          1177,
+          1205
+        ],
+        "rho": 0.4586948685319496,
+        "px": 0.14226841067908977,
+        "py": 0.1287105058830556,
+        "se_binary": 0.00993951752049769
+      },
+      {
+        "definition": "same_known_parents",
+        "cohort": "1860-1919",
+        "N": 22038,
+        "cells": [
+          19921,
+          679,
+          783,
+          655
+        ],
+        "rho": 0.43759082403097865,
+        "px": 0.06525093021145295,
+        "py": 0.060531808694073874,
+        "se_binary": 0.012235797801981634
+      },
+      {
+        "definition": "same_known_parents_elite",
+        "cohort": "1780-1859",
+        "N": 5130,
+        "cells": [
+          2249,
+          816,
+          1002,
+          1063
+        ],
+        "rho": 0.2529861612727564,
+        "px": 0.40253411306042886,
+        "py": 0.3662768031189084,
+        "se_binary": 0.013759492901065649
+      },
+      {
+        "definition": "same_known_parents_elite",
+        "cohort": "1860-1919",
+        "N": 4847,
+        "cells": [
+          3198,
+          506,
+          584,
+          559
+        ],
+        "rho": 0.3613486714524146,
+        "px": 0.2358159686403961,
+        "py": 0.21972354033422736,
+        "se_binary": 0.015648192632022388
+      },
+      {
+        "definition": "shared_father",
+        "cohort": "1780-1859",
+        "N": 17807,
+        "cells": [
+          14206,
+          1029,
+          1272,
+          1300
+        ],
+        "rho": 0.45655265230040065,
+        "px": 0.1444375807266805,
+        "py": 0.1307912618633122,
+        "se_binary": 0.009583559206752515
+      },
+      {
+        "definition": "shared_father",
+        "cohort": "1860-1919",
+        "N": 23151,
+        "cells": [
+          20899,
+          729,
+          827,
+          696
+        ],
+        "rho": 0.4366115296366404,
+        "px": 0.06578549522698804,
+        "py": 0.06155241674225735,
+        "se_binary": 0.011873657857597562
+      },
+      {
+        "definition": "shared_father_elite",
+        "cohort": "1780-1859",
+        "N": 5566,
+        "cells": [
+          2449,
+          883,
+          1085,
+          1149
+        ],
+        "rho": 0.25383571628511903,
+        "px": 0.40136543298598637,
+        "py": 0.36507366151634923,
+        "se_binary": 0.013212528476029536
+      },
+      {
+        "definition": "shared_father_elite",
+        "cohort": "1860-1919",
+        "N": 5139,
+        "cells": [
+          3377,
+          545,
+          618,
+          599
+        ],
+        "rho": 0.36098605981339094,
+        "px": 0.2368165012648375,
+        "py": 0.22261140299669196,
+        "se_binary": 0.015159121744909618
+      }
+    ]
+  },
+  "sources": {
+    "pnas.2300926120.sd01.xlsx": "82ce0404296858b01b62d59161f7ff27185b63627a8c6558f95039c05499761d",
+    "pnas.2300926120.sd03.xlsx": "fc204eca865277a33372e0727c36f198a622014fb96645fe28efa414e9129a50"
+  }
+}

@@ -1,0 +1,157 @@
+\section{What the Genetic Model Assumes and Predicts}
+\label{sec:fisher-model}
+\subsection{The Outcome and the Genetic Estimand}
+\label{sec:model-components}
+The benchmark is an additive model for a specified phenotype, not a general
+theory of every outcome called social status. Write the standardized phenotype
+as
+\[
+ P_i=hA_i+e_P E_i,\qquad e_P=\sqrt{1-h^2},
+\]
+where $A_i$ and $E_i$ have zero means, unit variances, and zero within-person
+covariance. The additive genetic contribution is $hA_i$, with variance
+$h^2$. Define $m=\operatorname{Corr}(A_M,A_F)$ and
+$r=\operatorname{Corr}(P_M,P_F)$ for spouses. The sexes share component
+variances, and those variances are stationary across generations.
+The formulation follows \citet{Fisher1918} and the explicit treatment of \citet{OttoEtAl1994}. Appendix~\ref{app:fisher} gives the primitive assumptions and derivations;
+there $\rho=r$ and $\rho_A=m$.
+
+The intended causal genetic contribution must be distinguished from a
+population predictor. In modern genomics, a direct effect originates in
+the individual's own genotype; an indirect effect originates in another
+person's genotype, apart from transmission of the individual's alleles.
+The direct effect can include parental, teacher, or peer responses to the
+individual's genetically influenced characteristics. It is not an effect
+that holds all social responses fixed
+\citep[Sections~3.1 and~3.4]{BenjaminEtAl2026}. This definition matters both
+for the covariance exclusions and for Clark's later interpretation of
+``social'' effects.
+
+\subsection{The Strength of the Environmental Covariance Exclusions}
+\label{sec:environmental-exclusions}
+
+The zero-covariance assumptions do much of the substantive work. Within
+a person, $\operatorname{Cov}(A_i,E_i)=0$ excludes systematic association
+between the direct genetic contribution and the remaining environmental
+contribution. Across biological relatives, the model excludes shared
+environmental contributions: $\operatorname{Cov}(E_i,E_j)=0$. In the birth
+process of Appendix~\ref{app:fisher}, each child's environment is also uncorrelated with parental
+genes and environments and with siblings' genes. In particular, for a
+parent $p$ and offspring $o$, and distinct siblings $1,2$,
+\[
+ \operatorname{Cov}(A_p,E_o)=\operatorname{Cov}(E_p,E_o)=0,
+ \qquad
+ \operatorname{Cov}(A_1,E_2)=\operatorname{Cov}(E_1,E_2)=0.
+\]
+These are substantive exclusions, not consequences of additive genetics
+or of Mendelian segregation.
+
+For education, occupation, earnings, and wealth, this is an exceptionally
+restrictive starting point. It excludes any net contribution to familial
+resemblance from shared schools, neighborhoods, resources, contacts, or
+inherited wealth beyond the pathways already assigned to genetic effects.
+It also excludes additional association between the child's inherited
+endowment and the environmental advantages or disadvantages supplied by
+the family. Individual environments may have large effects in this model,
+but the residual environmental influences must be uncorrelated along the
+specified family relationships. A large environmental variance therefore
+does not make the model permissive about environmental transmission.
+
+As \citet[pp.~10--11]{Goldberger1978} emphasizes, the asymmetry is striking:
+premarital environments may resemble one another among spouses, while
+shared rearing supplies no additional source of resemblance among
+siblings or between parents and children. For otherwise comparable
+biological relatives, being raised together rather than apart contributes
+nothing to the predicted correlation. For Clark's social outcomes, these
+restrictions demand unusually strong empirical justification. They cannot
+be established by fitting equations that impose them from the outset.
+Section~\ref{sec:genomic-evidence} explains why modern genomic evidence
+already challenges the exclusion of environmental confounding.
+
+The behavioral asymmetry deserves emphasis. Environmental contributions
+to parents' phenotypes help determine whom they marry, and assortment
+thereby associates those environments with the genes their children
+inherit. Yet the model gives each child a fresh environmental draw,
+disconnected from parental circumstances and from the sibling's
+environmental draw. Parents' environments thus enter the process of mate
+selection but contribute no additional resemblance between the children
+they raise. This construction is mathematically coherent: correlation with
+a parent's environment need not imply correlation with one's own when
+the model disconnects the two. Its behavioral plausibility is a separate
+question. For education, occupation, and wealth, excluding the family
+processes that could connect parental circumstances to children's
+opportunities requires evidence, not merely a consistent covariance matrix.
+Goldberger's question is therefore substantive: what account of family
+behavior supports these restrictions \citep[pp.~36--37]{Goldberger1978}?
+
+Two qualifications are essential. First, it would be incorrect to say
+that \emph{every} cross-person genetic--environmental covariance outside
+marriage is zero. Phenotypic assortment generates correlation between one
+spouse's environment and the other's genes; inheritance carries that
+association to their child. The path runs from association with the
+partner's genes to inheritance of those genes by the child; it is not a
+causal effect of the parent's environment on the child's genes. Nor is it
+transmission of the parent's environment to the child's environment.
+Indeed, the derivation in Appendix~\ref{app:fisher} gives
+$\operatorname{Cov}(E_M,A_o)=r h e_P/2$, even though
+$\operatorname{Cov}(A_M,E_o)=0$. The restriction excludes environmental
+transmission and additional covariance, while retaining the covariance
+already implied by the mating mechanism.
+
+Second, a direct genetic effect can include environmental responses to
+the individual's genotype. Such mediation belongs to the direct effect
+under the causal definition used in modern genomics; it is not automatically
+an omitted environmental term. Conversely, defining the genetic component
+as a population linear predictor can make its residual orthogonal by
+construction, but does not make that predictor a direct causal genetic
+contribution. Clark cannot obtain the causal interpretation merely by
+choosing an orthogonal statistical decomposition. This distinction is
+central to Sections~\ref{sec:genomic-evidence} and~\ref{sec:interpretation}.
+
+
+\subsection{The Mating Mechanism Restricts the Parameters}
+Under primary phenotypic assortment, spouses match on $P$ rather than
+separately on its genetic and environmental components. With the conditional
+linearity and independence assumptions stated in Appendix~\ref{app:fisher},
+\begin{equation}
+ m=h^2r.\label{eq:overview-restriction}
+\end{equation}
+The relation is derived from the matching mechanism; it is not an optional
+additional assumption or a consequence that requires an intergenerational
+equilibrium argument. A high phenotype predicts a genetic value of $hP$;
+applying that prediction on both sides of a marriage gives the factor $h^2$.
+
+Assortment on genetic value instead gives $r=h^2m$ under independent
+residual environments. Assortment on several traits can generate still
+other restrictions. Clark's appeal to matching on ``something deeper''
+therefore requires a specification \citep[pp.~16,75]{Clark2026}: either it is the same phenotypic
+model with a measurement equation, or it changes the mating process and
+requires new kinship formulas. These possibilities cannot be exchanged
+while retaining the original parameter interpretation.
+
+\subsection{Inheritance and the Predictions for Relatives}
+The child receives half each parent's additive genetic value plus a
+mean-zero segregation deviation:
+\[
+ A_o=\tfrac12(A_M+A_F)+S_o.
+\]
+Independent segregation across births and stationary unit genetic variance
+require $\operatorname{Var}(S_o)=(1-m)/2$. The child's environmental draw
+is fresh in the sense specified above. Under phenotypic assortment the
+resulting correlations are
+\[
+ \operatorname{Corr}(P_p,P_o)=\frac{h^2(1+r)}2,
+ \qquad
+ \operatorname{Corr}(P_1,P_2)=\frac{h^2(1+m)}2
+\]
+for a parent and child and for full siblings, respectively. Thus
+\begin{equation}
+ \operatorname{Corr}(P_p,P_o)-\operatorname{Corr}(P_1,P_2)
+ =\frac{h^2r(1-h^2)}2>0
+ \label{eq:overview-gap}
+\end{equation}
+when assortment is positive and $0<h^2<1$. More distant moments require
+additional assumptions about incoming spouses and shared ancestors,
+not merely Mendelian transmission. The complete derivation exposes where
+each exclusion enters. The next question is whether these latent
+predictions survive the way Clark's outcomes are recorded and fitted.

@@ -1,11 +1,15 @@
 # Bibliography notes
 
-42 checked entries in references.bib. Existing citation keys retained. The full evidence ledger, original files, proposed/final diff, and automated reports are in ../references/metadata/BIBLIOGRAPHY_AUDIT.md in the Dropbox workspace.
+Latest audit: [23 September 2026 original-PDF audit](../references/metadata/audit_2026-09-23/REPORT.md).
 
-Corrections include Jennifer R. Harris's name, Griliches's last page (S64), Cesarini--Visscher's article number, and Otto's 1995 working-paper number (0065). Preprints and published versions are retained separately.
+48 entries: all 46 existing entries reviewed, plus the two newly supplied Sjolander papers. There are 32 corresponding-version local PDFs, one local manuscript of a cited publication (Lee), and 15 entries without an exact local original. Do not describe the entire library as verified against local PDFs. Per-entry comments in references.bib and the field-level ledger identify missing sources, manuscript dates, version differences and externally sourced metadata.
 
-Fisher1918 retains the conventional 1918 date despite publisher volume metadata of 1919; the University of Adelaide's Fisher archive supports 1918. Clark2026 retains the literal manuscript date 6/5/2026. BenjaminEtAl2026 describes the supplied manuscript; its exact date and final publication metadata are not established by that PDF.
+Source-confirmed titles and authors are retained, with normal bibliographic typography. Existing keys and distinct versions are preserved. No publication details were invented. The Benjamin entry explicitly reports that its year comes only from the supplied filename.
 
-Automated metadata check of the 41-entry proposal: 26 matches, Fisher title-format exception reviewed manually, 14 skipped manuscript/working-paper entries checked against sources. The 42nd entry is the visually checked Bound--Solon 1998 NBER working paper. Bibliographic checks do not constitute verification of the review's substantive claims.
+The earlier external audit remains available in [BIBLIOGRAPHY_AUDIT.md](../references/metadata/BIBLIOGRAPHY_AUDIT.md); its checks must not be confused with the fresh local-source audit.
 
-Version pairs retained: Barcellos 2018 preprint/article; Benning 2023/2025; Bound--Solon 1998/1999; Otto 1994/1995; Sandewall et al. 2009/2014. No entries were merged or citation keys renamed.
+Subsequent source-checked addition: Goldberger1979 (*Heritability*, Economica), copied from the original in the JEL library; title, author, year, volume, issue and pages verified from its JSTOR cover. Current library: 49 entries.
+
+Final citation-placement pass: [24 September report](../references/metadata/citation_pass_2026-09-24/REPORT.md). Current library: **52 entries**, including three added primary genomic studies with local PDFs/text. Howe (2022) and the education-specific Okbay (2022) primary citations remain flagged in the manuscript source; the relevant statements currently cite the JEL review. Prior original-PDF/version uncertainties remain unresolved, not guessed.
+
+Introduction additions, 24 September: **54 entries** after adding Clark (2007) and Clark (2014). The former was checked against the supplied book bibliography; the latter against the hosted Princeton publisher record. Exact original-book PDFs were not verified locally; entry comments preserve this distinction.

@@ -1,0 +1,866 @@
+[
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "both",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 13840,
+    "cells": [
+      10964,
+      881,
+      934,
+      1061
+    ],
+    "rho": 0.4626186187222718,
+    "px": 0.14414739884393063,
+    "py": 0.14031791907514451,
+    "se_binary": 0.010710545256778402
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "both",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4311,
+    "cells": [
+      1827,
+      769,
+      785,
+      930
+    ],
+    "rho": 0.24644663658579896,
+    "px": 0.39781953143122245,
+    "py": 0.39410809556947346,
+    "se_binary": 0.014990273545112997
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "both",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 9529,
+    "cells": [
+      9137,
+      112,
+      149,
+      131
+    ],
+    "rho": 0.48824009218287734,
+    "px": 0.02938398572777836,
+    "py": 0.025501101899464793,
+    "se_binary": 0.02722459518919498
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "both",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 14508,
+    "cells": [
+      11436,
+      942,
+      998,
+      1132
+    ],
+    "rho": 0.46041884225665897,
+    "px": 0.1468155500413565,
+    "py": 0.1429556106975462,
+    "se_binary": 0.010390694589457853
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "both",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4599,
+    "cells": [
+      1943,
+      823,
+      840,
+      993
+    ],
+    "rho": 0.24458313740354465,
+    "px": 0.39856490541422046,
+    "py": 0.3948684496629702,
+    "se_binary": 0.014515973777981396
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "both",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 9909,
+    "cells": [
+      9493,
+      119,
+      158,
+      139
+    ],
+    "rho": 0.487870289357558,
+    "px": 0.029972752043596732,
+    "py": 0.026036936118679986,
+    "se_binary": 0.026439576468175036
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "either",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 16743,
+    "cells": [
+      13411,
+      1003,
+      1124,
+      1205
+    ],
+    "rho": 0.45799234765823416,
+    "px": 0.1391029086782536,
+    "py": 0.13187600788389175,
+    "se_binary": 0.009950017110786122
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "either",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 5130,
+    "cells": [
+      2249,
+      871,
+      947,
+      1063
+    ],
+    "rho": 0.25150302369424704,
+    "px": 0.39181286549707606,
+    "py": 0.3769980506822612,
+    "se_binary": 0.013776119012926679
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "either",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 11613,
+    "cells": [
+      11162,
+      132,
+      177,
+      142
+    ],
+    "rho": 0.46676580486064945,
+    "px": 0.027469215534314993,
+    "py": 0.023594247825712563,
+    "se_binary": 0.02569588775878887
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "either",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 17807,
+    "cells": [
+      14206,
+      1096,
+      1205,
+      1300
+    ],
+    "rho": 0.4557790996676687,
+    "px": 0.14067501544336497,
+    "py": 0.13455382714662772,
+    "se_binary": 0.009594615577100868
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "either",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 5566,
+    "cells": [
+      2449,
+      950,
+      1018,
+      1149
+    ],
+    "rho": 0.2522504344937664,
+    "px": 0.3893280632411067,
+    "py": 0.3771110312612289,
+    "se_binary": 0.01322963307957052
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "either",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 12241,
+    "cells": [
+      11757,
+      146,
+      187,
+      151
+    ],
+    "rho": 0.4627037098686525,
+    "px": 0.027612123192549628,
+    "py": 0.02426272363369006,
+    "se_binary": 0.024869969424274725
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "older",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 16463,
+    "cells": [
+      13212,
+      983,
+      1092,
+      1176
+    ],
+    "rho": 0.4587123094283292,
+    "px": 0.13776346959849362,
+    "py": 0.13114256210897163,
+    "se_binary": 0.010064244470059408
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "older",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4965,
+    "cells": [
+      2162,
+      852,
+      915,
+      1036
+    ],
+    "rho": 0.24984048134692968,
+    "px": 0.3929506545820745,
+    "py": 0.38026183282980863,
+    "se_binary": 0.013998306357738728
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "older",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 11498,
+    "cells": [
+      11050,
+      131,
+      177,
+      140
+    ],
+    "rho": 0.4640290957363093,
+    "px": 0.02757001217603061,
+    "py": 0.023569316402852668,
+    "se_binary": 0.025820329420821693
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "older",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 17489,
+    "cells": [
+      13984,
+      1068,
+      1169,
+      1268
+    ],
+    "rho": 0.45743717390142213,
+    "px": 0.13934473097375494,
+    "py": 0.1335696723654869,
+    "se_binary": 0.009709840326294763
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "older",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 5372,
+    "cells": [
+      2348,
+      923,
+      982,
+      1119
+    ],
+    "rho": 0.25175850297905455,
+    "px": 0.39110201042442294,
+    "py": 0.38011913626209975,
+    "se_binary": 0.01345692317476103
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "older",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 12117,
+    "cells": [
+      11636,
+      145,
+      187,
+      149
+    ],
+    "rho": 0.46009337936813177,
+    "px": 0.027729636048526865,
+    "py": 0.024263431542461005,
+    "se_binary": 0.024982245278992378
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "younger",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 14120,
+    "cells": [
+      11163,
+      901,
+      966,
+      1090
+    ],
+    "rho": 0.46160389838373356,
+    "px": 0.14560906515580735,
+    "py": 0.1410056657223796,
+    "se_binary": 0.010574745526184141
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "younger",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4476,
+    "cells": [
+      1914,
+      788,
+      817,
+      957
+    ],
+    "rho": 0.2485435903785918,
+    "px": 0.39633601429848075,
+    "py": 0.38985701519213584,
+    "se_binary": 0.014717348260334212
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "younger",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 9644,
+    "cells": [
+      9249,
+      113,
+      149,
+      133
+    ],
+    "rho": 0.4910965601880756,
+    "px": 0.029240978846951475,
+    "py": 0.02550808793031937,
+    "se_binary": 0.027070948670244666
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "younger",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 14826,
+    "cells": [
+      11658,
+      970,
+      1034,
+      1164
+    ],
+    "rho": 0.4583380315179332,
+    "px": 0.14825306893295562,
+    "py": 0.1439363280723054,
+    "se_binary": 0.010251591448141053
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "younger",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4793,
+    "cells": [
+      2044,
+      850,
+      876,
+      1023
+    ],
+    "rho": 0.24558730509932675,
+    "px": 0.396202795743793,
+    "py": 0.3907782182349259,
+    "se_binary": 0.014229974784567813
+  },
+  {
+    "cohort": "1780-1859",
+    "cohort_rule": "younger",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 10033,
+    "cells": [
+      9614,
+      120,
+      158,
+      141
+    ],
+    "rho": 0.4905832971978465,
+    "px": 0.02980165454001794,
+    "py": 0.026014153294129372,
+    "se_binary": 0.026298334791625452
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "both",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 19415,
+    "cells": [
+      17673,
+      578,
+      624,
+      540
+    ],
+    "rho": 0.4404960290478792,
+    "px": 0.05995364408962142,
+    "py": 0.05758434200360546,
+    "se_binary": 0.01344727493681745
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "both",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4193,
+    "cells": [
+      2863,
+      418,
+      459,
+      453
+    ],
+    "rho": 0.37556327201516015,
+    "px": 0.21750536608633436,
+    "py": 0.2077271643214882,
+    "se_binary": 0.017157175984510078
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "both",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 15222,
+    "cells": [
+      14810,
+      160,
+      165,
+      87
+    ],
+    "rho": 0.3378628029914732,
+    "px": 0.01655498620417816,
+    "py": 0.016226514255682563,
+    "se_binary": 0.027693416931183094
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "both",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 20170,
+    "cells": [
+      18351,
+      608,
+      651,
+      560
+    ],
+    "rho": 0.4377126881081498,
+    "px": 0.06003966286564204,
+    "py": 0.05790778383738225,
+    "se_binary": 0.013178868173816553
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "both",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4366,
+    "cells": [
+      2972,
+      440,
+      481,
+      473
+    ],
+    "rho": 0.37276415245277167,
+    "px": 0.2185066422354558,
+    "py": 0.2091158955565735,
+    "se_binary": 0.016793588133948475
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "both",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 15804,
+    "cells": [
+      15379,
+      168,
+      170,
+      87
+    ],
+    "rho": 0.32897694660563137,
+    "px": 0.016261705897241206,
+    "py": 0.016135155656795748,
+    "se_binary": 0.02724109304514389
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "either",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 22038,
+    "cells": [
+      19921,
+      680,
+      782,
+      655
+    ],
+    "rho": 0.43757542288382206,
+    "px": 0.0652055540430166,
+    "py": 0.06057718486251021,
+    "se_binary": 0.012235989890731474
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "either",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4847,
+    "cells": [
+      3198,
+      501,
+      589,
+      559
+    ],
+    "rho": 0.36151615195987097,
+    "px": 0.23684753455745822,
+    "py": 0.21869197441716526,
+    "se_binary": 0.015645379867490185
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "either",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 17191,
+    "cells": [
+      16723,
+      179,
+      193,
+      96
+    ],
+    "rho": 0.3295373176417332,
+    "px": 0.016811122098772613,
+    "py": 0.01599674248153103,
+    "se_binary": 0.025965803528729268
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "either",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 23151,
+    "cells": [
+      20899,
+      734,
+      822,
+      696
+    ],
+    "rho": 0.43654998761742536,
+    "px": 0.06556952183490994,
+    "py": 0.06176839013433545,
+    "se_binary": 0.011874397638344318
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "either",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 5139,
+    "cells": [
+      3377,
+      540,
+      623,
+      599
+    ],
+    "rho": 0.3611246381483906,
+    "px": 0.23778945320101186,
+    "py": 0.2216384510605176,
+    "se_binary": 0.015156863536468912
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "either",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 18012,
+    "cells": [
+      17522,
+      194,
+      199,
+      97
+    ],
+    "rho": 0.3194167266853222,
+    "px": 0.016433488785254274,
+    "py": 0.01615589606928714,
+    "se_binary": 0.025337449926990774
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "older",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 19415,
+    "cells": [
+      17673,
+      578,
+      624,
+      540
+    ],
+    "rho": 0.4404960290478792,
+    "px": 0.05995364408962142,
+    "py": 0.05758434200360546,
+    "se_binary": 0.01344727493681745
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "older",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4193,
+    "cells": [
+      2863,
+      418,
+      459,
+      453
+    ],
+    "rho": 0.37556327201516015,
+    "px": 0.21750536608633436,
+    "py": 0.2077271643214882,
+    "se_binary": 0.017157175984510078
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "older",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 15222,
+    "cells": [
+      14810,
+      160,
+      165,
+      87
+    ],
+    "rho": 0.3378628029914732,
+    "px": 0.01655498620417816,
+    "py": 0.016226514255682563,
+    "se_binary": 0.027693416931183094
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "older",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 20170,
+    "cells": [
+      18351,
+      608,
+      651,
+      560
+    ],
+    "rho": 0.4377126881081498,
+    "px": 0.06003966286564204,
+    "py": 0.05790778383738225,
+    "se_binary": 0.013178868173816553
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "older",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4366,
+    "cells": [
+      2972,
+      440,
+      481,
+      473
+    ],
+    "rho": 0.37276415245277167,
+    "px": 0.2185066422354558,
+    "py": 0.2091158955565735,
+    "se_binary": 0.016793588133948475
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "older",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 15804,
+    "cells": [
+      15379,
+      168,
+      170,
+      87
+    ],
+    "rho": 0.32897694660563137,
+    "px": 0.016261705897241206,
+    "py": 0.016135155656795748,
+    "se_binary": 0.02724109304514389
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "younger",
+    "parent_rule": "same_known_parents",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 22038,
+    "cells": [
+      19921,
+      680,
+      782,
+      655
+    ],
+    "rho": 0.43757542288382206,
+    "px": 0.0652055540430166,
+    "py": 0.06057718486251021,
+    "se_binary": 0.012235989890731474
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "younger",
+    "parent_rule": "same_known_parents",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 4847,
+    "cells": [
+      3198,
+      501,
+      589,
+      559
+    ],
+    "rho": 0.36151615195987097,
+    "px": 0.23684753455745822,
+    "py": 0.21869197441716526,
+    "se_binary": 0.015645379867490185
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "younger",
+    "parent_rule": "same_known_parents",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 17191,
+    "cells": [
+      16723,
+      179,
+      193,
+      96
+    ],
+    "rho": 0.3295373176417332,
+    "px": 0.016811122098772613,
+    "py": 0.01599674248153103,
+    "se_binary": 0.025965803528729268
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "younger",
+    "parent_rule": "shared_father",
+    "lineage": "all",
+    "orientation": "older_birth_first",
+    "N": 23151,
+    "cells": [
+      20899,
+      734,
+      822,
+      696
+    ],
+    "rho": 0.43654998761742536,
+    "px": 0.06556952183490994,
+    "py": 0.06176839013433545,
+    "se_binary": 0.011874397638344318
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "younger",
+    "parent_rule": "shared_father",
+    "lineage": "elite_or_mixed",
+    "orientation": "older_birth_first",
+    "N": 5139,
+    "cells": [
+      3377,
+      540,
+      623,
+      599
+    ],
+    "rho": 0.3611246381483906,
+    "px": 0.23778945320101186,
+    "py": 0.2216384510605176,
+    "se_binary": 0.015156863536468912
+  },
+  {
+    "cohort": "1860-1919",
+    "cohort_rule": "younger",
+    "parent_rule": "shared_father",
+    "lineage": "general",
+    "orientation": "older_birth_first",
+    "N": 18012,
+    "cells": [
+      17522,
+      194,
+      199,
+      97
+    ],
+    "rho": 0.3194167266853222,
+    "px": 0.016433488785254274,
+    "py": 0.01615589606928714,
+    "se_binary": 0.025337449926990774
+  }
+]

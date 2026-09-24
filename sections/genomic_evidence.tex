@@ -1,0 +1,157 @@
+\section{What Modern Genomic Evidence Can Identify}
+\label{sec:genomic-evidence}
+
+Modern genomic evidence can do more than supply additional correlations
+consistent with a fitted kinship model: it can help estimate components
+that kinship resemblance alone does not separately identify, and test
+restrictions imposed on them. Gene--environment covariance and dominance
+variance illustrate why this evidence warrants different judgments about
+different simplifying assumptions. Here gene--environment covariance
+means correlation between genetic and environmental contributions, not
+an interaction in which an effect changes with the environment.
+
+\subsection{Random Segregation Supplies New Identifying Variation}
+
+The decisive advance is that genotypes reveal random transmission within
+families, rather than merely average resemblance between types of relatives.
+Conditional on the parents' genotypes, a child's inherited alleles vary
+through Mendelian segregation. Children can consequently differ in their
+inherited endowments without those differences being assigned by parental
+wealth, schooling, or social position. This is precisely the variation
+missing when one tries to separate genetic and environmental transmission
+using only average parent--child and sibling correlations.
+
+A simple moment condition makes the advantage explicit. Let $X$ be a column
+vector of offspring allele counts, $W$ the parental genotypes, and
+$T=X-\mathbb E[X\mid W]$ the transmission deviation. Consider the correctly
+specified additive model
+\[
+ Y=X^{\mathsf T}\beta+f(W)+u,\qquad \mathbb E[T u]=0.
+\]
+Here $\beta$ contains direct effects, while $f(W)$ allows parental-genotype
+associations with family background. By construction,
+$\mathbb E[T\mid W]=0$, so $\mathbb E[T f(W)]=0$ and
+\[
+ \mathbb E[T Y]=\mathbb E[T T^{\mathsf T}]\beta.
+\]
+Where the transmission covariance matrix has sufficient rank, these
+moments identify the corresponding effects without requiring
+$\operatorname{Cov}(X,f(W))=0$ in the population. Correlated loci can limit
+which combinations are separately identified. The substantive condition
+$\mathbb E[T u]=0$ still requires justification: parental conditioning
+removes family-background association with transmission, but does not
+license omission of relevant transmitted variants or correlated sibling
+effects. Selection can also compromise the design. Nor does random
+transmission require environments to be unresponsive to the child's
+inherited characteristics; those responses can mediate its direct effect
+\citep[Sections~3.1, 4.4--4.5]{BenjaminEtAl2026}.
+
+Segregation also produces random variation in how much genetic material
+siblings and other relatives actually share. Genomic relatedness designs
+use that variation to estimate genetic variance separately from the average
+resemblance associated with a family relationship
+\citep{YoungEtAl2018}; see also \citet[Section~4.7]{BenjaminEtAl2026}. A PGI's segregation deviation similarly
+provides a source of within-family variation. These are distinct from using
+its between-family association as a causal effect. Assortment must be
+accounted for when translating segregation-based estimates into population
+genetic variance; the two variances are not generally identical
+\citep{Young2023}.
+
+\subsection{Evidence Already Challenges the Population-PGI Interpretation}
+Population-based GWAS coefficients can combine direct genetic effects with
+indirect effects, population structure, and other gene--environment
+association \citep{YoungEtAl2019,YoungEtAl2022}. This is an empirical problem,
+not merely a hypothetical possibility. % CITATION CHECK: Add Howe et al. (2022) primary citation after exact author-list/source verification; currently attributed through Benjamin et al.
+The evidence reviewed in
+\citet[Section~4.6]{BenjaminEtAl2026} includes smaller average family-based
+effects for educational attainment and changes in cross-trait genetic
+correlations. Treating population coefficients as unbiased direct effects
+is therefore untenable as a general premise. This does not establish bias
+in every coefficient or quantify the error in every claim Clark makes.
+
+The implication for $m$ is immediate. A spouse correlation in a score
+weighted by population coefficients need not measure assortment on the
+direct genetic component posited by the model. Family-based weights targeting
+direct effects are the appropriate starting point for this purpose and
+for the book's other PGI tests insofar as they seek to distinguish direct
+genetic differences from environmental explanations, including its
+geographical comparisons. \citet[Section~6.4]{BenjaminEtAl2026} explicitly
+recommend sufficiently well-powered family-based PGIs for assortment
+studies. Better population prediction does not establish the causal
+interpretation: the difference concerns the estimand as well as precision.
+
+Family-based weights do not automatically recover $m$. Finite precision,
+incomplete genetic coverage, and the particular family design's assumptions
+still matter; a score correlation is not the correlation in the complete
+latent endowment. These measurement issues require explicit treatment,
+not interchangeability of population and family-based coefficients.
+
+Clark discusses the non-transmitted-allele design of \citet{KongEtAl2018}
+and argues that assortment and incomplete measurement can account for its
+findings \citep[pp.~83--84]{Clark2026}. The criticism is not that he ignores
+this design. It is that an alternative explanation of one genetic-nurture
+result does not resolve the wider evidence of confounding in population
+associations. His causal use of those associations requires identifying
+conditions that their predictive success does not establish.
+
+\subsection{Gene--Environment Covariance and Dominance Warrant Different Conclusions}
+
+For gene--environment covariance, family-based designs use variation in
+transmission conditional on parental genotypes to separate direct genetic
+effects from associations generated by family background. Joint analyses
+of offspring and parental genotypes can additionally estimate indirect
+parental effects under explicit identifying assumptions. Comparisons with
+population estimates therefore provide evidence about the environmental
+and indirect-genetic contributions that population associations can
+absorb. The evidence reviewed by \citet[Sections~4.3--4.7]{BenjaminEtAl2026}
+includes substantial gene--environment correlation for educational
+attainment. It challenges the exclusion of such covariance from the model;
+it does not, without further assumptions, identify its entire magnitude
+or allocation across kinships. In particular, subtracting family-based
+from population-based coefficients does not automatically recover a single
+$\operatorname{Cov}(G,U)$: the difference can reflect several sources of
+confounding, and the mapping depends on the genetic coverage and the
+family design. Environmental responses caused by the child's own genotype
+also remain part of the direct effect, as defined in Section~\ref{sec:model-components}.
+
+The evidence on dominance supports a different conclusion. \citet{PazokitoroudiEtAl2021} directly estimate dominance contributions across a broad set of complex traits. Dominance
+variance measures departures from additivity between the two alleles at
+a locus. The genomic studies reviewed by
+\citet[Sections~3.2 and~4.7]{BenjaminEtAl2026}, % CITATION CHECK: Okbay et al. (2022) original/supplement is not in local library; the following EA-specific statement is explicitly attributed to the JEL review.
+including the educational
+attainment results of Okbay and colleagues, support a small contribution
+from dominance variance. Clark's decision to omit it is consequently a
+reasonable approximation for educational attainment, subject to the
+variants, populations, and precision covered by those studies. This is
+not a finding that every form of nonadditivity is absent, nor does it
+establish that dominance is negligible for every historical outcome.
+More importantly, evidence supporting negligible dominance supplies no
+justification for excluding gene--environment covariance or shared
+environmental influences. Modern evidence can thus support Clark's
+additive approximation while challenging the environmental exclusions
+on which his causal interpretation rests.
+
+\subsection{From Fitting Kinship Correlations to Testing Their Explanation}
+
+Better family-based PGIs can help estimate $m$ independently of the
+kinship correlations the model seeks to explain. With appropriate allowance
+for incomplete genetic measurement, estimates of $m$, $h^2$, and spouse
+phenotypic resemblance can test the contrasting restrictions of phenotypic
+and genetic assortment developed above. Cross-trait direct genetic
+covariances can test a strong single-endowment model; genomic signatures
+of assortment and comparisons across cohorts can probe equilibrium and
+stability assumptions \citep{YengoEtAl2018}; see also \citet[Sections~4.7 and~6.4]{BenjaminEtAl2026}.
+The aim should be to estimate components from transmission and genomic
+information, then predict kinship correlations not used in that estimation.
+This makes the data informative about which model is appropriate rather
+than merely which parameter values best fit a chosen model.
+
+The lesson of the great IQ debate was that good fit to kinship correlations
+does not establish the assumptions that give fitted parameters their causal
+meaning \citep{Loehlin1978,Goldberger1978}. Modern genomic data offer a way
+forward by supplying independent evidence about genetic assortment, direct
+and indirect genetic effects, dominance, and the consequences of mating
+across generations. These developments can support some of Clark's
+simplifications while challenging others. Their value lies in making
+consequential assumptions testable, rather than allowing another
+well-fitting model to stand as evidence of its own validity.

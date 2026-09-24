@@ -1,0 +1,59 @@
+\section{Introduction}
+Gregory Clark's \emph{To Have and Have Not} \citeyearpar{Clark2026}
+completes the trilogy begun with \emph{A Farewell to Alms}
+\citeyearpar{Clark2007} and \emph{The Son Also Rises}
+\citeyearpar{Clark2014}. It asks two questions: ``To what extent are
+social outcomes such as occupations, income, wealth, longevity, and
+health socially versus genetically determined? And to what degree can
+life outcomes be changed by social interventions?'' (p.~5). The book's
+ambition is to answer both through the study of family resemblance
+across four centuries of English history.
+
+Its foundation is an unusual historical resource assembled jointly with
+Neil Cummins: genealogies covering more than 400,000 individuals and
+approximately 1.7 million church marriage records. By combining
+genealogical research with census, probate, and other records, they
+trace education, occupation, wealth, and other outcomes across
+generations and among relatives as distant as fourth cousins
+(pp.~20--26, 35--36, 53).
+% SOURCE CHECK: p. 5 reports 449,000 individuals; p. 20 reports 436,185.
+% Rounded counts avoid choosing between the manuscript's inconsistent totals.
+
+Clark advances two main empirical claims. First, after accounting for
+measurement error, social status is remarkably persistent across
+generations, with an underlying intergenerational correlation near 0.8
+that has barely changed over four centuries. Second, the correlations
+in social outcomes across different types of relatives---from
+parent--child pairs and siblings to fourth cousins---``fit
+extraordinarily well'' a simple model of additive genetic inheritance
+with strong assortative mating (pp.~6, 53).
+
+Clark recognizes that cultural transmission could, in principle,
+produce the same correlations (p.~88). The second part therefore seeks
+evidence that distinguishes the competing explanations. Comparisons
+involving family size, birth order, birthplace, parental death, and
+other circumstances test what he calls the genetic model's ``clear
+predictions'' (p.~7). He interprets their results as evidence that
+direct genetic transmission predominates and social influences
+contribute little to the persistence of status (pp.~8--9).
+
+The third part develops the historical and policy implications Clark
+draws from this interpretation. He argues that ``modern societies spend
+too much on education'' (p.~9), favouring income transfers and wage
+compression as more effective ways to improve the circumstances of the
+disadvantaged (p.~217). He also assigns migration, differential
+fertility, and marital assortment a central role in shaping the
+distribution of abilities and societies' long-run prospects
+(pp.~217--218).
+
+Clark deserves considerable credit for this imaginative data-collection
+effort and the interesting empirical regularities it documents. I am
+far less persuaded by his interpretation and conclusions. The genetic
+estimates depend on strong assumptions about mating, measurement, and
+environmental transmission that a close fit does not establish.
+Moreover, even correctly identified genetic effects can operate
+through social mechanisms, and their magnitude does not determine the
+benefits of intervention. The review begins by examining the model and
+its estimation, then assesses the environmental and genomic evidence,
+before considering these further problems of interpretation in Clark's
+historical and policy claims.

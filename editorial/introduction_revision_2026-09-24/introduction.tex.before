@@ -1,0 +1,45 @@
+\section{Introduction}
+Gregory Clark's \emph{To Have and Have Not} assembles an unusually rich
+record of family resemblance and social mobility in England. Its Families
+of England and Marriages of England databases connect outcomes across
+many generations and types of relatives. These data, and the book's
+attention to the measurement of social status, are substantial contributions
+independent of the explanation Clark favors \citep{Clark2026}.
+
+The book's central claim is more demanding than persistence itself.
+Clark interprets the pattern of kinship correlations as evidence that
+additive genetic transmission, combined with strong assortative mating,
+accounts for social resemblance across generations. Part~II examines
+family and environmental comparisons that he takes to distinguish this
+account from social transmission. Part~III extends the argument to
+education, historical development, and population composition.
+
+This review asks whether those inferences follow. Three questions must
+be separated. First, do the fitted equations consistently represent the
+model Clark invokes, including its mating and measurement assumptions?
+Second, do the data distinguish that model from alternative processes
+that generate family resemblance? Third, even if the genetic estimates
+were valid, what would they establish about social mechanisms and the
+benefits of intervention? A defect at one stage does not establish every
+criticism at the others, and accepting genetic influences does not settle
+any of these questions.
+
+Measurement deserves particular care. Noisy occupational and educational
+proxies can distort comparisons of mobility, but labeling the difference
+between a recorded outcome and a latent ability ``measurement error''
+does not establish the classical error assumptions required by a correction.
+Nor can the consequences of recording a binary outcome generally be
+represented by one common attenuation factor. These issues affect what
+the reported parameters measure before their causal interpretation arises.
+
+The argument proceeds from the model's assumptions to measurement and
+estimation, then to identification and independent evidence. The discussion
+of modern genomics explains how random genetic transmission can test
+assumptions previously imposed on kinship correlations. Separate sections
+assess the historical application of assortment and the interpretation of
+genetic estimates for policy. Detailed derivations, simulations, and a
+balanced dossier of quotations are retained in the appendices. The central
+criticism is not that the observed persistence is uninteresting or that
+genetic explanations are inadmissible. It is that the evidence does not
+establish the particular genetic explanation, or its wider implications,
+as securely as the book claims.

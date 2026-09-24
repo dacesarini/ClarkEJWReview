@@ -1,3 +1,5 @@
+% RETAINED LEGACY SOURCE: not included by main.tex after the structural audit.
+% Active replacement: appendices/measurement_derivations.tex
 \section{Adding Classical Measurement Error}
 \label{sec:measurement-error}
 
@@ -276,7 +278,75 @@ uncertainty is on the log scale. Inference must also account for
 dependence between estimates from overlapping families. A small
 residual sum of squares does not by itself verify the measurement or
 transmission assumptions that identify $\eta$.
+\paragraph{A binary-outcome calibration.}\mbox{}\par
+Clark's higher-education outcome is a binary indicator observed for men in
+these historical cohorts (the supplementary methods, p.~14, describe the
+male-only construction; the two cohorts and their pair totals appear in
+Table~2, p.~2, of \citet{Clark2023}, and in Table~4.5, p.~54, of
+\citet{Clark2026}). We recovered cohort prevalences from the archived
+supplementary workbook `pnas.2300926120.sd03.xlsx`, sheet `Table 2 Ded
+1780-1919`, rather than from a published marginal table. After deduplicating
+person IDs and retaining nonmissing male indicators, the fractions coded one
+were $432/16{,}238=0.02660$ for births in 1780--1859 and
+$522/21{,}150=0.02468$ for births in 1860--1919. These are workbook-based
+calibrations, not claims that every kinship-pair sample has exactly those
+marginals.
 
+The simulation is fully specified as follows. For each of the 11 kinship rows
+in the Fisher table (the $n,D$ structure is Table~A1, p.~296, of
+\citet{Clark2026}), we generated $1{,}000{,}000$ independent pairs of latent
+standard-normal phenotypes with correlation
+\[
+ \rho_{n,D}=h^2\left(\frac{1+m}{2}\right)^n
+ \left(\frac{1+r}{1+m}\right)^D.
+\]
+The generating values $h^2=0.60$, $r=0.80$, and $m=h^2r=0.48$ are deliberately
+chosen illustrative values, not estimates read from Clark. For each endpoint
+we then formed the standardized recorded continuous outcome
+$Y=\sqrt{\theta}P+\sqrt{1-\theta}U$, with independent standard-normal $U$ and
+$\theta=0.80$; thus 20\% of recorded variance is independent white noise.
+For cohort prevalence $p$, we defined
+$\mathrm{Edu}=1\{Y\geq\Phi^{-1}(1-p)\}$, so the threshold was applied to the
+noisy observed outcome and the population prevalence was exactly $p$. The
+random seed was 20260920; pairs were simulated separately by kinship, not as
+one connected pedigree.
+
+For each simulated dataset we minimized the equally weighted sum of squared
+residuals in the 11 log correlations, imposing the phenotypic-assortment
+restriction $m=h^2r$. The fixed-$\theta$ fit set $\theta=1$; the free-$\theta$
+fit estimated $(h^2,r,\theta)$ in $(0,1]^3$. The table reports the resulting
+estimates; the displayed fixed-$\theta$ rows use the admissible bounds
+$h^2,r\leq1$.
+
+\begin{center}
+\small
+\begin{tabular}{llrrrrr}
+\hline
+Cohort & Outcome & $\theta$ & $h^2$ & $r$ & $m$ & RMSE(log)\\
+\hline
+1780--1859 & Continuous & 1 fixed & .476 & 1.000 & .476 & .044\\
+1780--1859 & Continuous & free & .606 & .782 & .474 & .009\\
+1780--1859 & Binary Edu & 1 fixed & .227 & 1.000 & .227 & .363\\
+1780--1859 & Binary Edu & free & .412 & .906 & .373 & .072\\
+1860--1919 & Continuous & 1 fixed & .480 & 1.000 & .480 & .048\\
+1860--1919 & Continuous & free & .598 & .809 & .484 & .012\\
+1860--1919 & Binary Edu & 1 fixed & .226 & 1.000 & .226 & .394\\
+1860--1919 & Binary Edu & free & .394 & .996 & .392 & .071\\
+\hline
+\end{tabular}
+\end{center}
+
+The continuous free-$\theta$ fits recover the deliberately chosen generating
+values closely. The binary free-$\theta$ fits do not: at Clark-like education
+prevalences they understate $h^2$ by about 31--34\%, inflate $r$ from .80 to
+.91--1.00, estimate $m$ around .37--.39 instead of .48, and estimate
+$\theta$ around .30 instead of .80. Fixing $\theta=1$ is worse and reaches
+$r=1$. Thresholding a rare binary outcome therefore changes the correlation
+pattern across kinships, rather than applying a common multiplicative
+attenuation. These are calibrated simulations, not a formal rejection of
+Clark's data; they show why the reported binary Pearson correlations need an
+explicit threshold/liability model before the continuous Fisher formulas can
+be given a latent interpretation.
 \subsection{Averaging Parents Changes the Correlation}
 \label{sec:me-averages}
 

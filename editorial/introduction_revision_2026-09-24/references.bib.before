@@ -1,0 +1,702 @@
+% Clark review bibliography.
+% Latest source-by-source audit: ../references/metadata/audit_2026-09-23/REPORT.md
+% Local-PDF evidence is distinguished from externally sourced or unresolved fields.
+% Citation keys and distinct publication versions retained.
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference. Local February 2018 bioRxiv preprint has a different title and is a separate entry.
+@article{BarcellosEtAl2018,
+  author       = {Barcellos, Silvia H. and Carvalho, Leandro S. and Turley, Patrick},
+  title        = {Education Can Reduce Health Differences Related to Genetic Risk of Obesity},
+  journal      = {Proceedings of the National Academy of Sciences},
+  year         = {2018},
+  volume       = {115},
+  number       = {42},
+  pages        = {E9765--E9772},
+  doi          = {10.1073/pnas.1802909115},
+  url          = {https://doi.org/10.1073/pnas.1802909115}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF BarcellosEtAl_2018_Education_Obesity_Preprint.pdf
+% Preprint version 5 February 2018 confirmed; not the published PNAS version.
+@unpublished{BarcellosEtAl2018Preprint,
+  author       = {Barcellos, Silvia H. and Carvalho, Leandro S. and Turley, Patrick},
+  title        = {Education can Reduce Health Disparities Related to Genetic Risk of Obesity: Evidence from a {British} Reform},
+  year         = {2018},
+  doi          = {10.1101/260463},
+  url          = {https://doi.org/10.1101/260463},
+  note         = {bioRxiv preprint, version posted 5 February 2018},
+  file         = {../references/BarcellosEtAl_2018_Education_Obesity_Preprint.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF BenjaminEtAl_2026_Social_Science_Genomics_Manuscript.pdf
+% Authors/title confirmed. Year 2026 comes only from original supplied filename JEL_2026_05_12.pdf; no dated title page or final publication metadata. Year remains explicitly qualified, not independently verified.
+@unpublished{BenjaminEtAl2026,
+  author       = {Benjamin, Daniel J. and Cesarini, David and Turley, Patrick and Young, Alexander Strudwick},
+  title        = {Social-Science Genomics: Progress, Challenges, and Future Directions},
+  year         = {2026},
+  note         = {Undated manuscript supplied as JEL\_2026\_05\_12.pdf; year inferred only from supplied filename, not established by the manuscript},
+  file         = {../references/BenjaminEtAl_2026_Social_Science_Genomics_Manuscript.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF BenningEtAl_2023_Hereditarian_Fallacies_Preprint.pdf
+@unpublished{BenningEtAl2023,
+  author       = {Benning, John W. and Carlson, Jedidiah and Shaw, Ruth G. and Harpak, Arbel},
+  title        = {{Clark} (2023) and the Persistence of Hereditarian Fallacies},
+  year         = {2023},
+  doi          = {10.1101/2023.11.01.565061},
+  url          = {https://doi.org/10.1101/2023.11.01.565061},
+  note         = {bioRxiv preprint, version posted 3 November 2023},
+  file         = {../references/BenningEtAl_2023_Hereditarian_Fallacies_Preprint.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF BenningEtAl_2025_Confounding_Human_Genetics.pdf
+@article{BenningEtAl2025,
+  author       = {Benning, John W. and Carlson, Jedidiah and Smith, Olivia S. and Shaw, Ruth G. and Harpak, Arbel},
+  title        = {Confounding fuels misinterpretation in human genetics},
+  journal      = {Proceedings of the Royal Society B: Biological Sciences},
+  year         = {2025},
+  volume       = {292},
+  pages        = {20251615},
+  doi          = {10.1098/rspb.2025.1615},
+  url          = {https://doi.org/10.1098/rspb.2025.1615},
+  file         = {../references/BenningEtAl_2025_Confounding_Human_Genetics.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{BlackDevereuxSalvanes2005,
+  author       = {Black, Sandra E. and Devereux, Paul J. and Salvanes, Kjell G.},
+  title        = {The More the Merrier? The Effect of Family Size and Birth Order on Children's Education},
+  journal      = {Quarterly Journal of Economics},
+  year         = {2005},
+  volume       = {120},
+  number       = {2},
+  pages        = {669--700},
+  doi          = {10.1093/qje/120.2.669},
+  url          = {https://doi.org/10.1093/qje/120.2.669}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF BoundSolon_1998_Double_Trouble_NBER6721.pdf
+% Scanned title page visually checked: September 1998, Working Paper 6721, NBER. DOI is retained external metadata, not printed on the title page.
+@techreport{BoundSolon1998,
+  author       = {Bound, John and Solon, Gary},
+  title        = {Double Trouble: On the Value of Twins-Based Estimation of the Return to Schooling},
+  institution  = {National Bureau of Economic Research},
+  type         = {NBER Working Paper},
+  year         = {1998},
+  month        = {September},
+  number       = {6721},
+  doi          = {10.3386/w6721},
+  url          = {https://www.nber.org/papers/w6721},
+  file         = {../references/BoundSolon_1998_Double_Trouble_NBER6721.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference. Local 1998 NBER working paper is a distinct version.
+@article{BoundSolon1999,
+  author       = {Bound, John and Solon, Gary},
+  title        = {Double Trouble: On the Value of Twins-Based Estimation of the Return to Schooling},
+  journal      = {Economics of Education Review},
+  year         = {1999},
+  volume       = {18},
+  number       = {2},
+  pages        = {169--182},
+  doi          = {10.1016/s0272-7757(98)00048-x},
+  url          = {https://doi.org/10.1016/s0272-7757(98)00048-x}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Bowles_2007_Genetically_Capitalist.pdf
+% Pages 394--396 confirmed: references continue onto 396 beside a separate review. Publisher end sheet confirms issue 5849 and DOI.
+@article{Bowles2007,
+  author       = {Bowles, Samuel},
+  title        = {Genetically Capitalist?},
+  journal      = {Science},
+  year         = {2007},
+  volume       = {318},
+  number       = {5849},
+  pages        = {394--396},
+  doi          = {10.1126/science.1149498},
+  url          = {https://doi.org/10.1126/science.1149498},
+  file         = {../references/Bowles_2007_Genetically_Capitalist.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Bowles_2007_Clark_Commentary_Memo.pdf
+@unpublished{Bowles2007Memo,
+  author       = {Bowles, Samuel},
+  title        = {Commentary on {Clark, Gregory, A Farewell to Alms: A Brief Economic History of the World (Princeton, 2007)}},
+  year         = {2007},
+  note         = {Memorandum dated 9 October 2007},
+  file         = {../references/Bowles_2007_Clark_Commentary_Memo.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Cesarini_Visscher_npjSciLearning_2017.pdf
+@article{CesariniVisscher2017,
+  author       = {Cesarini, David and Visscher, Peter M.},
+  title        = {Genetics and educational attainment},
+  journal      = {npj Science of Learning},
+  year         = {2017},
+  volume       = {2},
+  pages        = {4},
+  doi          = {10.1038/s41539-017-0005-6},
+  url          = {https://doi.org/10.1038/s41539-017-0005-6},
+  file         = {../references/Cesarini_Visscher_npjSciLearning_2017.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Clark_2023_Inheritance_Social_Status.pdf
+@article{Clark2023,
+  author       = {Clark, Gregory},
+  title        = {The inheritance of social status: {England}, 1600 to 2022},
+  journal      = {Proceedings of the National Academy of Sciences},
+  year         = {2023},
+  volume       = {120},
+  number       = {27},
+  pages        = {e2300926120},
+  doi          = {10.1073/pnas.2300926120},
+  url          = {https://doi.org/10.1073/pnas.2300926120},
+  file         = {../references/Clark_2023_Inheritance_Social_Status.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Clark_2025_Hereditarian_Fallacies_EHES285.pdf
+@techreport{Clark2025,
+  author       = {Clark, Gregory},
+  title        = {Hereditarian Fallacies? Inheritance of Social Status in {England}, 1600--2022},
+  institution  = {European Historical Economics Society},
+  type         = {EHES Working Paper},
+  year         = {2025},
+  number       = {285},
+  url          = {https://hdl.handle.net/10419/339005},
+  file         = {../references/Clark_2025_Hereditarian_Fallacies_EHES285.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Clark_2026_To_Have_and_Have_Not_Draft.pdf
+% Literal title-page date 6/5/2026 retained; month/day order not inferred.
+@unpublished{Clark2026,
+  author       = {Clark, Gregory},
+  title        = {To Have and Have Not: The Determinants of Social Status in {E}ngland, 1600--2026},
+  year         = {2026},
+  note         = {Unpublished book manuscript; title page dated 6/5/2026},
+  file         = {../references/Clark_2026_To_Have_and_Have_Not_Draft.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF ClarkCummins_2022_Assortative_Mating_LSE337.pdf
+% Authors/title confirmed. Local PDF lacks series cover and does not establish year, series number or institution as publisher; 2022/LSE/337 and URL retained from the earlier repository check, not verified by the local title page.
+@techreport{ClarkCummins2022,
+  author       = {Clark, Gregory and Cummins, Neil},
+  title        = {Assortative Mating and the Industrial Revolution: {England}, 1754--2021},
+  institution  = {London School of Economics and Political Science},
+  type         = {Economic History Working Paper},
+  year         = {2022},
+  number       = {337},
+  url          = {https://www.lse.ac.uk/Economic-History/Assets/Documents/WorkingPapers/Economic-History/2022/WP337.pdf},
+  file         = {../references/ClarkCummins_2022_Assortative_Mating_LSE337.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF ClarkCummins_2024_Matriline_Patriline_LSE366.pdf
+% Cover says Greg Clark; internal article title page says Gregory Clark, which the entry follows. January 2024, series 366 confirmed.
+@techreport{ClarkCummins2024,
+  author       = {Clark, Gregory and Cummins, Neil},
+  title        = {Matriline versus Patriline: Social Mobility in {England}, 1754--2023},
+  institution  = {London School of Economics and Political Science},
+  type         = {Economic History Working Paper},
+  year         = {2024},
+  month        = {January},
+  number       = {366},
+  file         = {../references/ClarkCummins_2024_Matriline_Patriline_LSE366.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF ClarkCummins_2025_Wealth_Shocks_EHES284.pdf
+@techreport{ClarkCummins2025,
+  author       = {Clark, Gregory and Cummins, Neil},
+  title        = {How Long do Wealth Shocks Persist? Less than three generations in {England}, 1700--2025},
+  institution  = {European Historical Economics Society},
+  type         = {EHES Working Paper},
+  year         = {2025},
+  month        = {October},
+  number       = {284},
+  file         = {../references/ClarkCummins_2025_Wealth_Shocks_EHES284.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF ClarkEtAl_2020_Twins_Fertility_Control.pdf
+@article{ClarkEtAl2020,
+  author       = {Clark, Gregory and Cummins, Neil and Curtis, Matthew},
+  title        = {Twins Support the Absence of Parity-Dependent Fertility Control in Pretransition Populations},
+  journal      = {Demography},
+  year         = {2020},
+  volume       = {57},
+  number       = {4},
+  pages        = {1571--1595},
+  doi          = {10.1007/s13524-020-00898-0},
+  url          = {https://doi.org/10.1007/s13524-020-00898-0},
+  file         = {../references/ClarkEtAl_2020_Twins_Fertility_Control.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF ClarkEtAl_2024_Occupational_Status_Indices.pdf
+@article{ClarkEtAl2024,
+  author       = {Clark, Gregory and Cummins, Neil and Curtis, Matthew},
+  title        = {Three new occupational status indices for {England} and {Wales}, 1800--1939},
+  journal      = {Historical Methods: A Journal of Quantitative and Interdisciplinary History},
+  year         = {2024},
+  volume       = {57},
+  number       = {1},
+  pages        = {41--66},
+  doi          = {10.1080/01615440.2024.2368458},
+  url          = {https://doi.org/10.1080/01615440.2024.2368458},
+  file         = {../references/ClarkEtAl_2024_Occupational_Status_Indices.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{ClarkCummins2025Hypergamy,
+  author       = {Clark, Gregory and Cummins, Neil},
+  title        = {Hypergamy Reconsidered: Marriage in {England}, 1837--2021},
+  journal      = {PLOS ONE},
+  year         = {2025},
+  volume       = {20},
+  number       = {2},
+  pages        = {e0316769},
+  doi          = {10.1371/journal.pone.0316769},
+  url          = {https://doi.org/10.1371/journal.pone.0316769}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF ClarkKristensen_2026_Myth_Nordic_Mobility_CES.pdf
+% Volume 68, year 2026, article 6, DOI and authors confirmed. Issue 1 is retained from earlier external metadata; not printed in the local PDF header. Value 6 is an article number, not a page range.
+@article{ClarkKristensen2026,
+  author       = {Clark, Gregory and Kristensen, Martin H{\o}rlyk},
+  title        = {The Myth of {Nordic} Mobility: Social Mobility Rates in Modern {Denmark} and {Sweden}},
+  journal      = {Comparative Economic Studies},
+  year         = {2026},
+  volume       = {68},
+  number       = {1},
+  pages        = {6},
+  doi          = {10.1057/s41294-025-00267-z},
+  url          = {https://doi.org/10.1057/s41294-025-00267-z},
+  file         = {../references/ClarkKristensen_2026_Myth_Nordic_Mobility_CES.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{ClarkNielsen2026,
+  author       = {Clark, Gregory and Nielsen, Christian Alexander Abildgaard},
+  title        = {The Returns to Education: A Meta-Study},
+  journal      = {Kyklos},
+  year         = {2026},
+  volume       = {79},
+  number       = {3},
+  pages        = {608--628},
+  doi          = {10.1111/kykl.70041},
+  url          = {https://doi.org/10.1111/kykl.70041}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{ColladoEtAl2023,
+  author       = {Collado, M. Dolores and Ortu{\~n}o-Ort{\'i}n, Ignacio and Stuhler, Jan},
+  title        = {Estimating Intergenerational and Assortative Processes in Extended Family Data},
+  journal      = {Review of Economic Studies},
+  year         = {2023},
+  volume       = {90},
+  number       = {3},
+  pages        = {1195--1227},
+  doi          = {10.1093/restud/rdac060},
+  url          = {https://doi.org/10.1093/restud/rdac060}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference. Conventional 1918 date versus publisher volume metadata 1919 remains explicitly qualified.
+@article{Fisher1918,
+  author       = {Fisher, Ronald A.},
+  title        = {The Correlation Between Relatives on the Supposition of {M}endelian Inheritance},
+  journal      = {Transactions of the Royal Society of Edinburgh},
+  year         = {1918},
+  volume       = {52},
+  number       = {2},
+  pages        = {399--433},
+  doi          = {10.1017/S0080456800012163},
+  url          = {https://doi.org/10.1017/S0080456800012163}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Goldberger_1978_Models_Methods_IQ_Debate_Revised.pdf
+% Cover and internal title page confirm Arthur S. Goldberger, Part I, revised, February 1978, paper 7801, SSRI, University of Wisconsin-Madison. OCR joins author initials; no invented expansion.
+@techreport{Goldberger1978,
+  author       = {Goldberger, Arthur S.},
+  title        = {Models and Methods in the {IQ} Debate: Part {I}. Revised},
+  institution  = {Social Systems Research Institute, University of Wisconsin--Madison},
+  type         = {SSRI Workshop Series Paper},
+  year         = {1978},
+  month        = {February},
+  number       = {7801},
+  file         = {../references/Goldberger_1978_Models_Methods_IQ_Debate_Revised.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{Griliches1977,
+  author       = {Griliches, Zvi},
+  title        = {Estimating the Returns to Schooling: Some Econometric Problems},
+  journal      = {Econometrica},
+  year         = {1977},
+  volume       = {45},
+  number       = {1},
+  pages        = {1--22},
+  doi          = {10.2307/1913285},
+  url          = {https://doi.org/10.2307/1913285}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Griliches_1979_Sibling_Models.pdf
+% JSTOR cover confirms authors/title/year/volume/issue/pages S37--S64. DOI retained from earlier external verification; source prints JSTOR stable URL instead.
+@article{Griliches1979,
+  author       = {Griliches, Zvi},
+  title        = {Sibling Models and Data in Economics: Beginnings of a Survey},
+  journal      = {Journal of Political Economy},
+  year         = {1979},
+  volume       = {87},
+  number       = {5, Part 2},
+  pages        = {S37--S64},
+  doi          = {10.1086/260822},
+  url          = {https://doi.org/10.1086/260822},
+  file         = {../references/Griliches_1979_Sibling_Models.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Jencks_1980_Heredity_Environment_Public_Policy.pdf
+% JSTOR cover and article confirm authors/title/year/volume/issue/pages. DOI retained external metadata; source prints stable identifier 2094892, not a DOI string.
+@article{Jencks1980,
+  author       = {Jencks, Christopher},
+  title        = {Heredity, Environment, and Public Policy Reconsidered},
+  journal      = {American Sociological Review},
+  year         = {1980},
+  volume       = {45},
+  number       = {5},
+  pages        = {723--736},
+  doi          = {10.2307/2094892},
+  url          = {https://doi.org/10.2307/2094892},
+  file         = {../references/Jencks_1980_Heredity_Environment_Public_Policy.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{KongEtAl2018,
+  author       = {Kong, Augustine and Thorleifsson, Gudmar and Frigge, Michael L. and Vilhjalmsson, Bjarni J. and Young, Alexander I. and Thorgeirsson, Thorgeir E. and Benonisdottir, Stefania and Oddsson, Asmundur and Halldorsson, Bjarni V. and Masson, Gisli and Gudbjartsson, Daniel F. and Helgason, Agnar and Bjornsdottir, Gyda and Thorsteinsdottir, Unnur and Stefansson, Kari},
+  title        = {The Nature of Nurture: Effects of Parental Genotypes},
+  journal      = {Science},
+  year         = {2018},
+  volume       = {359},
+  number       = {6374},
+  pages        = {424--428},
+  doi          = {10.1126/science.aan6877},
+  url          = {https://doi.org/10.1126/science.aan6877}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF LalaEtAl_2025_Impediments_Racist_Pseudoscience.pdf
+@article{LalaEtAl2025,
+  author       = {Lala, Kevin N. and Brown, Gillian and Twyman, Kalyani and Feldman, Marcus W.},
+  title        = {Impediments to countering racist pseudoscience},
+  journal      = {Evolutionary Human Sciences},
+  year         = {2025},
+  volume       = {7},
+  pages        = {e24},
+  doi          = {10.1017/ehs.2025.10012},
+  url          = {https://doi.org/10.1017/ehs.2025.10012},
+  file         = {../references/LalaEtAl_2025_Impediments_Racist_Pseudoscience.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF LalaFeldman_2024_Genes_Culture_Scientific_Racism.pdf
+@article{LalaFeldman2024,
+  author       = {Lala, Kevin N. and Feldman, Marcus W.},
+  title        = {Genes, culture, and scientific racism},
+  journal      = {Proceedings of the National Academy of Sciences},
+  year         = {2024},
+  volume       = {121},
+  number       = {48},
+  pages        = {e2322874121},
+  doi          = {10.1073/pnas.2322874121},
+  url          = {https://doi.org/10.1073/pnas.2322874121},
+  file         = {../references/LalaFeldman_2024_Genes_Culture_Scientific_Racism.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Lee_2023_Heritability_Persistence_Social_Class_Manuscript.pdf
+% VERSION MISMATCH: local PDF is an undated manuscript. It verifies author/title only; year, journal, volume, issue, article ID and DOI describe the published version and were checked externally in the earlier audit. Do not use this manuscript to certify published pagination.
+@article{Lee2023,
+  author       = {Lee, James J.},
+  title        = {The heritability and persistence of social class in {England}},
+  journal      = {Proceedings of the National Academy of Sciences},
+  year         = {2023},
+  volume       = {120},
+  number       = {29},
+  pages        = {e2309250120},
+  doi          = {10.1073/pnas.2309250120},
+  url          = {https://doi.org/10.1073/pnas.2309250120}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Loehlin_1978_Heredity_Environment_Jencks.pdf
+% Author/title/year/volume/issue and first/last printed pages confirmed. DOI retained external metadata; not printed in original PDF.
+@article{Loehlin1978,
+  author       = {Loehlin, John C.},
+  title        = {Heredity-Environment Analyses of {Jencks}'s {IQ} Correlations},
+  journal      = {Behavior Genetics},
+  year         = {1978},
+  volume       = {8},
+  number       = {5},
+  pages        = {415--436},
+  doi          = {10.1007/BF01067938},
+  url          = {https://doi.org/10.1007/BF01067938},
+  file         = {../references/Loehlin_1978_Heredity_Environment_Jencks.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Nagylaki_1982_Assortative_Mating_Quantitative_Character.pdf
+% Author/title/year/volume/pages confirmed. Issue 1 and DOI retained external metadata, not printed in local source.
+@article{Nagylaki1982,
+  author       = {Nagylaki, Thomas},
+  title        = {Assortative Mating for a Quantitative Character},
+  journal      = {Journal of Mathematical Biology},
+  year         = {1982},
+  volume       = {16},
+  number       = {1},
+  pages        = {57--74},
+  doi          = {10.1007/BF00275161},
+  url          = {https://doi.org/10.1007/BF00275161},
+  file         = {../references/Nagylaki_1982_Assortative_Mating_Quantitative_Character.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Neumark_1999_Biases_Twin_Estimates.pdf
+% Author/title/year/journal/volume/pages confirmed; source prints PII S0272-7757(97)00022-8. Issue 2 and DOI retained external metadata, not printed as such in original PDF.
+@article{Neumark1999,
+  author       = {Neumark, David},
+  title        = {Biases in twin estimates of the return to schooling},
+  journal      = {Economics of Education Review},
+  year         = {1999},
+  volume       = {18},
+  number       = {2},
+  pages        = {143--148},
+  doi          = {10.1016/s0272-7757(97)00022-8},
+  url          = {https://doi.org/10.1016/s0272-7757(97)00022-8},
+  file         = {../references/Neumark_1999_Biases_Twin_Estimates.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF OttoEtAl_1994_Genetic_Cultural_Inheritance_Manuscript.pdf
+@unpublished{OttoEtAl1994,
+  author       = {Otto, Sarah P. and Christiansen, Freddy B. and Feldman, Marcus W.},
+  title        = {Genetic and Cultural Inheritance of Continuous Traits},
+  year         = {1994},
+  note         = {Manuscript dated 28 July 1994; distinct from the 1995 working-paper citation},
+  file         = {../references/OttoEtAl_1994_Genetic_Cultural_Inheritance_Manuscript.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference. Local 28 July 1994 manuscript is a distinct version; 1995/0065 must not be inferred from it.
+@techreport{OttoEtAl1995,
+  author       = {Otto, Sarah P. and Christiansen, Freddy B. and Feldman, Marcus W.},
+  title        = {Genetic and Cultural Inheritance of Continuous Traits},
+  institution  = {Morrison Institute for Population and Resource Studies},
+  type         = {Working Paper},
+  year         = {1995},
+  number       = {0065},
+  url          = {https://www.zoology.ubc.ca/~otto/Research/Publications.html}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF SandewallEtAl_2009_Co_Twin_Methodology_IFN806.pdf
+@techreport{SandewallEtAl2009,
+  author       = {Sandewall, {\"O}rjan and Cesarini, David and Johannesson, Magnus},
+  title        = {The Co-twin Methodology and Returns to Schooling --- Testing a Critical Assumption},
+  institution  = {Research Institute of Industrial Economics},
+  type         = {IFN Working Paper},
+  year         = {2009},
+  number       = {806},
+  url          = {https://www.ifn.se/media/roicvnse/wp806.pdf},
+  file         = {../references/SandewallEtAl_2009_Co_Twin_Methodology_IFN806.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF SandewallEtAl_2014_Co_Twin_Methodology.pdf
+@article{SandewallEtAl2014,
+  author       = {Sandewall, {\"O}rjan and Cesarini, David and Johannesson, Magnus},
+  title        = {The co-twin methodology and returns to schooling --- testing a critical assumption},
+  journal      = {Labour Economics},
+  year         = {2014},
+  volume       = {26},
+  pages        = {1--10},
+  doi          = {10.1016/j.labeco.2013.10.002},
+  url          = {https://doi.org/10.1016/j.labeco.2013.10.002},
+  file         = {../references/SandewallEtAl_2014_Co_Twin_Methodology.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{SongEtAl2020,
+  author       = {Song, Xi and Massey, Catherine G. and Rolf, Karen A. and Ferrie, Joseph P. and Rothbaum, Jonathan L. and Xie, Yu},
+  title        = {Long-Term Decline in Intergenerational Mobility in the {United States} Since the 1850s},
+  journal      = {Proceedings of the National Academy of Sciences},
+  year         = {2020},
+  volume       = {117},
+  number       = {1},
+  pages        = {251--258},
+  doi          = {10.1073/pnas.1905094116},
+  url          = {https://doi.org/10.1073/pnas.1905094116}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{StunkardEtAl1990,
+  author       = {Stunkard, Albert J. and Harris, Jennifer R. and Pedersen, Nancy L. and McClearn, Gerald E.},
+  title        = {The Body-Mass Index of Twins Who Have Been Reared Apart},
+  journal      = {New England Journal of Medicine},
+  year         = {1990},
+  volume       = {322},
+  number       = {21},
+  pages        = {1483--1487},
+  doi          = {10.1056/NEJM199005243222102},
+  url          = {https://doi.org/10.1056/NEJM199005243222102}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{Ward2023,
+  author       = {Ward, Zachary},
+  title        = {Intergenerational Mobility in {American} History: Accounting for Race and Measurement Error},
+  journal      = {American Economic Review},
+  year         = {2023},
+  volume       = {113},
+  number       = {12},
+  pages        = {3213--3248},
+  doi          = {10.1257/aer.20200292},
+  url          = {https://doi.org/10.1257/aer.20200292}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF Young_2023_Indirect_Genetic_Effects_Assortative_Mating_Preprint.pdf
+% 11 July 2023 preprint version, author and DOI confirmed. Title extraction has font errors; human-readable title spelling retained, not OCR substitutions.
+@unpublished{Young2023,
+  author       = {Young, Alexander Strudwick},
+  title        = {Estimation of indirect genetic effects and heritability under assortative mating},
+  year         = {2023},
+  doi          = {10.1101/2023.07.10.548458},
+  url          = {https://doi.org/10.1101/2023.07.10.548458},
+  note         = {bioRxiv preprint, version posted 11 July 2023},
+  file         = {../references/Young_2023_Indirect_Genetic_Effects_Assortative_Mating_Preprint.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{YoungEtAl2019,
+  author       = {Young, Alexander I. and Benonisdottir, Stefania and Przeworski, Molly and Kong, Augustine},
+  title        = {Deconstructing the Sources of Genotype-Phenotype Associations in Humans},
+  journal      = {Science},
+  year         = {2019},
+  volume       = {365},
+  number       = {6460},
+  pages        = {1396--1400},
+  doi          = {10.1126/science.aax3710},
+  url          = {https://doi.org/10.1126/science.aax3710}
+}
+
+% SOURCE AUDIT 2026-09-23: NO EXACT LOCAL PDF
+% NO EXACT LOCAL PDF in references. Existing metadata retained from previous external audit; cannot certify against a local original. No missing fields filled by inference.
+@article{YoungEtAl2022,
+  author       = {Young, Alexander I. and Nehzati, Seyed Moeen and Benonisdottir, Stefania and Okbay, Aysu and Jayashankar, Hariharan and Lee, Chanwook and Cesarini, David and Benjamin, Daniel J. and Turley, Patrick and Kong, Augustine},
+  title        = {{Mendelian} Imputation of Parental Genotypes Improves Estimates of Direct Genetic Effects},
+  journal      = {Nature Genetics},
+  year         = {2022},
+  volume       = {54},
+  number       = {6},
+  pages        = {897--905},
+  doi          = {10.1038/s41588-022-01085-0},
+  url          = {https://doi.org/10.1038/s41588-022-01085-0}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF BleakleyFerrie_2016_Shocking_Behavior.pdf
+% Main article, not supplement, checked. Printed title/authors/year/pages/DOI confirmed; volume 131 and issue 3 appear in publisher URL watermarks. Last blank PDF page is not part of pagination.
+@article{BleakleyFerrie2016,
+  author       = {Bleakley, Hoyt and Ferrie, Joseph},
+  title        = {Shocking Behavior: Random Wealth in Antebellum {Georgia} and Human Capital Across Generations},
+  journal      = {The Quarterly Journal of Economics},
+  year         = {2016},
+  volume       = {131},
+  number       = {3},
+  pages        = {1455--1495},
+  doi          = {10.1093/qje/qjw014},
+  url          = {https://doi.org/10.1093/qje/qjw014},
+  file         = {../references/BleakleyFerrie_2016_Shocking_Behavior.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF SjolanderEtAl_2012_Causal_Interpretation_Between_Within_Models.pdf
+% PDF cover labels Article 10; printed article pages are 217--237. Cover includes honorific Mr after first author: excluded from author name, not silently treated as a surname or initial.
+@article{SjolanderEtAl2012,
+  author       = {Sj{\"o}lander, Arvid and Frisell, Thomas and {\"O}berg, Sara},
+  title        = {Causal Interpretation of Between-Within Models for Twin Research},
+  journal      = {Epidemiologic Methods},
+  year         = {2012},
+  volume       = {1},
+  number       = {1},
+  pages        = {217--237},
+  doi          = {10.1515/2161-962X.1015},
+  url          = {https://doi.org/10.1515/2161-962X.1015},
+  file         = {../references/SjolanderEtAl_2012_Causal_Interpretation_Between_Within_Models.pdf}
+}
+
+% SOURCE AUDIT 2026-09-23: Local PDF SjolanderEtAl_2022_Sibling_Comparison_Studies.pdf
+% Volume year 2022 and printed pages 71--94 confirmed; online-first date is 21 October 2021. No issue number inferred.
+@article{SjolanderEtAl2022,
+  author       = {Sj{\"o}lander, Arvid and Frisell, Thomas and {\"O}berg, Sara},
+  title        = {Sibling Comparison Studies},
+  journal      = {Annual Review of Statistics and Its Application},
+  year         = {2022},
+  volume       = {9},
+  pages        = {71--94},
+  doi          = {10.1146/annurev-statistics-040120-024521},
+  url          = {https://doi.org/10.1146/annurev-statistics-040120-024521},
+  file         = {../references/SjolanderEtAl_2022_Sibling_Comparison_Studies.pdf}
+}
+
+% Original PDF cover checked 2026-09-23: exact authors/title/journal/year/volume/issue/pages.
+% Source prints JSTOR stable URL; no unprinted DOI inferred.
+@article{Goldberger1979,
+  author       = {Goldberger, Arthur S.},
+  title        = {Heritability},
+  journal      = {Economica},
+  year         = {1979},
+  volume       = {46},
+  number       = {184},
+  pages        = {327--347},
+  url          = {http://www.jstor.org/stable/2553675},
+  file         = {../references/Goldberger_1979_Heritability.pdf}
+}
+
+% CITATION PASS 2026-09-24: Original author-hosted PDF and extracted text saved.
+% Authors/title/DOI/year/volume/pages checked in original PDF. No issue number inferred.
+@article{YoungEtAl2018,
+  author       = {Young, Alexander I. and Frigge, Michael L. and Gudbjartsson, Daniel F. and Thorleifsson, Gudmar and Bjornsdottir, Gyda and Sulem, Patrick and Masson, Gisli and Thorsteinsdottir, Unnur and Stefansson, Kari and Kong, Augustine},
+  title        = {Relatedness disequilibrium regression estimates heritability without environmental bias},
+  journal      = {Nature Genetics},
+  year         = {2018},
+  volume       = {50},
+  pages        = {1304--1310},
+  doi          = {10.1038/s41588-018-0178-9},
+  url          = {https://doi.org/10.1038/s41588-018-0178-9},
+  file         = {../references/YoungEtAl_2018_Relatedness_Disequilibrium_Regression.pdf}
+}
+
+% CITATION PASS 2026-09-24: Original author-hosted PDF and extracted text saved.
+% Authors/title/DOI checked in PDF; final volume/pages checked on Nature publisher record.
+@article{YengoEtAl2018,
+  author       = {Yengo, Loic and Robinson, Matthew R. and Keller, Matthew C. and Kemper, Kathryn E. and Yang, Yuanhao and Trzaskowski, Maciej and Gratten, Jacob and Turley, Patrick and Cesarini, David and Benjamin, Daniel J. and Wray, Naomi R. and Goddard, Michael E. and Yang, Jian and Visscher, Peter M.},
+  title        = {Imprint of assortative mating on the human genome},
+  journal      = {Nature Human Behaviour},
+  year         = {2018},
+  volume       = {2},
+  pages        = {948--954},
+  doi          = {10.1038/s41562-018-0476-3},
+  url          = {https://doi.org/10.1038/s41562-018-0476-3},
+  file         = {../references/YengoEtAl_2018_Imprint_Assortative_Mating.pdf}
+}
+
+% CITATION PASS 2026-09-24: Original author-hosted PDF and extracted text saved.
+% Authors/title/DOI/year/volume/pages checked in original PDF. No issue number inferred.
+@article{PazokitoroudiEtAl2021,
+  author       = {Pazokitoroudi, Ali and Chiu, Alec M. and Burch, Kathryn S. and Pasaniuc, Bogdan and Sankararaman, Sriram},
+  title        = {Quantifying the contribution of dominance deviation effects to complex trait variation in biobank-scale data},
+  journal      = {The American Journal of Human Genetics},
+  year         = {2021},
+  volume       = {108},
+  pages        = {799--808},
+  doi          = {10.1016/j.ajhg.2021.03.018},
+  url          = {https://doi.org/10.1016/j.ajhg.2021.03.018},
+  file         = {../references/PazokitoroudiEtAl_2021_Dominance_Deviation_Effects.pdf}
+}

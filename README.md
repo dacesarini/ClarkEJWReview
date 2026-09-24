@@ -1,26 +1,34 @@
-# Main Clark review
+# Clark review: active manuscript
 
-**Edit main.tex.** It is the main review source, with references.bib as its bibliography. Compiled output is main.pdf. The Fisher-model section is included from sections/fisher_model.tex; edit that file to revise the mathematical section. The measurement-error extension is in sections/measurement_error.tex; it uses theta for Clark's attenuation factor and eta for the noise share. Both sources are included in the main build.
+The active manuscript is `main.tex`, producing [main.pdf](main.pdf). The structural audit reorganized the argument into nine main sections, with detailed derivations and evidence in six appendices. Main prose now lives in the nine files explicitly included by `main.tex`; edit those files rather than the retained legacy section sources.
 
-The Git repository and its existing GitHub/Overleaf remotes remain in this directory. No remote changes were made during the folder cleanup.
+- [Current section/subsection outline](editorial/OUTLINE.md)
+- [Structural audit and complete to-do disposition map](editorial/STRUCTURE_AUDIT.md)
+- [Editorial holding PDF](editorial_holding.pdf): all 31 original working-list items, with superseded instructions identified in the audit
+- [Holding index and preserved drafts](editorial/HOLDING_INDEX.md)
+- [Pre-reorganization source snapshot](editorial/archive_2026-09-24_before_restructure/main.tex)
 
 ## Build
 
-The section `sections/assortment_comparison.tex` records the 14 September 2026 comparison of genetic and phenotypic assortment, including illustrative fits to the published PNAS education correlations. Reproduce the estimates with `python verification/fit_assortment_models.py`; saved output is `verification/assortment_fit_results.json`. Detailed discussion is in `../notes/assortment_and_measurement_error_2026-09-14.md`.
+From this folder in PowerShell:
 
-Windows PowerShell: ./build.ps1
+```powershell
+./build.ps1
+./build.ps1 -Document editorial_holding
+```
 
-Portable sequence, from this directory:
+Build the main manuscript first: the holding document imports its labels. The build runs pdfLaTeX, BibTeX, and two further pdfLaTeX passes, retaining intermediate files in `_build`. `main.pdf` contains the review and scholarly appendices; the editorial to-do material is separate. For Overleaf, select `main.tex`, pdfLaTeX, natbib/apalike.
 
-    pdflatex main.tex
-    bibtex main
-    pdflatex main.tex
-    pdflatex main.tex
+## Active files
 
-Overleaf: main document main.tex; compiler pdfLaTeX. The bibliography uses natbib and apalike. All manuscript build dependencies are contained in this directory.
+`sections/introduction.tex`, `model_overview.tex`, `measurement_identification.tex`, `identification_limits.tex`, `environmental_evidence.tex`, `genomic_evidence.tex`, `historical_application.tex`, `interpretation.tex`, and `conclusion.tex` form the main argument.
 
-supporting/ holds the previously tracked Goldberger transcription and derivation appendix. These are standalone sources; main.tex does not automatically include them. The current, more developed Otto derivation is ../derivations/Otto_additive_unique_phenotypic_homogamy.tex.
+`appendices/` contains the Fisher derivation, measurement derivation, binary calibration, alternative-mating fits, restriction/misspecification simulations, and balanced quotation dossier. The old `fisher_model.tex`, `measurement_error.tex`, `assortment_comparison.tex`, and `jencks_goldberger.tex` under `sections/` are retained legacy sources and are not included.
 
-The source-PDF catalog and full bibliography audit are in ../references/. A concise bibliography audit summary is kept here as BIBLIOGRAPHY_NOTES.md for future Git/Overleaf users.
+## Research and verification
 
-The opening includes the eight-point criticism framework. The Fisher-model section has been replaced with an explicit, analytically and computationally checked derivation. Other sections remain working drafts; the consistency edits made alongside this replacement are not a complete audit of their substantive claims. Verification instructions and source crosswalk: verification/README.md.
+The latest simulations and methods are in `../analysis/restriction_bias_2026-09-24/REPORT.md` and `MISSPECIFICATION.md`. Code and full replication results are beside those reports. These estimator experiments do not estimate bias in Clark's actual parameters. Earlier derivation verification remains in `verification/README.md`.
+
+The bibliography source audit remains in `../references/metadata/audit_2026-09-23/`; unresolved source-version and missing-original issues are recorded there and in `BIBLIOGRAPHY_NOTES.md`. The structural audit did not silently fill those gaps.
+
+The structural-edit scripts in `editorial/` record how the snapshot was transformed. Do not rerun them after editing the new draft: they regenerate text from the older snapshot.

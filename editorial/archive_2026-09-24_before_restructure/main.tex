@@ -1,0 +1,1176 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{natbib}
+\usepackage[skip=0.5\baselineskip,indent=0pt]{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{titlesec}
+\renewcommand{\thesection}{\Roman{section}}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{0.5em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{0.5em}{}
+\usepackage{enumitem}
+\setlist{leftmargin=*,labelindent=0pt,labelsep=0.325em,align=left}
+\setlist[enumerate]{label=\roman*.,ref=\roman*}
+\renewenvironment{itemize}{\begin{enumerate}}{\end{enumerate}}
+\setlist[description]{style=unboxed,leftmargin=0pt}
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
+\titlespacing*{\subsection}{0pt}{\baselineskip}{\baselineskip}
+
+\title{\makebox[\textwidth][l]{\parbox{\dimexpr\textwidth+0.5in\relax}{\raggedright Review of Gregory Clark: \emph{To Have and Have Not:}\\\emph{The Determinants of Social Status in England, 1600--2026}}}}
+\author{David Cesarini}
+\date{}
+
+\begin{document}
+\maketitle
+
+% =====================================================================
+\section{Introduction}
+
+The central question of this review is whether Clark's conclusions follow
+from his evidence. Eight concerns organize the critique:
+\begin{enumerate}
+\item \textbf{Good fit does not establish a correct model.}
+Even satisfactory fit need not identify the causal mechanism or yield
+unbiased genetic estimates---the Goldberger point.
+
+\item \textbf{Environmental transmission is excluded by assumption.}
+The model makes shared genes the only transmitted source of resemblance
+among relatives. Spousal resemblance induced by assortment requires a
+qualification to that statement.
+
+\item \textbf{Independent evidence challenges the assumptions.}
+Assess evidence from twins, adoption, extended families, and molecular
+genetics, specifying which restriction each finding challenges and
+evaluating Clark's response.
+
+\item \textbf{A fitted parameter is not automatically heritability.}
+That interpretation requires valid identifying assumptions. Heritability
+describes variation in a specified population and environment, not the
+fraction of an individual's outcome ``caused by genes.''
+
+\item \textbf{The Jencks critique: ``genetic'' does not mean an immutable
+physiological mechanism.}
+Genetic effects can operate through behavior, environments, and social
+responses---for example, food preferences affecting diet and BMI. Those
+pathways may be modifiable.
+
+\item \textbf{Heritability does not determine policy effectiveness.}
+A variance decomposition does not tell us what an intervention would
+accomplish. Criticize Clark's specific unsupported policy conclusions while
+acknowledging his stated concessions.
+
+\item \textbf{Intergenerational mobility is not a sufficient measure of
+policy success.}
+Policies can improve living standards or reduce inequality without
+changing relative ranks or intergenerational correlations.
+
+\item \textbf{Genetic explanation does not establish meritocracy.}
+Neither fairness nor equality of opportunity follows from evidence of
+genetic influence; institutions may respond unfairly to inherited
+characteristics.
+\end{enumerate}
+
+
+Gregory Clark's \emph{To Have and Have Not} \citep{Clark2026} makes an old
+and provocative claim on the strength of an enormous new dataset: that a
+person's station in life is set mainly by the genes they inherit, not by
+family environment, schooling, or social policy, and that this has been true
+in England, essentially without change, since 1600. The evidence comes from
+two purpose-built databases: Families of England, which traces 436,000
+individuals across four centuries of rare-surname lineages out to fourth
+cousins, and Marriages of England, 1.7 million marriage certificates spanning
+1837 to 2022.
+
+Part I is the empirical core. Correcting for measurement error in
+conventional status proxies, Clark estimates an underlying parent-child
+status correlation near $0.8$ --- strong enough that its signature is still
+detectable among relatives as distant as fourth cousins --- and shows this
+persistence essentially unchanged across four centuries that included the
+Industrial Revolution, mass education, women's enfranchisement, and the
+welfare state. Across roughly a dozen kinship types, the pattern is fit by
+\citet{Fisher1918}'s century-old model of additive genetic inheritance
+combined with strong assortative mating, with striking apparent precision
+(reported $R^2$ above $0.97$); Denmark and Sweden, despite their reputation
+as high-mobility welfare states, show the same model and the same low
+mobility. Clark is careful to say this is not fatalism: on his account, once social
+barriers to opportunity are removed, genetic inheritance and chance become
+the \emph{only} remaining sources of variation in status --- so a highly
+heritable status distribution is not, by itself, evidence of an unfair
+system, but potentially the signature of a meritocratic one.
+
+Part II examines that interpretation through a series of comparisons
+that Clark regards as distinguishing direct genetic transmission from
+environmental transmission: mothers' and fathers'
+status should matter equally (it mostly does); family size and birth order
+should not matter (they mostly don't); losing a parent young, or never
+meeting a grandparent, should not change a child's eventual status (it
+doesn't); accidental wealth gains should dissipate within a few generations,
+and conditional mean offspring outcomes should vary linearly with parental
+outcomes. Clark reports approximate linearity, interprets it as evidence
+against poverty and privilege traps, and counts these findings as support
+for direct genetic transmission over its sociological rivals.
+
+Part III draws out the consequences if all of this is right. Societies are,
+on this view, overspending on education and welfare interventions aimed at
+mobility, since mobility is set by genetic endowment and chance rather than
+by policy; the only lever left for changing a population's outcomes is
+changing who is in it, an implication Clark connects, without quite
+endorsing it, to selective immigration; and the differential fertility of
+high- and low-status parents will shape the next generation's genetic --- and
+therefore social --- composition regardless of what policy does.
+
+Whatever one concludes about that argument, the underlying data are a
+genuine, durable contribution independent of it, and will outlive any
+particular model fit to them. The book's insistence on the severity of
+measurement error in conventional mobility proxies is also well taken and,
+if anything, underappreciated outside this literature: Clark shows two
+recent, careful studies of the same underlying process (long-run American
+occupational mobility) reaching starkly different pictures of American
+history purely as an artifact of measurement choices --- \citet{SongEtAl2020}
+find high and rising mobility from 1830 to 1980, while \citet{Ward2023},
+correcting for measurement error in historical occupational data, finds
+persistently low mobility throughout (Fig.~4.1) --- which is exactly the
+kind of problem his own attenuation-correction method is designed to
+address. Part II also raises useful, empirically assessable questions about family
+background and social outcomes. Whether the answers distinguish genetic
+from environmental transmission is a separate issue.
+
+What is in question is the book's central causal claim: that this
+correlational pattern specifically identifies additive genetic transmission
+of status, as opposed to some other data-generating process that would fit
+comparably well. That claim does not survive scrutiny, for reasons developed
+in the sections that follow. Some of what follows is new; some was raised
+in peer review on the underlying 2023 PNAS paper and never resolved, and the
+book inherits it unchanged.
+
+% =====================================================================
+\input{sections/fisher_model}
+
+\input{sections/measurement_error}
+
+\input{sections/assortment_comparison}
+
+% =====================================================================
+\section{The Identification Problem}
+
+\subsection{Good Fit Does Not Imply Unbiased Estimates}
+
+Set aside, for a moment, whether Clark's fit claims are even correct on their
+own terms. There is a prior, more basic problem: good fit would not settle
+the matter even if it held up perfectly. A correctly specified model should
+generally be expected to fit the data well and to yield unbiased parameter
+estimates. The converse does not hold. A misspecified model can fit
+observed correlations closely while its parameter estimates mean nothing
+close to what the author claims they mean, because the fitted parameters are
+absorbing the specification error along with the genuine signal. Treating
+close agreement between predicted and observed correlations as validation of
+the assumptions used to derive the predictions --- rather than as one
+necessary, but far from sufficient, condition for those assumptions to be
+right --- is a fallacy with a long and specifically relevant history in
+exactly this empirical literature.
+
+\subsection{Regression Towards the Mean Does Not Identify Its Cause}
+\label{sec:regression-mean}
+
+Chapter~14 documents approximately linear relationships between parental
+outcomes and mean offspring outcomes for occupation, longevity, log house
+value and neighbourhood deprivation. The plotted slopes are below one:
+children of parents at opposite extremes have less extreme average
+outcomes. This is a genuine descriptive pattern of regression towards the
+mean, comparable in form to Galton's height example. The nearly flat
+longevity relationship indicates particularly strong regression, not its
+absence. The high reported $R^2$ values describe the fit to grouped means,
+not the share of individual offspring variation explained by parents
+\citep[pp.~210--216]{Clark2026}.
+
+The difficulty is the inference from this pattern to its mechanism.
+Clark calls it ``confirmation of the likely dominance of direct genetic
+transmission in determining most social outcomes'' (p.~216). Yet a purely
+cultural model can generate the same linear, symmetric conditional mean.
+For centred parental and offspring cultural characteristics, let
+\[
+ C_o=\gamma\frac{C_f+C_m}{2}+U,\qquad
+ 0<\gamma<1,\qquad \mathbb E[U\mid C_f,C_m]=0.
+\]
+Writing $\overline C=(C_f+C_m)/2$, the model implies
+$\mathbb E[C_o\mid\overline C]=\gamma\overline C$: deviations of either
+sign contract by the same proportion, without genetic transmission.
+Conversely, genetic additivity alone does not establish an exactly linear
+conditional mean; additional distributional or conditional-mean assumptions
+are required.
+
+The figures may challenge cultural models predicting strong poverty or
+privilege traps. But broad bins and high $R^2$ values do not replace
+formal tests of those predictions. Distinguishing genetic from cultural
+transmission requires restrictions or evidence on which the mechanisms
+differ.
+
+\subsection{The 1970s Precedent}
+\label{sec:1970s-precedent}
+
+In the mid-1970s two rival groups --- Jinks and Eaves at Birmingham, and Rao,
+Morton, and Yee at Honolulu --- fit competing biometric models of essentially
+the same kind to overlapping British and American IQ kinship-correlation
+data, and each group reported an excellent fit. Goldberger's (1978)
+re-examination of both efforts, transcribed in full in the companion file
+\texttt{Goldberger\_1978\_ModelsAndMethods.tex} included in this repository,
+is instructive on two counts.
+
+First, the two models, despite each fitting its own data well, produced
+substantively incompatible conclusions. Fit to overlapping American data,
+Rao and Morton's own estimate of narrow heritability of IQ among children was
+$.69$, against Jinks and Eaves's $.34$ --- roughly a twofold disagreement on
+the same underlying quantity, from ostensibly similar exercises. The two
+groups also disagreed about the sign of the adult-versus-childhood pattern:
+Rao and Morton's estimate of broad heritability among American adults was
+$.30$, falling relative to children, while Jinks and Eaves's corresponding
+estimate was $.68$, unchanged from their childhood estimate. A reader told
+only that both models ``fit the data well'' would have no way to know that
+the two exercises disagreed this sharply about what the data implied.
+
+Second, and more pointed, Goldberger showed algebraically that the Honolulu
+group's original 8-parameter model was not even \emph{identified}: ``the
+model was indeterminate, that is `non-estimable,' that is `not identified':
+even if the population values of all 11 kinship correlations were known,
+unique values of the [model's] parameters could not be obtained.'' Five of
+the eight parameters could take on any of an entire family of values without
+changing a single one of the model's predictions. Rao, Morton, and Yee
+themselves eventually conceded the indeterminacy and published a
+``corrected'' version of the model that forced identification by simply
+fixing one of the indeterminate parameters at an arbitrarily chosen value.
+Goldberger then computed that this patched model's predicted correlations
+still matched the data closely (``the fit is clearly very good,''
+$\chi^2_4=2.96$). The sequence is the point: a model can be shown
+mathematically not to pin down its own parameters, be patched by fixing one
+of them by fiat, and still return an excellent-looking fit --- fit is simply
+not informative about whether the underlying model was identified in the
+first place, let alone correctly specified.
+
+\subsection{The Same Pattern, on Clark's Own Data}
+
+The restriction derived in Section~\ref{sec:model-tests} provides a concrete
+way to examine Clark's own numbers. Table~\ref{tab:table45} reproduces
+the raw sibling and parent-child (``Full Sibling'' and ``Child'') correlations
+from the book's Table 4.5, for the two outcomes with two separate birth-year
+windows: occupational status and higher-education attainment.
+
+\begin{table}[h]
+\centering
+\caption{Raw correlations from Clark's Table 4.5}
+\label{tab:table45}
+\begin{tabular}{lcccc}
+\hline
+ & \multicolumn{2}{c}{Occupational status} & \multicolumn{2}{c}{Higher education} \\
+ & 1780--1859 & 1860--1919 & 1780--1859 & 1860--1919 \\
+\hline
+Full Sibling ($\hat\rho_S$)      & 0.584 & 0.496 & 0.558 & 0.359 \\
+Child ($\hat\rho_{PO}$)          & 0.585 & 0.513 & 0.500 & 0.305 \\
+\hline
+$\hat\rho_{PO}-\hat\rho_S$       & $+0.001$ & $+0.017$ & $-0.058$ & $-0.054$ \\
+\hline
+\end{tabular}
+\end{table}
+
+If a common, positive, phenotype-specific attenuation factor scales
+both correlations for a given outcome and period, it preserves the sign
+of the parent--child minus sibling difference. Equation~\eqref{eq:gap}
+requires that population difference to be positive when assortment is
+positive and $0<h^2<1$. The higher-education point estimates have the
+opposite sign in both periods. This is a useful specification diagnostic,
+but point estimates alone do not establish rejection: a formal test must
+account for their joint sampling uncertainty and verify comparable
+measurement and sampling across relationship types. If attenuation differs
+between the two kinships, the simple sign comparison need not be valid.
+The relevant exercise is therefore a joint test of the constrained
+predictions, not an inference from overall fit alone.
+
+\subsection{Binary Outcomes Are Not Continuous Phenotypes}
+\label{sec:binary-outcomes}
+
+Several of the outcomes to which Clark applies the continuous-trait kinship
+equations are indicators: company-director status, higher education, and
+literacy. The Pearson correlation of two indicators is a valid descriptive
+statistic. The problem is the next step. Clark treats those correlations as
+if they were generated by the same linear, Gaussian-style moment equations
+that apply to a continuously varying phenotype, with one common attenuation
+factor and the same restriction $m=h^2r$. He does not specify a
+threshold/liability model, convert the observed binary correlations to latent
+correlations, or show that a single attenuation factor is valid across
+kinship types.
+
+The issue is quantitative rather than semantic. We simulated the
+phenotypic-homogamy model used in the presentation, with $h^2=0.60$,
+$r=0.80$, $m=h^2r=0.48$, and continuous reliability $\theta=0.80$. For
+each of the eleven kinship types we generated one million independent pairs
+from the implied bivariate-normal latent phenotype. We then recorded both
+the continuous correlation and an indicator equal to one above the
+97.5th-percentile threshold. That threshold gives a prevalence of about
+2.5%, matching the observed higher-education prevalence in the two English
+cohorts (2.66% and 2.47%). We also repeated the exercise over a grid of
+$h^2$, $r$, $\theta$, and prevalence values spanning the range treated as
+plausible in the book. The calculation uses exact population correlations in
+the grid, so its results do not depend on Monte Carlo noise.
+
+The continuous version recovers the generating parameters: in the education
+calibration, the free-$\theta$ estimates are approximately $h^2=.60$,
+$r=.80$, and $m=.48$. After thresholding at the observed prevalence, the
+same estimator gives $h^2=.41$, $r=.91$, and $m=.37$ for 1780--1859 and
+$h^2=.39$, $r=1.00$, and $m=.39$ for 1860--1919; the fitted log-correlation
+RMSE remains only about .07. Across the grid, average absolute bias in
+$h^2$ is about 20% at 10% prevalence and 10% at 20% prevalence, while the
+free-$\theta$ estimate is badly biased throughout. Thresholding changes the
+mapping from latent to observed correlation in a way that varies by kinship
+type, so a good-looking fit can coexist with a materially wrong structural
+interpretation.
+
+The same pattern is visible in Clark's reported correlations. Across the
+book outcomes, mean log-RMSE is .153 for continuous/indexed outcomes and
+.350 for binary outcomes when the restriction is not imposed. Imposing
+$m=h^2r$ with $\theta=1$ raises these to .195 and .429. The corresponding
+PNAS means are .168 versus .391 without the restriction and .203 versus
+.475 with it. Freeing $\theta$ can reproduce the unrestricted fit because
+$\theta$ and $h^2$ share the intercept; it does not establish that the
+resulting $\theta$ is measurement reliability or that the recovered $h^2$
+has its claimed structural meaning. In the unrestricted free-$\theta$
+recoveries, three of the four binary outcomes in each source produce an
+inadmissible $h^2$ or $r$.
+
+These simulations are not a formal rejection of the empirical model: they
+use a specified latent Gaussian threshold process, independent pairs, and
+prevalence calibration from unique individuals rather than the exact
+kinship-pair samples. They establish the narrower point needed here. Clark
+has not supplied the additional binary-outcome model or validation required
+to interpret his indicator correlations as evidence for the continuous-trait
+genetic parameters he reports.
+\subsection{Confounding Is Not Limited to Genetic Nurture}
+\label{sec:confounding-beyond-nurture}
+
+Genetic nurture is one possible violation of the identifying exclusions,
+not an exhaustive account of confounding. Shared environmental influences,
+population structure, selection, or other unobserved determinants can
+also generate covariance that the fitted kinship equations mistakenly
+attribute to genetic transmission. To display the issue, write an outcome
+on its original scale as $Y_i=G_i+U_i$, where $G_i$ is its direct genetic
+contribution and $U_i$ collects the remaining influences. Then, for two
+relatives,
+\[
+ \operatorname{Cov}(Y_i,Y_j)=\operatorname{Cov}(G_i,G_j)
+ +\operatorname{Cov}(G_i,U_j)+\operatorname{Cov}(U_i,G_j)
+ +\operatorname{Cov}(U_i,U_j).
+\]
+The maintained model specifies or excludes each of these terms; assortment
+itself can generate some cross-person genetic--environmental covariance.
+Any additional covariance omitted from the fitted equations can alter the
+recovered genetic, assortment, and attenuation parameters. Rejecting a
+particular parental-genotype pathway does not establish those exclusions.
+An independent residual need not bias the genetic estimates, and different
+violations need not bias every parameter or operate in the same direction:
+the relevant question is whether the omitted influences change the moment
+conditions used for identification.
+
+This identification problem must also be distinguished from mediation.
+A social response caused by the child's own genotype may be part of its
+causal genetic effect, rather than confounding of that effect. Even a
+correctly identified genetic effect therefore requires interpretation,
+as Section~\ref{sec:interpretation} explains.
+
+\subsection{Confounding Within Monozygotic Twin Pairs}
+
+A related, longer-standing literature makes the same kind of point about
+within-family comparisons more generally. MZ-twin-difference designs, widely
+used to estimate the return to schooling on the logic that identical twins
+share both genotype and family background \citep{Griliches1979}, are only as
+good as the assumption that within-pair schooling differences are unrelated
+to individual ability \citep{Griliches1977,BoundSolon1999,Neumark1999}.
+Directly testing this assumption, \citet{SandewallEtAl2014} find that
+within-pair differences in adolescent IQ predict within-pair differences in
+educational attainment among monozygotic twins, and that controlling for IQ
+reduces the within-pair estimated return to schooling by roughly 15\%. If
+ability differences of exactly this kind survive even within monozygotic
+twin pairs, treating any specific empirical design --- Clark's collateral-
+relative decay curve included --- as if it cleanly isolates a single
+additive genetic channel, free of confounding by within-family differences
+in unmeasured ability, is not something that can simply be assumed.
+
+% =====================================================================
+\section{What Modern Genomic Evidence Can Identify}
+\label{sec:genomic-evidence}
+
+Modern genomic evidence can do more than supply additional correlations
+consistent with a fitted kinship model: it can help estimate components
+that kinship resemblance alone does not separately identify, and test
+restrictions imposed on them. Gene--environment covariance and dominance
+variance illustrate why this evidence warrants different judgments about
+different simplifying assumptions. Here gene--environment covariance
+means correlation between genetic and environmental contributions, not
+an interaction in which an effect changes with the environment.
+
+\subsection{Random Segregation Supplies New Identifying Variation}
+
+The decisive advance is that genotypes reveal random transmission within
+families, rather than merely average resemblance between types of relatives.
+Conditional on the parents' genotypes, a child's inherited alleles vary
+through Mendelian segregation. Children can consequently differ in their
+inherited endowments without those differences being assigned by parental
+wealth, schooling, or social position. This is precisely the variation
+missing when one tries to separate genetic and environmental transmission
+using only average parent--child and sibling correlations.
+
+A simple moment condition makes the advantage explicit. Let $X$ be a column
+vector of offspring allele counts, $W$ the parental genotypes, and
+$T=X-\mathbb E[X\mid W]$ the transmission deviation. Consider the correctly
+specified additive model
+\[
+ Y=X^{\mathsf T}\beta+f(W)+u,\qquad \mathbb E[T u]=0.
+\]
+Here $\beta$ contains direct effects, while $f(W)$ allows parental-genotype
+associations with family background. By construction,
+$\mathbb E[T\mid W]=0$, so $\mathbb E[T f(W)]=0$ and
+\[
+ \mathbb E[T Y]=\mathbb E[T T^{\mathsf T}]\beta.
+\]
+Where the transmission covariance matrix has sufficient rank, these
+moments identify the corresponding effects without requiring
+$\operatorname{Cov}(X,f(W))=0$ in the population. Correlated loci can limit
+which combinations are separately identified. The substantive condition
+$\mathbb E[T u]=0$ still requires justification: parental conditioning
+removes family-background association with transmission, but does not
+license omission of relevant transmitted variants or correlated sibling
+effects. Selection can also compromise the design. Nor does random
+transmission require environments to be unresponsive to the child's
+inherited characteristics; those responses can mediate its direct effect
+\citep[Sections~3.1, 4.4--4.5]{BenjaminEtAl2026}.
+
+Segregation also produces random variation in how much genetic material
+siblings and other relatives actually share. Genomic relatedness designs
+use that variation to estimate genetic variance separately from the average
+resemblance associated with a family relationship
+\citep[Section~4.7]{BenjaminEtAl2026}. A PGI's segregation deviation similarly
+provides a source of within-family variation. These are distinct from using
+its between-family association as a causal effect. Assortment must be
+accounted for when translating segregation-based estimates into population
+genetic variance; the two variances are not generally identical
+\citep{Young2023}.
+
+\subsection{Evidence Already Challenges the Population-PGI Interpretation}
+
+
+External genetic evidence could help adjudicate between models that fit
+similar kinship correlations, but its interpretation depends on how the
+genetic measures are constructed. Clark invokes modern genetic evidence
+to support a high value of $m$, the spousal correlation in latent genetic
+endowments. Population-based GWAS coefficients, however, need not identify
+direct genetic effects: they can also reflect indirect genetic effects,
+population structure, and other sources of gene--environment correlation
+\citep{YoungEtAl2019,YoungEtAl2022}. A spouse correlation in a PGI weighted
+by these coefficients therefore need not measure assortment on the direct
+genetic component posited by his model. This concerns the interpretation of
+the PGI evidence offered in support of $m$, independently of the objections
+to estimating $m$ from kinship correlations.
+
+The appropriate weights for this purpose are estimates from a credible
+family-based GWAS targeting direct genetic effects. The same preference
+applies to the book's other PGI tests insofar as they are meant to identify
+direct genetic differences or distinguish genetic from environmental
+explanations, including its geographical comparisons. This is a difference
+in what the scores measure, not merely their predictive precision.
+\citet[Sections~4 and~6.4]{BenjaminEtAl2026} review evidence that estimates
+for several social and behavioral traits change materially in family-based
+designs, and explicitly recommend using sufficiently well-powered
+family-based PGIs to study assortative mating. Treating population- and
+family-based scores as interchangeable overlooks this evidence. Population
+scores may remain useful predictors, but predictive performance does not
+establish the causal interpretation required here.
+
+Family-based weights are not by themselves sufficient to recover $m$:
+finite GWAS precision and incomplete coverage of the relevant genetic
+component still require attention, and identification depends on the
+particular family design and its assumptions. Even a family-based PGI's
+spousal correlation cannot simply be equated with the correlation in the
+full latent genetic endowment. These qualifications strengthen the case
+for explicit measurement and identification assumptions; they do not
+justify using population coefficients as if they were direct effects.
+
+Chapter~6 discusses the non-transmitted-allele design of
+\citet{KongEtAl2018} and argues that assortment and incomplete genetic
+measurement can account for its findings \citep[pp.~83--84]{Clark2026}.
+The objection is therefore not that Clark fails to discuss this design.
+It is that his causal use of population-based GWAS associations does not
+adequately confront the evidence that they fail to identify direct genetic
+effects. Using these associations as evidence about the model's direct
+genetic component implicitly requires the relevant confounding to have
+been removed, despite substantial evidence from family-based designs that
+standard population controls do not accomplish this for important social
+traits. An alternative explanation of one genetic-nurture result does not
+resolve this broader identification problem.
+
+The empirical issue is no longer merely whether population GWAS
+associations \emph{could} be confounded. For important social and behavioral
+traits, family-based estimates differ systematically from population
+estimates; the evidence reviewed in
+\citet[Section~4.6]{BenjaminEtAl2026} includes smaller average effects for
+educational attainment and changes in cross-trait genetic correlations.
+An interpretation that treats population coefficients as unbiased direct
+effects is therefore untenable as a general premise. This does not show
+that every coefficient is biased, or determine the bias in every numerical
+claim Clark makes. It does establish that zero omitted-variable bias cannot
+be presumed, and that the causal interpretation of his population-PGI
+comparisons requires evidence he has not supplied.
+
+\subsection{Gene--Environment Covariance and Dominance Warrant Different Conclusions}
+
+For gene--environment covariance, family-based designs use variation in
+transmission conditional on parental genotypes to separate direct genetic
+effects from associations generated by family background. Joint analyses
+of offspring and parental genotypes can additionally estimate indirect
+parental effects under explicit identifying assumptions. Comparisons with
+population estimates therefore provide evidence about the environmental
+and indirect-genetic contributions that population associations can
+absorb. The evidence reviewed by \citet[Sections~4.3--4.7]{BenjaminEtAl2026}
+includes substantial gene--environment correlation for educational
+attainment. It challenges the exclusion of such covariance from the model;
+it does not, without further assumptions, identify its entire magnitude
+or allocation across kinships. In particular, subtracting family-based
+from population-based coefficients does not automatically recover a single
+$\operatorname{Cov}(G,U)$: the difference can reflect several sources of
+confounding, and the mapping depends on the genetic coverage and the
+family design. Environmental responses caused by the child's own genotype
+also remain part of the direct effect, as discussed below.
+
+The evidence on dominance supports a different conclusion. Dominance
+variance measures departures from additivity between the two alleles at
+a locus. The genomic studies reviewed by
+\citet[Sections~3.2 and~4.7]{BenjaminEtAl2026}, including the educational
+attainment results of Okbay and colleagues, support a small contribution
+from dominance variance. Clark's decision to omit it is consequently a
+reasonable approximation for educational attainment, subject to the
+variants, populations, and precision covered by those studies. This is
+not a finding that every form of nonadditivity is absent, nor does it
+establish that dominance is negligible for every historical outcome.
+More importantly, evidence supporting negligible dominance supplies no
+justification for excluding gene--environment covariance or shared
+environmental influences. Modern evidence can thus support Clark's
+additive approximation while challenging the environmental exclusions
+on which his causal interpretation rests.
+
+\subsection{From Fitting Kinship Correlations to Testing Their Explanation}
+
+Better family-based PGIs can help estimate $m$ independently of the
+kinship correlations the model seeks to explain. With appropriate allowance
+for incomplete genetic measurement, estimates of $m$, $h^2$, and spouse
+phenotypic resemblance can test the contrasting restrictions of phenotypic
+and genetic assortment developed above. Cross-trait direct genetic
+covariances can test a strong single-endowment model; genomic signatures
+of assortment and comparisons across cohorts can probe equilibrium and
+stability assumptions \citep[Sections~4.7 and~6.4]{BenjaminEtAl2026}.
+The aim should be to estimate components from transmission and genomic
+information, then predict kinship correlations not used in that estimation.
+This makes the data informative about which model is appropriate rather
+than merely which parameter values best fit a chosen model.
+
+The lesson of the great IQ debate was that good fit to kinship correlations
+does not establish the assumptions that give fitted parameters their causal
+meaning \citep{Loehlin1978,Goldberger1978}. Modern genomic data offer a way
+forward by supplying independent evidence about genetic assortment, direct
+and indirect genetic effects, dominance, and the consequences of mating
+across generations. These developments can support some of Clark's
+simplifications while challenging others. Their value lies in making
+consequential assumptions testable, rather than allowing another
+well-fitting model to stand as evidence of its own validity.
+
+
+\input{sections/jencks_goldberger}
+
+\subsection{Ordinal Mobility Is Not the Only Thing Policy Can Be For}
+
+There is also a narrower, more specific problem with how the book gets from
+its estimates to its policy conclusions. The Introduction's own overview of Part III states:
+``The first
+implication of the importance of direct genetic transmission of social
+outcomes is that modern societies spend too much on education \ldots\ What
+drives much of this expenditure is a belief that boosting years of education
+by less advantaged students increases social mobility rates. Yet despite a
+substantial narrowing of the gap in years of education between high and low
+status students 1851--2022, social mobility rates are unchanged'' (p.~9). The
+argument silently assumes that the \emph{only} legitimate justification for
+education spending is changing relative, ordinal mobility --- moving people
+up and down the status distribution relative to one another, which is what
+the book's intergenerational transmission coefficients measure. But a policy
+can be worth its cost by raising everyone's \emph{absolute} outcomes even if
+it leaves the ordinal ranking, and the estimated transmission coefficients,
+completely untouched: a literacy program that lifts the reading level of an
+entire cohort improves welfare regardless of whether the same families end up
+in the same relative positions afterward. Evidence that an intervention did
+not change the intergenerational correlation is evidence about mobility; it
+is not, by itself, evidence about whether the intervention was worthwhile.
+
+The specific empirical claim that follows --- ``studies of the effect of
+increases in compulsory years of education for less able students in
+1918--22, 1947, and 1972 find no effect on employment, income, or health''
+(p.~9) --- is also not uncontested. Using the same 1972 reform (the raising of
+the minimum school-leaving age in England, Scotland, and Wales from 15 to
+16), \citet{BarcellosEtAl2018} find that the additional year of compulsory
+schooling it induced had real effects on middle-age health: it reduced body
+size and improved lung function (with larger improvements on both margins
+for individuals with higher genetic predisposition to obesity), and also
+increased blood pressure. Whatever one makes of the mixed direction of these
+effects, they are effects --- directly on the health margin the book says
+these reforms show ``no effect'' on.
+
+Nor is the birth-order test in Part II as distinctively confirmatory of the
+genetic model as the book presents it: prior labor-economics literature
+already finds birth-order effects on educational and economic outcomes to be
+real but small \citep{BlackDevereuxSalvanes2005}, so a modest or null
+birth-order effect in the FOE data is also compatible with ordinary
+environmental accounts of status transmission, not only with the additive
+genetic model.
+
+% =====================================================================
+\section{Conclusion}
+
+A pattern recurs across the specific problems catalogued above: evidence that
+would seem to cut against the genetic-transmission story is consistently
+absorbed as further confirmation of it, rather than treated as a live threat
+to the model. Strong marital assortment in the English data is read as
+confirming the model. When a far richer Swedish extended-kinship dataset,
+spanning 141 distinct relationship types, is used by \citet{ColladoEtAl2023}
+to reject the additive genetic model outright on its own terms, the
+rejection is attributed not to a real specification failure but to Collado,
+Ortu\~no-Ort\'in, and Stuhler's failure to correct for measurement error in
+years of education --- even though, by that same logic, essentially all of
+Clark's own point estimates would need to be treated with equal suspicion,
+not only the ones that happen to be inconvenient. And the near-equality of
+the English parent-child and sibling correlations is invoked in the book as
+an argument against a rival social-transmission model, although it also
+warrants checking against the Fisher model's parent--child versus sibling
+restriction (Section~\ref{sec:model-tests}), with sampling uncertainty and
+measurement assumptions taken into account. In each case, the same body of
+evidence would be read one way if it favored the model and the opposite way
+if it did not, and the book consistently finds the model favored.
+
+None of this need reflect bad faith, and it is not a new phenomenon. It is a
+documented occupational hazard of exactly this kind of model-fitting
+exercise, which is why this review has tried to root the critique
+historically rather than treat it as a one-off lapse specific to this book:
+the same asymmetry --- treating a close fit as confirmation and treating a
+poor fit as someone else's data problem --- is what let two incompatible
+research programs each claim vindication from the same 1970s IQ-kinship
+data, and it is what let a model later shown not even to be identified pass
+as ``clearly very good'' once patched (Section~\ref{sec:1970s-precedent}). The lesson from that
+history was that goodness of fit, on its own, says nothing about correct
+specification. \emph{To Have and Have Not} does not appear to have absorbed
+that lesson.
+
+None of this should obscure what the book gets right, and it is worth
+restating plainly rather than as a rhetorical concession. The genealogical
+infrastructure --- Families of England, Marriages of England --- is a
+genuine and lasting contribution to the study of long-run mobility,
+independent of any conclusion drawn from it. The book's insistence that
+measurement error in conventional status proxies is severe enough to distort
+mobility estimates is a real methodological point, well illustrated, and
+likely to outlast the debate over its author's preferred model. And the
+falsifiable test battery in Part II is good scientific practice, whatever
+one makes of how any individual test comes out.
+
+What has not been established is the specific causal claim the book is
+organized around: that this pattern of kinship correlations identifies
+additive genetic transmission of status, as opposed to some other
+data-generating process --- including some the book never considers --- that
+would fit comparably well. That is a strong, specific, and separable claim,
+and on the evidence presented it has not met its own evidentiary bar.
+
+I want to be explicit about what kind of disagreement this is. I am not
+troubled by the hypothesis that genes influence social outcomes, and I do
+not regard raising that possibility as objectionable, dangerous, or a mark
+against the author's character, in the way much of the criticism this book
+will attract is likely to suggest. My disagreement is narrower, and I hope
+more useful, than that: on the specific evidence and the specific model
+presented here, I am not persuaded.
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\clearpage
+\section*{Working Notes: Points to Revisit}
+\begin{itemize}
+\item \textbf{Parent and grandparent averages in Table A1.}
+Revisit the erroneously labelled average-parent and average-grandparent
+entries in the book's technical appendix. Distinguish a correlation with
+an average, a regression slope on that average, and an average of
+individual-relative correlations. Averaging changes reliability and the
+normalization, so the common individual attenuation factor cannot simply
+be carried over. Check the practical relevance separately: these average
+rows do not appear among the Table 4.5 moments specified for estimation.
+\item \textbf{Intuition for nonidentification of measurement error under
+genetic assortment.} Explain why independent true environmental variation
+and independent recording noise both dilute the observed genetic signal
+without affecting mate selection on genetic value. The correlations reveal
+only the product $\theta h^2$: less reliable measurement of a more
+heritable trait is observationally equivalent to more reliable measurement
+of a less heritable trait. Even the observed spouse correlation does not
+separate the two in this model.
+\item \textbf{The fundamental measurement-error exclusion.}
+An imperfect measure of a latent trait is not automatically that trait
+plus classical measurement error. The gap between observed education and
+an asserted latent social ability may reflect family resources, access
+to schooling, preferences, discrimination, and sex-specific opportunities.
+These influences may covary with the person's own genetic and environmental
+components, relatives' components, and relatives' measurement residuals.
+Our common-$\theta$ correction sets these covariances to zero. If they
+are nonzero, additional terms enter the observed kinship covariances and
+a uniform attenuation factor need not apply. Develop this objection:
+an admissible estimate of $\theta$ does not validate the exclusions or
+establish that an error-free heritability has been recovered.
+\item \textbf{Identification with generation-specific measurement error.}
+Revisit identification when attenuation differs across generations rather
+than being governed by one common $\theta$. How can the difference between
+full-sibling and parent--child correlations then distinguish the lineal
+factor $(1+r)/(1+m)$ from different attenuation factors? The same question
+arises for the single-grandparent moment relative to the aunt/uncle moment.
+Specify whether reliability varies by historical generation or by the
+number of generations separating a pair, derive the resulting pair-level
+attenuation factors, and establish what additional restrictions or moments
+would separate measurement error from the effects of $r$ versus $m$.
+\item \textbf{Measurement correction added to A1--A3, but parameter recovery unclear.}
+The book inserts $\theta$ into the moment equations, so the A3 intercept
+identifies $\exp(a)=\theta h^2$, not latent heritability alone. Yet the
+surrounding text still describes estimated heritability and cites the PNAS
+SI Table S2. Check whether the plotted/reported quantity is $\theta h^2$
+or a separately recovered $h^2$. Under phenotypic assortment, recovery
+from A3 is possible using $m=2b-1$, $r=(1+m)\exp(c)-1$, $h^2=m/r$,
+and $\theta=\exp(a)/h^2$, subject to admissibility; retaining the same
+regression is not itself an identification error. Distinguish this
+passage from Chapter 5's use of Table A2's spouse and affine-relative
+moments for Denmark and Sweden. Under the stated common-attenuation
+formulas, the sibling-in-law/sibling ratio identifies $r$, while the
+spouse correlation identifies $\theta r$, providing an additional route
+to separate reliability and heritability. Audit that estimation and
+Table 5.4 separately rather than assuming the PNAS procedure applies.
+\item \textbf{Reconcile Figure A1, PNAS Figure 1, and PNAS SI Table S2.}
+The book's Figure A1 (p.~298) is the counterpart of PNAS Figure~1,
+but several plotted coordinates differ. Approximate graphical readings
+of the heritability axis put higher education 1860--1919 near 0.58 in
+PNAS and 0.33 in the book, and occupational status 1860--1919 near
+0.66 and 0.53, respectively. PNAS Figure~1 also disagrees with its own
+SI Table S2: occupational status 1780--1859 is plotted near 0.94,
+whereas the table reports 0.722. These are graphical readings, not
+recovered numerical estimates. Establish the source data, estimation
+version, and parameter interpretation for each display; do not infer
+from the changed points alone that measurement error or the structural
+constraint was newly handled correctly. For an independent extension,
+the book's Table 5.1 (p.~67) reports observed education correlations for
+spouses and several affine relatives in Denmark and Sweden. Keep these
+distinct from the English education cohorts and from the latent
+correlations inferred in Table 5.2.
+\item \textbf{An apparent impasse between assortment interpretations.}
+With phenotypic assortment and free measurement attenuation, the lineal
+contrast and $m=h^2r$ allow separate recovery of $h^2$ and $\theta$.
+However, our unweighted A3 fits to Table 4.5 yield inadmissible structural
+recoveries for four of eight outcomes: $r>1$ for company directorship,
+and $h^2>1$ for occupational status 1780--1859, higher education
+1780--1859, and literacy. Alternatively, if the intended assumption is
+genotypic assortment, the moment formulas must change: the separate
+lineal adjustment disappears ($c=0$), and these kinship correlations
+identify only $m$ and $\theta h^2$. Intergenerational observations can
+improve estimation and test the common decay pattern, but do not add
+the identifying contrast needed to separate $h^2$ from $\theta$.
+Thus one cannot rescue the interpretation merely by switching assortment
+assumptions while retaining separately identified heritability. Is this
+an impasse for the interpretation of the reported estimates? Distinguish
+that concern from a formal rejection: bounded phenotypic estimation
+remains possible, the results depend on weighting and sampling uncertainty,
+and externally justified information about reliability or heritability
+could resolve the genotypic model's nonidentification.
+\item \textbf{Claims about regression to the mean.}
+Otto et al. explicitly discuss linear regression toward the mean in
+cultural models, including the possibility of reproducing the genetic
+model's rate. Clark is therefore wrong to present linear regression
+toward the mean as a distinct prediction of genetic transmission.
+Distinguish the shape of the regression relationship from its numerical
+rate, and distinguish a fixed prediction from a fitted parameter: in the
+genetic benchmark at issue the coefficient is 0.5, whereas in the cultural
+model it is a free parameter, which can also take that value. This is a
+difference in predictive restriction, not a demonstration that cultural
+transmission cannot generate the same pattern. Supply the explicit
+passages from Otto et al. and Clark, and specify the assumptions behind
+the genetic 0.5 benchmark rather than treating it as universal.
+\item \textbf{Key points to hammer home.}
+There is genuine value in Clark's analyses, and the review should
+acknowledge that explicitly. The central concern is not that the analyses
+are without merit, but whether the conclusions he draws follow logically
+from them. Preserve this distinction when assessing both contributions
+and limitations.
+Often Clark's conclusions do not follow from the evidence he presents.
+This does not establish that the conclusions are wrong; it means they
+have not been established nearly as credibly as he suggests. Develop
+this distinction consistently throughout the review. Working analogy
+to consider: his apparent resistance to alternative explanations recalls,
+in the opposite direction, the stubbornness of Lysenkoite social
+scientists who instinctively reject evidence allowing any role for
+genetics. The target is asymmetric standards of evidence, not an
+equivalence of substantive views. He also sometimes exaggerates how
+strongly his tests discriminate between genetic and cultural models;
+symmetry and regression toward the mean are key examples to document.
+Examine his claims that school reforms yield no benefits, distinguishing
+evidence of no benefit from failure to establish a benefit. Track shifts
+between policy criteria: does a reform help anyone or improve average
+outcomes, does it help the poor, does it reduce inequality, and does it
+increase or reduce mobility? These are distinct questions, and a failure
+on one criterion does not establish failure on the others. Collect
+specific passages showing where the criterion changes within an argument.
+\item \textbf{Selective discussion of assumptions in twin and adoption studies.}
+Clark's discussion focuses on one assumption whose violation can bias
+estimated $h^2$ downward, but these designs depend on other assumptions
+as well. Identify the assumption he emphasizes and examine the others,
+including violations that could bias estimates upward or have an
+ambiguous effect. Distinguish twin from adoption designs and assess the
+direction of each bias under explicit conditions. A possible source of
+downward bias alone does not establish that the estimates are lower
+bounds on heritability.
+\item \textbf{Lower resemblance when raised apart and claims about adoptees.}
+Add a discussion of the evidence for lower resemblance among relatives
+raised apart than among those raised together, and what this comparison
+implies for Clark's interpretation of environmental influences. His
+conclusions about adoptees appear much stronger than the evidence
+warrants. Identify the precise claims and supporting studies, report
+the relevant comparisons and uncertainty, and distinguish what those
+studies establish from broader claims about the absence of effects of
+rearing environments.
+\item \textbf{Within-MZ-twin estimates are not automatically causal.}
+Acknowledge Clark's valid point that comparisons within monozygotic
+twin pairs do not by themselves identify causal effects. Controlling
+for shared genes and family background does not eliminate nonshared
+confounding or measurement error. Also note that he does not cite the
+prior literature documenting these limitations, either within economics
+or outside it. Supply the relevant references and check his discussion
+and bibliography when developing this point: the methodological concern
+is important, but it is not new.
+\item \textbf{Implications for education spending and social outcomes.}
+Discuss the claims: ``First implication\ldots\ is that modern societies
+spend too much on education.'' ``What drives much of this expenditure
+is a belief that boosting years of education by less advantaged students
+increases social mobility rates.'' ``Second implication\ldots\ social
+outcomes will change only when the genetic endowment of the society
+changes.'' This implies that maximum genetics explains 60\%.
+\item \textbf{The covariance exclusions matter beyond genetic nurture.}
+Revisit Clark's rejection of genetic nurture on p.~86, but do not frame
+the objection as depending on this particular causal mechanism. Any
+relevant covariance that the fitted model incorrectly sets to zero can
+bias the recovered genetic, assortment and attenuation parameters.
+This includes environmental covariance between relatives and
+cross-person genetic--environmental covariance beyond the terms already
+implied by the stated assortment model. Establishing or rejecting a
+specific ``nature of nurture'' pathway does not establish the required
+zero-covariance restrictions. Write out the omitted covariance terms and
+show how they enter the fitted moments; do not presume that every
+violation biases every parameter, or that the direction is always the
+same. The issue is the validity of the identifying exclusions, not the
+label attached to the source of resemblance.
+
+\item \textbf{Binary phenotypes and the scale of the model.}
+Examine whether the linear phenotype, kinship-correlation and common
+measurement-error formulas apply to binary outcomes such as higher
+education, literacy and company directorship. Distinguish correlations
+and heritability on the observed binary scale from those of a latent
+liability. Investigate whether prevalence, thresholds, and differences
+across cohorts or sexes alter the predicted moments, attenuation and
+identification. In a threshold/liability model, the observed Pearson
+correlation is generally a nonlinear function of the latent correlation
+and the two marginal prevalences. Check explicitly whether one common
+attenuation factor $\theta$ can represent that transformation across
+kinship types; generally it need not. Compare a properly specified
+threshold model with the direct fit to binary Pearson correlations, and
+check whether Clark supplies such a link anywhere in the book or PNAS
+materials. Work out the implications before treating a binary outcome
+as a continuous phenotype with classical measurement error.
+The potentially serious problem is that thresholding changes the pattern
+of correlations across kinship types, not merely their level. Even if
+Fisher's model fits the latent correlations perfectly, its geometric
+decay restrictions generally fail for the observed binary Pearson
+correlations; fitting the original formulas can then distort inferred
+heritability and assortative mating. Demonstrate this using jointly
+normal liabilities whose population correlations satisfy the model
+exactly. Threshold them and compare fits to population tetrachoric
+correlations (the binary case of polychoric correlations), which recover
+the latent correlations under these assumptions, and to Pearson
+correlations. At 50\% prevalence in both groups, the exact mapping is
+$r_{\mathrm{binary}}=(2/\pi)\arcsin(r_{\mathrm{latent}})$: latent correlations
+of $0.8$ and $0.4$ become approximately $0.590$ and $0.262$, so even their
+ratio changes. Use several kinship types to show why neither a common
+attenuation factor nor refitting a single persistence rate generally
+restores the exact fit. The problem is especially consequential for the
+$\theta$ extension: classical measurement error motivates a common
+multiplicative attenuation, whereas thresholding generally implies an
+effective $\theta_k=r_{\mathrm{binary},k}/r_{\mathrm{latent},k}$ that varies
+across kinship types and marginal prevalences. In the example above,
+these ratios are approximately $0.738$ and $0.655$. On the log scale,
+$\log\theta_k$ is therefore not a common intercept shift: it can alter
+the fitted kinship-decay slope and lineal--collateral contrast used to
+recover the structural parameters. Allowing one free $\theta$ does not
+generally repair this misspecification; allowing a separate unrestricted
+$\theta_k$ for every kinship type would instead remove the cross-kinship
+restrictions that make the model informative. A threshold model should
+derive these transformations from prevalences and latent correlations.
+This population example isolates measurement-scale
+misspecification from sampling error; quantify its practical importance
+at the prevalences and correlations relevant to Clark's data.
+\item \textbf{Fit competing cultural and genetic transmission models.}
+Assess the absence of a serious comparison with joint cultural--genetic
+transmission or a purely cultural model. A good fit of the restricted
+genetic model, even if established, does not identify that mechanism.
+Specify and compare the alternatives under transparent assumptions and
+the same data and objective, distinguishing predictive restrictions
+from extra flexibility. For the regression-to-the-mean point above,
+\citet[pp.~8--9, eq.~8]{OttoEtAl1994} write
+\[
+ B_o=\beta_I(B_m+B_f)+\delta S_C,
+\]
+where $S_C$ is cultural transmission error, not schooling. The equation
+resembles genetic transmission, but $\beta_I$ is not fixed at one half.
+They explicitly describe regression towards the mean under cultural
+transmission; this pattern alone cannot select the genetic explanation.
+\item \textbf{Disconnect between behavioural genetic estimates and policy conclusions.}
+Develop the distinction between variance-component estimates and the
+causal effects of feasible interventions. Fixed genes do not imply
+fixed effects, and a statistical direct genetic effect need not operate
+through an unmodifiable physiological pathway. Use the eyeglasses
+example and relate the point to \citet{Goldberger1978} and
+\citet{Jencks1980}. Give explicit credit for the provocative questions,
+valuable dataset and interesting patterns while explaining why the
+model-selection and policy conclusions go beyond what those results
+establish. Engage with the empirical evidence rather than personal labels.
+
+\item \textbf{Assortment on ``something deeper'' requires a model.}
+Address Clark's argument that people assort on something deeper than
+the observed phenotype. Specify what that latent characteristic is,
+how it relates to observed outcomes and their genetic and environmental
+components, and how it governs partner selection. Derive the spouse
+covariances and kinship moment conditions under that matching rule,
+including the measurement assumptions needed to connect latent and
+observed outcomes. An appeal to a deeper trait is not sufficient to
+retain the original moment formulas or parameter interpretations.
+If this is simply phenotypic assortment on a latent trait measured with
+classical error, state and justify those restrictions explicitly; if it
+is a different assortment mechanism, establish which moments and
+identification results change.
+
+\item \textbf{Selective treatment of bias and lower within-family GWAS estimates.}
+Examine whether Clark acknowledges and adequately addresses the much
+lower estimates reported in within-family GWAS. His emphasis on biases
+that could depress other estimates should be assessed alongside evidence
+that controlling for family background reduces population GWAS effect
+estimates or polygenic-score associations. Identify the relevant studies,
+report the comparable within-family and population estimates with their
+uncertainty, and check his discussion before asserting an omission.
+Distinguish SNP effects, score associations or prediction, and SNP-based
+heritability from total narrow-sense heritability; these are not
+interchangeable quantities. Assess explanations involving indirect
+genetic effects, population structure, assortment and measurement error
+under explicit assumptions, rather than treating the lower estimates
+as either automatically decisive or automatically dismissible.
+
+\item \textbf{Use within-family PGIs in spousal analyses.}
+Clarify that analyses intended to interpret spousal PGI resemblance as
+assortment on direct genetic effects should use PGIs constructed with
+within-family GWAS effect estimates. Population-GWAS weights can also
+reflect population structure and indirect genetic associations, so
+spousal correlations in those scores need not isolate the intended
+genetic component. Compare the results using population and within-family
+weights, allowing for differences in precision and predictive accuracy.
+Within-family weighting is not a complete solution: establish what the
+score measures, which biases remain, and how its spousal correlation
+relates to the model's latent additive-genetic correlation $m$.
+
+\item \textbf{Misspecification need not produce poor fit.}
+Make explicit that a misspecified model can fit the observed moments
+well: fitted parameters may absorb omitted covariance terms, and
+different mechanisms may generate similar patterns of resemblance.
+Consequently, good fit does not validate the identifying restrictions
+or the genetic interpretation of the estimates. Keep this logical point
+separate from the empirical concern that fit may itself be poor once
+the model's restrictions and admissible parameter bounds are imposed.
+Assess both, but do not make the identification criticism depend on
+establishing poor fit or a formal statistical rejection.
+
+\item \textbf{Residual stratification despite ancestry restrictions and quality control.}
+Document the substantial GWAS evidence that population stratification
+can bias estimates even after standard quality control and restriction
+to an apparently homogeneous ancestry group. Such restrictions do not
+establish the absence of fine-scale population structure or its
+association with social and environmental differences. Assemble concrete
+examples, specifying the phenotype, ancestry definition, controls and
+evidence used to diagnose residual bias. Explain the implications for
+interpreting population-GWAS effects and spousal PGI correlations as
+purely genetic quantities. Distinguish stratification from indirect
+genetic effects and assortative mating; a within-family versus population
+difference alone need not identify which mechanism accounts for it.
+
+\item \textbf{The Collado--Clark debate and the identification disputes of the 1970s.}
+Explore the parallels with the debates involving Jencks, the Birmingham
+group, and Cloninger and colleagues. A recurring problem is identification
+of distinct transmission mechanisms from a small set of kinship moments:
+similar fits can conceal very different causal models and parameter
+interpretations. Check the historical positions and the precise points
+of disagreement before drawing the comparison. The irony is how much
+progress has occurred in data, molecular measurement and research designs,
+while this basic identification problem can reappear when inference rests
+on a limited set of resemblance patterns. Explain which newer evidence
+can actually distinguish the competing mechanisms, rather than treating
+technical progress itself as a solution to identification.
+
+\item \textbf{Goldberger on adding environments to Fisher's scheme.}
+Use Goldberger's pointed observation, preserving its specific target:
+``The Birmingham models gain empirical validity by tacking on environmental
+correlations to Fisher's scheme'' \citep[p.~36]{Goldberger1978}.
+Discuss the accompanying coherence problem: adding a shared-environment
+term to sibling resemblance requires an account of the process generating
+it and its implications for other kinships. Goldberger asks whether shared
+sibling environmental variance should reappear for uncles and cousins,
+what equates parent--child and sibling environmental shares in another
+specification, and why parental transmission of both environments and genes
+does not generate gene--environment covariance. Follow his Appendix to
+spell out the restrictions for a coherent extension. Do not turn this into
+a claim that every shared sibling influence must persist across generations;
+the implications depend on how the environment is generated and transmitted.
+
+\item \textbf{Modern evidence on dominance does not establish zero shared environment.}
+Section~\ref{sec:genomic-evidence} now develops the distinction between
+dominance and gene--environment covariance. Extend its outcome-specific
+evidence where appropriate. Identify the relevant findings,
+state exactly which claim about dominance they support, and delimit
+the outcomes and designs to which they apply. This does not vindicate
+the separate claim that shared-environment variance $c^2$ is zero for
+all outcomes in adulthood. Evaluate that claim against outcome-specific
+evidence and uncertainty, keeping dominance and shared-environment
+components conceptually distinct. Support for one modelling assumption
+cannot stand in for evidence for the other.
+% User's dictated continuation after "or" is still pending; do not infer it.
+\item \textbf{Read Alex Young's commentary on Clark.}
+Read Young's initial reaction and extended July 2023 commentary on
+Clark's PNAS paper, including his discussion of alternative transmission
+models, assortative mating and identification. Compare the arguments
+with our review before deciding whether to cite or address them.
+The posts are dated 26 June and 4 July 2023; original links are retained
+in the saved source notes.
+Copies and retrieval notes are saved in the project reference library.
+
+\item \textbf{Add analogy to equilibrium restriction from economics.}
+Explain why $m=h^2r$ is a consequence of the maintained phenotypic-assortment
+model, not an optional additional assumption. Select an economic analogy
+that distinguishes primitive assumptions from their implied restrictions,
+and distinguishes estimating an unrestricted model to test the restriction
+from interpreting its fit as the fit of the maintained model.
+
+
+\par\medskip
+\textit{Preferred option: the consumption Euler equation.}
+Consider a consumer with logarithmic utility who can transfer resources
+between two periods at gross return $R$, under certainty and with an
+interior optimum. Utility maximisation implies $c_2/c_1=\beta R$, where
+$\beta$ is the discount factor. Consumption growth, patience and the
+return cannot be specified independently while preserving that model.
+The Euler equation is a consequence of the optimisation problem, not
+an optional additional assumption. The assortment restriction plays an
+analogous role: freeing $m$, $r$ and $h^2$ requires changing the maintained
+model, rather than simply declining to impose one of its consequences.
+
+\par\medskip
+\textit{Preferred option: homogeneity of consumer demand.}
+In the standard consumer model, doubling all prices and nominal income
+leaves the budget set unchanged. With unchanged preferences and a unique
+optimum, it therefore leaves demand unchanged. Homogeneity of demand is
+a consequence of the model, not an additional assumption to be accepted
+or discarded independently. A fitted demand equation that responds to
+this common rescaling may be useful descriptively, but it cannot
+represent the maintained choice model. Likewise, the phenotypic-assortment
+model does not permit independent choices of $m$, $r$ and $h^2$: its
+assumptions require $m=h^2r$.
+
+\item \textbf{Cite the Georgia land lottery paper.}
+Cite \citet{BleakleyFerrie2016}, ``Shocking Behavior: Random Wealth in
+Antebellum Georgia and Human Capital Across Generations,'' on the 1832
+Cherokee Land Lottery, when discussing exogenous wealth shocks and
+intergenerational outcomes.
+
+\item \textbf{Regression towards the mean does not identify the transmission mechanism.}
+Focus the criticism of Chapter~14 on the inference from an approximately
+linear conditional mean to a claim about its causal mechanism.
+The figures do show substantial regression towards the mean; do not
+base the critique on denying that descriptive finding. A nearly flat
+child-on-parent relationship, as for longevity, means especially strong
+regression. The dashed lines in the empirical panels are fitted lines,
+not the identity line.
+
+Show explicitly that a purely cultural model can generate the same
+linear, symmetric pattern: if
+$C_o=\gamma(C_f+C_m)/2+U$, with an independent mean-zero social
+innovation $U$, then the conditional mean given the parental average
+is linear. Under suitable Gaussian assumptions and innovation variance,
+this model can reproduce the one-generation joint distribution of
+parental and offspring phenotypes in our additive Fisher specialisation.
+This is a counterexample to identification from these plots, not a claim
+that every extended-pedigree model is equivalent. Assess Clark's
+conclusion that the pattern confirms the likely dominance of direct
+genetic transmission (p.~216) against a specified cultural alternative,
+rather than equating cultural transmission generally with the particular
+poverty/privilege-trap pattern sketched on p.~211.
+
+Supporting qualifications: genetic additivity alone does not guarantee
+an exactly linear conditional mean; linearity, contraction and symmetry
+about a common population mean require distinct assumptions; the high
+reported $R^2$ values for grouped means are not individual-level
+explanatory power or formal tests against nonlinearities; and symmetry
+of log deviations is not equality of ordinary percentage changes.
+Keep these qualifications subordinate to the identification criticism.
+The source-checked quotations, graphical slope estimates, identity-line
+replots and mathematical counterexamples are saved in the
+Chapter~14 audit dated 23 September 2026 in the project notes.
+% Source: ../notes/chapter14_regression_to_mean_audit_2026-09-23.md
+
+\item \textbf{Chapter 18: equilibrium variance and a numerical correction.}
+With fixed segregation variance $S$, the chapter's equation (6) implies
+$V(m)=2S/(1-m)$, hence $V(0.6)/V(0)=2.5$, not the fivefold increase
+stated on p.~274; the fivefold result is correct for the correlation
+of $0.8$ used in \citet[pp.~3--4]{ClarkCummins2022}.
+The discrepancy is consistent with an uncorrected carryover from the
+working paper, although the revision history has not been verified.
+For the final review, emphasize that this is a standard additive-genetic
+equilibrium result under a constant-segregation-variance approximation,
+whereas interpreting latent social ability as genetic, relating genetic
+to phenotypic assortment ($m=h^2r$ under phenotypic homogamy, with
+potentially changing $h^2$), and attributing the Industrial Revolution
+to the enlarged upper tail require separate justification.
+The increase in equilibrium genetic variance under positive assortative
+mating is a classical result of quantitative genetics, originating in
+Fisher's framework and developed more explicitly in subsequent theoretical
+work. Clark's contribution here lies in its proposed historical application,
+whose empirical premises and causal interpretation require separate
+evaluation. Trace the result through Fisher, subsequent formal treatments
+such as Nagylaki's, and textbook accounts, distinguishing Fisher's explicit
+results from later clarifications rather than attributing its origin to
+a modern exposition.
+% Modern reference: Yengo and Visscher (2018), Theoretical Population Biology
+% 124:51--60, doi:10.1016/j.tpb.2018.09.002, equations (3)--(5).
+
+\item \textbf{Cousin marriage does not establish weak genetic assortment.}
+Examine Chapter~18's inference from cousin marriage to a low equilibrium
+spousal genetic correlation (pp.~278--281). Random choice of a cousin
+with respect to ability or status is an assumption, not an implication
+of cousin marriage; selection within the permitted kinship pool could
+change the result. More fundamentally, establish whether the cousin
+correlation $[(1+m)/2]^3$ remains valid under recurrent consanguineous
+mating before accepting the fixed-point calculation
+$m=[(1+m)/2]^3$: repeated related mating creates additional shared
+ancestors and paths of genetic relationship that require an explicit
+pedigree or population-genetic treatment. Treat this as a derivation to
+check, not as a completed demonstration of the corrected equilibrium.
+Distinguish genetic relatedness through shared ancestry from correlation
+in additive genetic values for a particular trait. The calculation alone
+does not establish weaker genetic assortment in the historical societies
+concerned, nor their comparative supply of exceptional innovators.
+
+\end{itemize}
+
+\end{document}
+

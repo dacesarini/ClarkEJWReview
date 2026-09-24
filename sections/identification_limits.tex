@@ -1,0 +1,109 @@
+\section{Good Fit, Model Restrictions, and Causal Identification}
+\label{sec:identification-limits}
+The preceding problems concern the connection between the model and the
+recorded correlations. A further problem would remain even if that connection
+were correct: matching the moments does not uniquely establish their cause.
+Correct specification and identification can justify consistency under
+appropriate estimation conditions; they do not guarantee finite-sample
+unbiasedness. Conversely, misspecified equations can fit closely while
+assigning the wrong structural meaning to their parameters.
+
+\subsection{The Lesson of the 1970s IQ Debate}
+\label{sec:1970s-precedent}
+The disagreement is not new. Models fitted to overlapping IQ kinship data
+in the 1970s yielded sharply different heritability estimates despite
+apparently satisfactory fit. \citet{Loehlin1978} traced important differences
+to assumptions about dominance, assortment, and twin environments. His
+constructive recommendation was to identify the consequential assumptions
+and seek external evidence about them.
+
+\citet{Goldberger1978} distinguished problems that are easily conflated.
+The Honolulu model could not uniquely identify its parameters even from
+population correlations; fixing a parameter could restore an estimable
+version without establishing that the chosen value was correct. Separately,
+misspecified models could produce wrong structural estimates despite good
+fit. His simple twin example shows how excess environmental resemblance
+among MZ twins can be attributed to heritability while the fitted equations
+reproduce both twin correlations exactly \citep[p.~72]{Goldberger1978}.
+The issue is not merely imprecision. It is what the observations establish
+about the decomposition imposed on them.
+
+\subsection{What Omitting a Model-Implied Restriction Does}
+\citet[p.~19]{Goldberger1978} criticizes freeing spouse genetic resemblance while
+retaining formulas derived under Fisher's mating scheme. Alternative
+mating mechanisms may remove that restriction, but require a new derivation.
+That is a warning about structural specification, not a theorem that an
+unrestricted estimator must be inconsistent whenever a true equality is
+left unimposed. If the unrestricted moments remain valid and uniquely
+identify the true parameters, the true point still fits the population
+moments exactly. Omission alone then does not change the probability limit.
+
+Failing to impose a model-implied restriction can weaken or destroy
+identification and can aggravate finite-sample bias. But persistent bias
+under otherwise valid identification requires an additional argument,
+such as incorrect moment equations or an invalid structural interpretation.
+Goldberger's warning makes that investigation necessary; it does not
+substitute for it. A statistically significant failure of a necessary
+restriction challenges the joint maintained assumptions. It does not
+identify which assumption failed or show that every estimate is biased.
+
+Appendix~\ref{app:restriction-simulations} separates these cases using
+population calculations and simulated pedigrees. Under the correct mating
+model with identified unrestricted moments, both estimators recover the
+population truth. With only parent--child and sibling moments, omitting
+the phenotypic-assortment restriction instead leaves multiple triples
+$(h^2,m,r)$ observationally equivalent. Under the wrong mating equations,
+all three fitted parameters can converge to wrong values. Imposing the
+restriction of that wrong model does not repair it.
+
+\subsection{Confounding Is Not Limited to Genetic Nurture}
+\label{sec:confounding-beyond-nurture}
+
+Genetic nurture is one possible violation of the identifying exclusions,
+not an exhaustive account of confounding. Shared environmental influences,
+population structure, selection, or other unobserved determinants can
+also generate covariance that the fitted kinship equations mistakenly
+attribute to genetic transmission. To display the issue, write an outcome
+on its original scale as $Y_i=G_i+U_i$, where $G_i$ is its direct genetic
+contribution and $U_i$ collects the remaining influences. Then, for two
+relatives,
+\[
+ \operatorname{Cov}(Y_i,Y_j)=\operatorname{Cov}(G_i,G_j)
+ +\operatorname{Cov}(G_i,U_j)+\operatorname{Cov}(U_i,G_j)
+ +\operatorname{Cov}(U_i,U_j).
+\]
+The maintained model specifies or excludes each of these terms; assortment
+itself can generate some cross-person genetic--environmental covariance.
+Any additional covariance omitted from the fitted equations can alter the
+recovered genetic, assortment, and attenuation parameters. Rejecting a
+particular parental-genotype pathway does not establish those exclusions.
+An independent residual need not bias the genetic estimates, and different
+violations need not bias every parameter or operate in the same direction:
+the relevant question is whether the omitted influences change the moment
+conditions used for identification.
+
+This identification problem must also be distinguished from mediation.
+A social response caused by the child's own genotype may be part of its
+causal genetic effect, rather than confounding of that effect. Even a
+correctly identified genetic effect therefore requires interpretation,
+as Section~\ref{sec:interpretation} explains.
+
+
+\subsection{A Perfect Fit Can Misclassify Cultural Transmission}
+The distinction is especially clear in a deliberately constructed
+counterexample. Let a socially transmitted characteristic follow the same
+parental averaging process as an additive genetic characteristic, with
+independent innovations and the same degree of assortment. Both are
+Gaussian and independent of one another before matching. Their phenotypic
+contributions then have the same kinship-correlation pattern. A model
+that includes only genetic transmission absorbs their combined variance
+into its genetic parameter.
+
+In the example in Appendix~\ref{app:restriction-simulations}, the true
+direct genetic variance share is $.48$, while a cultural component
+contributes $.20$. The genetic-only model reports $h^2=.68$. It reproduces
+all twelve fitted correlations exactly and satisfies its own restriction
+$r=h^2m$. The construction is not offered as a realistic account of every
+family process. It establishes that neither perfect fit nor satisfaction
+of this restriction identifies the genetic interpretation. Independent
+measurements or designs on which the mechanisms differ are required.

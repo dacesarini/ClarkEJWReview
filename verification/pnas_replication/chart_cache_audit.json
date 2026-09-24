@@ -1,0 +1,3387 @@
+[
+  {
+    "source": "archive\\PNAS_refereeing\\ClarkRevise\\PNAS - Inheritance of Social Status - Supporting Information - revised.docx",
+    "embedded_files": [],
+    "charts": [
+      {
+        "part": "word/charts/chart5.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Corr"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.8"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "6",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "8",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "9",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "10",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$K$4:$K$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.49609999999999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.51249999999999996"
+                },
+                {
+                  "index": "2",
+                  "value": "0.36880000000000002"
+                },
+                {
+                  "index": "3",
+                  "value": "0.34689999999999999"
+                },
+                {
+                  "index": "4",
+                  "value": "0.2772"
+                },
+                {
+                  "index": "5",
+                  "value": "0.2571"
+                },
+                {
+                  "index": "6",
+                  "value": "0.15079999999999999"
+                },
+                {
+                  "index": "7",
+                  "value": "0.14019999999999999"
+                },
+                {
+                  "index": "8",
+                  "value": "0.13800000000000001"
+                },
+                {
+                  "index": "9",
+                  "value": "0.13880000000000001"
+                },
+                {
+                  "index": "10",
+                  "value": "8.9849999999999999E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Pheno"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.8"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "6",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "8",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "9",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "10",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$AI$4:$AI$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "1",
+                  "value": "0.51249999999999996"
+                },
+                {
+                  "index": "3",
+                  "value": "0.34689999999999999"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "fitted"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$3:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.8"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "6",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "8",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "9",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "10",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "11",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "12",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$U$3:$U$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.59313320000000003"
+                },
+                {
+                  "index": "1",
+                  "value": "0.47457958000000006"
+                },
+                {
+                  "index": "2",
+                  "value": "0.47457958000000006"
+                },
+                {
+                  "index": "3",
+                  "value": "0.3797366840000001"
+                },
+                {
+                  "index": "4",
+                  "value": "0.3797366840000001"
+                },
+                {
+                  "index": "5",
+                  "value": "0.30386236720000009"
+                },
+                {
+                  "index": "6",
+                  "value": "0.24316291376000013"
+                },
+                {
+                  "index": "7",
+                  "value": "0.19460335100800014"
+                },
+                {
+                  "index": "8",
+                  "value": "0.15575570080640011"
+                },
+                {
+                  "index": "9",
+                  "value": "0.12467758064512009"
+                },
+                {
+                  "index": "10",
+                  "value": "9.9815084516096081E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "7.9925087612876866E-2"
+                },
+                {
+                  "index": "12",
+                  "value": "3.6509999999999998E-4"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      },
+      {
+        "part": "word/charts/chart1.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Occ Stat"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$D$3:$D$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.68631310000000001"
+                },
+                {
+                  "index": "1",
+                  "value": "0.7127926"
+                },
+                {
+                  "index": "2",
+                  "value": "0.7242229"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Higher Education"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$I$3:$I$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.45360780000000001"
+                },
+                {
+                  "index": "1",
+                  "value": "0.48709079999999999"
+                },
+                {
+                  "index": "2",
+                  "value": "0.50317160000000005"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Occ Stat +95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$G$3:$G$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.71927579200000002"
+                },
+                {
+                  "index": "1",
+                  "value": "0.74637445599999996"
+                },
+                {
+                  "index": "2",
+                  "value": "0.73654875200000003"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Occ Stat -95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$F$3:$F$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.65335040799999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.67921074400000003"
+                },
+                {
+                  "index": "2",
+                  "value": "0.71189704799999998"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Higher  Ed +95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$L$3:$L$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.51260027200000002"
+                },
+                {
+                  "index": "1",
+                  "value": "0.55326275199999997"
+                },
+                {
+                  "index": "2",
+                  "value": "0.52241903497460007"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Higher Ed -95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$K$3:$K$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.39461532799999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.42091884800000001"
+                },
+                {
+                  "index": "2",
+                  "value": "0.48392416502540003"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      },
+      {
+        "part": "word/charts/chart2.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Average Wealth"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "Wealth!$A$3:$A$16"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1865"
+                },
+                {
+                  "index": "1",
+                  "value": "1875"
+                },
+                {
+                  "index": "2",
+                  "value": "1885"
+                },
+                {
+                  "index": "3",
+                  "value": "1895"
+                },
+                {
+                  "index": "4",
+                  "value": "1905"
+                },
+                {
+                  "index": "5",
+                  "value": "1915"
+                },
+                {
+                  "index": "6",
+                  "value": "1925"
+                },
+                {
+                  "index": "7",
+                  "value": "1935"
+                },
+                {
+                  "index": "8",
+                  "value": "1945"
+                },
+                {
+                  "index": "9",
+                  "value": "1955"
+                },
+                {
+                  "index": "10",
+                  "value": "1965"
+                },
+                {
+                  "index": "11",
+                  "value": "1975"
+                },
+                {
+                  "index": "12",
+                  "value": "1985"
+                },
+                {
+                  "index": "13",
+                  "value": "1992"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "Wealth!$B$3:$B$16"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "2.619043"
+                },
+                {
+                  "index": "1",
+                  "value": "1.410954"
+                },
+                {
+                  "index": "2",
+                  "value": "1.493892"
+                },
+                {
+                  "index": "3",
+                  "value": "1.1937800000000001"
+                },
+                {
+                  "index": "4",
+                  "value": "1.846258"
+                },
+                {
+                  "index": "5",
+                  "value": "1.269091"
+                },
+                {
+                  "index": "6",
+                  "value": "1.0334650000000001"
+                },
+                {
+                  "index": "7",
+                  "value": "1.0149170000000001"
+                },
+                {
+                  "index": "8",
+                  "value": "0.92084529999999998"
+                },
+                {
+                  "index": "9",
+                  "value": "1.236334"
+                },
+                {
+                  "index": "10",
+                  "value": "0.94330329999999996"
+                },
+                {
+                  "index": "11",
+                  "value": "0.89344959999999995"
+                },
+                {
+                  "index": "12",
+                  "value": "1.011752"
+                },
+                {
+                  "index": "13",
+                  "value": "0.89192380000000004"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Wealth +95%"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "Wealth!$A$3:$A$16"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1865"
+                },
+                {
+                  "index": "1",
+                  "value": "1875"
+                },
+                {
+                  "index": "2",
+                  "value": "1885"
+                },
+                {
+                  "index": "3",
+                  "value": "1895"
+                },
+                {
+                  "index": "4",
+                  "value": "1905"
+                },
+                {
+                  "index": "5",
+                  "value": "1915"
+                },
+                {
+                  "index": "6",
+                  "value": "1925"
+                },
+                {
+                  "index": "7",
+                  "value": "1935"
+                },
+                {
+                  "index": "8",
+                  "value": "1945"
+                },
+                {
+                  "index": "9",
+                  "value": "1955"
+                },
+                {
+                  "index": "10",
+                  "value": "1965"
+                },
+                {
+                  "index": "11",
+                  "value": "1975"
+                },
+                {
+                  "index": "12",
+                  "value": "1985"
+                },
+                {
+                  "index": "13",
+                  "value": "1992"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "Wealth!$E$3:$E$16"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "3.1855792360000001"
+                },
+                {
+                  "index": "1",
+                  "value": "1.931447092"
+                },
+                {
+                  "index": "2",
+                  "value": "1.995208256"
+                },
+                {
+                  "index": "3",
+                  "value": "1.6851717960000001"
+                },
+                {
+                  "index": "4",
+                  "value": "2.31898158"
+                },
+                {
+                  "index": "5",
+                  "value": "1.6900790080000001"
+                },
+                {
+                  "index": "6",
+                  "value": "1.474839164"
+                },
+                {
+                  "index": "7",
+                  "value": "1.4365672920000001"
+                },
+                {
+                  "index": "8",
+                  "value": "1.3154181920000001"
+                },
+                {
+                  "index": "9",
+                  "value": "1.625012584"
+                },
+                {
+                  "index": "10",
+                  "value": "1.3266346119999999"
+                },
+                {
+                  "index": "11",
+                  "value": "1.2704959759999999"
+                },
+                {
+                  "index": "12",
+                  "value": "1.3908722519999999"
+                },
+                {
+                  "index": "13",
+                  "value": "1.3862309000000002"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Wealth -95%"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "Wealth!$A$3:$A$16"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1865"
+                },
+                {
+                  "index": "1",
+                  "value": "1875"
+                },
+                {
+                  "index": "2",
+                  "value": "1885"
+                },
+                {
+                  "index": "3",
+                  "value": "1895"
+                },
+                {
+                  "index": "4",
+                  "value": "1905"
+                },
+                {
+                  "index": "5",
+                  "value": "1915"
+                },
+                {
+                  "index": "6",
+                  "value": "1925"
+                },
+                {
+                  "index": "7",
+                  "value": "1935"
+                },
+                {
+                  "index": "8",
+                  "value": "1945"
+                },
+                {
+                  "index": "9",
+                  "value": "1955"
+                },
+                {
+                  "index": "10",
+                  "value": "1965"
+                },
+                {
+                  "index": "11",
+                  "value": "1975"
+                },
+                {
+                  "index": "12",
+                  "value": "1985"
+                },
+                {
+                  "index": "13",
+                  "value": "1992"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "Wealth!$D$3:$D$16"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "2.0525067639999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.890460908"
+                },
+                {
+                  "index": "2",
+                  "value": "0.99257574400000004"
+                },
+                {
+                  "index": "3",
+                  "value": "0.70238820400000002"
+                },
+                {
+                  "index": "4",
+                  "value": "1.3735344199999999"
+                },
+                {
+                  "index": "5",
+                  "value": "0.84810299199999994"
+                },
+                {
+                  "index": "6",
+                  "value": "0.59209083600000012"
+                },
+                {
+                  "index": "7",
+                  "value": "0.59326670800000003"
+                },
+                {
+                  "index": "8",
+                  "value": "0.52627240799999997"
+                },
+                {
+                  "index": "9",
+                  "value": "0.84765541600000005"
+                },
+                {
+                  "index": "10",
+                  "value": "0.55997198800000003"
+                },
+                {
+                  "index": "11",
+                  "value": "0.51640322399999994"
+                },
+                {
+                  "index": "12",
+                  "value": "0.63263174799999999"
+                },
+                {
+                  "index": "13",
+                  "value": "0.39761669999999999"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Constant"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "Wealth!$A$2:$A$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1855"
+                },
+                {
+                  "index": "1",
+                  "value": "1865"
+                },
+                {
+                  "index": "2",
+                  "value": "1875"
+                },
+                {
+                  "index": "3",
+                  "value": "1885"
+                },
+                {
+                  "index": "4",
+                  "value": "1895"
+                },
+                {
+                  "index": "5",
+                  "value": "1905"
+                },
+                {
+                  "index": "6",
+                  "value": "1915"
+                },
+                {
+                  "index": "7",
+                  "value": "1925"
+                },
+                {
+                  "index": "8",
+                  "value": "1935"
+                },
+                {
+                  "index": "9",
+                  "value": "1945"
+                },
+                {
+                  "index": "10",
+                  "value": "1955"
+                },
+                {
+                  "index": "11",
+                  "value": "1965"
+                },
+                {
+                  "index": "12",
+                  "value": "1975"
+                },
+                {
+                  "index": "13",
+                  "value": "1985"
+                },
+                {
+                  "index": "14",
+                  "value": "1992"
+                },
+                {
+                  "index": "15",
+                  "value": "2005"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "Wealth!$F$2:$F$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "1"
+                },
+                {
+                  "index": "2",
+                  "value": "1"
+                },
+                {
+                  "index": "3",
+                  "value": "1"
+                },
+                {
+                  "index": "4",
+                  "value": "1"
+                },
+                {
+                  "index": "5",
+                  "value": "1"
+                },
+                {
+                  "index": "6",
+                  "value": "1"
+                },
+                {
+                  "index": "7",
+                  "value": "1"
+                },
+                {
+                  "index": "8",
+                  "value": "1"
+                },
+                {
+                  "index": "9",
+                  "value": "1"
+                },
+                {
+                  "index": "10",
+                  "value": "1"
+                },
+                {
+                  "index": "11",
+                  "value": "1"
+                },
+                {
+                  "index": "12",
+                  "value": "1"
+                },
+                {
+                  "index": "13",
+                  "value": "1"
+                },
+                {
+                  "index": "14",
+                  "value": "1"
+                },
+                {
+                  "index": "15",
+                  "value": "1"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      },
+      {
+        "part": "word/charts/chart3.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Corr"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.8"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "6",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "8",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "9",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "10",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$G$4:$G$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.27106999999999998"
+                },
+                {
+                  "index": "1",
+                  "value": "0.31879999999999997"
+                },
+                {
+                  "index": "2",
+                  "value": "0.1812"
+                },
+                {
+                  "index": "3",
+                  "value": "0.24579999999999999"
+                },
+                {
+                  "index": "4",
+                  "value": "0.15479999999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "0.1007"
+                },
+                {
+                  "index": "6",
+                  "value": "7.4300000000000005E-2"
+                },
+                {
+                  "index": "7",
+                  "value": "5.7259999999999998E-2"
+                },
+                {
+                  "index": "8",
+                  "value": "5.1069999999999997E-2"
+                },
+                {
+                  "index": "9",
+                  "value": "1.6990000000000002E-2"
+                },
+                {
+                  "index": "10",
+                  "value": "3.1879999999999999E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Pheno"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.8"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "6",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "8",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "9",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "10",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$AE$4:$AE$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "1",
+                  "value": "0.31879999999999997"
+                },
+                {
+                  "index": "3",
+                  "value": "0.24579999999999999"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "fitted"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$3:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.8"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "6",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "8",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "9",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "10",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "11",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "12",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$Q$3:$Q$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.31718149999999995"
+                },
+                {
+                  "index": "1",
+                  "value": "0.24885791999999998"
+                },
+                {
+                  "index": "2",
+                  "value": "0.24885791999999998"
+                },
+                {
+                  "index": "3",
+                  "value": "0.19419905600000004"
+                },
+                {
+                  "index": "4",
+                  "value": "0.19419905600000004"
+                },
+                {
+                  "index": "5",
+                  "value": "0.15047196480000002"
+                },
+                {
+                  "index": "6",
+                  "value": "0.11549029184000006"
+                },
+                {
+                  "index": "7",
+                  "value": "8.750495347200006E-2"
+                },
+                {
+                  "index": "8",
+                  "value": "6.5116682777600049E-2"
+                },
+                {
+                  "index": "9",
+                  "value": "4.7206066222080054E-2"
+                },
+                {
+                  "index": "10",
+                  "value": "3.2877572977664041E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "2.1414778382131235E-2"
+                },
+                {
+                  "index": "12",
+                  "value": "-2.44364E-2"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      },
+      {
+        "part": "word/charts/chart4.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Corr"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$47:$D$60"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.8"
+                },
+                {
+                  "index": "3",
+                  "value": "0.8"
+                },
+                {
+                  "index": "4",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "6",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "7",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "8",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "9",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "10",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "11",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "12",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "13",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$I$47:$I$60"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.42699999999999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.4763"
+                },
+                {
+                  "index": "2",
+                  "value": "0.34649999999999997"
+                },
+                {
+                  "index": "3",
+                  "value": "0.31359999999999999"
+                },
+                {
+                  "index": "4",
+                  "value": "0.30399999999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "0.2419"
+                },
+                {
+                  "index": "6",
+                  "value": "0.2407"
+                },
+                {
+                  "index": "7",
+                  "value": "0.1701"
+                },
+                {
+                  "index": "8",
+                  "value": "0.21759999999999999"
+                },
+                {
+                  "index": "9",
+                  "value": "0.14979999999999999"
+                },
+                {
+                  "index": "13",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Pheno"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$47:$D$60"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.8"
+                },
+                {
+                  "index": "3",
+                  "value": "0.8"
+                },
+                {
+                  "index": "4",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "6",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "7",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "8",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "9",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "10",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "11",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "12",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "13",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$AG$47:$AG$60"
+              ],
+              "indexed_points": [
+                {
+                  "index": "2",
+                  "value": "0.34649999999999997"
+                },
+                {
+                  "index": "5",
+                  "value": "0.2419"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "fitted"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$47:$D$60"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.8"
+                },
+                {
+                  "index": "3",
+                  "value": "0.8"
+                },
+                {
+                  "index": "4",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "6",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "7",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "8",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "9",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "10",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "11",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "12",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "13",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$S$47:$S$60"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.46297079999999996"
+                },
+                {
+                  "index": "1",
+                  "value": "0.37509487999999996"
+                },
+                {
+                  "index": "2",
+                  "value": "0.37509487999999996"
+                },
+                {
+                  "index": "3",
+                  "value": "0.37509487999999996"
+                },
+                {
+                  "index": "4",
+                  "value": "0.30479414400000004"
+                },
+                {
+                  "index": "5",
+                  "value": "0.30479414400000004"
+                },
+                {
+                  "index": "6",
+                  "value": "0.24855355520000005"
+                },
+                {
+                  "index": "7",
+                  "value": "0.20356108416000007"
+                },
+                {
+                  "index": "8",
+                  "value": "0.16756710732800009"
+                },
+                {
+                  "index": "9",
+                  "value": "0.13877192586240006"
+                },
+                {
+                  "index": "10",
+                  "value": "0.11573578068992008"
+                },
+                {
+                  "index": "11",
+                  "value": "9.7306864551936045E-2"
+                },
+                {
+                  "index": "12",
+                  "value": "8.2563731641548843E-2"
+                },
+                {
+                  "index": "13",
+                  "value": "2.35912E-2"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      }
+    ],
+    "external_links": [
+      {
+        "part": "word/charts/_rels/chart1.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Science%20Article\\pnas%20REVISION\\dead_fathers_pnas.xlsx",
+        "TargetMode": "External"
+      },
+      {
+        "part": "word/charts/_rels/chart2.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\FOE%20Description\\FOE%20representative.xlsx",
+        "TargetMode": "External"
+      },
+      {
+        "part": "word/charts/_rels/chart3.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Figures%20for%20book\\Family%20Tree%20Correlations%20-%20all%20FOE-2022.xlsx",
+        "TargetMode": "External"
+      },
+      {
+        "part": "word/charts/_rels/chart4.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Figures%20for%20book\\Family%20Tree%20Correlations%20-%20all%20FOE-2022.xlsx",
+        "TargetMode": "External"
+      },
+      {
+        "part": "word/charts/_rels/chart5.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Figures%20for%20book\\Family%20Tree%20Correlations%20-%20all%20FOE-2022.xlsx",
+        "TargetMode": "External"
+      }
+    ]
+  },
+  {
+    "source": "archive\\PNAS_refereeing\\ClarkRevise\\PNAS - Inheritance of Social Status -revised.docx",
+    "embedded_files": [],
+    "charts": [
+      {
+        "part": "word/charts/chart2.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Corr"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .57 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.78500000000000003"
+                },
+                {
+                  "index": "1",
+                  "value": "0.78500000000000003"
+                },
+                {
+                  "index": "2",
+                  "value": "0.61622500000000002"
+                },
+                {
+                  "index": "3",
+                  "value": "0.61622500000000002"
+                },
+                {
+                  "index": "4",
+                  "value": "0.48373662500000003"
+                },
+                {
+                  "index": "5",
+                  "value": "0.37973325062500002"
+                },
+                {
+                  "index": "6",
+                  "value": "0.29809060174062502"
+                },
+                {
+                  "index": "7",
+                  "value": "0.23400112236639065"
+                },
+                {
+                  "index": "8",
+                  "value": "0.18369088105761666"
+                },
+                {
+                  "index": "9",
+                  "value": "0.14419734163022907"
+                },
+                {
+                  "index": "10",
+                  "value": "0.11319491317972982"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .57 corr'!$F$4:$F$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.3362"
+                },
+                {
+                  "index": "1",
+                  "value": "0.36"
+                },
+                {
+                  "index": "2",
+                  "value": "0.246"
+                },
+                {
+                  "index": "3",
+                  "value": "0.27829999999999999"
+                },
+                {
+                  "index": "4",
+                  "value": "0.21049999999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "0.1472"
+                },
+                {
+                  "index": "6",
+                  "value": "0.14130000000000001"
+                },
+                {
+                  "index": "7",
+                  "value": "8.3900000000000002E-2"
+                },
+                {
+                  "index": "8",
+                  "value": "9.9500000000000005E-2"
+                },
+                {
+                  "index": "9",
+                  "value": "6.9199999999999998E-2"
+                },
+                {
+                  "index": "10",
+                  "value": "7.7600000000000002E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Pheno"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .57 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.78500000000000003"
+                },
+                {
+                  "index": "1",
+                  "value": "0.78500000000000003"
+                },
+                {
+                  "index": "2",
+                  "value": "0.61622500000000002"
+                },
+                {
+                  "index": "3",
+                  "value": "0.61622500000000002"
+                },
+                {
+                  "index": "4",
+                  "value": "0.48373662500000003"
+                },
+                {
+                  "index": "5",
+                  "value": "0.37973325062500002"
+                },
+                {
+                  "index": "6",
+                  "value": "0.29809060174062502"
+                },
+                {
+                  "index": "7",
+                  "value": "0.23400112236639065"
+                },
+                {
+                  "index": "8",
+                  "value": "0.18369088105761666"
+                },
+                {
+                  "index": "9",
+                  "value": "0.14419734163022907"
+                },
+                {
+                  "index": "10",
+                  "value": "0.11319491317972982"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .57 corr'!$AD$4:$AD$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "1",
+                  "value": "0.36"
+                },
+                {
+                  "index": "3",
+                  "value": "0.27829999999999999"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "fitted"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .57 corr'!$D$3:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "0.78500000000000003"
+                },
+                {
+                  "index": "2",
+                  "value": "0.78500000000000003"
+                },
+                {
+                  "index": "3",
+                  "value": "0.61622500000000002"
+                },
+                {
+                  "index": "4",
+                  "value": "0.61622500000000002"
+                },
+                {
+                  "index": "5",
+                  "value": "0.48373662500000003"
+                },
+                {
+                  "index": "6",
+                  "value": "0.37973325062500002"
+                },
+                {
+                  "index": "7",
+                  "value": "0.29809060174062502"
+                },
+                {
+                  "index": "8",
+                  "value": "0.23400112236639065"
+                },
+                {
+                  "index": "9",
+                  "value": "0.18369088105761666"
+                },
+                {
+                  "index": "10",
+                  "value": "0.14419734163022907"
+                },
+                {
+                  "index": "11",
+                  "value": "0.11319491317972982"
+                },
+                {
+                  "index": "12",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .57 corr'!$P$3:$P$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.41339510000000002"
+                },
+                {
+                  "index": "1",
+                  "value": "0.32684977400000004"
+                },
+                {
+                  "index": "2",
+                  "value": "0.32684977400000004"
+                },
+                {
+                  "index": "3",
+                  "value": "0.25891169309000001"
+                },
+                {
+                  "index": "4",
+                  "value": "0.25891169309000001"
+                },
+                {
+                  "index": "5",
+                  "value": "0.20558029957565002"
+                },
+                {
+                  "index": "6",
+                  "value": "0.16371515566688527"
+                },
+                {
+                  "index": "7",
+                  "value": "0.13085101769850493"
+                },
+                {
+                  "index": "8",
+                  "value": "0.10505266939332637"
+                },
+                {
+                  "index": "9",
+                  "value": "8.4800965973761203E-2"
+                },
+                {
+                  "index": "10",
+                  "value": "6.8903378789402545E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "5.6423772849680996E-2"
+                },
+                {
+                  "index": "12",
+                  "value": "1.0858700000000001E-2"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      },
+      {
+        "part": "word/charts/chart1.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Corr"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.8"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "6",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "8",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "9",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "10",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$F$4:$F$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.33379999999999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.3518"
+                },
+                {
+                  "index": "2",
+                  "value": "0.252"
+                },
+                {
+                  "index": "3",
+                  "value": "0.26840000000000003"
+                },
+                {
+                  "index": "4",
+                  "value": "0.21329999999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "0.15790000000000001"
+                },
+                {
+                  "index": "6",
+                  "value": "0.1389"
+                },
+                {
+                  "index": "7",
+                  "value": "9.3329999999999996E-2"
+                },
+                {
+                  "index": "8",
+                  "value": "9.5250000000000001E-2"
+                },
+                {
+                  "index": "9",
+                  "value": "7.5600000000000001E-2"
+                },
+                {
+                  "index": "10",
+                  "value": "8.4158999999999998E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Pheno"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$4:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.8"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "6",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "8",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "9",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "10",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "11",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$AD$4:$AD$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "1",
+                  "value": "0.3518"
+                },
+                {
+                  "index": "3",
+                  "value": "0.26840000000000003"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "fitted"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "'All .6 corr'!$D$3:$D$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "1"
+                },
+                {
+                  "index": "1",
+                  "value": "0.8"
+                },
+                {
+                  "index": "2",
+                  "value": "0.8"
+                },
+                {
+                  "index": "3",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "4",
+                  "value": "0.64000000000000012"
+                },
+                {
+                  "index": "5",
+                  "value": "0.51200000000000012"
+                },
+                {
+                  "index": "6",
+                  "value": "0.40960000000000019"
+                },
+                {
+                  "index": "7",
+                  "value": "0.32768000000000019"
+                },
+                {
+                  "index": "8",
+                  "value": "0.26214400000000015"
+                },
+                {
+                  "index": "9",
+                  "value": "0.20971520000000016"
+                },
+                {
+                  "index": "10",
+                  "value": "0.16777216000000014"
+                },
+                {
+                  "index": "11",
+                  "value": "0.13421772800000012"
+                },
+                {
+                  "index": "12",
+                  "value": "0"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "'All .6 corr'!$P$3:$P$15"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.4047618"
+                },
+                {
+                  "index": "1",
+                  "value": "0.32509174000000002"
+                },
+                {
+                  "index": "2",
+                  "value": "0.32509174000000002"
+                },
+                {
+                  "index": "3",
+                  "value": "0.26135569200000008"
+                },
+                {
+                  "index": "4",
+                  "value": "0.26135569200000008"
+                },
+                {
+                  "index": "5",
+                  "value": "0.21036685360000004"
+                },
+                {
+                  "index": "6",
+                  "value": "0.16957578288000005"
+                },
+                {
+                  "index": "7",
+                  "value": "0.13694292630400007"
+                },
+                {
+                  "index": "8",
+                  "value": "0.11083664104320005"
+                },
+                {
+                  "index": "9",
+                  "value": "8.995161283456006E-2"
+                },
+                {
+                  "index": "10",
+                  "value": "7.3243590267648054E-2"
+                },
+                {
+                  "index": "11",
+                  "value": "5.9877172214118445E-2"
+                },
+                {
+                  "index": "12",
+                  "value": "6.4114999999999997E-3"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      },
+      {
+        "part": "word/charts/chart3.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Father"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "summary!$A$3:$A$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.99999990000000005"
+                },
+                {
+                  "index": "1",
+                  "value": "1"
+                },
+                {
+                  "index": "2",
+                  "value": "1.0000000099999999"
+                },
+                {
+                  "index": "4",
+                  "value": "1.9999998999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "2"
+                },
+                {
+                  "index": "6",
+                  "value": "2.0000000099999999"
+                },
+                {
+                  "index": "8",
+                  "value": "2.9999999000000002"
+                },
+                {
+                  "index": "9",
+                  "value": "3"
+                },
+                {
+                  "index": "10",
+                  "value": "3.0000000099999999"
+                },
+                {
+                  "index": "12",
+                  "value": "3.9999999000000002"
+                },
+                {
+                  "index": "13",
+                  "value": "4"
+                },
+                {
+                  "index": "14",
+                  "value": "4.0000000099999999"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "summary!$F$3:$F$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "1",
+                  "value": "0.2359"
+                },
+                {
+                  "index": "5",
+                  "value": "0.315"
+                },
+                {
+                  "index": "9",
+                  "value": "0.34"
+                },
+                {
+                  "index": "13",
+                  "value": "0.29559999999999997"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Mother"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "summary!$A$3:$A$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.99999990000000005"
+                },
+                {
+                  "index": "1",
+                  "value": "1"
+                },
+                {
+                  "index": "2",
+                  "value": "1.0000000099999999"
+                },
+                {
+                  "index": "4",
+                  "value": "1.9999998999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "2"
+                },
+                {
+                  "index": "6",
+                  "value": "2.0000000099999999"
+                },
+                {
+                  "index": "8",
+                  "value": "2.9999999000000002"
+                },
+                {
+                  "index": "9",
+                  "value": "3"
+                },
+                {
+                  "index": "10",
+                  "value": "3.0000000099999999"
+                },
+                {
+                  "index": "12",
+                  "value": "3.9999999000000002"
+                },
+                {
+                  "index": "13",
+                  "value": "4"
+                },
+                {
+                  "index": "14",
+                  "value": "4.0000000099999999"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "summary!$I$3:$I$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "1",
+                  "value": "0.26619999999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "0.23799999999999999"
+                },
+                {
+                  "index": "9",
+                  "value": "0.35099999999999998"
+                },
+                {
+                  "index": "13",
+                  "value": "8.5199999999999998E-2"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Father-range"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "summary!$A$3:$A$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.99999990000000005"
+                },
+                {
+                  "index": "1",
+                  "value": "1"
+                },
+                {
+                  "index": "2",
+                  "value": "1.0000000099999999"
+                },
+                {
+                  "index": "4",
+                  "value": "1.9999998999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "2"
+                },
+                {
+                  "index": "6",
+                  "value": "2.0000000099999999"
+                },
+                {
+                  "index": "8",
+                  "value": "2.9999999000000002"
+                },
+                {
+                  "index": "9",
+                  "value": "3"
+                },
+                {
+                  "index": "10",
+                  "value": "3.0000000099999999"
+                },
+                {
+                  "index": "12",
+                  "value": "3.9999999000000002"
+                },
+                {
+                  "index": "13",
+                  "value": "4"
+                },
+                {
+                  "index": "14",
+                  "value": "4.0000000099999999"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "summary!$H$3:$H$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.1720236"
+                },
+                {
+                  "index": "1",
+                  "value": "0.2359"
+                },
+                {
+                  "index": "2",
+                  "value": "0.2997764"
+                },
+                {
+                  "index": "4",
+                  "value": "0.23091600000000001"
+                },
+                {
+                  "index": "5",
+                  "value": "0.315"
+                },
+                {
+                  "index": "6",
+                  "value": "0.39908399999999999"
+                },
+                {
+                  "index": "8",
+                  "value": "0.28022000000000002"
+                },
+                {
+                  "index": "9",
+                  "value": "0.34"
+                },
+                {
+                  "index": "10",
+                  "value": "0.39978000000000002"
+                },
+                {
+                  "index": "12",
+                  "value": "0.24699199999999999"
+                },
+                {
+                  "index": "13",
+                  "value": "0.29559999999999997"
+                },
+                {
+                  "index": "14",
+                  "value": "0.34420799999999996"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Mother Range"
+              ]
+            },
+            "xVal": {
+              "formulas": [
+                "summary!$A$3:$A$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.99999990000000005"
+                },
+                {
+                  "index": "1",
+                  "value": "1"
+                },
+                {
+                  "index": "2",
+                  "value": "1.0000000099999999"
+                },
+                {
+                  "index": "4",
+                  "value": "1.9999998999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "2"
+                },
+                {
+                  "index": "6",
+                  "value": "2.0000000099999999"
+                },
+                {
+                  "index": "8",
+                  "value": "2.9999999000000002"
+                },
+                {
+                  "index": "9",
+                  "value": "3"
+                },
+                {
+                  "index": "10",
+                  "value": "3.0000000099999999"
+                },
+                {
+                  "index": "12",
+                  "value": "3.9999999000000002"
+                },
+                {
+                  "index": "13",
+                  "value": "4"
+                },
+                {
+                  "index": "14",
+                  "value": "4.0000000099999999"
+                }
+              ],
+              "literal_texts": []
+            },
+            "yVal": {
+              "formulas": [
+                "summary!$K$3:$K$17"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.21094759999999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.26619999999999999"
+                },
+                {
+                  "index": "2",
+                  "value": "0.32145239999999997"
+                },
+                {
+                  "index": "4",
+                  "value": "0.14333199999999999"
+                },
+                {
+                  "index": "5",
+                  "value": "0.23799999999999999"
+                },
+                {
+                  "index": "6",
+                  "value": "0.33266799999999996"
+                },
+                {
+                  "index": "8",
+                  "value": "0.29239599999999999"
+                },
+                {
+                  "index": "9",
+                  "value": "0.35099999999999998"
+                },
+                {
+                  "index": "10",
+                  "value": "0.40960399999999997"
+                },
+                {
+                  "index": "12",
+                  "value": "3.7768000000000003E-2"
+                },
+                {
+                  "index": "13",
+                  "value": "8.5199999999999998E-2"
+                },
+                {
+                  "index": "14",
+                  "value": "0.132632"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      }
+    ],
+    "external_links": [
+      {
+        "part": "word/charts/_rels/chart1.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Figures%20for%20book\\Family%20Tree%20Correlations%20-%20all%20FOE-2022.xlsx",
+        "TargetMode": "External"
+      },
+      {
+        "part": "word/charts/_rels/chart2.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Science%20Article\\pnas%20REVISION\\Family%20Tree%20Correlations%20-%20pnas.xlsx",
+        "TargetMode": "External"
+      },
+      {
+        "part": "word/charts/_rels/chart3.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Gender%20Symmetry\\Gnder%20Sym%20Estimates-figure.xlsx",
+        "TargetMode": "External"
+      }
+    ]
+  },
+  {
+    "source": "archive\\PNAS_refereeing\\ClarkRevise\\Response to Second Reviewer.docx",
+    "embedded_files": [],
+    "charts": [
+      {
+        "part": "word/charts/chart1.xml",
+        "series": [
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Occ Stat"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$D$3:$D$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.68631310000000001"
+                },
+                {
+                  "index": "1",
+                  "value": "0.7127926"
+                },
+                {
+                  "index": "2",
+                  "value": "0.7242229"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Higher Education"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$I$3:$I$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.45360780000000001"
+                },
+                {
+                  "index": "1",
+                  "value": "0.48709079999999999"
+                },
+                {
+                  "index": "2",
+                  "value": "0.50317160000000005"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Occ Stat +95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$G$3:$G$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.71927579200000002"
+                },
+                {
+                  "index": "1",
+                  "value": "0.74637445599999996"
+                },
+                {
+                  "index": "2",
+                  "value": "0.73654875200000003"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Occ Stat -95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$F$3:$F$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.65335040799999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.67921074400000003"
+                },
+                {
+                  "index": "2",
+                  "value": "0.71189704799999998"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Higher  Ed +95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$L$3:$L$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.51260027200000002"
+                },
+                {
+                  "index": "1",
+                  "value": "0.55326275199999997"
+                },
+                {
+                  "index": "2",
+                  "value": "0.52241903497460007"
+                }
+              ],
+              "literal_texts": []
+            }
+          },
+          {
+            "tx": {
+              "formulas": [],
+              "indexed_points": [],
+              "literal_texts": [
+                "Higher Ed -95%"
+              ]
+            },
+            "cat": {
+              "formulas": [
+                "Estimates!$B$3:$B$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0-13"
+                },
+                {
+                  "index": "1",
+                  "value": "14-20"
+                },
+                {
+                  "index": "2",
+                  "value": "21+"
+                }
+              ],
+              "literal_texts": []
+            },
+            "val": {
+              "formulas": [
+                "Estimates!$K$3:$K$5"
+              ],
+              "indexed_points": [
+                {
+                  "index": "0",
+                  "value": "0.39461532799999999"
+                },
+                {
+                  "index": "1",
+                  "value": "0.42091884800000001"
+                },
+                {
+                  "index": "2",
+                  "value": "0.48392416502540003"
+                }
+              ],
+              "literal_texts": []
+            }
+          }
+        ]
+      }
+    ],
+    "external_links": [
+      {
+        "part": "word/charts/_rels/chart1.xml.rels",
+        "Id": "rId3",
+        "Type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject",
+        "Target": "file:///C:\\Users\\Xerxes\\Dropbox\\For%20whom%20the%20bell%20curve%20tolls\\Science%20Article\\pnas%20REVISION\\dead_fathers_pnas.xlsx",
+        "TargetMode": "External"
+      }
+    ]
+  },
+  {
+    "source": "archive\\PNAS_refereeing\\ClarkRevise\\Reviewer 1 response.docx",
+    "embedded_files": [],
+    "charts": [],
+    "external_links": []
+  }
+]

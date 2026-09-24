@@ -1,5 +1,20 @@
 # Fisher-model section: source checks and verification
 
+## End-of-day analysis index, 14 September 2026
+
+- `fit_all_phenotypes.py` / `all_phenotypes_free_theta_results.json`: all nine PNAS outcome columns, phenotypic assortment with one free theta.
+- `fit_relaxed_heritability.py` / `relaxed_heritability_results.json`: diagnostic removal of the upper heritability bound.
+- `fit_two_attenuation_factors.py` / `two_attenuation_factors_results.json`: separate attenuation for same-generation and cross-generation relative pairs.
+- `plot_assortment_fits.py`: standalone figure in `figures/assortment_fits_education_1860_1919.{png,pdf,svg}`.
+
+These use unweighted squared deviations in correlation levels; do not confuse them with the log-regression replication diagnostics below. Detailed assumptions, results, and next steps: `../notes/session_wrap_up_2026-09-14.md` relative to the repository root.
+
+## Assortment comparison added 14 September 2026
+
+Follow-up: `python verification/audit_appendix_regression.py` reads the raw PNAS education-pair workbook and records correlation/count mismatches, along with explicitly named log-regression weighting alternatives, in `verification/appendix_regression_audit.json`. This is a replication attempt, not an exact reproduction: the per-moment standard-error procedure is not documented in the inspected material, several supplied inputs differ from the published table, and the book uses revised correlations. Detailed interpretation: `../notes/appendix_estimating_equation_audit_2026-09-14.md`.
+
+Run `python verification/fit_assortment_models.py` (NumPy and SciPy). This fits both assortment models to both PNAS education cohorts with theta fixed at one, using unweighted and pair-count-weighted objectives. It also fits free theta under phenotypic assortment for 1860-1919 and checks the continuum of equivalent free-theta genetic fits. Multistart bounded least squares is checked against differential evolution. Inputs are rounded PNAS Table 2 correlations and SI Table S1 counts; no spouse observation is included. Results: `verification/assortment_fit_results.json`. These descriptive fits are not dependence-aware statistical tests. Manuscript section: `sections/assortment_comparison.tex`.
+
 Editable source: ../sections/fisher_model.tex. The main review includes it directly.
 
 Run python verification/verify_fisher_model.py from the repository root (or run the script by absolute path). Dependencies: Python, NumPy, SymPy. The report is written to _build/fisher_model_verification.json. These tools are not required to compile the review.

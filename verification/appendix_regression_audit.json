@@ -1,0 +1,507 @@
+{
+  "note": "Literal raw-label audit, not a repaired dataset or exact replication. Binary SEs assume independent pairs; normal approximations are alternative assumptions, not documented Clark weights.",
+  "cohorts": {
+    "1780-1859": {
+      "published_rounded_regressions": {
+        "OLS": {
+          "a": -0.5488653406890458,
+          "log_b": -0.2702227258726234,
+          "c": 0.16177311816008758,
+          "exp_a": 0.57760482339282,
+          "m": 0.5264189778116819,
+          "r": 0.7944482137058095,
+          "recovered_h2": 0.6626221429287762,
+          "recovered_theta": 0.8716956255639431,
+          "admissible_free_theta_PH": true
+        },
+        "pair_counts": {
+          "a": -0.5696893257181374,
+          "log_b": -0.2631324914772003,
+          "c": 0.18371705595881724,
+          "exp_a": 0.5657011602037428,
+          "m": 0.5372801046170923,
+          "r": 0.8473122503350281,
+          "recovered_h2": 0.6340992997618661,
+          "recovered_theta": 0.8921333936438505,
+          "admissible_free_theta_PH": true
+        },
+        "normal_approx_inverse_var_correlation": {
+          "a": -0.5298863477305195,
+          "log_b": -0.2681881037900518,
+          "c": 0.15689923201897168,
+          "exp_a": 0.5886718697705883,
+          "m": 0.5295278251634594,
+          "r": 0.7893605274479132,
+          "recovered_h2": 0.6708313967452608,
+          "recovered_theta": 0.877525817406141,
+          "admissible_free_theta_PH": true
+        },
+        "normal_approx_inverse_var_log_correlation": {
+          "a": -0.4755671865635824,
+          "log_b": -0.2514694205864404,
+          "c": 0.09206769529357817,
+          "exp_a": 0.6215324316283884,
+          "m": 0.5553144750969039,
+          "r": 0.7053075151548878,
+          "recovered_h2": 0.787336676789776,
+          "recovered_theta": 0.7894112518199652,
+          "admissible_free_theta_PH": true
+        }
+      },
+      "raw_label_audit": [
+        {
+          "relationship": "Full siblings",
+          "raw_label": "sons",
+          "n": 15935,
+          "correlation": 0.17630347944040395,
+          "binary_iid_se": 0.019861732857188716,
+          "cells": [
+            15266,
+            261,
+            336,
+            72
+          ],
+          "published_correlation": 0.479,
+          "published_n": 10772
+        },
+        {
+          "relationship": "Parent-child",
+          "raw_label": "father-son",
+          "n": 8337,
+          "correlation": 0.5383729179124588,
+          "binary_iid_se": 0.028222860472864427,
+          "cells": [
+            7998,
+            102,
+            108,
+            129
+          ],
+          "published_correlation": 0.538,
+          "published_n": 8337
+        },
+        {
+          "relationship": "Aunt/uncle",
+          "raw_label": "siblings-rem",
+          "n": 12030,
+          "correlation": 0.382261526425067,
+          "binary_iid_se": 0.02185367384910452,
+          "cells": [
+            11358,
+            243,
+            259,
+            170
+          ],
+          "published_correlation": 0.382,
+          "published_n": 12030
+        },
+        {
+          "relationship": "Grandparent",
+          "raw_label": "grandson",
+          "n": 4619,
+          "correlation": 0.3811272445568145,
+          "binary_iid_se": 0.0350148632920946,
+          "cells": [
+            4357,
+            107,
+            89,
+            66
+          ],
+          "published_correlation": 0.381,
+          "published_n": 4619
+        },
+        {
+          "relationship": "First cousins",
+          "raw_label": "cousin",
+          "n": 14635,
+          "correlation": 0.29052714550262676,
+          "binary_iid_se": 0.01955148658524622,
+          "cells": [
+            13798,
+            395,
+            287,
+            155
+          ],
+          "published_correlation": 0.291,
+          "published_n": 14635
+        },
+        {
+          "relationship": "First cousins removed",
+          "raw_label": "cousin-rem",
+          "n": 12318,
+          "correlation": 0.23416118833062172,
+          "binary_iid_se": 0.021973441837768913,
+          "cells": [
+            11695,
+            230,
+            302,
+            91
+          ],
+          "published_correlation": 0.234,
+          "published_n": 12319
+        },
+        {
+          "relationship": "Second cousins",
+          "raw_label": "cousin2",
+          "n": 11507,
+          "correlation": 0.18874222818173256,
+          "binary_iid_se": 0.02198678835084848,
+          "cells": [
+            10935,
+            216,
+            289,
+            67
+          ],
+          "published_correlation": 0.176,
+          "published_n": 15935
+        },
+        {
+          "relationship": "Second cousins removed",
+          "raw_label": "cousin2-rem",
+          "n": 12212,
+          "correlation": 0.03192587309859576,
+          "binary_iid_se": 0.015243225520827085,
+          "cells": [
+            11814,
+            125,
+            264,
+            9
+          ],
+          "published_correlation": 0.032,
+          "published_n": 12212
+        },
+        {
+          "relationship": "Third cousins",
+          "raw_label": "cousin3",
+          "n": 13545,
+          "correlation": 0.08158445290484873,
+          "binary_iid_se": 0.020351611291157135,
+          "cells": [
+            13147,
+            130,
+            249,
+            19
+          ],
+          "published_correlation": 0.071,
+          "published_n": 15349
+        },
+        {
+          "relationship": "Third cousins removed",
+          "raw_label": "cousin3-rem",
+          "n": 12503,
+          "correlation": 0.094317918938062,
+          "binary_iid_se": 0.023783541535532984,
+          "cells": [
+            12195,
+            171,
+            120,
+            17
+          ],
+          "published_correlation": 0.094,
+          "published_n": 12503
+        },
+        {
+          "relationship": "Fourth cousins",
+          "raw_label": "cousin4",
+          "n": 15953,
+          "correlation": 0.07993555279100811,
+          "binary_iid_se": 0.016511274793548022,
+          "cells": [
+            15352,
+            295,
+            275,
+            31
+          ],
+          "published_correlation": 0.08,
+          "published_n": 15953
+        }
+      ],
+      "raw_regressions": {
+        "inverse_binary_iid_var_correlation": {
+          "a": -1.0932229264487914,
+          "log_b": -0.20056893215234384,
+          "c": 0.6175434428432897,
+          "exp_a": 0.33513463698542645,
+          "m": 0.6365301666165122,
+          "r": 2.0347276717728016,
+          "recovered_h2": 0.31283310068807446,
+          "recovered_theta": 1.071288927700745,
+          "admissible_free_theta_PH": false
+        },
+        "inverse_binary_iid_var_log_correlation": {
+          "a": -0.7586342235267824,
+          "log_b": -0.18732875296480483,
+          "c": 0.28792943655945874,
+          "exp_a": 0.46830559119157883,
+          "m": 0.6583421982310786,
+          "r": 1.211669951079339,
+          "recovered_h2": 0.5433345917711638,
+          "recovered_theta": 0.8619101347201082,
+          "admissible_free_theta_PH": false
+        }
+      }
+    },
+    "1860-1919": {
+      "published_rounded_regressions": {
+        "OLS": {
+          "a": -0.5514202867629322,
+          "log_b": -0.33663064644446056,
+          "c": -0.13053467561289328,
+          "exp_a": 0.5761309578422875,
+          "m": 0.42834514674703694,
+          "r": 0.2535529237447871,
+          "recovered_h2": 1.6893717509571549,
+          "recovered_theta": 0.34103266940261456,
+          "admissible_free_theta_PH": false
+        },
+        "pair_counts": {
+          "a": -0.45488099152378586,
+          "log_b": -0.34527198307923374,
+          "c": -0.21437647652733988,
+          "exp_a": 0.634523477127158,
+          "m": 0.41605551141628183,
+          "r": 0.14281980441435693,
+          "recovered_h2": 2.913149987302867,
+          "recovered_theta": 0.21781352827446762,
+          "admissible_free_theta_PH": false
+        },
+        "normal_approx_inverse_var_correlation": {
+          "a": -0.4867857246634363,
+          "log_b": -0.33964928011725487,
+          "c": -0.18802512803286361,
+          "exp_a": 0.614598712182225,
+          "m": 0.42403999709464446,
+          "r": 0.17995083506432108,
+          "recovered_h2": 2.356421391115395,
+          "recovered_theta": 0.26081867805966114,
+          "admissible_free_theta_PH": false
+        },
+        "normal_approx_inverse_var_log_correlation": {
+          "a": -1.004391712298445,
+          "log_b": -0.18850539097155938,
+          "c": 0.14938117109062177,
+          "exp_a": 0.36626736298812673,
+          "m": 0.6563920772906346,
+          "r": 0.9232624960153253,
+          "recovered_h2": 0.710948489864511,
+          "recovered_theta": 0.5151812940174163,
+          "admissible_free_theta_PH": true
+        }
+      },
+      "raw_label_audit": [
+        {
+          "relationship": "Full siblings",
+          "raw_label": "sons",
+          "n": 33813,
+          "correlation": 0.1857577347834712,
+          "binary_iid_se": 0.012847868589944201,
+          "cells": [
+            32148,
+            866,
+            608,
+            191
+          ],
+          "published_correlation": 0.326,
+          "published_n": 15806
+        },
+        {
+          "relationship": "Parent-child",
+          "raw_label": "father-son",
+          "n": 15394,
+          "correlation": 0.37351483100766836,
+          "binary_iid_se": 0.02610300465607203,
+          "cells": [
+            14930,
+            233,
+            123,
+            108
+          ],
+          "published_correlation": 0.374,
+          "published_n": 15394
+        },
+        {
+          "relationship": "Aunt/uncle",
+          "raw_label": "siblings-rem",
+          "n": 34874,
+          "correlation": 0.22748429604576195,
+          "binary_iid_se": 0.016429561138041487,
+          "cells": [
+            33794,
+            579,
+            356,
+            145
+          ],
+          "published_correlation": 0.228,
+          "published_n": 34874
+        },
+        {
+          "relationship": "Grandparent",
+          "raw_label": "grandson",
+          "n": 15661,
+          "correlation": 0.2489824893572224,
+          "binary_iid_se": 0.024017731978820754,
+          "cells": [
+            15135,
+            296,
+            153,
+            77
+          ],
+          "published_correlation": 0.249,
+          "published_n": 15661
+        },
+        {
+          "relationship": "First cousins",
+          "raw_label": "cousin",
+          "n": 26829,
+          "correlation": 0.17296591724632537,
+          "binary_iid_se": 0.0174740549509813,
+          "cells": [
+            25991,
+            423,
+            329,
+            86
+          ],
+          "published_correlation": 0.173,
+          "published_n": 26829
+        },
+        {
+          "relationship": "First cousins removed",
+          "raw_label": "cousin-rem",
+          "n": 51001,
+          "correlation": 0.16167191097836522,
+          "binary_iid_se": 0.010421459791127217,
+          "cells": [
+            48643,
+            1259,
+            865,
+            234
+          ],
+          "published_correlation": 0.162,
+          "published_n": 51001
+        },
+        {
+          "relationship": "Second cousins",
+          "raw_label": "cousin2",
+          "n": 33813,
+          "correlation": 0.1857577347834712,
+          "binary_iid_se": 0.012847868589944201,
+          "cells": [
+            32148,
+            866,
+            608,
+            191
+          ],
+          "published_correlation": 0.186,
+          "published_n": 33813
+        },
+        {
+          "relationship": "Second cousins removed",
+          "raw_label": "cousin2-rem",
+          "n": 57201,
+          "correlation": 0.12544936577125598,
+          "binary_iid_se": 0.008748899530471043,
+          "cells": [
+            54235,
+            1601,
+            1128,
+            237
+          ],
+          "published_correlation": 0.125,
+          "published_n": 57201
+        },
+        {
+          "relationship": "Third cousins",
+          "raw_label": "cousin3",
+          "n": 33900,
+          "correlation": 0.08499283122082352,
+          "binary_iid_se": 0.010458089894296266,
+          "cells": [
+            32273,
+            740,
+            794,
+            93
+          ],
+          "published_correlation": 0.085,
+          "published_n": 33900
+        },
+        {
+          "relationship": "Third cousins removed",
+          "raw_label": "cousin3-rem",
+          "n": 53477,
+          "correlation": 0.031803343579476846,
+          "binary_iid_se": 0.006322089215592655,
+          "cells": [
+            50843,
+            1606,
+            955,
+            73
+          ],
+          "published_correlation": 0.032,
+          "published_n": 53447
+        },
+        {
+          "relationship": "Fourth cousins",
+          "raw_label": "cousin4",
+          "n": 30104,
+          "correlation": 0.014433365157130874,
+          "binary_iid_se": 0.006957530087158915,
+          "cells": [
+            28435,
+            768,
+            865,
+            36
+          ],
+          "published_correlation": 0.014,
+          "published_n": 30104
+        }
+      ],
+      "raw_regressions": {
+        "inverse_binary_iid_var_correlation": {
+          "a": -0.46212976130787153,
+          "log_b": -0.36749921167645344,
+          "c": -0.17578797036927996,
+          "exp_a": 0.6299405927230208,
+          "m": 0.38492774538800845,
+          "r": 0.16167159559374755,
+          "recovered_h2": 2.380923773123787,
+          "recovered_theta": 0.26457822792727836,
+          "admissible_free_theta_PH": false
+        },
+        "inverse_binary_iid_var_log_correlation": {
+          "a": -1.3062374994569725,
+          "log_b": -0.13677194273328036,
+          "c": 0.3656898884213164,
+          "exp_a": 0.2708371667325864,
+          "m": 0.7443382159118053,
+          "r": 1.5144777458131893,
+          "recovered_h2": 0.4914817784345438,
+          "recovered_theta": 0.5510624780337748,
+          "admissible_free_theta_PH": false
+        }
+      }
+    }
+  },
+  "book_rounded_OLS_only": {
+    "1780-1859": {
+      "a": -0.2168486776070777,
+      "log_b": -0.3185171013006931,
+      "c": -0.07860722707823718,
+      "exp_a": 0.8050517824503874,
+      "m": 0.45445328265554785,
+      "r": 0.34450088125850487,
+      "recovered_h2": 1.3191643545159395,
+      "recovered_theta": 0.6102740569773787,
+      "admissible_free_theta_PH": false
+    },
+    "1860-1919": {
+      "a": -1.1050587907793057,
+      "log_b": -0.22237127110847593,
+      "c": 0.19575220435606885,
+      "exp_a": 0.33119141066847957,
+      "m": 0.6012361255853977,
+      "r": 0.9474641956288254,
+      "recovered_h2": 0.6345739800609156,
+      "recovered_theta": 0.5219114257358725,
+      "admissible_free_theta_PH": true
+    }
+  }
+}

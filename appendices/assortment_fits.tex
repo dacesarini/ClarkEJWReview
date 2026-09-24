@@ -1,0 +1,79 @@
+\section{Illustrative Fits under Alternative Mating Models}
+\label{app:assortment-comparison}
+
+Changing the mating mechanism changes both the predicted correlations and
+what the data can identify. Using Clark's notation, let $m$ be the spouse
+genetic correlation, $r$ the spouse correlation in the true phenotype,
+$h^2$ its heritability, and $\theta$ the common attenuation factor. Under
+phenotypic assortment, $m=h^2r$. An alternative in which spouses assort
+only on additive genetic value, with environmental components having
+conditional mean zero given own genetic value, instead gives $r=h^2m$.
+Retaining additive transmission, fresh offspring environments, and the
+corresponding conditionally independent outside-mate construction, both
+models predict sibling correlation $\theta h^2(1+m)/2$. But phenotypic
+assortment predicts parent--child correlation $\theta(h^2+m)/2$, whereas
+genetic assortment makes it equal to the sibling correlation. Likewise,
+genetic assortment equates grandparent and avuncular correlations.
+The common shape of the collateral-relative formulas therefore does not
+justify fitting the original table with three unrestricted structural
+parameters and interpreting it as either model.
+
+To illustrate, we fitted both models by unweighted nonlinear least squares
+to the eleven published higher-education correlations for births
+1860--1919 in \citet[Table~2]{Clark2023}. These are the rounded PNAS
+correlations, not the different correlations in the book's Table~4.5.
+The fits impose the appropriate parameter bounds and assortment
+restriction; no observed spouse correlation is included.
+
+\begin{table}[htbp]
+\centering
+\caption{Illustrative constrained fits to PNAS education correlations}
+\label{tab:assortment-comparison}
+\begin{tabular}{lrrrrr}
+\hline
+Model & $\theta$ & $h^2$ & $m$ & Implied $r$ & SSE\\
+\hline
+Genetic, no error & 1 & 0.4278 & 0.5638 & 0.2412 & 0.01029\\
+Phenotypic, no error & 1 & 0.4393 & 0.4393 & 1.0000 & 0.02701\\
+Phenotypic, error allowed & 0.5176 & 0.7765 & 0.5810 & 0.7482 & 0.00928\\
+\hline
+\end{tabular}
+\end{table}
+
+Without measurement error, the phenotypic model reaches the boundary of
+perfect spouse phenotype correlation. Allowing error yields an admissible
+fit and a smaller residual sum of squares, with an additional identified
+parameter. Under genetic assortment, by contrast, every moment depends on
+$\theta$ and $h^2$ only through their product: freeing $\theta$ leaves the
+fit unchanged, with $\theta h^2=0.4278$ and $m=0.5638$. Even an observed
+spouse correlation would identify only $\theta h^2m$. Under phenotypic
+assortment, the lineal--collateral contrast can instead supply the
+information needed to separate heritability and attenuation, as derived
+in Section~\ref{sec:me-identification}.
+
+These calculations sharpen rather than settle the criticism. A high
+genetic spouse correlation relative to the observed genetic variance share
+can be consistent with a properly specified latent-phenotype model.
+The requirement is to derive, impose, and check that model's restrictions
+throughout, not to invoke a different matching mechanism while retaining
+the original parameter interpretations---the issue highlighted by
+\citet[p.~19]{Goldberger1978}. The fits here are descriptive, not formal
+specification tests: correlations have dependent sampling errors, and our
+equal-sex measurement and heritability assumptions are particularly strong
+for historical education, which Clark records only for men. The fitting
+code and numerical output are supplied in the repository's
+\texttt{verification/} directory.
+
+The appendix's stated estimation procedure warrants a precise distinction.
+Equation A3 specifies three freely fitted regression coefficients; it
+does not state a nonlinear constraint or a constrained recovery of the
+structural parameters. This has one coefficient too many for phenotypic
+assortment with known attenuation, or for genetic assortment, whose lineal
+adjustment must vanish. With unknown attenuation under phenotypic
+assortment, however, three coefficients can be legitimate: recover $m$
+and $r$, impose $h^2=m/r$, and recover $\theta$ from the intercept,
+checking admissibility. The appendix does not explain that recovery;
+its intercept identifies $\theta h^2$, not latent heritability alone.
+The number of coefficients therefore establishes the excess freedom in
+the first two interpretations, but does not by itself establish it in
+the third.

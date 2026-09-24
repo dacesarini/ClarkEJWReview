@@ -15,3 +15,6 @@ main.pdf
 
 _build/
 __pycache__/
+
+# Generated extracts of local source documents and referee correspondence.
+/verification/pnas_replication/sources/
